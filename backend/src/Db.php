@@ -39,6 +39,17 @@ CREATE TABLE IF NOT EXISTS books (
     is_seed INTEGER NOT NULL DEFAULT 0,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE IF NOT EXISTS lessons (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT NOT NULL UNIQUE,
+    series TEXT NOT NULL DEFAULT 'alam',
+    part INTEGER NOT NULL DEFAULT 1,
+    title TEXT NOT NULL,
+    summary TEXT NOT NULL DEFAULT '',
+    cover TEXT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
 CREATE TABLE IF NOT EXISTS pages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     book_id INTEGER NOT NULL REFERENCES books(id) ON DELETE CASCADE,
@@ -56,6 +67,17 @@ SQL);
 
     private static function seed(PDO $pdo): void
     {
+        foreach (glob(dirname(__DIR__) . '/seed/lessons/*.json') ?: [] as $file) {
+            $lesson = json_decode((string) file_get_contents($file), true);
+            if (!is_array($lesson)) {
+                continue;
+            }
+            $exists = $pdo->prepare('SELECT 1 FROM lessons WHERE slug = ?');
+            $exists->execute([$lesson['slug']]);
+            if (!$exists->fetchColumn()) {
+                Lessons::create($pdo, $lesson);
+            }
+        }
         foreach (glob(dirname(__DIR__) . '/seed/*.json') ?: [] as $file) {
             $book = json_decode((string) file_get_contents($file), true);
             if (!is_array($book)) {

@@ -1,6 +1,6 @@
 import type { Mood, Pose, SceneItem } from '../types';
 
-export type Fx = 'leaves' | 'fruit' | 'rain' | 'sparkle' | 'splash';
+export type Fx = 'leaves' | 'fruit' | 'rain' | 'sparkle' | 'splash' | 'flash';
 
 export interface Interaction {
   /** Nama animasi CSS: react-<anim> */
@@ -66,6 +66,14 @@ const TABLE: Record<string, Interaction> = {
   unta: { anim: 'sway', sound: 'camel', mood: 'senang' },
   tebing: { anim: 'squash', sound: 'echo' },
   piramida: { anim: 'squash', sound: 'echo' },
+  matahari: { anim: 'pulse', sound: 'chime', fx: ['sparkle'], fxBox: [-90, -90, 180, 180], origin: 'center' },
+  bulan: { anim: 'pulse', sound: 'chime', fx: ['sparkle'], fxBox: [-70, -70, 140, 140], origin: 'center' },
+  bintang: { anim: 'pulse', sound: 'twinkle', fx: ['sparkle'], fxBox: [-30, -30, 60, 60], origin: 'center' },
+  pelangi: { anim: 'rainbow', sound: 'rainbow', fx: ['sparkle'], fxBox: [-280, -300, 560, 280], origin: 'bottom' },
+  petir: { anim: 'flicker', sound: 'thunder', fx: ['flash'], fxBox: [0, -140, 1, 1], origin: 'center' },
+  layangan: { anim: 'flyaway', sound: 'whoosh', origin: 'center' },
+  kincir: { anim: 'wobble', sound: 'whoosh', origin: 'bottom' },
+  angin: { anim: 'drift', sound: 'whoosh', origin: 'center' },
   ikan: { anim: 'flyaway', sound: 'bubble', fx: ['splash'], fxBox: [-10, -20, 30, 10], origin: 'center' },
   api: { anim: 'squash', sound: 'crackle', fx: ['sparkle'], fxBox: [-40, -140, 80, 90] },
   // hujan dan ombak tidak interaktif (hanya hiasan di depan gambar)
@@ -79,4 +87,20 @@ export function interactionFor(item: SceneItem): Interaction | undefined {
   if (item.t === 'vas' && item.v === 1) return { ...base, sound: 'tinkle' };
   if (item.t === 'pohon' && item.v === 1) return { ...base, fx: ['leaves', 'fruit'], sound: 'rustle' };
   return base;
+}
+
+/** Nama yang ditampilkan dan diucapkan saat benda disentuh di halaman belajar. */
+const NAMES: Record<string, string> = {
+  matahari: 'Matahari', bulan: 'Bulan', bintang: 'Bintang', awan: 'Awan', pelangi: 'Pelangi', petir: 'Kilat',
+  layangan: 'Layang-layang', kincir: 'Kincir angin', angin: 'Angin', pohon: 'Pohon', kurma: 'Pohon kurma',
+  bunga: 'Bunga', burung: 'Burung', kupu: 'Kupu-kupu', rumah: 'Rumah', batu: 'Batu', semak: 'Semak',
+  kancil: 'Kancil', gajah: 'Gajah', kelinci: 'Kelinci', ikan: 'Ikan', semut: 'Semut',
+};
+const FRUITS = ['Apel', 'Jeruk', 'Pisang', 'Semangka', 'Stroberi', 'Anggur'];
+
+export function nameFor(item: SceneItem): string | undefined {
+  if (item.t === 'buah') return FRUITS[item.v ?? 0];
+  if (item.t === 'bulan') return ['Bulan purnama', 'Bulan sabit', 'Bulan separuh'][item.v ?? 0] ?? 'Bulan';
+  if (item.t === 'awan' && (item.v ?? 0) >= 2) return 'Awan mendung';
+  return NAMES[item.t];
 }

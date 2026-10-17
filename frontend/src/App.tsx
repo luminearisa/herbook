@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Home } from './pages/Home';
 import { Reader } from './pages/Reader';
 import { Create } from './pages/Create';
+import { Explore } from './pages/Explore';
+import { Lesson } from './pages/Lesson';
 import { InstallBanner, InstallButton } from './InstallPrompt';
 import { SoundToggle } from './SoundToggle';
 
@@ -25,6 +27,7 @@ export function go(path: string) {
 export function App() {
   const route = useHashRoute();
   const book = route.match(/^\/buku\/([a-z0-9-]+)$/);
+  const lesson = route.match(/^\/sekitar\/([a-z0-9-]+)$/);
 
   return (
     <div className="app">
@@ -41,13 +44,14 @@ export function App() {
         </a>
         <nav>
           <a href="#/" className={route === '/' ? 'active' : ''}>Perpustakaan</a>
+          <a href="#/sekitar" className={route.startsWith('/sekitar') ? 'active' : ''}>Mengenal Sekitar</a>
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
           <InstallButton />
           <SoundToggle />
         </nav>
       </header>
       <main>
-        {book ? <Reader slug={book[1]} key={book[1]} /> : route === '/baru' ? <Create /> : <Home />}
+        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : <Home />}
       </main>
       <footer className="footer">Her Book · cerita bergambar untuk dibaca bersama</footer>
       <InstallBanner />

@@ -9,6 +9,7 @@ loadEnvFile($root . '/.env');
 require $root . '/src/Scene.php';
 require $root . '/src/Db.php';
 require $root . '/src/Books.php';
+require $root . '/src/Lessons.php';
 require $root . '/src/StoryMaker.php';
 
 $path = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/') ?: '/';
@@ -56,7 +57,12 @@ function handleApi(string $method, string $route): void
 {
     try {
         $pdo = Db::pdo();
-        if ($route === '/books' && $method === 'GET') {
+        if ($route === '/lessons' && $method === 'GET') {
+            json(Lessons::all($pdo));
+        } elseif (preg_match('#^/lessons/([a-z0-9-]+)$#', $route, $lm) && $method === 'GET') {
+            $lesson = Lessons::find($pdo, $lm[1]);
+            $lesson ? json($lesson) : json(['error' => 'Materi tidak ditemukan.'], 404);
+        } elseif ($route === '/books' && $method === 'GET') {
             json(Books::all($pdo));
         } elseif ($route === '/books' && $method === 'POST') {
             $slug = Books::create($pdo, body());

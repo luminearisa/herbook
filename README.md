@@ -25,6 +25,10 @@ Mode pengembangan (hot reload): `npm run dev:api` dan `npm run dev:web` di dua t
 
 Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan teks cerita di bagian bawah. Kepekatan latar teks bisa diatur dengan slider "Teks" (tersimpan di browser). Panah kiri/kanan atau geser untuk berpindah halaman, `Esc` untuk keluar.
 
+## Mengenal Sekitar
+
+Segmen belajar selain cerita (`#/sekitar`). Materi pertama: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
+
 ## Interaktif
 
 Di halaman baca, gambar bisa disentuh: pohon bergoyang dan menjatuhkan daun (atau buah), kancil melompat, buaya membuka mulut dan menggeram, gajah berteriak, awan meneteskan hujan, bunga berkilau, orang dan tokoh buah menyapa dengan suara, dan seterusnya. Daftar reaksi tiap jenis ada di `frontend/src/scene/interactions.ts`. Menyentuh bagian kosong juga ada efeknya: riak air di sungai, kilau di langit, dan kepulan debu di tanah. Di adegan malam, bulan bisa disentuh. Ka'bah sengaja tidak dibuat interaktif.

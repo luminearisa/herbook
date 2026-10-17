@@ -20,6 +20,8 @@ const SKY: Record<Bg, [string, string]> = {
   laut: ['#7fd0ff', '#e6f6ff'],
   lautmalam: ['#0a1640', '#2b3a80'],
   lautbelah: ['#7fd0ff', '#e6f6ff'],
+  padang: ['#6ec6f5', '#f3fbd9'],
+  padangmalam: ['#071236', '#2b3a80'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -102,7 +104,7 @@ function ForestSilhouette({ y, color }: { y: number; color: string }) {
 
 const GROUND: Record<Bg, string> = {
   hutan: '#68b258', sungai: '#68b258', kebun: '#8fbf5a', desa: '#78b85e', malam: '#2a6a46',
-  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55', laut: '#2a7fb8', lautmalam: '#0c2552', lautbelah: '#1c6fb0',
+  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55', laut: '#2a7fb8', lautmalam: '#0c2552', lautbelah: '#1c6fb0', padang: '#68b258', padangmalam: '#1f5a3e',
 };
 
 /** `ext`: tambahan tinggi (unit viewBox) di bawah kanvas 800x500, dipakai mode layar penuh. */
@@ -132,6 +134,18 @@ export function Background({ bg, ext = 0, interactive = false, onInteract }: { b
               <path key={`${x}${y}`} d={`M${x} ${y} q15 -8 30 0 t30 0`} />
             ))}
           </g>
+        </>
+      )}
+      {bg === 'padang' && (
+        <>
+          <Hills far="#a9dc94" mid="#86c876" y={290} />
+          <Grass color="#68b258" from={362} />
+        </>
+      )}
+      {bg === 'padangmalam' && (
+        <>
+          <Hills far="#18285c" mid="#17493f" y={300} />
+          <Grass color="#1f5a3e" from={366} />
         </>
       )}
       {bg === 'lautbelah' && (

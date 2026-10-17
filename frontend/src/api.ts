@@ -1,4 +1,4 @@
-import type { Book, BookSummary, Category } from './types';
+import type { Book, BookSummary, Category, Lesson, LessonSummary } from './types';
 
 async function request<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -18,5 +18,7 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ prompt, category }),
     }),
+  lessons: () => request<LessonSummary[]>('/api/lessons'),
+  lesson: (slug: string) => request<Lesson>(`/api/lessons/${slug}`),
   remove: (slug: string) => request<{ ok: true }>(`/api/books/${slug}`, { method: 'DELETE' }),
 };

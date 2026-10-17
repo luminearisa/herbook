@@ -191,6 +191,40 @@ const SYNTH: Record<string, (c: AudioContext) => void> = {
   bubble: (c) => {
     [0, 0.09, 0.19].forEach((at, i) => tone(c, { f: 500 + i * 140, f2: 900 + i * 200, dur: 0.07, vol: 0.14, at }));
   },
+  twinkle: (c) => {
+    [2093, 2637, 3136].forEach((f, i) => tone(c, { f, dur: 0.35, vol: 0.09, at: i * 0.08 }));
+  },
+  rainbow: (c) => {
+    [523, 587, 659, 698, 784, 880, 988].forEach((f, i) => tone(c, { f, dur: 0.35, vol: 0.1, at: i * 0.1 }));
+  },
+  thunder: (c) => {
+    noise(c, { dur: 0.12, hp: 1800, vol: 0.28 }); // retakan
+    noise(c, { dur: 2.0, lp: 220, vol: 0.5, at: 0.18 });
+    tone(c, { f: 70, f2: 45, dur: 1.8, vol: 0.25, at: 0.2, lp: 200 });
+  },
+  whoosh: (c) => {
+    const t0 = c.currentTime;
+    const len = Math.floor(c.sampleRate * 1.3);
+    const buf = c.createBuffer(1, len, c.sampleRate);
+    const d = buf.getChannelData(0);
+    for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+    const src = c.createBufferSource();
+    src.buffer = buf;
+    const f = c.createBiquadFilter();
+    f.type = 'bandpass';
+    f.Q.value = 1.4;
+    f.frequency.setValueAtTime(350, t0);
+    f.frequency.exponentialRampToValueAtTime(2200, t0 + 0.6);
+    f.frequency.exponentialRampToValueAtTime(500, t0 + 1.25);
+    const g = c.createGain();
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(0.3, t0 + 0.5);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + 1.25);
+    src.connect(f);
+    f.connect(g);
+    g.connect(master!);
+    src.start(t0);
+  },
   crackle: (c) => {
     noise(c, { dur: 0.9, lp: 700, vol: 0.18 });
     for (let i = 0; i < 9; i++) noise(c, { dur: 0.04, hp: 2500, vol: 0.25, at: 0.05 + i * 0.09 + Math.random() * 0.05 });

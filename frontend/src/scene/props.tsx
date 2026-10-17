@@ -62,12 +62,14 @@ export function Bunga({ v = 0 }: CharProps) {
 }
 
 export function Awan({ v = 0 }: CharProps) {
+  const c = v >= 2 ? '#707c8c' : '#fff'; // v=2,3: awan mendung
   return (
-    <g className={v % 2 ? 'drift-b' : 'drift'} opacity=".95">
-      <ellipse cx="0" cy="0" rx="54" ry="18" fill="#fff" />
-      <circle cx="-20" cy="-12" r="20" fill="#fff" />
-      <circle cx="14" cy="-18" r="26" fill="#fff" />
-      <circle cx="38" cy="-6" r="16" fill="#fff" />
+    <g className={v % 2 ? 'drift-b' : 'drift'} opacity=".96">
+      <ellipse cx="0" cy="0" rx="54" ry="18" fill={c} />
+      <circle cx="-20" cy="-12" r="20" fill={c} />
+      <circle cx="14" cy="-18" r="26" fill={c} />
+      <circle cx="38" cy="-6" r="16" fill={c} />
+      {v >= 2 && <ellipse cx="4" cy="6" rx="46" ry="9" fill="#5a6676" opacity=".6" />}
     </g>
   );
 }
@@ -481,6 +483,133 @@ export function Piramida() {
       <path d="M-110 0 L0 -150 L110 0Z" fill="#e8c27a" stroke="#c9a257" strokeWidth="3" />
       <path d="M0 -150 L110 0 L34 0Z" fill="#cfa55c" />
       <path d="M-84 -34 H84 M-62 -64 H62 M-40 -94 H40 M-20 -122 H20" stroke="#c9a257" strokeWidth="2.4" opacity=".8" />
+    </g>
+  );
+}
+
+/* ---------------- Benda langit dan cuaca ---------------- */
+
+export function Matahari() {
+  return (
+    <g>
+      <circle r="120" fill="#ffe27a" opacity=".16" />
+      <circle r="92" fill="#ffe27a" opacity=".22" />
+      <g className="rays">
+        {Array.from({ length: 16 }, (_, i) => (
+          <rect key={i} x="-4" y={i % 2 ? -82 : -92} width="8" height={i % 2 ? 22 : 34} rx="4" fill="#ffc83d" transform={`rotate(${i * 22.5})`} />
+        ))}
+      </g>
+      <circle r="52" fill="#ffc83d" />
+      <circle r="44" fill="#ffdd57" />
+      <ellipse cx="-14" cy="-16" rx="16" ry="9" fill="#fff" opacity=".35" transform="rotate(-30 -14 -16)" />
+    </g>
+  );
+}
+
+export function Bulan({ v = 0 }: CharProps) {
+  return (
+    <g>
+      <circle r="84" fill="#fff6c0" opacity=".12" />
+      <circle r="62" fill="#fff6c0" opacity=".2" />
+      {v === 1 ? (
+        <g>
+          <path d="M6 -48 A48 48 0 1 0 6 48 A36 36 0 1 1 6 -48Z" fill="#fff9d6" />
+          <circle cx="-22" cy="-6" r="5" fill="#efe3a0" /><circle cx="-14" cy="22" r="3.5" fill="#efe3a0" />
+        </g>
+      ) : v === 2 ? (
+        <g>
+          <path d="M0 -48 A48 48 0 0 0 0 48Z" fill="#fff9d6" />
+          <path d="M0 -48 A48 48 0 0 1 0 48Z" fill="#fff6c0" opacity=".12" />
+          <circle cx="-20" cy="-12" r="6" fill="#efe3a0" /><circle cx="-12" cy="22" r="4" fill="#efe3a0" />
+        </g>
+      ) : (
+        <g>
+          <circle r="48" fill="#fff9d6" />
+          <circle cx="-16" cy="-12" r="9" fill="#efe3a0" /><circle cx="18" cy="10" r="12" fill="#efe3a0" /><circle cx="-6" cy="28" r="5" fill="#efe3a0" /><circle cx="22" cy="-26" r="5" fill="#efe3a0" />
+        </g>
+      )}
+    </g>
+  );
+}
+
+export function Bintang({ v = 0 }: CharProps) {
+  const col = ['#fff3a0', '#ffe27a', '#d9ecff', '#ffd1e8'][v % 4];
+  return (
+    <g className="twinkle" style={{ animationDelay: `${(v % 4) * 0.4}s` }}>
+      <circle r="26" fill={col} opacity=".18" />
+      <path d="M0 -24 L6.5 -8 L24 -7 L10.5 4 L15 21 L0 11.5 L-15 21 L-10.5 4 L-24 -7 L-6.5 -8z" fill={col} />
+    </g>
+  );
+}
+
+const RAINBOW = ['#ee3b3b', '#ff9a1f', '#ffd21f', '#4cbf4c', '#2f8fe8', '#4a4fc9', '#8e44ad'];
+
+export function Pelangi() {
+  return (
+    <g>
+      {RAINBOW.map((c, i) => (
+        <path key={c} className="arc" style={{ ['--i' as string]: i }} d={`M${-300 + i * 20} 0 A${300 - i * 20} ${300 - i * 20} 0 0 1 ${300 - i * 20} 0`} fill="none" stroke={c} strokeWidth="21" opacity=".92" />
+      ))}
+    </g>
+  );
+}
+
+export function Petir() {
+  return (
+    <g>
+      <path d="M10 -280 L-34 -150 L-4 -150 L-30 -40 L-6 -40 L-22 0 L42 -120 L10 -120 L44 -210 L18 -210 L40 -280z" fill="#fff6a8" stroke="#ffd21f" strokeWidth="5" strokeLinejoin="round" />
+      <path d="M10 -280 L-34 -150 L-4 -150 L-30 -40 L-6 -40 L-22 0 L42 -120 L10 -120 L44 -210 L18 -210 L40 -280z" fill="#ffd21f" opacity=".35" />
+    </g>
+  );
+}
+
+export function Layangan({ v = 0 }: CharProps) {
+  const a = ['#ee3b3b', '#2f8fe8', '#8e44ad', '#4cbf4c'][v % 4];
+  const b = ['#ffd21f', '#fff', '#ff9a1f', '#ffd21f'][v % 4];
+  return (
+    <g className="kite">
+      <path d="M0 40 Q-30 100 10 150 T-10 260" stroke="#fff" strokeWidth="2" fill="none" opacity=".9" />
+      <g className="tail">
+        {[0, 1, 2, 3].map((i) => (
+          <path key={i} d={`M${-6 + i * 4} ${52 + i * 26} l-9 8 l9 8 l-9 8z`} fill={i % 2 ? a : b} />
+        ))}
+      </g>
+      <path d="M0 -50 L34 0 L0 46 L-34 0z" fill={a} />
+      <path d="M0 -50 L34 0 L0 0z M0 46 L-34 0 L0 0z" fill={b} />
+      <path d="M0 -50 V46 M-34 0 H34" stroke="#8a5a2b" strokeWidth="2.4" />
+    </g>
+  );
+}
+
+export function Kincir() {
+  return (
+    <g>
+      <path d="M-26 0 L-12 -150 H12 L26 0z" fill="#e9dcc4" stroke="#bfae8a" strokeWidth="3" />
+      <path d="M-18 -60 H18 M-22 -30 H22 M-14 -100 H14" stroke="#cdbd9a" strokeWidth="2" />
+      <rect x="-9" y="-36" width="18" height="36" rx="4" fill="#8a5a2b" />
+      <path d="M-18 -150 L0 -176 L18 -150z" fill="#b3472d" />
+      <g transform="translate(0 -150)">
+        <g className="spin-blades">
+          {[0, 90, 180, 270].map((a) => (
+            <g key={a} transform={`rotate(${a})`}>
+              <rect x="-4" y="-96" width="8" height="96" fill="#8a5a2b" />
+              <path d="M4 -92 H34 V-46 H4z" fill="#fffaf0" stroke="#bfae8a" strokeWidth="2" />
+              <path d="M4 -69 H34 M19 -92 V-46" stroke="#cdbd9a" strokeWidth="1.5" />
+            </g>
+          ))}
+        </g>
+        <circle r="8" fill="#6a421e" />
+      </g>
+    </g>
+  );
+}
+
+export function Angin() {
+  return (
+    <g className="wind" fill="none" stroke="#fff" strokeWidth="6" strokeLinecap="round" opacity=".9">
+      <path d="M-120 -30 H40 Q80 -30 80 -60 Q80 -86 54 -84" />
+      <path d="M-90 10 H110 Q150 10 150 40 Q150 66 122 64" />
+      <path d="M-130 50 H0 Q30 50 30 70 Q30 88 10 86" />
     </g>
   );
 }

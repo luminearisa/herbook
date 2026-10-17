@@ -306,3 +306,42 @@ nav { align-items: center; }
 @keyframes flame { from { transform: scale(1, .92) skewX(-3deg); } to { transform: scale(.95, 1.08) skewX(3deg); } }
 .fishswim { animation: fishswim 2.2s ease-in-out infinite alternate; }
 @keyframes fishswim { from { transform: translateX(-10px) rotate(-3deg); } to { transform: translateX(14px) rotate(3deg); } }
+.react-pulse { animation: r-pulse .9s ease-in-out; }
+.react-flicker { animation: r-flicker .7s steps(2, end); }
+.react-rainbow { animation: none; }
+.react-rainbow .arc { animation: arcpulse .9s ease-in-out both; animation-delay: calc(var(--i) * .09s); }
+@keyframes r-pulse { 0%, 100% { transform: scale(1); } 40% { transform: scale(1.18); } 70% { transform: scale(.96); } }
+@keyframes r-flicker { 0%, 100% { opacity: 1; } 20% { opacity: .15; } 40% { opacity: 1; } 60% { opacity: .3; } 80% { opacity: 1; } }
+@keyframes arcpulse { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-16px); } }
+.fx-flash { opacity: 0; animation: flash .8s ease-out forwards; pointer-events: none; }
+@keyframes flash { 0% { opacity: .95; } 18% { opacity: .15; } 34% { opacity: .85; } 100% { opacity: 0; } }
+.spin-blades { animation: spin 6s linear infinite; }
+.wind { animation: windy 3s ease-in-out infinite alternate; }
+@keyframes windy { from { transform: translateX(-24px); opacity: .5; } to { transform: translateX(34px); opacity: .95; } }
+.kite { animation: kitefly 3.4s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 0; }
+.kite .tail { animation: tailwag .7s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 50% 0; }
+@keyframes kitefly { from { transform: rotate(-6deg) translateY(0); } to { transform: rotate(6deg) translateY(-10px); } }
+@keyframes tailwag { from { transform: skewX(-8deg); } to { transform: skewX(8deg); } }
+.name-tag { animation: tagIn .35s ease-out both; }
+@keyframes tagIn { from { opacity: 0; transform: translateY(8px) scale(.8); } to { opacity: 1; transform: none; } }
+
+/* mengenal sekitar */
+.chip.alam { background: #d9f0e2; color: #1f4a36; }
+.lesson-title { margin: 0; font-size: 1.5rem; color: var(--green-dark); }
+.fact { background: #fff4cf; border: 2px solid #f3d58a; border-radius: 16px; padding: 10px 14px; font-size: .98rem; line-height: 1.55; }
+.reflection { margin: 0; color: #2f6b4f; font-weight: 500; font-size: .95rem; }
+.quiz { display: grid; gap: 12px; }
+.options { display: grid; gap: 8px; }
+.option { font: inherit; font-weight: 500; text-align: left; padding: 12px 16px; border-radius: 14px; border: 2px solid var(--line); background: #fff; cursor: pointer; transition: transform .1s, border-color .1s; }
+.option:hover:not(:disabled) { border-color: var(--green); transform: translateX(3px); }
+.option.right { border-color: #2f9a4d; background: #e3f6e8; }
+.option.wrong { border-color: #d9503a; background: #fde8e4; }
+.feedback { margin: 0; font-size: .98rem; line-height: 1.5; }
+.stars { font-size: 2rem; margin: 0; letter-spacing: 4px; }
+.reader.full .lesson-title { font-size: clamp(1.1rem, 2.4vw, 1.6rem); }
+.reader.full .fact { font-size: clamp(.85rem, 1.6vw, 1rem); }
+.reader.full .options .option { padding: 8px 14px; }
+.spread .art-frame { align-self: start; }
+.reader.full .spread .art-frame { align-self: auto; }
+.reader.full.lesson .story { max-height: 42vh; }
+.reader.full.lesson .story-text { font-size: clamp(.95rem, 1.8vw, 1.2rem); line-height: 1.5; }

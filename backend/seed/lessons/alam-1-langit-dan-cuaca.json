@@ -1,0 +1,666 @@
+{
+ "slug": "alam-1-langit-dan-cuaca",
+ "series": "alam",
+ "part": 1,
+ "title": "Alam Part 1: Langit dan Cuaca",
+ "summary": "Kenali matahari, bulan, bintang, awan, hujan, pelangi, angin, serta kilat dan guntur lewat gambar yang bisa disentuh.",
+ "cover": {
+  "bg": "padang",
+  "items": [
+   {
+    "t": "pelangi",
+    "x": 400,
+    "y": 392,
+    "s": 1.2
+   },
+   {
+    "t": "matahari",
+    "x": 690,
+    "y": 90,
+    "s": 0.5
+   },
+   {
+    "t": "awan",
+    "x": 130,
+    "y": 300,
+    "s": 0.8
+   },
+   {
+    "t": "awan",
+    "x": 690,
+    "y": 320,
+    "s": 0.8,
+    "v": 1
+   },
+   {
+    "t": "pohon",
+    "x": 110,
+    "y": 410,
+    "s": 1.1
+   },
+   {
+    "t": "bunga",
+    "x": 300,
+    "y": 484,
+    "v": 1
+   },
+   {
+    "t": "bunga",
+    "x": 520,
+    "y": 484,
+    "v": 2
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Matahari",
+   "text": "Matahari adalah bintang yang paling dekat dengan Bumi. Ia memberi kita cahaya dan kehangatan, sehingga tumbuhan bisa tumbuh dan kita bisa melihat dengan jelas di siang hari. Matahari terbit di timur dan terbenam di barat.",
+   "fact": "Cahaya matahari butuh sekitar 8 menit untuk sampai ke Bumi, dan ukuran Matahari kira-kira 109 kali diameter Bumi. Jangan menatap matahari langsung, ya!",
+   "reflection": "Subhanallah, Allah menciptakan matahari sebagai sumber cahaya dan kehangatan bagi kita.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "matahari",
+      "x": 400,
+      "y": 170,
+      "s": 1.5
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 705,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 260,
+      "y": 480
+     },
+     {
+      "t": "bunga",
+      "x": 340,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 520,
+      "y": 482,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 600,
+      "y": 478,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 600,
+      "y": 110,
+      "v": 2
+     },
+     {
+      "t": "kupu",
+      "x": 200,
+      "y": 300
+     }
+    ]
+   }
+  },
+  {
+   "title": "Bulan",
+   "text": "Bulan adalah satelit alami Bumi yang mengelilingi Bumi. Bulan tidak punya cahaya sendiri, ia bersinar karena memantulkan cahaya matahari. Bentuk bulan yang tampak berubah-ubah, dari bulan sabit sampai bulan purnama.",
+   "fact": "Bulan mengelilingi Bumi dalam waktu sekitar 27 hari, dan perubahan bentuknya dari purnama ke purnama berikutnya sekitar 29,5 hari.",
+   "reflection": "Subhanallah, bulan membantu kita menandai hitungan waktu dan bulan-bulan dalam setahun.",
+   "scene": {
+    "bg": "padangmalam",
+    "items": [
+     {
+      "t": "bulan",
+      "x": 400,
+      "y": 150,
+      "s": 1.6,
+      "v": 0
+     },
+     {
+      "t": "bulan",
+      "x": 150,
+      "y": 90,
+      "s": 0.5,
+      "v": 1
+     },
+     {
+      "t": "bulan",
+      "x": 660,
+      "y": 100,
+      "s": 0.5,
+      "v": 2
+     },
+     {
+      "t": "bintang",
+      "x": 260,
+      "y": 60,
+      "s": 0.45,
+      "v": 1
+     },
+     {
+      "t": "bintang",
+      "x": 560,
+      "y": 50,
+      "s": 0.4,
+      "v": 2
+     },
+     {
+      "t": "bintang",
+      "x": 90,
+      "y": 200,
+      "s": 0.4,
+      "v": 0
+     },
+     {
+      "t": "bintang",
+      "x": 720,
+      "y": 210,
+      "s": 0.45,
+      "v": 3
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 710,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 400,
+      "y": 446
+     }
+    ]
+   }
+  },
+  {
+   "title": "Bintang",
+   "text": "Bintang adalah bola gas raksasa yang sangat panas dan memancarkan cahayanya sendiri. Bintang tampak kecil karena letaknya sangat jauh. Pada malam yang cerah tanpa awan, kita bisa melihat ribuan bintang berkelap-kelip di langit.",
+   "fact": "Matahari juga sebuah bintang! Ia tampak sangat besar dan terang hanya karena jaraknya yang paling dekat dari kita.",
+   "reflection": "Subhanallah, langit malam dihiasi bintang-bintang yang indah sebagai tanda kebesaran Allah.",
+   "scene": {
+    "bg": "padangmalam",
+    "items": [
+     {
+      "t": "bintang",
+      "x": 120,
+      "y": 70,
+      "s": 1.0,
+      "v": 0
+     },
+     {
+      "t": "bintang",
+      "x": 290,
+      "y": 150,
+      "s": 0.7,
+      "v": 1
+     },
+     {
+      "t": "bintang",
+      "x": 430,
+      "y": 60,
+      "s": 1.3,
+      "v": 2
+     },
+     {
+      "t": "bintang",
+      "x": 560,
+      "y": 170,
+      "s": 0.8,
+      "v": 3
+     },
+     {
+      "t": "bintang",
+      "x": 690,
+      "y": 70,
+      "s": 1.0,
+      "v": 0
+     },
+     {
+      "t": "bintang",
+      "x": 80,
+      "y": 220,
+      "s": 0.6,
+      "v": 2
+     },
+     {
+      "t": "bintang",
+      "x": 360,
+      "y": 230,
+      "s": 0.55,
+      "v": 0
+     },
+     {
+      "t": "bintang",
+      "x": 630,
+      "y": 260,
+      "s": 0.6,
+      "v": 1
+     },
+     {
+      "t": "bintang",
+      "x": 220,
+      "y": 40,
+      "s": 0.45,
+      "v": 3
+     },
+     {
+      "t": "bulan",
+      "x": 740,
+      "y": 170,
+      "s": 0.45,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 405,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "title": "Awan",
+   "text": "Awan terbentuk dari butiran air dan kristal es yang sangat kecil dan melayang di udara. Air dari laut, sungai, dan tanah menguap karena panas matahari, naik ke langit, lalu mendingin menjadi awan. Bentuk awan bermacam-macam.",
+   "fact": "Awan yang tampak ringan bisa beratnya ratusan ton, tetapi butiran airnya sangat kecil sehingga bisa melayang di udara.",
+   "reflection": "Alhamdulillah, awan menjadi tempat Allah menyimpan air untuk hujan.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "awan",
+      "x": 160,
+      "y": 90,
+      "s": 1.2
+     },
+     {
+      "t": "awan",
+      "x": 420,
+      "y": 150,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "awan",
+      "x": 660,
+      "y": 80,
+      "s": 1.1
+     },
+     {
+      "t": "awan",
+      "x": 540,
+      "y": 250,
+      "s": 0.8,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "bunga",
+      "x": 300,
+      "y": 482
+     },
+     {
+      "t": "bunga",
+      "x": 500,
+      "y": 480,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 650,
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hujan",
+   "text": "Ketika butiran air di awan makin banyak dan berat, mereka jatuh ke bumi sebagai hujan. Hujan membuat tanah subur, mengisi sungai, dan menyegarkan tumbuhan. Air hujan lalu mengalir ke laut dan menguap lagi, membentuk daur air.",
+   "fact": "Tetes hujan bisa jatuh dengan kecepatan sampai sekitar 30 km per jam. Hujan membawa berkah, tetapi tetap berhati-hatilah saat hujan deras.",
+   "reflection": "Alhamdulillah, hujan adalah rahmat dari Allah yang menghidupkan bumi yang kering.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "awan",
+      "x": 180,
+      "y": 90,
+      "s": 1.4,
+      "v": 2
+     },
+     {
+      "t": "awan",
+      "x": 430,
+      "y": 70,
+      "s": 1.7,
+      "v": 3
+     },
+     {
+      "t": "awan",
+      "x": 670,
+      "y": 100,
+      "s": 1.3,
+      "v": 2
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 300,
+      "y": 446
+     },
+     {
+      "t": "bunga",
+      "x": 480,
+      "y": 482,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 560,
+      "y": 478,
+      "v": 2
+     },
+     {
+      "t": "hujan",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Pelangi",
+   "text": "Pelangi muncul ketika sinar matahari menembus tetes-tetes air hujan di udara. Cahaya putih terurai menjadi tujuh warna: merah, jingga, kuning, hijau, biru, nila, dan ungu. Pelangi biasanya terlihat saat hujan mulai reda dan matahari bersinar di belakang kita.",
+   "fact": "Pelangi sebenarnya berbentuk lingkaran penuh, tetapi dari tanah kita hanya melihat setengahnya. Setiap orang melihat pelanginya sendiri dari sudut yang sedikit berbeda.",
+   "reflection": "Subhanallah, betapa indahnya warna-warni ciptaan Allah.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "pelangi",
+      "x": 400,
+      "y": 392,
+      "s": 1.2
+     },
+     {
+      "t": "awan",
+      "x": 110,
+      "y": 330,
+      "s": 0.8
+     },
+     {
+      "t": "awan",
+      "x": 700,
+      "y": 330,
+      "s": 0.8,
+      "v": 1
+     },
+     {
+      "t": "matahari",
+      "x": 690,
+      "y": 80,
+      "s": 0.5
+     },
+     {
+      "t": "bunga",
+      "x": 250,
+      "y": 482
+     },
+     {
+      "t": "bunga",
+      "x": 340,
+      "y": 486,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 470,
+      "y": 484,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 560,
+      "y": 480,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 250,
+      "y": 150,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Angin",
+   "text": "Angin adalah udara yang bergerak. Udara panas naik dan udara yang lebih dingin bergerak mengisi tempatnya, sehingga terjadi angin. Angin bisa menerbangkan layang-layang, memutar kincir, dan menggoyangkan daun-daun.",
+   "fact": "Kincir angin dipakai untuk menggiling biji-bijian, dan sekarang juga untuk menghasilkan listrik. Angin tidak bisa kita lihat, tetapi kita bisa merasakan dan melihat gerakannya.",
+   "reflection": "Subhanallah, Allah mengirim angin untuk menggerakkan awan dan menyejukkan bumi.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "kincir",
+      "x": 200,
+      "y": 438,
+      "s": 1.25
+     },
+     {
+      "t": "layangan",
+      "x": 570,
+      "y": 150,
+      "s": 1.2,
+      "v": 0
+     },
+     {
+      "t": "layangan",
+      "x": 460,
+      "y": 90,
+      "s": 0.7,
+      "v": 1
+     },
+     {
+      "t": "angin",
+      "x": 420,
+      "y": 260
+     },
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 380,
+      "y": 482
+     },
+     {
+      "t": "bunga",
+      "x": 460,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "awan",
+      "x": 640,
+      "y": 70,
+      "s": 0.9
+     }
+    ]
+   }
+  },
+  {
+   "title": "Kilat dan Guntur",
+   "text": "Kilat adalah cahaya terang yang muncul ketika listrik di dalam awan melompat ke awan lain atau ke tanah. Bunyi gemuruh yang menyusul kilat disebut guntur. Kita melihat kilat lebih dulu, baru mendengar gunturnya.",
+   "fact": "Cahaya lebih cepat daripada suara. Hitung detik antara kilat dan guntur: tiap 3 detik kira-kira berjarak 1 kilometer. Saat ada petir, segera masuk ke dalam rumah dan jangan berteduh di bawah pohon.",
+   "reflection": "Guntur dan kilat adalah tanda kebesaran Allah. Mari kita berhati-hati dan berlindung di tempat yang aman.",
+   "scene": {
+    "bg": "padangmalam",
+    "items": [
+     {
+      "t": "awan",
+      "x": 200,
+      "y": 80,
+      "s": 1.5,
+      "v": 2
+     },
+     {
+      "t": "awan",
+      "x": 450,
+      "y": 60,
+      "s": 1.8,
+      "v": 3
+     },
+     {
+      "t": "awan",
+      "x": 680,
+      "y": 95,
+      "s": 1.4,
+      "v": 2
+     },
+     {
+      "t": "petir",
+      "x": 440,
+      "y": 420,
+      "s": 1.0
+     },
+     {
+      "t": "rumah",
+      "x": 650,
+      "y": 424,
+      "s": 1.0
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "hujan",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Apa yang memberi kita cahaya dan panas di siang hari?",
+   "options": [
+    "Matahari",
+    "Bulan",
+    "Awan"
+   ],
+   "answer": 0,
+   "explain": "Matahari adalah bintang terdekat yang memberi cahaya dan kehangatan."
+  },
+  {
+   "q": "Bulan bersinar karena...",
+   "options": [
+    "Punya lampu sendiri",
+    "Memantulkan cahaya matahari",
+    "Menyerap cahaya bintang"
+   ],
+   "answer": 1,
+   "explain": "Bulan tidak punya cahaya sendiri; ia memantulkan cahaya matahari."
+  },
+  {
+   "q": "Bintang yang paling dekat dengan Bumi adalah...",
+   "options": [
+    "Bulan",
+    "Awan",
+    "Matahari"
+   ],
+   "answer": 2,
+   "explain": "Matahari adalah sebuah bintang, dan jaraknya paling dekat dengan Bumi."
+  },
+  {
+   "q": "Awan terbentuk dari...",
+   "options": [
+    "Kapas",
+    "Butiran air dan es yang sangat kecil",
+    "Asap"
+   ],
+   "answer": 1,
+   "explain": "Awan terdiri dari butiran air dan kristal es yang melayang di udara."
+  },
+  {
+   "q": "Pelangi muncul ketika ada...",
+   "options": [
+    "Matahari dan hujan",
+    "Bulan dan bintang",
+    "Angin dan petir"
+   ],
+   "answer": 0,
+   "explain": "Sinar matahari terurai menjadi tujuh warna oleh tetes air hujan."
+  },
+  {
+   "q": "Mana yang kita lihat lebih dulu saat ada petir?",
+   "options": [
+    "Guntur",
+    "Kilat",
+    "Keduanya bersamaan"
+   ],
+   "answer": 1,
+   "explain": "Cahaya lebih cepat daripada suara, jadi kilat terlihat lebih dulu."
+  },
+  {
+   "q": "Angin bisa menggerakkan...",
+   "options": [
+    "Layang-layang dan kincir",
+    "Hanya batu",
+    "Bulan"
+   ],
+   "answer": 0,
+   "explain": "Angin menerbangkan layang-layang dan memutar kincir angin."
+  }
+ ]
+}
