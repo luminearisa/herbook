@@ -1,0 +1,386 @@
+{
+ "slug": "kancil-mencuri-timun",
+ "title": "Kancil Mencuri Timun",
+ "author": "Dongeng Nusantara",
+ "summary": "Kancil yang lapar mencuri timun di kebun Pak Tani. Tapi Pak Tani tidak kalah akal!",
+ "moral": "Mengambil milik orang lain tanpa izin itu tidak baik. Lebih baik meminta dengan sopan, ya!",
+ "cover": {
+  "bg": "kebun",
+  "items": [
+   {
+    "t": "rumah",
+    "x": 650,
+    "y": 330,
+    "s": 0.8
+   },
+   {
+    "t": "timun",
+    "x": 230,
+    "y": 445,
+    "s": 1.1
+   },
+   {
+    "t": "timun",
+    "x": 470,
+    "y": 455,
+    "s": 1.1
+   },
+   {
+    "t": "orangorangan",
+    "x": 570,
+    "y": 440,
+    "s": 1
+   },
+   {
+    "t": "kancil",
+    "x": 110,
+    "y": 460,
+    "s": 1.25,
+    "mood": "licik"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Musim kemarau datang begitu panjang. Rumput menguning dan buah-buahan di hutan mengering. Kancil berjalan lesu sambil memegangi perutnya. \"Aku lapar sekali...\" keluhnya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 500,
+      "y": 70,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 400,
+      "s": 1.1
+     },
+     {
+      "t": "batu",
+      "x": 260,
+      "y": 455
+     },
+     {
+      "t": "batu",
+      "x": 610,
+      "y": 462,
+      "s": 0.8
+     },
+     {
+      "t": "kancil",
+      "x": 430,
+      "y": 458,
+      "s": 1.25,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dari balik semak, hidung Kancil mengendus sesuatu yang segar. Di tepi desa ada kebun timun milik Pak Tani, hijau dan penuh buah. \"Hmm, segar sekali!\" bisiknya sambil mengintip.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 60
+     },
+     {
+      "t": "rumah",
+      "x": 660,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 360
+     },
+     {
+      "t": "timun",
+      "x": 270,
+      "y": 430,
+      "s": 1.1
+     },
+     {
+      "t": "timun",
+      "x": 470,
+      "y": 455,
+      "s": 1.1
+     },
+     {
+      "t": "semak",
+      "x": 100,
+      "y": 450
+     },
+     {
+      "t": "kancil",
+      "x": 150,
+      "y": 462,
+      "s": 1.1,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil menyelinap masuk ke kebun. Kres, kres! Ia melahap timun yang segar dan renyah. Hari demi hari ia datang lagi, dan kebun Pak Tani makin gundul.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 660,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 360
+     },
+     {
+      "t": "timun",
+      "x": 200,
+      "y": 435,
+      "s": 1.1
+     },
+     {
+      "t": "timun",
+      "x": 560,
+      "y": 450,
+      "s": 1.1
+     },
+     {
+      "t": "kupu",
+      "x": 330,
+      "y": 300
+     },
+     {
+      "t": "kancil",
+      "x": 380,
+      "y": 462,
+      "s": 1.2,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Siapa yang mencuri timunku?\" Pak Tani heran dan geram. Ia pun membuat orang-orangan sawah, lalu melumurinya dengan getah nangka yang lengket. \"Tunggu saja, pencuri kecil!\" katanya.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 520,
+      "y": 60
+     },
+     {
+      "t": "rumah",
+      "x": 680,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 360
+     },
+     {
+      "t": "timun",
+      "x": 160,
+      "y": 440,
+      "s": 1.0
+     },
+     {
+      "t": "orangorangan",
+      "x": 570,
+      "y": 450,
+      "s": 1.1
+     },
+     {
+      "t": "petani",
+      "x": 330,
+      "y": 462,
+      "s": 1.15,
+      "mood": "marah"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Malam itu bulan bersinar. Kancil datang lagi dan melihat sosok berdiri di tengah kebun. \"Hei, minggir!\" Tak ada jawaban. Kancil menendang, dan plak! Kakinya melekat. Ia menyepak dengan kaki lain, lengket pula. Kancil pun terjebak!",
+   "scene": {
+    "bg": "malam",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 680,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 360
+     },
+     {
+      "t": "timun",
+      "x": 170,
+      "y": 445,
+      "s": 1.0
+     },
+     {
+      "t": "orangorangan",
+      "x": 520,
+      "y": 455,
+      "s": 1.2
+     },
+     {
+      "t": "kancil",
+      "x": 340,
+      "y": 465,
+      "s": 1.2,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Pagi harinya, Pak Tani menemukan Kancil yang menempel di orang-orangan sawah. \"Nah, tertangkap kau!\" Kancil pun dimasukkan ke dalam kurungan bambu. Ia sedih dan menyesal.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 200,
+      "y": 60,
+      "s": 0.9
+     },
+     {
+      "t": "rumah",
+      "x": 680,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 300,
+      "y": 360
+     },
+     {
+      "t": "petani",
+      "x": 250,
+      "y": 465,
+      "s": 1.2,
+      "mood": "licik"
+     },
+     {
+      "t": "kancil",
+      "x": 560,
+      "y": 462,
+      "s": 1.15,
+      "mood": "sedih"
+     },
+     {
+      "t": "kurungan",
+      "x": 560,
+      "y": 462,
+      "s": 1.2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil mendapat akal. Ia berbaring diam dan menahan napas, berpura-pura mati. \"Kasihan, ia sudah mati,\" kata Pak Tani, lalu membuka kurungan dan melemparkannya ke semak-semak.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 680,
+      "y": 320,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 300,
+      "y": 360
+     },
+     {
+      "t": "timun",
+      "x": 150,
+      "y": 445,
+      "s": 0.9
+     },
+     {
+      "t": "petani",
+      "x": 260,
+      "y": 465,
+      "s": 1.2,
+      "mood": "kaget"
+     },
+     {
+      "t": "kancil",
+      "x": 540,
+      "y": 462,
+      "s": 1.2,
+      "pose": "rebah",
+      "mood": "pingsan"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Begitu Pak Tani berbalik, Kancil membuka mata, melompat, dan lari secepat angin. \"Terima kasih, Pak Tani!\" serunya dari jauh. Sejak itu Kancil tak pernah mencuri lagi. Tamat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 420,
+      "y": 60
+     },
+     {
+      "t": "rumah",
+      "x": 90,
+      "y": 330,
+      "s": 0.7
+     },
+     {
+      "t": "petani",
+      "x": 160,
+      "y": 462,
+      "s": 0.9,
+      "mood": "marah",
+      "flip": true
+     },
+     {
+      "t": "kancil",
+      "x": 560,
+      "y": 462,
+      "s": 1.2,
+      "pose": "lari",
+      "mood": "senang"
+     },
+     {
+      "t": "kupu",
+      "x": 700,
+      "y": 300
+     }
+    ]
+   }
+  }
+ ]
+}

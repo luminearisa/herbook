@@ -1,0 +1,467 @@
+{
+ "slug": "kancil-dan-buaya",
+ "title": "Kancil dan Buaya",
+ "author": "Dongeng Nusantara",
+ "summary": "Kancil yang kecil harus menyeberangi sungai penuh buaya lapar demi kebun buah yang ranum. Bagaimana caranya?",
+ "moral": "Akal yang cerdik lebih berharga daripada kekuatan. Tetapi gunakanlah kecerdikan dengan bijak, ya!",
+ "cover": {
+  "bg": "sungai",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 740,
+    "y": 330,
+    "s": 0.9,
+    "v": 1
+   },
+   {
+    "t": "awan",
+    "x": 250,
+    "y": 70,
+    "s": 1
+   },
+   {
+    "t": "buaya",
+    "x": 250,
+    "y": 405,
+    "s": 0.84,
+    "pose": "renang",
+    "mood": "marah"
+   },
+   {
+    "t": "buaya",
+    "x": 430,
+    "y": 415,
+    "s": 0.84,
+    "pose": "renang",
+    "mood": "marah"
+   },
+   {
+    "t": "kancil",
+    "x": 110,
+    "y": 440,
+    "s": 1.25,
+    "mood": "licik"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di tengah hutan yang rimbun, hiduplah seekor kancil kecil yang sangat cerdik. Pagi itu matahari bersinar hangat, burung-burung bernyanyi, tetapi perut Kancil berbunyi: krucuk, krucuk! \"Aduh, aku lapar sekali,\" katanya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 150,
+      "y": 80
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 705,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 260,
+      "y": 440
+     },
+     {
+      "t": "bunga",
+      "x": 330,
+      "y": 470
+     },
+     {
+      "t": "bunga",
+      "x": 350,
+      "y": 478,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 640,
+      "y": 160
+     },
+     {
+      "t": "kupu",
+      "x": 570,
+      "y": 300
+     },
+     {
+      "t": "kancil",
+      "x": 430,
+      "y": 455,
+      "s": 1.25,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dari kejauhan, Kancil melihat kebun di seberang sungai. Pohon-pohon mangga dan jambunya penuh buah ranum! Sayang sekali, sungai itu dihuni banyak buaya lapar yang matanya mengintip dari balik air. \"Bagaimana caraku menyeberang?\" gumam Kancil.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 330,
+      "s": 0.9,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 770,
+      "y": 350,
+      "s": 0.8,
+      "v": 1
+     },
+     {
+      "t": "buaya",
+      "x": 330,
+      "y": 380,
+      "s": 0.72,
+      "pose": "renang",
+      "mood": "marah"
+     },
+     {
+      "t": "buaya",
+      "x": 510,
+      "y": 410,
+      "s": 0.72,
+      "pose": "renang",
+      "mood": "marah"
+     },
+     {
+      "t": "semak",
+      "x": 90,
+      "y": 440
+     },
+     {
+      "t": "kancil",
+      "x": 75,
+      "y": 455,
+      "s": 1.15,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tiba-tiba Kancil tersenyum. Ia punya akal! \"Hai, Buaya-Buaya yang gagah!\" teriaknya. \"Raja Hutan akan mengadakan pesta daging, dan aku disuruh menghitung kalian semua yang diundang!\" Para buaya saling berpandangan dan bermunculan dari dalam air.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "awan",
+      "x": 520,
+      "y": 60,
+      "s": 0.9
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 330,
+      "s": 0.9,
+      "v": 1
+     },
+     {
+      "t": "buaya",
+      "x": 250,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "buaya",
+      "x": 400,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "buaya",
+      "x": 550,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 75,
+      "y": 455,
+      "s": 1.25,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Berbarislah dari tepi sini sampai ke seberang, supaya mudah kuhitung!\" kata Kancil. Buaya-buaya yang serakah itu pun tergesa-gesa berbaris rapat, sambil membayangkan daging lezat di pesta nanti.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 330,
+      "s": 0.9,
+      "v": 1
+     },
+     {
+      "t": "buaya",
+      "x": 250,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "buaya",
+      "x": 400,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "buaya",
+      "x": 550,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 75,
+      "y": 455,
+      "s": 1.2,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Hop! Kancil melompat ke punggung buaya pertama. \"Satu!\" Hop! Ke punggung buaya kedua. \"Dua!\" Hop! Ke punggung buaya ketiga. \"Tiga!\" Ia berhitung sambil melompat dengan lincah ke seberang.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 330,
+      "s": 0.9,
+      "v": 1
+     },
+     {
+      "t": "buaya",
+      "x": 250,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "buaya",
+      "x": 400,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "buaya",
+      "x": 550,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "kancil",
+      "x": 330,
+      "y": 395,
+      "s": 0.8,
+      "pose": "lompat",
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sampailah Kancil di seberang! Dengan satu lompatan terakhir, ia mendarat di tepi sungai yang berumput. \"Terima kasih, Buaya! Aku hanya ingin menyeberang, tidak ada pesta daging!\" serunya sambil tertawa riang.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 360,
+      "s": 1.1,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 640,
+      "y": 440
+     },
+     {
+      "t": "buaya",
+      "x": 250,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "buaya",
+      "x": 400,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "buaya",
+      "x": 550,
+      "y": 400,
+      "s": 0.78,
+      "pose": "renang",
+      "mood": "kaget"
+     },
+     {
+      "t": "kancil",
+      "x": 730,
+      "y": 455,
+      "s": 1.2,
+      "mood": "senang",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Buaya-buaya itu melongo, lalu menggeram marah. \"Kita ditipu!\" Tetapi semuanya sudah terlambat. Kancil sudah jauh dan tak terkejar, sementara mereka hanya bisa menggerutu di dalam air.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 360,
+      "s": 1.1,
+      "v": 1
+     },
+     {
+      "t": "buaya",
+      "x": 260,
+      "y": 395,
+      "s": 0.84,
+      "mood": "marah",
+      "pose": "renang"
+     },
+     {
+      "t": "buaya",
+      "x": 420,
+      "y": 410,
+      "s": 0.84,
+      "mood": "marah",
+      "pose": "renang"
+     },
+     {
+      "t": "buaya",
+      "x": 540,
+      "y": 385,
+      "s": 0.84,
+      "mood": "marah",
+      "pose": "renang"
+     },
+     {
+      "t": "kancil",
+      "x": 720,
+      "y": 460,
+      "s": 0.8,
+      "mood": "licik",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Di kebun, Kancil makan mangga dan jambu sampai kenyang. Hari itu ia belajar, dan kita juga: kecerdikan bisa menolong kita keluar dari bahaya. Tetapi sebaiknya kita gunakan untuk kebaikan, bukan untuk menipu. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 200,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 400,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 690,
+      "y": 400,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 300,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 560,
+      "y": 470
+     },
+     {
+      "t": "kupu",
+      "x": 480,
+      "y": 280
+     },
+     {
+      "t": "burung",
+      "x": 360,
+      "y": 150
+     },
+     {
+      "t": "kancil",
+      "x": 430,
+      "y": 458,
+      "s": 1.25,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ]
+}

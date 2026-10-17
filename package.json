@@ -1,0 +1,10 @@
+{
+  "name": "herbook",
+  "private": true,
+  "scripts": {
+    "dev:api": "php -S 127.0.0.1:8000 backend/router.php",
+    "dev:web": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "start": "npm run build && php -S 127.0.0.1:8000 backend/router.php"
+  }
+}
