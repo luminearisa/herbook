@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties } from 're
 import { go } from '../App';
 import { api } from '../api';
 import { Scene } from '../scene/Scene';
+import { SoundToggle } from '../SoundToggle';
 import type { Book } from '../types';
 
 export function Reader({ slug }: { slug: string }) {
@@ -12,6 +13,7 @@ export function Reader({ slug }: { slug: string }) {
   const touchX = useRef<number | null>(null);
   const root = useRef<HTMLElement>(null);
   const [full, setFull] = useState(false);
+  const [touched, setTouched] = useState(false);
   const [portrait, setPortrait] = useState(() => window.innerHeight > window.innerWidth);
   const [alpha, setAlpha] = useState(() => {
     try {
@@ -135,6 +137,7 @@ export function Reader({ slug }: { slug: string }) {
             <input type="range" min={30} max={100} value={alpha} onChange={(e) => setAlpha(Number(e.target.value))} aria-label="Kepekatan latar teks" />
           </label>
         )}
+        <SoundToggle />
         <button className="btn small" onClick={full ? exitFull : enterFull} aria-pressed={full}>
           {full ? '✕ Keluar' : '⛶ Layar penuh'}
         </button>
@@ -143,7 +146,10 @@ export function Reader({ slug }: { slug: string }) {
 
       <div className="spread" key={index}>
         <div className="art-frame">
+          {!touched && <div className="touch-hint">👆 Sentuh gambarnya!</div>}
           <Scene
+            interactive
+            onInteract={() => setTouched(true)}
             scene={page ? page.scene : book.cover}
             className="art"
             extend={full ? 110 : 0}

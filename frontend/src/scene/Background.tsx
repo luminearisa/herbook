@@ -1,4 +1,6 @@
+import { useRef, useState } from 'react';
 import type { Bg } from '../types';
+import { playSound } from '../sound';
 
 const STARS: [number, number, number][] = [
   [70, 40, 2], [160, 90, 1.6], [260, 30, 2.2], [340, 110, 1.5], [430, 50, 2], [520, 130, 1.6],
@@ -32,16 +34,31 @@ function Sky({ bg }: { bg: Bg }) {
   );
 }
 
-function Sun({ low }: { low?: boolean }) {
+function Sun({ low, interactive, onInteract }: { low?: boolean; interactive?: boolean; onInteract?: () => void }) {
+  const [fast, setFast] = useState(false);
+  const timer = useRef<number>();
+  function tap() {
+    onInteract?.();
+    playSound('chime');
+    setFast(true);
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => setFast(false), 1400);
+  }
   return (
-    <g transform={`translate(${low ? 600 : 660} ${low ? 250 : 90})`}>
-      <g className="rays">
+    <g
+      transform={`translate(${low ? 600 : 660} ${low ? 250 : 90})`}
+      className={interactive ? 'tappable' : undefined}
+      onClick={interactive ? tap : undefined}
+      role={interactive ? 'button' : undefined}
+      aria-label={interactive ? 'matahari' : undefined}
+    >
+      <g className={fast ? 'rays rays-fast' : 'rays'}>
         {Array.from({ length: 12 }, (_, i) => (
           <rect key={i} x="-3" y="-64" width="6" height="18" rx="3" fill="#ffd54a" transform={`rotate(${i * 30})`} />
         ))}
       </g>
-      <circle r="38" fill="#ffd54a" />
-      <circle r="30" fill="#ffe27a" />
+      <circle r="38" fill="#ffd54a" className={fast ? 'sun-pulse' : undefined} />
+      <circle r="30" fill="#ffe27a" className={fast ? 'sun-pulse' : undefined} />
     </g>
   );
 }
@@ -85,15 +102,15 @@ const GROUND: Record<Bg, string> = {
 };
 
 /** `ext`: tambahan tinggi (unit viewBox) di bawah kanvas 800x500, dipakai mode layar penuh. */
-export function Background({ bg, ext = 0 }: { bg: Bg; ext?: number }) {
+export function Background({ bg, ext = 0, interactive = false, onInteract }: { bg: Bg; ext?: number; interactive?: boolean; onInteract?: () => void }) {
   const night = bg === 'malam';
   const b = 500 + ext;
   return (
     <g>
       <Sky bg={bg} />
       {ext > 0 && <rect y="480" width="800" height={ext + 20} fill={GROUND[bg]} />}
-      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun') && <Sun />}
-      {bg === 'senja' && <Sun low />}
+      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun') && <Sun interactive={interactive} onInteract={onInteract} />}
+      {bg === 'senja' && <Sun low interactive={interactive} onInteract={onInteract} />}
       {bg === 'hutan' && (
         <>
           <Hills far="#9bd48b" mid="#7cc07a" y={280} />

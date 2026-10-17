@@ -3,6 +3,7 @@ import { Home } from './pages/Home';
 import { Reader } from './pages/Reader';
 import { Create } from './pages/Create';
 import { InstallBanner, InstallButton } from './InstallPrompt';
+import { SoundToggle } from './SoundToggle';
 
 function useHashRoute(): string {
   const [hash, setHash] = useState(() => window.location.hash.slice(1) || '/');
@@ -42,6 +43,7 @@ export function App() {
           <a href="#/" className={route === '/' ? 'active' : ''}>Perpustakaan</a>
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
           <InstallButton />
+          <SoundToggle />
         </nav>
       </header>
       <main>

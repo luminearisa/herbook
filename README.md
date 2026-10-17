@@ -25,6 +25,12 @@ Mode pengembangan (hot reload): `npm run dev:api` dan `npm run dev:web` di dua t
 
 Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan teks cerita di bagian bawah. Kepekatan latar teks bisa diatur dengan slider "Teks" (tersimpan di browser). Panah kiri/kanan atau geser untuk berpindah halaman, `Esc` untuk keluar.
 
+## Interaktif
+
+Di halaman baca, gambar bisa disentuh: pohon bergoyang dan menjatuhkan daun (atau buah), kancil melompat, buaya membuka mulut dan menggeram, gajah berteriak, awan meneteskan hujan, bunga berkilau, orang dan tokoh buah menyapa dengan suara, dan seterusnya. Daftar reaksi tiap jenis ada di `frontend/src/scene/interactions.ts`. Ka'bah sengaja tidak dibuat interaktif.
+
+Suara dibuat langsung oleh browser (Web Audio), jadi tanpa berkas dan tanpa masalah lisensi. Untuk memakai rekaman asli, lihat `frontend/public/sounds/README.md`. Tombol 🔊 di bar atas mematikan semua suara.
+
 ## Tambah buku dengan prompt
 
 Buka **+ Buku Baru**, tulis ide cerita. Dengan `ANTHROPIC_API_KEY` di environment, Claude
