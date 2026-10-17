@@ -1,10 +1,15 @@
 <?php
 declare(strict_types=1);
 
-require __DIR__ . '/../src/Scene.php';
-require __DIR__ . '/../src/Db.php';
-require __DIR__ . '/../src/Books.php';
-require __DIR__ . '/../src/StoryMaker.php';
+// Saat di-deploy, deploy/index.php mendefinisikan HERBOOK_ROOT (folder aplikasi di luar
+// folder web) dan HERBOOK_DIST (folder web berisi hasil build frontend).
+$root = defined('HERBOOK_ROOT') ? HERBOOK_ROOT : dirname(__DIR__);
+loadEnvFile($root . '/.env');
+
+require $root . '/src/Scene.php';
+require $root . '/src/Db.php';
+require $root . '/src/Books.php';
+require $root . '/src/StoryMaker.php';
 
 $path = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/') ?: '/';
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
@@ -14,6 +19,24 @@ if (str_starts_with($path, '/api')) {
     return;
 }
 serveFrontend($path);
+
+/** Memuat KEY=VALUE dari .env (di luar folder web) tanpa menimpa environment yang sudah ada. */
+function loadEnvFile(string $file): void
+{
+    if (!is_readable($file)) {
+        return;
+    }
+    foreach (file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [] as $line) {
+        if ($line[0] === '#' || !str_contains($line, '=')) {
+            continue;
+        }
+        [$key, $value] = explode('=', $line, 2);
+        $key = trim($key);
+        if ($key !== '' && getenv($key) === false) {
+            putenv($key . '=' . trim($value, " \t\"'"));
+        }
+    }
+}
 
 function json(mixed $data, int $status = 200): void
 {
@@ -75,7 +98,7 @@ function handleApi(string $method, string $route): void
 /** Menyajikan hasil build React (frontend/dist), dengan fallback ke index.html. */
 function serveFrontend(string $path): void
 {
-    $dist = realpath(__DIR__ . '/../../frontend/dist');
+    $dist = realpath(defined('HERBOOK_DIST') ? HERBOOK_DIST : __DIR__ . '/../../frontend/dist');
     if ($dist === false) {
         http_response_code(503);
         echo 'Frontend belum dibangun. Jalankan "npm run build" di folder frontend, atau pakai "npm run dev".';

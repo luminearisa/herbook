@@ -25,12 +25,15 @@ final class StoryMaker
                 }
                 return ['book' => $book, 'mode' => 'ai', 'note' => null];
             } catch (Throwable $e) {
+                if (!in_array($category, ['dongeng', 'fabel'], true)) {
+                    throw new InvalidArgumentException('Pembuatan cerita dengan AI gagal (' . $e->getMessage() . '). Periksa ANTHROPIC_API_KEY lalu coba lagi.');
+                }
                 $note = 'AI tidak tersedia (' . $e->getMessage() . '), memakai penyusun cerita sederhana.';
             }
         } else {
             $note = 'ANTHROPIC_API_KEY belum diatur, memakai penyusun cerita sederhana.';
         }
-        return ['book' => self::offline($prompt), 'mode' => 'offline', 'note' => $note];
+        return ['book' => ['category' => $category] + self::offline($prompt), 'mode' => 'offline', 'note' => $note];
     }
 
     /** Kisah Islami tidak menggambar manusia (nabi/sahabat): buang tokoh manusia dari adegan. @param array<string,mixed> $book @return array<string,mixed> */

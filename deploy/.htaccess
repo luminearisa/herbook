@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+Options -Indexes
+RewriteEngine On
+
+# File statis (assets hasil build) dilayani langsung
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} !^/index\.php$
+RewriteRule ^ - [L]
+
+# Semua yang lain (API dan halaman) lewat index.php
+RewriteRule ^ index.php [L]
+
+# Jangan sajikan berkas internal
+<FilesMatch "^(\.|deploy|README)">
+    Require all denied
+</FilesMatch>

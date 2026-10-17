@@ -45,3 +45,16 @@ ANTHROPIC_API_KEY=sk-... npm run dev:api
 Format adegan: `{"bg":"sungai","items":[{"t":"kancil","x":100,"y":450,"s":1.2,"mood":"licik","pose":"lompat"}]}`
 di kanvas 800×500. Untuk menambah tokoh/properti baru, gambar komponennya di `frontend/src/scene/`
 dan daftarkan di `Scene.tsx` serta `Scene.php`.
+
+## Deploy ke Hostinger (shared hosting)
+
+`deploy/deploy.sh` membangun frontend lalu mengunggah lewat SSH/rsync. Susunan di server:
+
+- `domains/<domain>/herbook-app/` : `src/`, `seed/`, `public/`, `data/` (database), `.env` (di luar folder web)
+- `domains/<domain>/public_html/herbook/` : hasil build frontend, `index.php` dan `.htaccess` dari `deploy/`
+
+```sh
+bash deploy/deploy.sh                      # nilai bawaan bisa diganti: HERBOOK_HOST, HERBOOK_PORT, HERBOOK_BASE
+```
+
+Pakai kunci SSH, jangan menyimpan password di repo. Untuk fitur prompt, isi `herbook-app/.env` di server dengan `ANTHROPIC_API_KEY=...`.
