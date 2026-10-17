@@ -1,0 +1,243 @@
+{
+ "title": "Rafi Belajar Bismillah",
+ "summary": "Rafi belajar adab makan: mencuci tangan, membaca bismillah, makan dengan tangan kanan, tidak berlebihan, dan bersyukur. (HR. Bukhari dan Muslim dari Umar bin Abi Salamah; QS. Al-A'raf: 31)",
+ "moral": "Adab makan: cuci tangan, baca bismillah, makan dengan tangan kanan, ambil secukupnya, habiskan, lalu ucapkan alhamdulillah.",
+ "cover": {
+  "bg": "dalamrumah",
+  "items": [
+   {
+    "t": "anak",
+    "x": 260,
+    "y": 470,
+    "s": 1.4,
+    "v": 0,
+    "mood": "senang",
+    "pose": "doa"
+   },
+   {
+    "t": "meja",
+    "x": 520,
+    "y": 470,
+    "s": 1.2,
+    "v": 0
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Siang itu Rafi sedang asyik bermain. \"Rafi, ayo makan siang, Nak!\" panggil Ibu dari ruang makan. Aroma nasi hangat membuat perut Rafi berbunyi. Ia berlari ke meja makan.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 420,
+      "y": 456,
+      "s": 1.2,
+      "v": 0
+     },
+     {
+      "t": "dewasa",
+      "x": 690,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "anak",
+      "x": 210,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Rafi langsung duduk dan hendak menyuap nasi. \"Tunggu dulu, Nak,\" kata Ibu lembut. \"Tanganmu habis bermain, cuci dulu supaya bersih.\" Rafi tersipu, lalu berlari ke kamar mandi mencuci tangan dengan sabun.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 380,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "kaget",
+      "pose": "duduk"
+     },
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.3,
+      "v": 0
+     },
+     {
+      "t": "dewasa",
+      "x": 660,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang",
+      "pose": "salam"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Rafi kembali duduk. \"Sebelum makan, kita baca bismillah,\" ajak Ibu. Rafi menengadahkan tangan dan berdoa, \"Allahumma baarik lanaa fiimaa razaqtanaa, wa qinaa 'adzaaban naar, bismillah.\"",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "doa"
+     },
+     {
+      "t": "dewasa",
+      "x": 480,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang",
+      "pose": "doa"
+     },
+     {
+      "t": "meja",
+      "x": 410,
+      "y": 470,
+      "s": 1.3,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Rafi mengingat pesan yang diajarkan Rasulullah ﷺ kepada anak kecil: \"Wahai anak, sebutlah nama Allah, makanlah dengan tangan kananmu, dan makanlah dari yang dekat denganmu.\" (HR. Bukhari dan Muslim). Rafi pun makan dengan tangan kanan, dari piring di depannya.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 400,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "duduk"
+     },
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.3,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Karena senang, Rafi mengambil nasi banyak sekali. Tetapi perutnya cepat kenyang, dan nasi di piringnya masih bersisa. Rafi menunduk. \"Aduh, aku mengambil terlalu banyak...\"",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 400,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "sedih",
+      "pose": "duduk"
+     },
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.3,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Allah berfirman, 'Makan dan minumlah, tetapi jangan berlebih-lebihan,'\" kata Ibu (QS. Al-A'raf: 31). \"Nasi yang tersisa juga rezeki dari Allah.\" Rafi menghabiskan nasinya sedikit demi sedikit, dan berjanji mengambil secukupnya lain kali.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "duduk"
+     },
+     {
+      "t": "dewasa",
+      "x": 480,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang",
+      "pose": "duduk"
+     },
+     {
+      "t": "meja",
+      "x": 410,
+      "y": 470,
+      "s": 1.3,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Selesai makan, Rafi dan Ibu mengucapkan, \"Alhamdulillah, alladzi ath'amanaa wa saqaanaa wa ja'alanaa muslimiin.\" Rafi tahu: cuci tangan, baca bismillah, makan dengan tangan kanan, ambil secukupnya, lalu bersyukur. Tamat.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 690,
+      "y": 450,
+      "s": 1.0,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 260,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "doa"
+     },
+     {
+      "t": "dewasa",
+      "x": 420,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang",
+      "pose": "doa"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "rafi-belajar-bismillah",
+ "category": "adab",
+ "author": "Adab Anak Muslim"
+}

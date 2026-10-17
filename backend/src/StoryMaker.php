@@ -12,9 +12,9 @@ final class StoryMaker
     {
         $key = getenv('ANTHROPIC_API_KEY') ?: '';
         $note = null;
-        if ($category === 'islami' && $key === '') {
+        if (!in_array($category, ['dongeng', 'fabel'], true) && $key === '') {
             // Isi keagamaan tidak disusun dari templat; butuh penulis AI.
-            throw new InvalidArgumentException('Kisah Islami baru bisa dibuat setelah ANTHROPIC_API_KEY diatur di server.');
+            throw new InvalidArgumentException('Cerita Islami dan adab baru bisa dibuat setelah ANTHROPIC_API_KEY diatur di server.');
         }
         if ($key !== '') {
             try {
@@ -72,6 +72,7 @@ Tokoh utama cerita sebaiknya kancil kecuali pengguna meminta lain; gunakan hanya
 TXT . match ($category) {
             'islami' => self::islamicRules(),
             'fabel' => self::fableRules(),
+            'adab' => self::adabRules(),
             default => '',
         };
     }
@@ -82,6 +83,16 @@ TXT . match ($category) {
 
 
 KATEGORI FABEL: cerita hewan yang berperilaku seperti manusia dan selalu berakhir dengan pesan moral yang jelas (isi bagian moral). Boleh memakai fabel klasik (mis. kura-kura dan kelinci) atau karangan baru. Tokoh utama tidak harus kancil. Tambahan TIPE: kelinci, belalang, singa, tikus, bendera (garis finis), jaring (digambar setelah tokoh yang terperangkap), semut, kurakura; BG tambahan: salju; POSE tambahan: tidur (kelinci/singa); pohon dan semak v=3 berarti bersalju.
+TXT;
+    }
+
+    private static function adabRules(): string
+    {
+        return <<<TXT
+
+
+KATEGORI ADAB ANAK MUSLIM: cerita tentang anak-anak Muslim fiktif (mis. Rafi dan Salma) yang belajar satu adab, misalnya adab makan, salam, jujur, berbagi, atau berbakti kepada orang tua. Nilai dan doa/dalil yang disebut hanya dari Al-Qur'an atau hadis shahih, dengan sumbernya (mis. HR. Bukhari dan Muslim, QS. Al-A'raf: 31) di summary; jangan mengarang dalil. Nada hangat dan tidak menggurui; pelajaran adab muncul dari kejadian sehari-hari dan ditutup dengan moral berisi poin adab yang mudah diingat.
+Tokoh manusia hanya anak fiktif dan keluarga mereka, digambar dengan TIPE anak (v=0 laki-laki, v=1 perempuan, v=2 laki-laki lain, v=3 perempuan lain) dan dewasa (v=0 ayah, v=1 ibu, v=2 nenek). Jangan menggambar nabi, rasul, atau sahabat. Anak/dewasa menghadap depan; POSE tambahan: duduk (di belakang meja), salam (mengulurkan tangan), doa (menengadah berdoa), lari. Tambahan TIPE: meja (v=0 hidangan, v=1 piring kosong, v=2 sisa makanan), vas (v=0 utuh, v=1 pecah), kue, rumah; BG tambahan: dalamrumah (ruang dalam, lantai y>=380) dan desa (rumah/halaman).
 TXT;
     }
 

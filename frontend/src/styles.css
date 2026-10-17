@@ -162,3 +162,4 @@ textarea:focus { outline: 3px solid #bfe0c8; border-color: var(--green); }
 .chip.fabel { background: #ffe3b8; color: #7a4a0c; }
 .snow { animation: snowfall linear infinite; }
 @keyframes snowfall { from { transform: translateY(0); opacity: 0; } 10% { opacity: 1; } to { transform: translateY(520px) translateX(24px); opacity: .9; } }
+.chip.adab { background: #e4dcf5; color: #3e2a7a; }

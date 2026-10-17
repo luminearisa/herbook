@@ -1,0 +1,219 @@
+{
+ "title": "Jujur Itu Indah",
+ "summary": "Rafi memecahkan vas kesayangan Ibu dan belajar bahwa jujur membuat hati tenang. (HR. Bukhari dan Muslim tentang kejujuran)",
+ "moral": "Jujurlah walaupun berbuat salah. Katakan yang sebenarnya, minta maaf, dan bertanggung jawab memperbaikinya.",
+ "cover": {
+  "bg": "dalamrumah",
+  "items": [
+   {
+    "t": "vas",
+    "x": 520,
+    "y": 470,
+    "s": 1.4,
+    "v": 1
+   },
+   {
+    "t": "anak",
+    "x": 300,
+    "y": 470,
+    "s": 1.4,
+    "v": 0,
+    "mood": "sedih"
+   },
+   {
+    "t": "dewasa",
+    "x": 640,
+    "y": 470,
+    "s": 1.35,
+    "v": 1,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Ibu pergi ke pasar dan berpesan, \"Rafi, jaga rumah ya, jangan berlarian di dalam.\" Namun Rafi sedang asyik bermain pesawat-pesawatan, berlari kian kemari sambil merentangkan tangan.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 560,
+      "y": 470,
+      "s": 1.4,
+      "v": 0
+     },
+     {
+      "t": "anak",
+      "x": 300,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Prang! Tangan Rafi menyenggol vas biru kesayangan Ibu. Vas itu jatuh dan pecah berkeping-keping. Rafi terpaku dengan mata terbelalak.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 520,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Jantung Rafi berdebar kencang. \"Bagaimana kalau Ibu marah? Lebih baik aku diam dan pura-pura tidak tahu.\" Tetapi hatinya gelisah dan tidak tenang.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 540,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Rafi teringat sabda Rasulullah ﷺ, \"Hendaklah kalian jujur, karena kejujuran membawa kepada kebaikan, dan kebaikan membawa ke surga.\" (HR. Bukhari dan Muslim). Rafi menarik napas dalam-dalam dan memutuskan untuk berkata jujur.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 540,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "sedih",
+      "pose": "doa"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ketika Ibu pulang, Rafi menghampiri dan berkata pelan, \"Ibu, maafkan Rafi. Rafi berlari di dalam rumah dan memecahkan vas Ibu.\" Ibu terkejut, melihat pecahan vas, lalu menatap Rafi.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 450,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 300,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "sedih"
+     },
+     {
+      "t": "dewasa",
+      "x": 620,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ibu tersenyum dan memeluk Rafi. \"Ibu sedih vasnya pecah, tapi Ibu bangga kamu jujur. Lain kali berhati-hatilah, ya.\" Rafi pun membantu Ibu membersihkan pecahan dengan hati-hati, sambil berjanji tidak berlarian di dalam rumah.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "vas",
+      "x": 450,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang"
+     },
+     {
+      "t": "dewasa",
+      "x": 560,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Hati Rafi terasa lega dan ringan. Ia belajar bahwa berkata jujur itu menenangkan, dan meminta maaf membuat kita menjadi anak yang dicintai Allah dan Ibu. Tamat.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang",
+      "pose": "doa"
+     },
+     {
+      "t": "dewasa",
+      "x": 520,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "jujur-itu-indah",
+ "category": "adab",
+ "author": "Adab Anak Muslim"
+}

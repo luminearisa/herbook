@@ -1,8 +1,8 @@
 export type Mood = 'senang' | 'takut' | 'licik' | 'sedih' | 'marah' | 'kaget' | 'pingsan';
-export type Pose = 'berdiri' | 'lari' | 'lompat' | 'rebah' | 'renang' | 'tidur';
-export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun' | 'salju';
+export type Pose = 'berdiri' | 'lari' | 'lompat' | 'rebah' | 'renang' | 'tidur' | 'duduk' | 'salam' | 'doa';
+export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun' | 'salju' | 'dalamrumah';
 
-export type Category = 'dongeng' | 'islami' | 'fabel';
+export type Category = 'dongeng' | 'islami' | 'fabel' | 'adab';
 
 export interface SceneItem {
   t: string;

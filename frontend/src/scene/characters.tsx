@@ -611,3 +611,140 @@ export function Belalang({ pose = 'berdiri', mood = 'senang' }: CharProps) {
     </g>
   );
 }
+
+/* ---------------- Anak dan keluarga Muslim ---------------- */
+
+const SKIN = ['#e0a370', '#ecb98c', '#a8714a', '#d9a06e'];
+
+function HumanFace({ mood, y }: { mood: Mood; y: number }) {
+  const eyeR = mood === 'kaget' ? 3.6 : 2.8;
+  return (
+    <g>
+      <circle cx="-14" cy={y + 8} r="4" fill="#f4a0a0" opacity=".45" />
+      <circle cx="14" cy={y + 8} r="4" fill="#f4a0a0" opacity=".45" />
+      {[-7, 7].map((x) => (
+        <g key={x}>
+          <circle cx={x} cy={y} r={eyeR} fill={INK} />
+          <circle cx={x + 1} cy={y - 1} r="1" fill="#fff" />
+        </g>
+      ))}
+      {mood === 'marah' && <path d={`M-12 ${y - 8} L-3 ${y - 4} M12 ${y - 8} L3 ${y - 4}`} stroke={INK} strokeWidth="2" strokeLinecap="round" />}
+      {(mood === 'sedih' || mood === 'takut') && <path d={`M-12 ${y - 4} L-3 ${y - 8} M12 ${y - 4} L3 ${y - 8}`} stroke={INK} strokeWidth="2" strokeLinecap="round" />}
+      {mood === 'kaget' && <path d={`M-11 ${y - 9} q4 -3 8 0 M3 ${y - 9} q4 -3 8 0`} stroke={INK} strokeWidth="1.6" fill="none" strokeLinecap="round" />}
+      {mood === 'senang' && <path d={`M-6 ${y + 9} Q0 ${y + 16} 6 ${y + 9}`} fill="#fff" stroke={INK} strokeWidth="1.8" strokeLinecap="round" />}
+      {mood === 'licik' && <path d={`M-5 ${y + 11} Q1 ${y + 13} 7 ${y + 7}`} fill="none" stroke={INK} strokeWidth="1.8" strokeLinecap="round" />}
+      {(mood === 'sedih' || mood === 'takut') && <path d={`M-5 ${y + 13} Q0 ${y + 8} 5 ${y + 13}`} fill="none" stroke={INK} strokeWidth="1.8" strokeLinecap="round" />}
+      {mood === 'marah' && <path d={`M-5 ${y + 12} H5`} stroke={INK} strokeWidth="2" strokeLinecap="round" />}
+      {mood === 'kaget' && <ellipse cx="0" cy={y + 12} rx="3" ry="4" fill="#5a2a1a" />}
+    </g>
+  );
+}
+
+function Person({ kind, v = 0, pose = 'berdiri', mood = 'senang' }: { kind: 'anak' | 'dewasa' } & CharProps) {
+  const adult = kind === 'dewasa';
+  const elder = adult && v === 2;
+  const girl = adult ? v === 1 || v === 2 : v % 2 === 1;
+  const skin = SKIN[v % 4];
+  const hijab = elder ? '#cfcfe0' : adult ? '#7c5fbf' : ['#f29bb5', '#f29bb5', '#f29bb5', '#6cc7b4'][v % 4];
+  const dress = elder ? '#8aa0b8' : adult ? '#9a80d6' : v % 4 === 3 ? '#3f9c8a' : '#e0638f';
+  const koko = v % 4 >= 2 ? '#cfe8f3' : '#f4f1e6';
+  const peci = v % 4 >= 2 ? '#f4f1e6' : '#2b2b30';
+  const pants = adult ? '#3b3b44' : '#2c3e6b';
+  const sleeve = girl ? dress : koko;
+  const run = pose === 'lari';
+  const sit = pose === 'duduk';
+
+  const arm = (d: string) => <path d={d} stroke={sleeve} strokeWidth="10" strokeLinecap="round" fill="none" />;
+  const hand = (x: number, y: number, rx = 5, ry = 5) => <ellipse cx={x} cy={y} rx={rx} ry={ry} fill={skin} />;
+  const arms = (() => {
+    switch (pose) {
+      case 'salam':
+        return (
+          <>
+            {arm('M-25 -94 L-31 -62')}{hand(-31, -58)}
+            {arm('M25 -94 L56 -84')}{hand(61, -83)}
+          </>
+        );
+      case 'doa':
+        return (
+          <>
+            {arm('M-25 -94 Q-34 -74 -12 -86')}{arm('M25 -94 Q34 -74 12 -86')}
+            {hand(-8, -92, 8, 5.5)}{hand(8, -92, 8, 5.5)}
+          </>
+        );
+      case 'lari':
+        return (
+          <>
+            {arm('M-25 -94 L-42 -76')}{hand(-45, -73)}
+            {arm('M25 -94 L40 -112')}{hand(43, -116)}
+          </>
+        );
+      case 'duduk':
+        return (
+          <>
+            {arm('M-25 -94 L-18 -66')}{hand(-17, -62)}
+            {arm('M25 -94 L18 -66')}{hand(17, -62)}
+          </>
+        );
+      default:
+        return (
+          <>
+            {arm('M-25 -94 L-31 -62')}{hand(-31, -58)}
+            {arm('M25 -94 L31 -62')}{hand(31, -58)}
+          </>
+        );
+    }
+  })();
+
+  const body = (
+    <g transform={run ? 'translate(0 -4) rotate(-6 0 -60)' : sit ? 'translate(0 16)' : undefined}>
+      {/* kaki / gamis */}
+      {girl ? (
+        <path d={`M-24 -98 Q-30 -50 ${run ? -40 : -36} ${sit ? -62 : 0} H${run ? 30 : 36} Q30 -50 24 -98Z`} fill={dress} />
+      ) : (
+        !sit && (
+          <>
+            <rect x="-19" y="-64" width="17" height="58" rx="6" fill={pants} transform={run ? 'rotate(18 -10 -64)' : undefined} />
+            <rect x="2" y="-64" width="17" height="58" rx="6" fill={pants} transform={run ? 'rotate(-18 10 -64)' : undefined} />
+          </>
+        )
+      )}
+      {!girl && !sit && (
+        <>
+          <ellipse cx={run ? -26 : -11} cy="-4" rx="11" ry="5" fill="#2b1a0f" />
+          <ellipse cx={run ? 28 : 11} cy="-4" rx="11" ry="5" fill="#2b1a0f" />
+          <rect x="-25" y="-102" width="50" height="46" rx="12" fill={koko} />
+          <path d="M0 -100 V-60" stroke="#c9c2ae" strokeWidth="2" />
+          {[-92, -82, -72].map((y) => <circle key={y} cx="0" cy={y} r="1.8" fill="#9a927e" />)}
+        </>
+      )}
+      {girl && <path d="M-34 -6 H34" stroke="#fff" strokeOpacity=".35" strokeWidth="3" />}
+      {arms}
+      {/* kepala */}
+      {girl ? (
+        <>
+          <circle cx="0" cy="-116" r="27" fill={hijab} />
+          <path d="M-27 -112 Q-38 -90 -26 -80 L26 -80 Q38 -90 27 -112Z" fill={hijab} />
+          <circle cx="0" cy="-114" r="19" fill={skin} />
+        </>
+      ) : (
+        <>
+          <circle cx="-19" cy="-116" r="5" fill={skin} /><circle cx="19" cy="-116" r="5" fill={skin} />
+          <circle cx="0" cy="-116" r="20" fill={skin} />
+          <path d="M-20 -122 Q-20 -148 0 -148 Q20 -148 20 -122Z" fill={peci} />
+          <path d="M-20 -124 H20" stroke="#d9a93c" strokeWidth="2.2" />
+        </>
+      )}
+      <HumanFace mood={mood} y={girl ? -116 : -115} />
+      {elder && (
+        <g fill="none" stroke="#6b5a4a" strokeWidth="1.6">
+          <circle cx="-7" cy="-115" r="6" /><circle cx="7" cy="-115" r="6" /><path d="M-1 -115 H1" />
+        </g>
+      )}
+    </g>
+  );
+  return adult ? <g transform="scale(1.3)">{body}</g> : body;
+}
+
+export const Anak = (p: CharProps) => <Person kind="anak" {...p} />;
+export const Dewasa = (p: CharProps) => <Person kind="dewasa" {...p} />;

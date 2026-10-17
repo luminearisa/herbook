@@ -1,0 +1,261 @@
+{
+ "title": "Berbagi Itu Indah",
+ "summary": "Salma membagikan kue kepada tetangga dan temannya, belajar memuliakan tetangga. (HR. Bukhari dan Muslim tentang memuliakan tetangga)",
+ "moral": "Berbagi tidak membuat kita kekurangan. Muliakan tetangga dan sayangi teman, maka hati kita menjadi bahagia.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "rumah",
+    "x": 660,
+    "y": 390,
+    "s": 1.4
+   },
+   {
+    "t": "anak",
+    "x": 300,
+    "y": 470,
+    "s": 1.4,
+    "v": 1,
+    "mood": "senang"
+   },
+   {
+    "t": "kue",
+    "x": 300,
+    "y": 398,
+    "s": 0.6
+   },
+   {
+    "t": "anak",
+    "x": 470,
+    "y": 470,
+    "s": 1.4,
+    "v": 0,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Pagi itu Ibu membuat banyak kue yang harum. Salma menunggu dengan tidak sabar di dapur. \"Wah, kue buatan Ibu pasti enak sekali!\" serunya.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 200,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "dewasa",
+      "x": 620,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "meja",
+      "x": 410,
+      "y": 470,
+      "s": 1.2,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 410,
+      "y": 396,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Salma, kuenya banyak sekali,\" kata Ibu. \"Rasulullah ﷺ bersabda, 'Barang siapa beriman kepada Allah dan hari akhir, hendaklah ia memuliakan tetangganya.' (HR. Bukhari dan Muslim). Bagaimana kalau kita bagi dengan Nenek Aminah di sebelah?\" Salma setuju.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 210,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "salam"
+     },
+     {
+      "t": "dewasa",
+      "x": 620,
+      "y": 470,
+      "s": 1.35,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "meja",
+      "x": 410,
+      "y": 470,
+      "s": 1.2,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 410,
+      "y": 396,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Salma membawa sepiring kue dengan hati-hati ke rumah tetangga. Ia mengetuk pintu dan mengucap salam, \"Assalamu'alaikum, Nenek Aminah!\"",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 660,
+      "y": 390,
+      "s": 1.4
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "kue",
+      "x": 330,
+      "y": 400,
+      "s": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nenek Aminah membuka pintu dan tersenyum lebar. \"Wa'alaikumussalam, Salma! Terima kasih, Nak.\" Salma menjawab, \"Sama-sama, Nek.\" Nenek mendoakannya dengan penuh sayang, \"Jazakillahu khairan.\"",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 700,
+      "y": 380,
+      "s": 1.4
+     },
+     {
+      "t": "dewasa",
+      "x": 540,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang",
+      "pose": "doa"
+     },
+     {
+      "t": "anak",
+      "x": 300,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dalam perjalanan pulang, Salma bertemu Rafi, temannya, yang duduk sendirian dan lapar karena lupa membawa bekal. Salma masih punya sebuah kue, dan ia membaginya dengan Rafi. \"Ini untukmu, Rafi,\" katanya sambil tersenyum.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "salam"
+     },
+     {
+      "t": "kue",
+      "x": 330,
+      "y": 398,
+      "s": 0.5
+     },
+     {
+      "t": "anak",
+      "x": 520,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Rafi tersenyum lebar dan berkata, \"Jazakillah khairan, Salma!\" Salma pulang dengan hati hangat. Ia belajar bahwa berbagi tidak membuat kita kekurangan, justru menambah bahagia dan persahabatan. Tamat.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 690,
+      "y": 380,
+      "s": 1.3
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "anak",
+      "x": 480,
+      "y": 470,
+      "s": 1.4,
+      "v": 0,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "berbagi-itu-indah",
+ "category": "adab",
+ "author": "Adab Anak Muslim"
+}

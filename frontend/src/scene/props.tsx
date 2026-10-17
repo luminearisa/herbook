@@ -251,3 +251,77 @@ export function Jaring() {
     </g>
   );
 }
+
+export function Meja({ v = 0 }: CharProps) {
+  return (
+    <g>
+      {[-80, 70].map((x) => <rect key={x} x={x} y="-52" width="12" height="52" rx="3" fill="#8a5a2b" />)}
+      <rect x="-100" y="-62" width="200" height="12" rx="5" fill="#b9833f" />
+      <rect x="-100" y="-52" width="200" height="22" fill="#e8efe0" opacity=".9" />
+      <path d="M-100 -52 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0 q10 12 20 0" fill="#e8efe0" />
+      {v === 0 && (
+        <>
+          <ellipse cx="-34" cy="-66" rx="30" ry="7" fill="#fff" stroke="#c9c2ae" />
+          <path d="M-52 -68 Q-34 -92 -16 -68z" fill="#fffdf4" stroke="#e5ddc4" />
+          <circle cx="-20" cy="-70" r="6" fill="#d9603a" /><circle cx="-46" cy="-70" r="5" fill="#6aa84f" />
+          <rect x="30" y="-90" width="18" height="28" rx="4" fill="#bfe4f5" opacity=".85" stroke="#7fb8d8" />
+          <ellipse cx="72" cy="-66" rx="20" ry="5" fill="#fff" stroke="#c9c2ae" />
+          <circle cx="66" cy="-70" r="5" fill="#f2b134" /><circle cx="78" cy="-70" r="5" fill="#d9603a" />
+        </>
+      )}
+      {v === 1 && (
+        <>
+          <ellipse cx="-34" cy="-66" rx="30" ry="7" fill="#fff" stroke="#c9c2ae" />
+          <ellipse cx="-34" cy="-66" rx="20" ry="4" fill="#f4f1e6" />
+          <ellipse cx="70" cy="-66" rx="20" ry="5" fill="#fff" stroke="#c9c2ae" />
+          <rect x="30" y="-90" width="18" height="28" rx="4" fill="#bfe4f5" opacity=".85" stroke="#7fb8d8" />
+        </>
+      )}
+      {v === 2 && (
+        <>
+          <ellipse cx="-34" cy="-66" rx="30" ry="7" fill="#fff" stroke="#c9c2ae" />
+          {[[-52, -67], [-42, -65], [-26, -67], [-14, -65], [-30, -69]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r="2.4" fill="#fffdf4" stroke="#d9d0b4" />)}
+          <path d="M-60 -66 q8 -8 16 -2" stroke="#d9603a" strokeWidth="4" fill="none" strokeLinecap="round" />
+          <ellipse cx="70" cy="-66" rx="20" ry="5" fill="#fff" stroke="#c9c2ae" />
+          <circle cx="62" cy="-68" r="3" fill="#fffdf4" /><circle cx="76" cy="-67" r="3" fill="#fffdf4" />
+        </>
+      )}
+    </g>
+  );
+}
+
+export function Vas({ v = 0 }: CharProps) {
+  if (v === 1) {
+    return (
+      <g>
+        <path d="M-34 0 L-22 -18 L-10 0z M2 0 L14 -24 L26 -4 L32 0z M-18 -6 L-4 -26 L6 -8z" fill="#4a8fd0" stroke="#2f6aa0" strokeWidth="1.5" />
+        <path d="M-40 -2 q6 -10 12 -2 M20 -2 q8 -8 14 0" stroke="#e86a8a" strokeWidth="3" fill="none" strokeLinecap="round" />
+        <circle cx="-44" cy="-6" r="4" fill="#e86a8a" /><circle cx="40" cy="-8" r="4" fill="#ffd23f" />
+        <path d="M-6 -34 l4 8 M10 -36 l-4 10" stroke="#ffd23f" strokeWidth="3" strokeLinecap="round" />
+      </g>
+    );
+  }
+  return (
+    <g>
+      <path d="M-18 0 Q-34 -30 -12 -56 L-8 -66 H8 L12 -56 Q34 -30 18 0z" fill="#4a8fd0" stroke="#2f6aa0" strokeWidth="2" />
+      <path d="M-14 -34 Q0 -26 14 -34" stroke="#fff" strokeOpacity=".6" strokeWidth="3" fill="none" />
+      <path d="M0 -66 Q-10 -90 -20 -94 M0 -66 Q6 -96 10 -102 M0 -66 Q14 -84 24 -86" stroke="#3f9a4d" strokeWidth="3" fill="none" />
+      <circle cx="-20" cy="-96" r="7" fill="#e86a8a" /><circle cx="10" cy="-104" r="7" fill="#ffd23f" /><circle cx="25" cy="-88" r="6" fill="#e86a8a" />
+    </g>
+  );
+}
+
+export function Kue() {
+  return (
+    <g>
+      <ellipse cx="0" cy="-2" rx="52" ry="9" fill="#c9c2ae" />
+      <ellipse cx="0" cy="-8" rx="48" ry="9" fill="#fffdf4" stroke="#d9d0b4" />
+      {[[-26, '#f2b134'], [0, '#d9603a'], [26, '#8a5a2b']].map(([x, c]) => (
+        <g key={x as number}>
+          <path d={`M${(x as number) - 14} -10 Q${x} -34 ${(x as number) + 14} -10z`} fill={c as string} />
+          <circle cx={x as number} cy="-26" r="3" fill="#fff" opacity=".8" />
+        </g>
+      ))}
+    </g>
+  );
+}

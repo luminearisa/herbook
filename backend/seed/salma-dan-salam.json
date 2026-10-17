@@ -1,0 +1,246 @@
+{
+ "title": "Salma dan Salam",
+ "summary": "Salma belajar mengucap salam, meminta izin, dan mencium tangan orang yang lebih tua. (HR. Muslim tentang menyebarkan salam; QS. An-Nur: 27)",
+ "moral": "Ucapkan salam, minta izin sebelum masuk, hormati orang yang lebih tua dengan mencium tangannya, dan ucapkan terima kasih.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "rumah",
+    "x": 640,
+    "y": 390,
+    "s": 1.5
+   },
+   {
+    "t": "anak",
+    "x": 300,
+    "y": 470,
+    "s": 1.4,
+    "v": 1,
+    "mood": "senang",
+    "pose": "salam"
+   },
+   {
+    "t": "dewasa",
+    "x": 480,
+    "y": 470,
+    "s": 1.35,
+    "v": 2,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Sepulang sekolah, Salma berkunjung ke rumah Nenek. Ia begitu rindu hingga berlari kencang menuju pintu rumah, tanpa mengucapkan apa pun.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 620,
+      "y": 400,
+      "s": 1.5
+     },
+     {
+      "t": "anak",
+      "x": 300,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nenek sedang duduk di teras dan tersenyum melihat cucunya. \"Cucuku sayang, ada yang terlupa. Ketika sampai di rumah seseorang, kita ucapkan salam dulu, ya.\" Salma tersipu malu.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 700,
+      "y": 360,
+      "s": 1.3
+     },
+     {
+      "t": "dewasa",
+      "x": 560,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang"
+     },
+     {
+      "t": "anak",
+      "x": 280,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Salma mengulang dengan sopan, \"Assalamu'alaikum, Nenek.\" Nenek menjawab dengan gembira, \"Wa'alaikumussalam warahmatullahi wabarakatuh.\" Rasulullah ﷺ bersabda, \"Sebarkanlah salam di antara kalian, niscaya kalian saling mencintai.\" (HR. Muslim)",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 700,
+      "y": 360,
+      "s": 1.3
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "salam"
+     },
+     {
+      "t": "dewasa",
+      "x": 530,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Salma lalu mencium tangan Nenek dengan lembut, tanda hormat kepada orang yang lebih tua. Nenek mengusap kepala Salma dan mendoakannya, \"Semoga Allah menjadikanmu anak yang salehah.\"",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 700,
+      "y": 360,
+      "s": 1.3
+     },
+     {
+      "t": "anak",
+      "x": 400,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "salam"
+     },
+     {
+      "t": "dewasa",
+      "x": 520,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Di dalam rumah, Salma melihat kue buatan Nenek di atas meja. Ia ingin sekali mengambilnya, tetapi ia bertanya dulu, \"Nek, bolehkah Salma mengambil kuenya?\" Nenek mengangguk senang, \"Boleh, ambillah satu, Nak.\"",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "dewasa",
+      "x": 580,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang"
+     },
+     {
+      "t": "anak",
+      "x": 280,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "meja",
+      "x": 430,
+      "y": 470,
+      "s": 1.1,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 430,
+      "y": 402,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Salma mengambil kue dengan tangan kanan dan berkata, \"Jazakillah khairan, Nek.\" Mereka duduk bersama menikmati kue. Salma belajar: ucapkan salam, minta izin, cium tangan orang tua, dan ucapkan terima kasih. Tamat.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 470,
+      "s": 1.4,
+      "v": 1,
+      "mood": "senang",
+      "pose": "duduk"
+     },
+     {
+      "t": "dewasa",
+      "x": 520,
+      "y": 470,
+      "s": 1.35,
+      "v": 2,
+      "mood": "senang",
+      "pose": "duduk"
+     },
+     {
+      "t": "meja",
+      "x": 430,
+      "y": 470,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 430,
+      "y": 396,
+      "s": 1.0
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "salma-dan-salam",
+ "category": "adab",
+ "author": "Adab Anak Muslim"
+}

@@ -8,15 +8,15 @@ declare(strict_types=1);
  */
 final class Scene
 {
-    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja', 'gurun', 'salju'];
+    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja', 'gurun', 'salju', 'dalamrumah'];
     public const TYPES = [
         'kancil', 'buaya', 'harimau', 'gajah', 'petani', 'kurakura', 'burung', 'kupu',
         'pohon', 'semak', 'batu', 'bunga', 'awan', 'timun', 'orangorangan',
         'rumah', 'kurungan', 'pagar', 'kabah', 'semut', 'hudhud', 'ababil', 'kurma',
-        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring',
+        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring', 'anak', 'dewasa', 'meja', 'vas', 'kue',
     ];
     public const MOODS = ['senang', 'takut', 'licik', 'sedih', 'marah', 'kaget', 'pingsan'];
-    public const POSES = ['berdiri', 'lari', 'lompat', 'rebah', 'renang', 'tidur'];
+    public const POSES = ['berdiri', 'lari', 'lompat', 'rebah', 'renang', 'tidur', 'duduk', 'salam', 'doa'];
 
     /** @return array{bg:string,items:list<array<string,mixed>>} */
     public static function sanitize(mixed $scene): array

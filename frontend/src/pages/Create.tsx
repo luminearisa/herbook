@@ -9,6 +9,11 @@ const IDEAS: Record<Category, string[]> = {
     'Kura-kura dan kelinci berlomba lari',
     'Semut yang rajin dan belalang yang malas',
   ],
+  adab: [
+    'Rafi belajar adab masuk dan keluar kamar mandi',
+    'Salma belajar berbakti kepada ibu dan ayah',
+    'Rafi dan Salma belajar adab di masjid',
+  ],
   islami: [
     'Kisah Nabi Yunus dan ikan paus',
     'Kisah unta Nabi Saleh',
@@ -50,16 +55,18 @@ export function Create() {
       </p>
       <form onSubmit={submit} className="create-form">
         <div className="tabs" role="radiogroup" aria-label="Jenis cerita">
-          {([['dongeng', 'Dongeng'], ['fabel', 'Fabel'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
+          {([['dongeng', 'Dongeng'], ['fabel', 'Fabel'], ['adab', 'Adab Anak Muslim'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
             <button type="button" key={k} role="radio" aria-checked={category === k} className={'tab' + (category === k ? ' on' : '')} onClick={() => setCategory(k)} disabled={busy}>
               {label}
             </button>
           ))}
         </div>
-        {category === 'islami' && (
+        {(category === 'islami' || category === 'adab') && (
           <p className="note">
-            Kisah Islami hanya mengambil dari Al-Qur'an dan hadis shahih, dan tidak menggambar manusia
-            (nabi dan sahabat); hanya hewan, alam, dan Ka'bah. Perlu ANTHROPIC_API_KEY di server.
+            {category === 'adab'
+              ? "Cerita adab dengan tokoh anak Muslim; dalil hanya dari Al-Qur'an dan hadis shahih."
+              : "Kisah Islami hanya mengambil dari Al-Qur'an dan hadis shahih, dan tidak menggambar nabi dan sahabat; hanya hewan, alam, dan Ka'bah."}{' '}
+            Perlu ANTHROPIC_API_KEY di server.
           </p>
         )}
         <textarea

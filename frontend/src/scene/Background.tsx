@@ -14,6 +14,7 @@ const SKY: Record<Bg, [string, string]> = {
   senja: ['#6a4c9c', '#ffb26b'],
   gurun: ['#7cc8f2', '#fff0c4'],
   salju: ['#b9d3ea', '#f3f8fc'],
+  dalamrumah: ['#fbe9c8', '#fbe9c8'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -90,6 +91,24 @@ export function Background({ bg }: { bg: Bg }) {
           <Hills far="#9bd48b" mid="#7cc07a" y={280} />
           <ForestSilhouette y={320} color="#4f9e5a" />
           <Grass color="#68b258" from={360} />
+        </>
+      )}
+      {bg === 'dalamrumah' && (
+        <>
+          <rect y="300" width="800" height="14" fill="#e9d2a2" />
+          <rect y="314" width="800" height="70" fill="#f3dfb4" />
+          <rect y="384" width="800" height="116" fill="#c98f55" />
+          {Array.from({ length: 8 }, (_, i) => (
+            <path key={i} d={`M${i * 110 - 20} 384 L${i * 140 - 160} 500`} stroke="#a8713c" strokeWidth="3" />
+          ))}
+          <path d="M0 440 H800 M0 475 H800" stroke="#a8713c" strokeWidth="2" opacity=".7" />
+          <rect x="560" y="70" width="170" height="150" rx="8" fill="#bfe4f5" stroke="#8a5a2b" strokeWidth="9" />
+          <path d="M645 70 V220 M560 145 H730" stroke="#8a5a2b" strokeWidth="6" />
+          <circle cx="690" cy="115" r="22" fill="#fff6c0" opacity=".85" />
+          <path d="M548 62 Q572 120 556 228 L596 228 Q580 120 596 62z M742 62 Q718 120 734 228 L694 228 Q710 120 694 62z" fill="#e88aa0" opacity=".9" />
+          <rect x="90" y="86" width="150" height="100" rx="8" fill="#fffaf0" stroke="#8a5a2b" strokeWidth="8" />
+          <path d="M115 160 Q165 100 215 160z" fill="#8fd0a0" />
+          <circle cx="190" cy="118" r="12" fill="#ffd54a" />
         </>
       )}
       {bg === 'salju' && (

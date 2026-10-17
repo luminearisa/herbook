@@ -6,9 +6,10 @@ Ilustrasi digambar sebagai **SVG** dari data adegan, jadi buku baru bisa dibuat 
 Isi awal:
 - Dongeng Kancil: *Kancil dan Buaya*, *Kancil Mencuri Timun*, *Kancil dan Gajah*
 - Fabel: *Kura-kura dan Kelinci*, *Semut dan Belalang*, *Singa dan Tikus*
+- Adab Anak Muslim: *Rafi Belajar Bismillah*, *Salma dan Salam*, *Jujur Itu Indah*, *Berbagi Itu Indah* (tokoh anak: Rafi dan Salma)
 - Kisah Islami: *Pasukan Gajah dan Burung Ababil* (QS. Al-Fil), *Semut yang Waspada* (QS. An-Naml), *Hud-hud dan Negeri Saba* (QS. An-Naml)
 
-Kisah Islami sengaja tidak menggambar manusia (nabi dan sahabat); hanya hewan, alam, dan Ka'bah.
+Kisah Islami sengaja tidak menggambar manusia (nabi dan sahabat); hanya hewan, alam, dan Ka'bah. Kategori Adab memakai tokoh anak Muslim fiktif beserta keluarganya.
 
 ## Menjalankan
 

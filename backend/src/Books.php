@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 final class Books
 {
-    public const CATEGORIES = ['dongeng', 'islami', 'fabel'];
+    public const CATEGORIES = ['dongeng', 'islami', 'fabel', 'adab'];
 
     /** @return list<array<string,mixed>> */
     public static function all(PDO $pdo): array
