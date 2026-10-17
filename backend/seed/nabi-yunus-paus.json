@@ -1,0 +1,258 @@
+{
+ "title": "Nabi Yunus dan Ikan Paus",
+ "summary": "Kisah Nabi Yunus 'alaihis salam yang ditelan ikan besar dan berdoa dalam tiga kegelapan. (QS. Al-Anbiya: 87-88; QS. Ash-Shaffat: 139-148)",
+ "moral": "Selalu bertobat dan berdoa kepada Allah, di mana pun kita berada. Allah mendengar doa hamba-Nya dan mengeluarkannya dari kesulitan.",
+ "cover": {
+  "bg": "laut",
+  "items": [
+   {
+    "t": "awan",
+    "x": 260,
+    "y": 70
+   },
+   {
+    "t": "paus",
+    "x": 400,
+    "y": 372,
+    "s": 1.2
+   },
+   {
+    "t": "ombak",
+    "x": 400,
+    "y": 396
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Nabi Yunus 'alaihis salam diutus Allah kepada kaum Ninawa. Beliau mengajak mereka beriman, tetapi mereka tidak mau mendengarkan. Beliau pun pergi meninggalkan mereka dengan hati marah, sebelum Allah memberi izin.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 130,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 690,
+      "y": 420,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 400,
+      "y": 160,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Beliau menaiki sebuah kapal yang penuh muatan. Di tengah laut, badai besar datang dan ombak menghantam kapal. Setelah diundi, beliau pun dilemparkan ke laut.",
+   "scene": {
+    "bg": "laut",
+    "items": [
+     {
+      "t": "awan",
+      "x": 160,
+      "y": 70,
+      "s": 1.2
+     },
+     {
+      "t": "awan",
+      "x": 450,
+      "y": 55,
+      "s": 1.3
+     },
+     {
+      "t": "awan",
+      "x": 680,
+      "y": 80,
+      "s": 1.1
+     },
+     {
+      "t": "bahtera",
+      "x": 400,
+      "y": 372,
+      "s": 1.0
+     },
+     {
+      "t": "ombak",
+      "x": 400,
+      "y": 398
+     },
+     {
+      "t": "hujan",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Atas perintah Allah, seekor ikan besar datang dan menelan beliau. Beliau tidak terluka, dan hanya Allah yang mengetahui keadaannya. Saat itu ikan besar itu menjadi tempat beliau berdoa kepada Allah.",
+   "scene": {
+    "bg": "laut",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "paus",
+      "x": 400,
+      "y": 380,
+      "s": 1.2
+     },
+     {
+      "t": "ombak",
+      "x": 400,
+      "y": 400
+     }
+    ]
+   }
+  },
+  {
+   "text": "Di dalam perut ikan, di tengah malam dan kedalaman laut, Nabi Yunus berada dalam tiga kegelapan: gelapnya malam, gelapnya laut, dan gelapnya perut ikan. Beliau menyadari kesalahannya dan merendahkan diri kepada Allah.",
+   "scene": {
+    "bg": "lautmalam",
+    "items": [
+     {
+      "t": "paus",
+      "x": 400,
+      "y": 390,
+      "s": 1.2,
+      "mood": "sedih"
+     },
+     {
+      "t": "ombak",
+      "x": 400,
+      "y": 410
+     }
+    ]
+   }
+  },
+  {
+   "text": "Beliau berdoa, \"Laa ilaaha illaa anta, subhaanaka innii kuntu minazh zhaalimiin\", artinya, \"Tidak ada Tuhan selain Engkau. Maha Suci Engkau, sesungguhnya aku termasuk orang-orang yang zalim.\" (QS. Al-Anbiya: 87)",
+   "scene": {
+    "bg": "lautmalam",
+    "items": [
+     {
+      "t": "paus",
+      "x": 400,
+      "y": 390,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "ombak",
+      "x": 400,
+      "y": 410
+     }
+    ]
+   }
+  },
+  {
+   "text": "Allah mengabulkan doa beliau dan menyelamatkannya dari kesedihan. Ikan itu melepaskan beliau di tanah yang tandus dalam keadaan sakit. Lalu Allah menumbuhkan pohon labu di dekatnya untuk menaunginya.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 120,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "timun",
+      "x": 420,
+      "y": 458,
+      "s": 1.6
+     },
+     {
+      "t": "timun",
+      "x": 560,
+      "y": 462,
+      "s": 1.4
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 290
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nabi Yunus kembali menyeru kaumnya, dan kali ini mereka beriman. Allah menerima iman mereka dan memberi mereka kenikmatan hidup. Dari kisah ini kita belajar untuk selalu berdoa dan bertobat, karena Allah Maha Penerima tobat. Tamat.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "kurma",
+      "x": 120,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 700,
+      "y": 420,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 140,
+      "v": 2
+     },
+     {
+      "t": "burung",
+      "x": 460,
+      "y": 180,
+      "v": 0
+     },
+     {
+      "t": "kupu",
+      "x": 560,
+      "y": 290
+     },
+     {
+      "t": "timun",
+      "x": 420,
+      "y": 462,
+      "s": 1.3
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "nabi-yunus-paus",
+ "category": "islami",
+ "author": "Kisah Islami"
+}

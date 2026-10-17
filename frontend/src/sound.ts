@@ -184,6 +184,19 @@ const SYNTH: Record<string, (c: AudioContext) => void> = {
   creak: (c) => {
     tone(c, { f: 210, f2: 150, dur: 0.6, type: 'sawtooth', vol: 0.1, lp: 600, vib: 30 });
   },
+  whale: (c) => {
+    tone(c, { f: 130, f2: 260, dur: 0.9, vol: 0.22, vib: 6, lp: 900 });
+    tone(c, { f: 260, f2: 150, dur: 1.0, vol: 0.2, vib: 6, lp: 900, at: 0.8 });
+  },
+  bark: (c) => {
+    [0, 0.22].forEach((at) => {
+      tone(c, { f: 420, f2: 200, dur: 0.14, type: 'sawtooth', vol: 0.2, lp: 1200, at });
+      noise(c, { dur: 0.08, bp: 900, q: 0.8, vol: 0.2, at });
+    });
+  },
+  echo: (c) => {
+    [1, 0.5, 0.25, 0.12].forEach((v, i) => tone(c, { f: 300 - i * 25, f2: 250 - i * 25, dur: 0.28, vol: 0.2 * v, vib: 5, at: i * 0.32, lp: 900 }));
+  },
   plop: (c) => tone(c, { f: 420, f2: 120, dur: 0.18, vol: 0.3 }),
   pop: (c) => tone(c, { f: 600, f2: 200, dur: 0.1, vol: 0.25 }),
 };

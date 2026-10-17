@@ -359,3 +359,56 @@ export function Tongkat() {
     </g>
   );
 }
+
+export function Bahtera() {
+  return (
+    <g>
+      <path d="M-160 -44 L160 -44 Q140 12 96 12 L-96 12 Q-140 12 -160 -44Z" fill="#8a5a2b" stroke="#5a3a1c" strokeWidth="3" />
+      <path d="M-150 -26 H150 M-140 -10 H140" stroke="#6a421e" strokeWidth="3" />
+      <rect x="-84" y="-114" width="168" height="72" rx="6" fill="#b9833f" stroke="#7a4e2a" strokeWidth="3" />
+      <path d="M-104 -112 L0 -170 L104 -112z" fill="#a8532e" stroke="#7a3a1c" strokeWidth="3" />
+      <circle cx="-40" cy="-80" r="12" fill="#ffe9a8" stroke="#7a4e2a" strokeWidth="3" />
+      <circle cx="40" cy="-80" r="12" fill="#ffe9a8" stroke="#7a4e2a" strokeWidth="3" />
+      <rect x="-12" y="-96" width="24" height="54" rx="3" fill="#7a4e2a" />
+      <path d="M-150 -44 V-62 M-110 -44 V-62 M110 -44 V-62 M150 -44 V-62 M-150 -62 H-90 M90 -62 H150" stroke="#6a421e" strokeWidth="4" />
+    </g>
+  );
+}
+
+export function Gua() {
+  return (
+    <g>
+      <path d="M-170 0 Q-160 -150 -44 -192 Q62 -214 134 -152 Q182 -104 176 0Z" fill="#8c8579" stroke="#6f695f" strokeWidth="3" />
+      <path d="M-120 -90 Q-80 -150 -20 -170 M60 -184 Q120 -160 150 -110" stroke="#a69f92" strokeWidth="6" fill="none" strokeLinecap="round" opacity=".7" />
+      <path d="M-64 0 Q-64 -92 8 -104 Q84 -92 84 0Z" fill="#1d1a18" />
+      <path d="M-50 0 Q-50 -80 8 -90 Q70 -80 70 0Z" fill="#2d2825" />
+      <ellipse cx="-110" cy="-8" rx="34" ry="14" fill="#5fae55" /><ellipse cx="120" cy="-8" rx="38" ry="15" fill="#5fae55" />
+      <ellipse cx="-30" cy="-176" rx="30" ry="12" fill="#6fbf5f" opacity=".85" /><ellipse cx="86" cy="-150" rx="26" ry="10" fill="#6fbf5f" opacity=".85" />
+    </g>
+  );
+}
+
+/** Hujan deras satu layar; letakkan di x=0, y=0. Tidak menerima sentuhan. */
+export function Hujan() {
+  return (
+    <g pointerEvents="none">
+      {Array.from({ length: 46 }, (_, i) => {
+        const x = (i * 53) % 840;
+        return (
+          <path key={i} className="rain-line" style={{ animationDelay: `${(i % 9) * 0.11}s`, animationDuration: `${0.7 + (i % 4) * 0.12}s` }} d={`M${x} -40 l-8 26`} stroke="#d6efff" strokeOpacity=".8" strokeWidth="2.4" strokeLinecap="round" />
+        );
+      })}
+      <rect width="800" height="500" fill="#1d3a5c" opacity=".16" />
+    </g>
+  );
+}
+
+/** Pita ombak di depan; letakkan di x=400. Tidak menerima sentuhan. */
+export function Ombak() {
+  return (
+    <g pointerEvents="none" className="drift-b">
+      <path d="M-520 0 q40 -22 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 V120 H-520z" fill="#2f8fc8" opacity=".92" />
+      <path d="M-520 0 q40 -22 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0" fill="none" stroke="#fff" strokeOpacity=".75" strokeWidth="4" />
+    </g>
+  );
+}

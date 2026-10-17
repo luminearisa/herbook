@@ -17,6 +17,8 @@ const SKY: Record<Bg, [string, string]> = {
   gurun: ['#7cc8f2', '#fff0c4'],
   salju: ['#b9d3ea', '#f3f8fc'],
   dalamrumah: ['#fbe9c8', '#fbe9c8'],
+  laut: ['#7fd0ff', '#e6f6ff'],
+  lautmalam: ['#0a1640', '#2b3a80'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -99,7 +101,7 @@ function ForestSilhouette({ y, color }: { y: number; color: string }) {
 
 const GROUND: Record<Bg, string> = {
   hutan: '#68b258', sungai: '#68b258', kebun: '#8fbf5a', desa: '#78b85e', malam: '#2a6a46',
-  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55',
+  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55', laut: '#2a7fb8', lautmalam: '#0c2552',
 };
 
 /** `ext`: tambahan tinggi (unit viewBox) di bawah kanvas 800x500, dipakai mode layar penuh. */
@@ -110,13 +112,25 @@ export function Background({ bg, ext = 0, interactive = false, onInteract }: { b
     <g>
       <Sky bg={bg} />
       {ext > 0 && <rect y="480" width="800" height={ext + 20} fill={GROUND[bg]} />}
-      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun') && <Sun interactive={interactive} onInteract={onInteract} />}
+      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun' || bg === 'laut') && <Sun interactive={interactive} onInteract={onInteract} />}
       {bg === 'senja' && <Sun low interactive={interactive} onInteract={onInteract} />}
       {bg === 'hutan' && (
         <>
           <Hills far="#9bd48b" mid="#7cc07a" y={280} />
           <ForestSilhouette y={320} color="#4f9e5a" />
           <Grass color="#68b258" from={360} />
+        </>
+      )}
+      {(bg === 'laut' || bg === 'lautmalam') && (
+        <>
+          <path d="M0 300 H800 V500 H0z" fill={bg === 'laut' ? '#4db8ec' : '#17408a'} />
+          <rect y="300" width="800" height={b - 300} fill={bg === 'laut' ? '#3aa0d8' : '#12337a'} opacity=".55" />
+          <path d="M0 300 H800" stroke="#fff" strokeOpacity={bg === 'laut' ? 0.6 : 0.25} strokeWidth="3" />
+          <g className="ripples" stroke="#fff" strokeOpacity={bg === 'laut' ? 0.5 : 0.22} strokeWidth="3" fill="none" strokeLinecap="round">
+            {[[80, 330], [320, 322], [560, 336], [180, 380], [470, 372], [700, 390], [90, 440], [360, 450], [620, 458]].map(([x, y]) => (
+              <path key={`${x}${y}`} d={`M${x} ${y} q15 -8 30 0 t30 0`} />
+            ))}
+          </g>
         </>
       )}
       {bg === 'dalamrumah' && (
@@ -216,7 +230,7 @@ export function Overlay({ bg, ext = 0, interactive = false, onInteract }: { bg: 
     );
   }
   if (bg === 'senja') return <rect width="800" height={500 + ext} fill="#ff8a3d" opacity=".14" pointerEvents="none" />;
-  if (bg !== 'malam') return null;
+  if (bg !== 'malam' && bg !== 'lautmalam') return null;
   function tapMoon() {
     onInteract?.();
     playSound('chime');
@@ -231,7 +245,7 @@ export function Overlay({ bg, ext = 0, interactive = false, onInteract }: { bg: 
         {STARS.map(([x, y, r], i) => (
           <circle key={i} className={glow ? 'twinkle twinkle-fast' : 'twinkle'} style={{ animationDelay: `${i * 0.3}s` }} cx={x} cy={y} r={r} fill="#fff7c2" />
         ))}
-        {[[200, 380], [330, 420], [560, 400], [700, 440]].map(([x, y], i) => (
+        {bg === 'malam' && [[200, 380], [330, 420], [560, 400], [700, 440]].map(([x, y], i) => (
           <circle key={i} className="firefly" style={{ animationDelay: `${i * 0.7}s` }} cx={x} cy={y} r="3" fill="#e9ff6b" />
         ))}
       </g>

@@ -854,3 +854,73 @@ export function Lubang({ v = 0 }: CharProps) {
     </g>
   );
 }
+
+/* ---------------- Paus, anjing ---------------- */
+
+export function Paus({ mood = 'senang' }: CharProps) {
+  const blue = '#5b86b6';
+  return (
+    <g>
+      <g className="spout" opacity=".85">
+        <path d="M-6 -104 Q-16 -138 -34 -150 M-6 -104 Q-6 -144 -6 -160 M-6 -104 Q4 -138 22 -150" stroke="#bfe8ff" strokeWidth="6" strokeLinecap="round" fill="none" />
+        <circle cx="-34" cy="-152" r="5" fill="#bfe8ff" /><circle cx="-6" cy="-163" r="5" fill="#bfe8ff" /><circle cx="22" cy="-152" r="5" fill="#bfe8ff" />
+      </g>
+      <path d="M-146 -34 C-176 -50 -196 -86 -182 -116 C-166 -102 -154 -86 -142 -66 C-136 -92 -120 -108 -110 -118 C-104 -92 -110 -64 -128 -44Z" fill="#4a73a3" />
+      <path d="M-150 -30 C-140 -92 -60 -112 20 -102 C90 -94 142 -62 152 -22 C152 -4 142 0 122 0 L-110 0 C-134 0 -150 -12 -150 -30Z" fill={blue} />
+      <path d="M-20 0 C40 -10 110 -16 150 -22 C150 -4 142 0 122 0Z" fill="#e8f1f8" />
+      <path d="M60 -12 Q100 -18 140 -24" stroke="#bcd0e4" strokeWidth="2" fill="none" />
+      <path d="M-10 -34 Q-40 -10 -20 -4 Q10 -14 20 -32z" fill="#4a73a3" />
+      <circle cx="92" cy="-62" r="8" fill="#fff" stroke="#1d2b3a" strokeWidth="2" />
+      <circle cx="94" cy="-62" r="4" fill="#1d2b3a" />
+      <path d="M96 -36 Q120 -28 146 -38" stroke="#1d2b3a" strokeWidth="3" fill="none" strokeLinecap="round" opacity={mood === 'sedih' ? 0.3 : 1} />
+      <circle cx="104" cy="-48" r="6" fill="#f4a0a0" opacity=".45" />
+    </g>
+  );
+}
+
+export function Anjing({ pose = 'berdiri', mood = 'senang' }: CharProps) {
+  const fur = '#c58a4a';
+  const light = '#ecd1a2';
+  const ear = '#7a4e26';
+  const sleep = pose === 'tidur';
+  const run = pose === 'lari';
+  if (sleep) {
+    return (
+      <g>
+        <path d="M-52 -24 Q-82 -34 -72 -60" stroke={fur} strokeWidth="9" fill="none" strokeLinecap="round" />
+        <ellipse cx="-4" cy="-24" rx="52" ry="22" fill={fur} />
+        <ellipse cx="46" cy="-6" rx="30" ry="8" fill={light} />
+        <ellipse cx="84" cy="-6" rx="16" ry="7" fill={light} />
+        <circle cx="64" cy="-34" r="20" fill={fur} />
+        <ellipse cx="80" cy="-26" rx="14" ry="9" fill={light} />
+        <ellipse cx="90" cy="-28" rx="4.5" ry="3.6" fill="#2b1a0f" />
+        <ellipse cx="50" cy="-34" rx="8" ry="17" fill={ear} transform="rotate(14 50 -34)" />
+        <path d="M62 -42 q6 5 12 0" stroke="#2b1a0f" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+        <Zzz x={96} y={-62} />
+      </g>
+    );
+  }
+  const leg = (x: number, r: number, dark?: boolean) => (
+    <g transform={`translate(${x} -34) rotate(${r})`}>
+      <rect x="-6" y="0" width="12" height="34" rx="6" fill={dark ? '#a8713c' : fur} />
+      <ellipse cx="2" cy="34" rx="9" ry="4.5" fill={light} />
+    </g>
+  );
+  const rot = run ? [-34, 30, 34, -28] : [0, 0, 0, 0];
+  return (
+    <g transform={run ? 'translate(0 -6) rotate(-5 0 -40)' : undefined}>
+      <path d="M-40 -56 Q-70 -70 -58 -96" stroke={fur} strokeWidth="9" fill="none" strokeLinecap="round" className="wag" />
+      {leg(-28, rot[0], true)}
+      {leg(26, rot[2], true)}
+      <ellipse cx="0" cy="-48" rx="42" ry="22" fill={fur} />
+      <ellipse cx="4" cy="-36" rx="30" ry="9" fill={light} />
+      {leg(-16, rot[1])}
+      {leg(38, rot[3])}
+      <circle cx="52" cy="-78" r="19" fill={fur} />
+      <ellipse cx="70" cy="-70" rx="14" ry="9.5" fill={light} />
+      <ellipse cx="81" cy="-73" rx="4.5" ry="3.6" fill="#2b1a0f" />
+      <ellipse cx="40" cy="-76" rx="8" ry="17" fill={ear} transform="rotate(12 40 -76)" />
+      <g style={{ color: fur }}><SimpleFace ex={58} ey={-82} mx={70} my={-62} mood={mood} r={4.6} /></g>
+    </g>
+  );
+}

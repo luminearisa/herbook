@@ -294,3 +294,9 @@ nav { align-items: center; }
 .fx-puff { transform-box: fill-box; transform-origin: center; opacity: 0; animation: fxpuff .9s ease-out forwards; }
 @keyframes fxpuff { 0% { opacity: .85; transform: translateY(0) scale(.3); } 100% { opacity: 0; transform: translateY(-26px) scale(1.5); } }
 .twinkle-fast { animation-duration: .5s; }
+.rain-line { animation: rainfall .8s linear infinite; }
+@keyframes rainfall { from { transform: translateY(0); opacity: 0; } 10% { opacity: 1; } to { transform: translateY(540px) translateX(-30px); opacity: .9; } }
+.spout { animation: spout 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes spout { 0%, 100% { opacity: .2; transform: scaleY(.5); } 50% { opacity: .9; transform: scaleY(1); } }
+.wag { animation: wag .5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 100% 100%; }
+@keyframes wag { from { transform: rotate(-10deg); } to { transform: rotate(14deg); } }

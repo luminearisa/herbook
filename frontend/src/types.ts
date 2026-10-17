@@ -1,6 +1,6 @@
 export type Mood = 'senang' | 'takut' | 'licik' | 'sedih' | 'marah' | 'kaget' | 'pingsan';
 export type Pose = 'berdiri' | 'lari' | 'lompat' | 'rebah' | 'renang' | 'tidur' | 'duduk' | 'salam' | 'doa';
-export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun' | 'salju' | 'dalamrumah';
+export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun' | 'salju' | 'dalamrumah' | 'laut' | 'lautmalam';
 
 export type Category = 'dongeng' | 'islami' | 'fabel' | 'adab';
 

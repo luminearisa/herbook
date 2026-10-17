@@ -59,6 +59,11 @@ const TABLE: Record<string, Interaction> = {
   surat: { anim: 'flutter', sound: 'chime', origin: 'center' },
   debu: { anim: 'puff', sound: 'rustle', origin: 'center' },
   sarang: { anim: 'wobble', sound: 'thump' },
+  paus: { anim: 'squash', sound: 'whale', fx: ['splash'], fxBox: [-20, -165, 40, 20], mood: 'senang' },
+  anjing: { anim: 'hop2', sound: 'bark', mood: 'senang' },
+  bahtera: { anim: 'wobble', sound: 'creak', origin: 'bottom' },
+  gua: { anim: 'squash', sound: 'echo' },
+  // hujan dan ombak tidak interaktif (hanya hiasan di depan gambar)
   // kabah sengaja tidak ada: tidak dijadikan mainan
 };
 
