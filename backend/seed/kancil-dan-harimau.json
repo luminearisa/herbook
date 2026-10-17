@@ -1,0 +1,407 @@
+{
+ "slug": "kancil-dan-harimau",
+ "title": "Kancil dan Harimau",
+ "author": "Dongeng Nusantara",
+ "summary": "Harimau yang lapar ingin memangsa Kancil. Dengan akal dan ketenangan, Kancil mencari cara agar bisa lolos dari cakar Harimau. Bagaimana caranya?",
+ "moral": "Ketenangan dan akal yang cerdik dapat menolong kita saat bahaya datang. Tetapi gunakanlah akal untuk kebaikan, dan jangan sombong dengan kekuatan.",
+ "category": "dongeng",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "awan",
+    "x": 250,
+    "y": 70
+   },
+   {
+    "t": "pohon",
+    "x": 110,
+    "y": 410,
+    "s": 1.3
+   },
+   {
+    "t": "pohon",
+    "x": 700,
+    "y": 400,
+    "s": 1.2,
+    "v": 1
+   },
+   {
+    "t": "semak",
+    "x": 620,
+    "y": 445
+   },
+   {
+    "t": "harimau",
+    "x": 250,
+    "y": 455,
+    "s": 1.3,
+    "mood": "marah"
+   },
+   {
+    "t": "kancil",
+    "x": 580,
+    "y": 460,
+    "s": 1.2,
+    "mood": "takut",
+    "flip": true
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Pagi itu hutan sangat sejuk. Kancil kecil minum di tepi sungai sambil bernyanyi riang. Tiba-tiba semak bergoyang keras, dan seekor Harimau besar muncul dengan mata lapar. \"Hai Kancil, kebetulan sekali. Aku sedang sangat lapar!\" aumnya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 150,
+      "y": 80
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 610,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 330,
+      "y": 470
+     },
+     {
+      "t": "burung",
+      "x": 200,
+      "y": 150
+     },
+     {
+      "t": "kancil",
+      "x": 260,
+      "y": 460,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "harimau",
+      "x": 620,
+      "y": 455,
+      "s": 1.3,
+      "mood": "marah",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil terkejut lalu melangkah mundur. Jantungnya berdebar kencang, tetapi ia berusaha tetap tenang. \"Tunggu, Tuan Harimau!\" katanya. \"Aku memang kecil, tetapi aku punya kabar penting untukmu.\" Harimau menghentikan langkahnya, penasaran.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 520,
+      "y": 65
+     },
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 405,
+      "s": 1.25
+     },
+     {
+      "t": "semak",
+      "x": 430,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 520,
+      "y": 472
+     },
+     {
+      "t": "kupu",
+      "x": 600,
+      "y": 300
+     },
+     {
+      "t": "kancil",
+      "x": 300,
+      "y": 460,
+      "s": 1.2,
+      "mood": "takut"
+     },
+     {
+      "t": "harimau",
+      "x": 590,
+      "y": 450,
+      "s": 1.25,
+      "mood": "marah",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Di seberang sungai sana ada harimau lain,\" bisik Kancil. \"Ia mengaku dirinya Raja Hutan dan menertawakan Tuan!\" Mendengar itu, Harimau marah bukan kepalang. \"Berani sekali dia! Tunjukkan padaku di mana dia berada!\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 65,
+      "s": 0.9
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 95,
+      "y": 445
+     },
+     {
+      "t": "burung",
+      "x": 480,
+      "y": 140
+     },
+     {
+      "t": "kancil",
+      "x": 220,
+      "y": 460,
+      "s": 1.2,
+      "mood": "licik"
+     },
+     {
+      "t": "harimau",
+      "x": 560,
+      "y": 450,
+      "s": 1.3,
+      "mood": "marah",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sampailah mereka di tepi sungai. \"Itu dia, Tuan,\" kata Kancil sambil menunjuk ke dalam air. Harimau menengok dan melihat sosok harimau besar di permukaan air. Ia tidak tahu bahwa itu hanya bayangannya sendiri! \"Hei, kamu! Berani menantangku?\" aumnya.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "awan",
+      "x": 520,
+      "y": 60,
+      "s": 0.9
+     },
+     {
+      "t": "pohon",
+      "x": 725,
+      "y": 360,
+      "s": 1.05
+     },
+     {
+      "t": "batu",
+      "x": 300,
+      "y": 448
+     },
+     {
+      "t": "kancil",
+      "x": 140,
+      "y": 455,
+      "s": 1.2,
+      "mood": "licik"
+     },
+     {
+      "t": "harimau",
+      "x": 540,
+      "y": 435,
+      "s": 1.2,
+      "mood": "marah",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Grrr!\" aum Harimau. Aneh, harimau di dalam air pun membuka mulut seolah mengaum balik. Harimau semakin geram. \"Dia berani membalas aumanku! Awas kamu, aku akan mengajarimu!\"",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 360,
+      "s": 1
+     },
+     {
+      "t": "batu",
+      "x": 290,
+      "y": 448
+     },
+     {
+      "t": "ikan",
+      "x": 320,
+      "y": 320
+     },
+     {
+      "t": "kancil",
+      "x": 150,
+      "y": 455,
+      "s": 1.15,
+      "mood": "licik"
+     },
+     {
+      "t": "harimau",
+      "x": 545,
+      "y": 425,
+      "s": 1.25,
+      "mood": "marah",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Harimau tidak sabar lagi. Ia melompat ke dalam sungai untuk menerkam penantangnya. Byur! Air memercik tinggi. Namun, harimau itu tidak ada! Yang ada hanya riak air yang mengelilingi tubuhnya sendiri.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 360,
+      "s": 1
+     },
+     {
+      "t": "ombak",
+      "x": 300,
+      "y": 430
+     },
+     {
+      "t": "kancil",
+      "x": 150,
+      "y": 455,
+      "s": 1.1,
+      "mood": "kaget"
+     },
+     {
+      "t": "harimau",
+      "x": 480,
+      "y": 425,
+      "s": 1.15,
+      "pose": "lompat",
+      "mood": "kaget",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sementara Harimau bingung di dalam air, Kancil menyelinap ke balik semak-semak. Basah kuyup dan kedinginan, Harimau menyesal. \"Ternyata aku tertipu oleh bayanganku sendiri,\" gumamnya dengan malu.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 360,
+      "s": 1,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 660,
+      "y": 445
+     },
+     {
+      "t": "harimau",
+      "x": 250,
+      "y": 430,
+      "s": 1.15,
+      "pose": "renang",
+      "mood": "sedih"
+     },
+     {
+      "t": "kancil",
+      "x": 710,
+      "y": 458,
+      "s": 1,
+      "mood": "licik",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil pun pulang dengan hati lega. Ia belajar bahwa ketenangan dan akal dapat menolong saat bahaya datang. Tetapi akal itu harus dipakai untuk kebaikan, bukan untuk menyakiti. Sedangkan kesombongan hanya merugikan diri sendiri. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 200,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 400,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 690,
+      "y": 400,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 300,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 560,
+      "y": 470
+     },
+     {
+      "t": "kupu",
+      "x": 480,
+      "y": 280
+     },
+     {
+      "t": "burung",
+      "x": 360,
+      "y": 150
+     },
+     {
+      "t": "kancil",
+      "x": 430,
+      "y": 458,
+      "s": 1.25,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ]
+}

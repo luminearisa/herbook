@@ -1,0 +1,493 @@
+{
+ "slug": "cuaca-1-mengenal-cuaca",
+ "series": "cuaca",
+ "part": 1,
+ "title": "Cuaca Part 1: Mengenal Cuaca",
+ "summary": "Kenali jenis-jenis cuaca: cerah, berawan, mendung, hujan, berangin, panas, dan dingin, lewat gambar yang bisa disentuh.",
+ "cover": {
+  "bg": "padang",
+  "items": [
+   {
+    "t": "matahari",
+    "x": 610,
+    "y": 105,
+    "s": 1.3
+   },
+   {
+    "t": "awan",
+    "x": 150,
+    "y": 90,
+    "s": 1.1
+   },
+   {
+    "t": "awan",
+    "x": 430,
+    "y": 65,
+    "s": 1.3,
+    "v": 1
+   },
+   {
+    "t": "pohon",
+    "x": 100,
+    "y": 410,
+    "s": 1.2
+   },
+   {
+    "t": "kincir",
+    "x": 700,
+    "y": 440,
+    "s": 1.1
+   },
+   {
+    "t": "bunga",
+    "x": 330,
+    "y": 482,
+    "v": 2
+   },
+   {
+    "t": "kupu",
+    "x": 480,
+    "y": 300
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Apa Itu Cuaca?",
+   "text": "Cuaca adalah keadaan udara di suatu tempat pada waktu tertentu. Kadang langit cerah, kadang berawan, kadang hujan. Cuaca bisa berubah setiap hari, bahkan setiap jam. Kita bisa merasakan cuaca lewat panas, dingin, angin, dan hujan.",
+   "fact": "Cuaca berbeda dengan iklim. Cuaca berubah cepat dalam hitungan jam atau hari, sedangkan iklim adalah rata-rata cuaca dalam waktu yang sangat lama.",
+   "reflection": "Subhanallah, Allah mengatur cuaca agar bumi ini seimbang dan nyaman untuk makhluk-Nya.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "matahari",
+      "x": 620,
+      "y": 110,
+      "s": 1.3
+     },
+     {
+      "t": "awan",
+      "x": 160,
+      "y": 85,
+      "s": 1.1
+     },
+     {
+      "t": "awan",
+      "x": 430,
+      "y": 60,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 320,
+      "y": 482,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 450,
+      "y": 300
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Cerah",
+   "text": "Cuaca cerah terjadi saat langit bersih dan matahari bersinar terang. Udara terasa hangat dan nyaman. Saat cuaca cerah, kita bisa bermain di luar, berjalan-jalan, atau membantu menjemur pakaian.",
+   "fact": "Meski cerah, jangan lupa memakai topi atau tabir surya saat bermain di bawah matahari agar kulit tidak terbakar.",
+   "reflection": "Alhamdulillah, cuaca cerah memberi kita kesempatan bermain dan belajar di luar rumah.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "matahari",
+      "x": 600,
+      "y": 100,
+      "s": 1.5
+     },
+     {
+      "t": "awan",
+      "x": 150,
+      "y": 80,
+      "s": 0.9
+     },
+     {
+      "t": "awan",
+      "x": 730,
+      "y": 160,
+      "s": 0.7,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 250,
+      "y": 140
+     },
+     {
+      "t": "kupu",
+      "x": 430,
+      "y": 300
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 320,
+      "y": 482,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 520,
+      "y": 482,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Berawan",
+   "text": "Saat cuaca berawan, langit tertutup awan sehingga matahari tidak terlalu terik. Udara terasa lebih sejuk. Awan terbentuk dari kumpulan titik air yang melayang di langit.",
+   "fact": "Awan yang tebal dan berwarna gelap disebut awan mendung. Biasanya itu pertanda hujan akan segera turun.",
+   "reflection": "Subhanallah, awan menjadi tanda perubahan cuaca yang Allah atur dengan rapi.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "awan",
+      "x": 200,
+      "y": 90,
+      "s": 1.4
+     },
+     {
+      "t": "awan",
+      "x": 430,
+      "y": 70,
+      "s": 1.6,
+      "v": 1
+     },
+     {
+      "t": "awan",
+      "x": 650,
+      "y": 110,
+      "s": 1.3
+     },
+     {
+      "t": "matahari",
+      "x": 690,
+      "y": 110,
+      "s": 0.5
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 350,
+      "y": 482
+     },
+     {
+      "t": "kupu",
+      "x": 560,
+      "y": 300
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Mendung",
+   "text": "Cuaca mendung terjadi saat awan tebal berwarna gelap menutupi langit. Matahari tidak terlihat dan udara terasa pengap. Mendung sering menjadi pertanda hujan akan datang. Sebaiknya kita bersiap membawa payung atau jas hujan.",
+   "fact": "Warna gelap pada awan terjadi karena awan sangat tebal dan berisi banyak air, sehingga cahaya matahari sulit menembusnya.",
+   "reflection": "Alhamdulillah, mendung mengingatkan kita bahwa hujan sebentar lagi turun membawa berkah.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "awan",
+      "x": 180,
+      "y": 80,
+      "s": 1.5,
+      "v": 2
+     },
+     {
+      "t": "awan",
+      "x": 430,
+      "y": 60,
+      "s": 1.8,
+      "v": 3
+     },
+     {
+      "t": "awan",
+      "x": 680,
+      "y": 95,
+      "s": 1.4,
+      "v": 2
+     },
+     {
+      "t": "angin",
+      "x": 400,
+      "y": 250
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 640,
+      "y": 445
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Hujan",
+   "text": "Cuaca hujan terjadi ketika titik-titik air di awan menjadi berat lalu jatuh ke bumi. Hujan menyuburkan tanah dan mengisi sungai. Saat hujan, berteduhlah di tempat aman, pakai payung atau jas hujan, dan jangan bermain di luar saat hujan deras atau ada petir.",
+   "fact": "Air hujan menguap lagi karena panas matahari, naik ke langit, lalu menjadi awan. Proses ini disebut daur air dan berlangsung terus-menerus.",
+   "reflection": "Alhamdulillah, hujan adalah rahmat Allah yang menghidupkan bumi dan menyegarkan udara.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "awan",
+      "x": 180,
+      "y": 80,
+      "s": 1.5,
+      "v": 3
+     },
+     {
+      "t": "awan",
+      "x": 450,
+      "y": 60,
+      "s": 1.8,
+      "v": 3
+     },
+     {
+      "t": "awan",
+      "x": 690,
+      "y": 95,
+      "s": 1.4,
+      "v": 3
+     },
+     {
+      "t": "rumah",
+      "x": 620,
+      "y": 430,
+      "s": 1.1
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "hujan",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Berangin",
+   "text": "Cuaca berangin terjadi saat udara bergerak kencang. Kita bisa merasakan angin menerpa wajah dan melihat daun serta ranting bergoyang. Angin menerbangkan layang-layang dan memutar kincir.",
+   "fact": "Angin tidak bisa dilihat, tetapi bisa dirasakan dan dilihat gerakannya. Angin juga membantu menggerakkan perahu layar.",
+   "reflection": "Subhanallah, angin yang Allah kirim menyejukkan udara dan membantu banyak pekerjaan manusia.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "layangan",
+      "x": 560,
+      "y": 150,
+      "s": 1.2,
+      "v": 0
+     },
+     {
+      "t": "layangan",
+      "x": 460,
+      "y": 90,
+      "s": 0.7,
+      "v": 1
+     },
+     {
+      "t": "angin",
+      "x": 420,
+      "y": 260
+     },
+     {
+      "t": "kincir",
+      "x": 210,
+      "y": 438,
+      "s": 1.25
+     },
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "awan",
+      "x": 640,
+      "y": 70,
+      "s": 0.9
+     },
+     {
+      "t": "bunga",
+      "x": 380,
+      "y": 482
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Panas",
+   "text": "Cuaca panas terjadi saat matahari bersinar sangat terik dan udara terasa hangat. Di daerah gurun, cuaca bisa sangat panas pada siang hari. Saat cuaca panas, minumlah air yang cukup, pakai pakaian tipis, dan berteduhlah bila kepanasan.",
+   "fact": "Pakaian berwarna terang seperti putih memantulkan cahaya matahari, sehingga terasa lebih sejuk daripada pakaian berwarna gelap.",
+   "reflection": "Alhamdulillah, Allah menciptakan air dan tempat berteduh agar kita tetap nyaman saat cuaca panas.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 690,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "sumur",
+      "x": 430,
+      "y": 455,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "batu",
+      "x": 250,
+      "y": 452
+     }
+    ]
+   }
+  },
+  {
+   "title": "Cuaca Dingin",
+   "text": "Cuaca dingin terjadi saat udara terasa sejuk sekali, bahkan sampai menusuk tulang. Di daerah bersalju, butiran salju turun dari langit dan menutupi tanah. Saat cuaca dingin, kenakan pakaian hangat seperti jaket, syal, dan sarung tangan.",
+   "fact": "Salju adalah kristal es yang terbentuk di awan saat suhu sangat dingin. Tidak ada dua keping salju yang bentuknya benar-benar sama.",
+   "reflection": "Subhanallah, Allah menurunkan salju putih yang indah dan mengajarkan kita bersyukur atas setiap cuaca.",
+   "scene": {
+    "bg": "salju",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 560,
+      "y": 430,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 710,
+      "y": 405,
+      "s": 1.1
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Cuaca adalah keadaan ... di suatu tempat pada waktu tertentu.",
+   "options": [
+    "Udara",
+    "Tanah",
+    "Air laut"
+   ],
+   "answer": 0,
+   "explain": "Cuaca adalah keadaan udara: panas, dingin, berangin, atau hujan."
+  },
+  {
+   "q": "Mana yang menandakan cuaca cerah?",
+   "options": [
+    "Langit gelap dan berangin",
+    "Langit bersih dan matahari terang",
+    "Turun salju lebat"
+   ],
+   "answer": 1,
+   "explain": "Cuaca cerah ditandai langit bersih dan matahari bersinar terang."
+  },
+  {
+   "q": "Awan tebal berwarna gelap biasanya pertanda...",
+   "options": [
+    "Hujan akan turun",
+    "Cuaca makin cerah",
+    "Malam akan tiba"
+   ],
+   "answer": 0,
+   "explain": "Awan mendung yang tebal dan gelap biasanya menandakan hujan akan turun."
+  },
+  {
+   "q": "Saat hujan deras dan ada petir, sebaiknya kita...",
+   "options": [
+    "Bermain di lapangan",
+    "Berteduh di tempat aman",
+    "Berdiri di bawah pohon"
+   ],
+   "answer": 1,
+   "explain": "Saat hujan deras dan ada petir, berteduhlah di tempat aman dan jangan berdiri di bawah pohon."
+  },
+  {
+   "q": "Angin bisa kita ketahui karena...",
+   "options": [
+    "Bisa dilihat warnanya",
+    "Terasa di wajah dan menggerakkan daun",
+    "Berbunyi seperti musik"
+   ],
+   "answer": 1,
+   "explain": "Angin tidak terlihat, tetapi bisa dirasakan dan dilihat dari gerakan daun serta benda lain."
+  },
+  {
+   "q": "Saat cuaca panas, sebaiknya kita...",
+   "options": [
+    "Memakai jaket tebal",
+    "Minum air yang cukup dan berteduh",
+    "Bermain di bawah matahari seharian"
+   ],
+   "answer": 1,
+   "explain": "Saat cuaca panas, minumlah air yang cukup, pakai pakaian tipis, dan berteduh bila kepanasan."
+  },
+  {
+   "q": "Saat cuaca dingin bersalju, kita sebaiknya memakai...",
+   "options": [
+    "Pakaian hangat seperti jaket",
+    "Pakaian renang",
+    "Kacamata hitam saja"
+   ],
+   "answer": 0,
+   "explain": "Saat cuaca dingin, kenakan pakaian hangat seperti jaket, syal, dan sarung tangan."
+  }
+ ]
+}

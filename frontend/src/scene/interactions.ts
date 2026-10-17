@@ -95,6 +95,8 @@ const NAMES: Record<string, string> = {
   layangan: 'Layang-layang', kincir: 'Kincir angin', angin: 'Angin', pohon: 'Pohon', kurma: 'Pohon kurma',
   bunga: 'Bunga', burung: 'Burung', kupu: 'Kupu-kupu', rumah: 'Rumah', batu: 'Batu', semak: 'Semak',
   kancil: 'Kancil', gajah: 'Gajah', kelinci: 'Kelinci', ikan: 'Ikan', semut: 'Semut',
+  pagar: 'Pagar', meja: 'Meja', vas: 'Vas bunga', kue: 'Kue', sumur: 'Sumur', tongkat: 'Tongkat',
+  kurungan: 'Kurungan', timun: 'Timun',
 };
 const FRUITS = ['Apel', 'Jeruk', 'Pisang', 'Semangka', 'Stroberi', 'Anggur'];
 

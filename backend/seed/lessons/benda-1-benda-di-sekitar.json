@@ -1,0 +1,428 @@
+{
+ "slug": "benda-1-benda-di-sekitar",
+ "series": "benda",
+ "part": 1,
+ "title": "Benda Part 1: Benda-Benda di Sekitar Kita",
+ "summary": "Kenali rumah, pagar, meja, vas, kue, sumur, tongkat, dan kurungan lewat gambar yang bisa disentuh.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "awan",
+    "x": 250,
+    "y": 70
+   },
+   {
+    "t": "pohon",
+    "x": 90,
+    "y": 410,
+    "s": 1.2
+   },
+   {
+    "t": "rumah",
+    "x": 560,
+    "y": 435,
+    "s": 1.35
+   },
+   {
+    "t": "pagar",
+    "x": 300,
+    "y": 458,
+    "s": 0.9
+   },
+   {
+    "t": "sumur",
+    "x": 120,
+    "y": 450,
+    "s": 0.8
+   },
+   {
+    "t": "bunga",
+    "x": 690,
+    "y": 482,
+    "v": 2
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Rumah",
+   "text": "Rumah adalah tempat kita tinggal dan beristirahat bersama keluarga. Di dalamnya ada ruang tamu, kamar, dapur, dan kamar mandi. Rumah melindungi kita dari panas, hujan, dan angin. Kita harus menjaga rumah tetap bersih dan rapi.",
+   "fact": "Rumah yang sehat memiliki jendela agar udara segar masuk dan atap agar air hujan tidak menetes ke dalam.",
+   "reflection": "Alhamdulillah, Allah memberi kita rumah sebagai tempat berlindung dan berkumpul dengan keluarga.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 170,
+      "y": 75
+     },
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 520,
+      "y": 435,
+      "s": 1.4
+     },
+     {
+      "t": "pagar",
+      "x": 280,
+      "y": 458,
+      "s": 0.9
+     },
+     {
+      "t": "bunga",
+      "x": 200,
+      "y": 482,
+      "v": 0
+     },
+     {
+      "t": "kupu",
+      "x": 420,
+      "y": 300
+     }
+    ]
+   }
+  },
+  {
+   "title": "Pagar",
+   "text": "Pagar adalah benda yang dipasang di sekeliling rumah atau kebun. Pagar bisa terbuat dari kayu, bambu, besi, atau batu. Fungsinya menjaga keamanan, membatasi halaman, dan membuat rumah terlihat rapi. Kita harus membuka dan menutup pintu pagar dengan hati-hati.",
+   "fact": "Pagar juga bisa menjadi tempat tumbuhan merambat, sehingga halaman rumah jadi lebih hijau dan indah.",
+   "reflection": "Alhamdulillah, pagar membantu menjaga rumah dan keluarga kita tetap aman.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 320,
+      "y": 65
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 630,
+      "y": 432,
+      "s": 1.2
+     },
+     {
+      "t": "pagar",
+      "x": 350,
+      "y": 458,
+      "s": 1.25
+     },
+     {
+      "t": "semak",
+      "x": 700,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 170,
+      "y": 482,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "title": "Meja",
+   "text": "Meja adalah benda datar berkaki yang dipakai untuk meletakkan sesuatu. Kita memakai meja untuk makan, belajar, menulis, atau bekerja. Meja biasanya terbuat dari kayu, plastik, atau logam. Jaga meja tetap bersih dan jangan berdiri di atasnya.",
+   "fact": "Meja makan keluarga biasanya berbentuk persegi atau bulat agar semua orang bisa duduk bersama.",
+   "reflection": "Alhamdulillah, dengan meja kita bisa makan dan belajar dengan lebih nyaman.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.6,
+      "v": 1
+     },
+     {
+      "t": "vas",
+      "x": 315,
+      "y": 405,
+      "s": 0.7,
+      "v": 0
+     },
+     {
+      "t": "kue",
+      "x": 500,
+      "y": 407,
+      "s": 0.7
+     }
+    ]
+   }
+  },
+  {
+   "title": "Vas",
+   "text": "Vas adalah wadah untuk menaruh bunga. Vas bisa terbuat dari keramik, kaca, atau tanah liat. Dengan vas, bunga tampak cantik di dalam rumah. Vas mudah pecah, jadi peganglah dengan dua tangan dan letakkan di tempat yang aman.",
+   "fact": "Sebelum dimasukkan ke vas, batang bunga dipotong miring dan airnya diganti agar bunga tetap segar lebih lama.",
+   "reflection": "Subhanallah, bunga di dalam vas membuat rumah terasa segar dan indah.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.6,
+      "v": 1
+     },
+     {
+      "t": "vas",
+      "x": 400,
+      "y": 405,
+      "s": 1.6,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Kue",
+   "text": "Kue adalah makanan manis yang dibuat dari tepung, telur, gula, dan mentega. Kue dipanggang di oven atau dikukus. Ada kue ulang tahun, kue kering, dan kue basah. Kue sering disajikan saat acara istimewa. Makanlah secukupnya dan jangan lupa cuci tangan.",
+   "fact": "Kue ulang tahun biasanya dihias krim dan lilin. Jumlah lilin sering menunjukkan usia orang yang berulang tahun.",
+   "reflection": "Alhamdulillah, Allah memberi kita makanan lezat untuk dinikmati bersama keluarga.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.6,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 400,
+      "y": 405,
+      "s": 1.9
+     }
+    ]
+   }
+  },
+  {
+   "title": "Sumur",
+   "text": "Sumur adalah lubang yang digali di tanah untuk mendapatkan air. Air sumur dipakai untuk minum, memasak, mandi, dan mencuci. Dulu orang menimba air dengan ember dan tali. Sumur harus ditutup rapat agar aman, terutama bagi anak-anak.",
+   "fact": "Air sumur berasal dari air tanah yang meresap ke dalam bumi. Kita harus menghemat air dan tidak mencemarnya.",
+   "reflection": "Alhamdulillah, Allah menyediakan air bersih dari dalam bumi untuk kebutuhan kita.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "sumur",
+      "x": 430,
+      "y": 455,
+      "s": 1.3,
+      "v": 0
+     },
+     {
+      "t": "semak",
+      "x": 680,
+      "y": 445
+     },
+     {
+      "t": "timun",
+      "x": 250,
+      "y": 472,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 620,
+      "y": 140
+     }
+    ]
+   }
+  },
+  {
+   "title": "Tongkat",
+   "text": "Tongkat adalah batang kayu atau bambu yang panjang. Tongkat membantu orang berjalan di jalan yang licin atau menopang tubuh. Ada juga tongkat untuk menjangkau benda yang tinggi. Gunakan tongkat dengan hati-hati agar tidak mengenai orang lain.",
+   "fact": "Tongkat sudah dipakai manusia sejak ribuan tahun lalu untuk membantu berjalan, jauh sebelum ada kursi roda.",
+   "reflection": "Alhamdulillah, benda sederhana seperti tongkat bisa membantu orang yang membutuhkan.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 250,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 405,
+      "s": 1.1
+     },
+     {
+      "t": "tongkat",
+      "x": 430,
+      "y": 470,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 620,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 540,
+      "y": 482,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "title": "Kurungan",
+   "text": "Kurungan adalah kandang yang terbuat dari bambu atau kawat. Orang memakai kurungan untuk menempatkan burung atau ayam agar aman. Hewan di dalam kurungan tetap perlu diberi makan, minum, dan udara segar. Jangan lupa membersihkan kandangnya setiap hari.",
+   "fact": "Burung di alam bebas terbang jauh mencari makan. Jika dipelihara, kita bertanggung jawab menjaga kesehatannya.",
+   "reflection": "Alhamdulillah, hewan juga makhluk Allah yang perlu kita sayangi dan rawat.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "awan",
+      "x": 500,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 430,
+      "y": 380,
+      "s": 0.7,
+      "v": 0
+     },
+     {
+      "t": "kurungan",
+      "x": 430,
+      "y": 455,
+      "s": 1.25
+     },
+     {
+      "t": "semak",
+      "x": 690,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 240,
+      "y": 482,
+      "v": 1
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Rumah adalah tempat untuk...",
+   "options": [
+    "Berlayar di laut",
+    "Tinggal dan beristirahat",
+    "Menangkap ikan"
+   ],
+   "answer": 1,
+   "explain": "Rumah adalah tempat tinggal dan beristirahat bersama keluarga."
+  },
+  {
+   "q": "Pagar biasanya dipasang di ... rumah.",
+   "options": [
+    "Sekeliling",
+    "Atas atap",
+    "Dalam lemari"
+   ],
+   "answer": 0,
+   "explain": "Pagar dipasang di sekeliling rumah atau kebun untuk menjaga keamanan."
+  },
+  {
+   "q": "Meja paling sering dipakai untuk...",
+   "options": [
+    "Terbang",
+    "Menyelam",
+    "Makan dan belajar"
+   ],
+   "answer": 2,
+   "explain": "Meja dipakai untuk meletakkan makanan, buku, atau alat tulis."
+  },
+  {
+   "q": "Vas dipakai untuk menaruh...",
+   "options": [
+    "Bunga",
+    "Sepatu",
+    "Buku"
+   ],
+   "answer": 0,
+   "explain": "Vas adalah wadah untuk menaruh bunga agar tampak cantik."
+  },
+  {
+   "q": "Bahan utama kue adalah...",
+   "options": [
+    "Batu dan pasir",
+    "Tepung, telur, dan gula",
+    "Kayu dan besi"
+   ],
+   "answer": 1,
+   "explain": "Kue dibuat dari tepung, telur, gula, dan mentega, lalu dipanggang atau dikukus."
+  },
+  {
+   "q": "Sumur adalah tempat untuk mendapatkan...",
+   "options": [
+    "Api",
+    "Air",
+    "Angin"
+   ],
+   "answer": 1,
+   "explain": "Sumur digali di tanah untuk mendapatkan air."
+  },
+  {
+   "q": "Tongkat membantu orang untuk...",
+   "options": [
+    "Berjalan",
+    "Terbang",
+    "Berenang"
+   ],
+   "answer": 0,
+   "explain": "Tongkat membantu orang berjalan atau menopang tubuh."
+  }
+ ]
+}

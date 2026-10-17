@@ -4,7 +4,7 @@ Perpustakaan buku cerita bergambar. Backend PHP + SQLite, frontend React + TypeS
 Ilustrasi digambar sebagai **SVG** dari data adegan, jadi buku baru bisa dibuat lewat prompt.
 
 Isi awal:
-- Dongeng Kancil: *Kancil dan Buaya*, *Kancil Mencuri Timun*, *Kancil dan Gajah*
+- Dongeng Kancil: *Kancil dan Buaya*, *Kancil Mencuri Timun*, *Kancil dan Gajah*, *Kancil dan Harimau*
 - Fabel: *Kura-kura dan Kelinci*, *Semut dan Belalang*, *Singa dan Tikus*, *Kelinci dan Singa yang Sombong*, *Kura-kura dan Dua Bangau*, *Kancil dan Mangga yang Tinggi*, *Jeruk yang Dipandang Sebelah Mata*, *Semangka yang Sombong*, *Pesta Kejutan untuk Kelinci* (tokoh buah-buahan)
 - Adab Anak Muslim: *Rafi Belajar Bismillah*, *Salma dan Salam*, *Jujur Itu Indah*, *Berbagi Itu Indah* (tokoh anak: Rafi dan Salma)
 - Kisah Islami: *Pasukan Gajah dan Burung Ababil* (QS. Al-Fil), *Semut yang Waspada* (QS. An-Naml), *Hud-hud dan Negeri Saba* (QS. An-Naml), *Nabi Nuh dan Bahtera* (QS. Hud), *Nabi Yunus dan Ikan Paus* (QS. Al-Anbiya, Ash-Shaffat), *Ashabul Kahfi dan Anjingnya* (QS. Al-Kahfi), *Anjing yang Kehausan* (HR. Bukhari dan Muslim), *Nabi Saleh dan Unta Allah* (QS. Al-A'raf, Hud, Asy-Syu'ara), *Nabi Ibrahim dan Api* (QS. Al-An'am, Al-Anbiya; HR. Bukhari), *Nabi Musa dan Laut yang Terbelah* (QS. Asy-Syu'ara, Thaha, Yunus)
@@ -27,7 +27,7 @@ Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan tek
 
 ## Mengenal Sekitar
 
-Segmen belajar selain cerita (`#/sekitar`). Materi pertama: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
+Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur), **Benda Part 1: Benda-Benda di Sekitar Kita** (rumah, pagar, meja, vas, kue, sumur, tongkat, kurungan), dan **Cuaca Part 1: Mengenal Cuaca** (cerah, berawan, mendung, hujan, berangin, panas, dingin). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
 
 ## Interaktif
 
