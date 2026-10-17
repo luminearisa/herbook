@@ -21,6 +21,10 @@ npm start            # build frontend lalu jalankan di http://127.0.0.1:8000
 
 Mode pengembangan (hot reload): `npm run dev:api` dan `npm run dev:web` di dua terminal.
 
+## Membaca
+
+Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan teks cerita di bagian bawah. Kepekatan latar teks bisa diatur dengan slider "Teks" (tersimpan di browser). Panah kiri/kanan atau geser untuk berpindah halaman, `Esc` untuk keluar.
+
 ## Tambah buku dengan prompt
 
 Buka **+ Buku Baru**, tulis ide cerita. Dengan `ANTHROPIC_API_KEY` di environment, Claude

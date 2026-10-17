@@ -31,20 +31,29 @@ function Item({ item }: { item: SceneItem }) {
   );
 }
 
-export function Scene({ scene, className }: { scene: SceneData; className?: string }) {
+interface SceneProps {
+  scene: SceneData;
+  className?: string;
+  /** Tinggi tambahan di bawah kanvas (unit viewBox) agar tokoh tidak tertutup teks di layar penuh. */
+  extend?: number;
+  /** Nilai preserveAspectRatio; bawaan 'xMidYMid slice'. */
+  fit?: string;
+}
+
+export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice' }: SceneProps) {
   return (
     <svg
       className={className}
-      viewBox="0 0 800 500"
-      preserveAspectRatio="xMidYMid slice"
+      viewBox={`0 0 800 ${500 + extend}`}
+      preserveAspectRatio={fit}
       role="img"
       aria-label="Ilustrasi cerita"
     >
-      <Background bg={scene.bg} />
+      <Background bg={scene.bg} ext={extend} />
       {scene.items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
-      <Overlay bg={scene.bg} />
+      <Overlay bg={scene.bg} ext={extend} />
     </svg>
   );
 }

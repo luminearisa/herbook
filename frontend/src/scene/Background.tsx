@@ -79,11 +79,19 @@ function ForestSilhouette({ y, color }: { y: number; color: string }) {
   );
 }
 
-export function Background({ bg }: { bg: Bg }) {
+const GROUND: Record<Bg, string> = {
+  hutan: '#68b258', sungai: '#68b258', kebun: '#8fbf5a', desa: '#78b85e', malam: '#2a6a46',
+  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55',
+};
+
+/** `ext`: tambahan tinggi (unit viewBox) di bawah kanvas 800x500, dipakai mode layar penuh. */
+export function Background({ bg, ext = 0 }: { bg: Bg; ext?: number }) {
   const night = bg === 'malam';
+  const b = 500 + ext;
   return (
     <g>
       <Sky bg={bg} />
+      {ext > 0 && <rect y="480" width="800" height={ext + 20} fill={GROUND[bg]} />}
       {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun') && <Sun />}
       {bg === 'senja' && <Sun low />}
       {bg === 'hutan' && (
@@ -99,7 +107,7 @@ export function Background({ bg }: { bg: Bg }) {
           <rect y="314" width="800" height="70" fill="#f3dfb4" />
           <rect y="384" width="800" height="116" fill="#c98f55" />
           {Array.from({ length: 8 }, (_, i) => (
-            <path key={i} d={`M${i * 110 - 20} 384 L${i * 140 - 160} 500`} stroke="#a8713c" strokeWidth="3" />
+            <path key={i} d={`M${i * 110 - 20} 384 L${i * 140 - 160 + (30 * i - 140) * (ext / 116)} ${b}`} stroke="#a8713c" strokeWidth="3" />
           ))}
           <path d="M0 440 H800 M0 475 H800" stroke="#a8713c" strokeWidth="2" opacity=".7" />
           <rect x="560" y="70" width="170" height="150" rx="8" fill="#bfe4f5" stroke="#8a5a2b" strokeWidth="9" />
@@ -162,14 +170,14 @@ export function Background({ bg }: { bg: Bg }) {
           <ForestSilhouette y={290} color="#4f9e5a" />
           <Grass color="#68b258" from={300} />
           {/* sungai: tepi kiri < 170, tepi kanan > 630 */}
-          <path d="M150 300 L650 300 L700 500 L100 500z" fill="#3aa0d8" />
-          <path d="M170 300 L630 300 L670 500 L130 500z" fill="#4db8ec" />
+          <path d={`M150 300 L650 300 L${700 + ext * 0.25} ${b} L${100 - ext * 0.25} ${b}z`} fill="#3aa0d8" />
+          <path d={`M170 300 L630 300 L${670 + ext * 0.2} ${b} L${130 - ext * 0.2} ${b}z`} fill="#4db8ec" />
           <g className="ripples" stroke="#fff" strokeOpacity=".5" strokeWidth="3" fill="none" strokeLinecap="round">
             <path d="M230 330 q15 -8 30 0 t30 0" /><path d="M450 322 q15 -8 30 0 t30 0" />
             <path d="M300 450 q15 -8 30 0 t30 0" /><path d="M510 470 q15 -8 30 0 t30 0" />
             <path d="M200 400 q15 -8 30 0 t30 0" /><path d="M560 420 q15 -8 30 0 t30 0" />
           </g>
-          <path d="M150 300 L170 300 L130 500 L100 500z M630 300 L650 300 L700 500 L670 500z" fill="#c9b27a" opacity=".7" />
+          <path d={`M150 300 L170 300 L${130 - ext * 0.2} ${b} L${100 - ext * 0.25} ${b}z M630 300 L650 300 L${700 + ext * 0.25} ${b} L${670 + ext * 0.2} ${b}z`} fill="#c9b27a" opacity=".7" />
         </>
       )}
     </g>
@@ -177,7 +185,7 @@ export function Background({ bg }: { bg: Bg }) {
 }
 
 /** Lapisan di atas objek: cahaya malam/senja, bulan, bintang, kunang-kunang. */
-export function Overlay({ bg }: { bg: Bg }) {
+export function Overlay({ bg, ext = 0 }: { bg: Bg; ext?: number }) {
   if (bg === 'salju') {
     return (
       <g fill="#fff">
@@ -187,11 +195,11 @@ export function Overlay({ bg }: { bg: Bg }) {
       </g>
     );
   }
-  if (bg === 'senja') return <rect width="800" height="500" fill="#ff8a3d" opacity=".14" />;
+  if (bg === 'senja') return <rect width="800" height={500 + ext} fill="#ff8a3d" opacity=".14" />;
   if (bg !== 'malam') return null;
   return (
     <g>
-      <rect width="800" height="500" fill="#101e5c" opacity=".38" />
+      <rect width="800" height={500 + ext} fill="#101e5c" opacity=".38" />
       {STARS.map(([x, y, r], i) => (
         <circle key={i} className="twinkle" style={{ animationDelay: `${i * 0.3}s` }} cx={x} cy={y} r={r} fill="#fff7c2" />
       ))}

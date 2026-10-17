@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { go } from '../App';
 import { api } from '../api';
 import { Scene } from '../scene/Scene';
@@ -10,6 +10,16 @@ export function Reader({ slug }: { slug: string }) {
   const [index, setIndex] = useState(0);
   const [speaking, setSpeaking] = useState(false);
   const touchX = useRef<number | null>(null);
+  const root = useRef<HTMLElement>(null);
+  const [full, setFull] = useState(false);
+  const [portrait, setPortrait] = useState(() => window.innerHeight > window.innerWidth);
+  const [alpha, setAlpha] = useState(() => {
+    try {
+      return Number(localStorage.getItem('herbook-text-alpha')) || 78;
+    } catch {
+      return 78;
+    }
+  });
   const [note] = useState(() => {
     const n = sessionStorage.getItem('herbook-note');
     sessionStorage.removeItem('herbook-note');
@@ -22,6 +32,38 @@ export function Reader({ slug }: { slug: string }) {
   }, [slug]);
 
   const total = book ? book.pages.length + 1 : 0; // + halaman penutup
+
+  // Layar penuh: API browser bila ada, kalau tidak (mis. iPhone) cukup mode CSS.
+  const enterFull = useCallback(() => {
+    setFull(true);
+    root.current?.requestFullscreen?.().catch(() => {});
+  }, []);
+  const exitFull = useCallback(() => {
+    setFull(false);
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    const onFs = () => {
+      if (!document.fullscreenElement) setFull(false);
+    };
+    const onResize = () => setPortrait(window.innerHeight > window.innerWidth);
+    document.addEventListener('fullscreenchange', onFs);
+    window.addEventListener('resize', onResize);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFs);
+      window.removeEventListener('resize', onResize);
+      if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    };
+  }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('herbook-text-alpha', String(alpha));
+    } catch {
+      /* penyimpanan tidak tersedia, abaikan */
+    }
+  }, [alpha]);
   const move = useCallback(
     (d: number) => {
       window.speechSynthesis?.cancel();
@@ -35,10 +77,12 @@ export function Reader({ slug }: { slug: string }) {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight') move(1);
       if (e.key === 'ArrowLeft') move(-1);
+      if (e.key === 'f' || e.key === 'F') (full ? exitFull : enterFull)();
+      if (e.key === 'Escape' && full) exitFull();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [move]);
+  }, [move, full, enterFull, exitFull]);
 
   if (error) return <p className="error narrow section">{error}</p>;
   if (!book) return <p className="muted narrow section">Membuka buku…</p>;
@@ -70,7 +114,9 @@ export function Reader({ slug }: { slug: string }) {
 
   return (
     <section
-      className="reader"
+      ref={root}
+      className={'reader' + (full ? ' full' : '')}
+      style={{ '--text-alpha': alpha / 100 } as CSSProperties}
       onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
       onTouchEnd={(e) => {
         if (touchX.current === null) return;
@@ -82,13 +128,27 @@ export function Reader({ slug }: { slug: string }) {
       <div className="reader-head">
         <a href="#/" className="back">← Rak buku</a>
         <h1>{book.title}</h1>
-        <span className="muted">{isEnd ? 'Tamat' : `Halaman ${index + 1} dari ${book.pages.length}`}</span>
+        <span className="muted page-count">{isEnd ? 'Tamat' : `Halaman ${index + 1} dari ${book.pages.length}`}</span>
+        {full && (
+          <label className="alpha-ctl">
+            Teks
+            <input type="range" min={30} max={100} value={alpha} onChange={(e) => setAlpha(Number(e.target.value))} aria-label="Kepekatan latar teks" />
+          </label>
+        )}
+        <button className="btn small" onClick={full ? exitFull : enterFull} aria-pressed={full}>
+          {full ? '✕ Keluar' : '⛶ Layar penuh'}
+        </button>
       </div>
       {note && <p className="note">{note}</p>}
 
       <div className="spread" key={index}>
         <div className="art-frame">
-          <Scene scene={page ? page.scene : book.cover} className="art" />
+          <Scene
+            scene={page ? page.scene : book.cover}
+            className="art"
+            extend={full ? 110 : 0}
+            fit={full ? (portrait ? 'xMidYMid meet' : 'xMidYMax slice') : undefined}
+          />
         </div>
         <article className="story">
           {page ? (
