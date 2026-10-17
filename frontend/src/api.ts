@@ -41,6 +41,13 @@ export const api = {
       body: JSON.stringify({ identifier, password }),
     }),
   logout: () => request<{ ok: true }>('/api/auth/logout', { method: 'POST' }),
+  updateProfile: (input: { name: string; whatsapp?: string }) =>
+    request<{ user: User }>('/api/auth/profile', { method: 'POST', body: JSON.stringify(input) }),
+  changePassword: (current: string, password: string) =>
+    request<{ ok: true }>('/api/auth/password', {
+      method: 'POST',
+      body: JSON.stringify({ current, password }),
+    }),
 
   progress: () => request<{ items: ProgressItem[] }>('/api/progress'),
   saveProgress: (item: { kind: string; slug: string; page: number; total: number; completed: boolean }) =>

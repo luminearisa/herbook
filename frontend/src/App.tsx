@@ -5,6 +5,7 @@ import { Create } from './pages/Create';
 import { Explore } from './pages/Explore';
 import { Lesson } from './pages/Lesson';
 import { Masuk } from './pages/Masuk';
+import { Profil } from './pages/Profil';
 import { AuthButton } from './AuthButton';
 import { init as initAuth } from './auth';
 import { InstallBanner, InstallButton } from './InstallPrompt';
@@ -59,7 +60,7 @@ export function App() {
         </nav>
       </header>
       <main>
-        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : route === '/masuk' ? <Masuk /> : <Home />}
+        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : route === '/masuk' ? <Masuk /> : route === '/profil' ? <Profil /> : <Home />}
       </main>
       <footer className="footer">Her Book · cerita bergambar untuk dibaca bersama</footer>
       <InstallBanner />

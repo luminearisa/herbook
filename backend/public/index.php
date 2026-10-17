@@ -68,6 +68,21 @@ function handleApi(string $method, string $route): void
             json(['ok' => true]);
         } elseif ($route === '/auth/me' && $method === 'GET') {
             json(['user' => Auth::user($pdo)]);
+        } elseif ($route === '/auth/profile' && $method === 'POST') {
+            $user = Auth::user($pdo);
+            if (!$user) {
+                json(['error' => 'Belum masuk.'], 401);
+                return;
+            }
+            json(['user' => Auth::updateProfile($pdo, $user['id'], body())]);
+        } elseif ($route === '/auth/password' && $method === 'POST') {
+            $user = Auth::user($pdo);
+            if (!$user) {
+                json(['error' => 'Belum masuk.'], 401);
+                return;
+            }
+            Auth::changePassword($pdo, $user['id'], body());
+            json(['ok' => true]);
         } elseif ($route === '/progress' && $method === 'GET') {
             $user = Auth::user($pdo);
             json(['items' => $user ? Progress::all($pdo, $user['id']) : []]);

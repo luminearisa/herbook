@@ -78,3 +78,15 @@ export async function logout(): Promise<void> {
   progress.setSyncEnabled(false);
   set(null);
 }
+
+/** Perbarui nama & nomor WA pengguna yang sedang masuk. */
+export async function updateProfile(input: { name: string; whatsapp?: string }): Promise<User> {
+  const { user } = await api.updateProfile(input);
+  set(user);
+  return user;
+}
+
+/** Ganti kata sandi (wajib menyertakan kata sandi saat ini). */
+export async function changePassword(current: string, password: string): Promise<void> {
+  await api.changePassword(current, password);
+}

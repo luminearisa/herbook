@@ -40,6 +40,10 @@ Kalau ingin riwayat ikut tersimpan di akun (bisa dibuka dari perangkat lain), bu
 atau masuk, riwayat yang sudah ada di perangkat itu otomatis digabungkan ke akun. Sesi login memakai
 cookie `HttpOnly` (aman dari JavaScript), berlaku 30 hari, dan ditutup dengan tombol **Keluar**.
 
+**Login sepenuhnya opsional** — tanpa akun semua fitur (membaca, materi, kuis, membuat buku) tetap
+bisa dipakai; yang berbeda hanya tempat menyimpan riwayat. Halaman `#/profil` (tombol 👤 di bar atas)
+dipakai untuk mengubah nama, nomor WA, dan kata sandi.
+
 ## Interaktif
 
 Di halaman baca, gambar bisa disentuh: pohon bergoyang dan menjatuhkan daun (atau buah), kancil melompat, buaya membuka mulut dan menggeram, gajah berteriak, awan meneteskan hujan, bunga berkilau, orang dan tokoh buah menyapa dengan suara, dan seterusnya. Daftar reaksi tiap jenis ada di `frontend/src/scene/interactions.ts`. Menyentuh bagian kosong juga ada efeknya: riak air di sungai, kilau di langit, dan kepulan debu di tanah. Di adegan malam, bulan bisa disentuh. Ka'bah sengaja tidak dibuat interaktif.
@@ -58,7 +62,7 @@ ANTHROPIC_API_KEY=sk-... npm run dev:api
 
 ## Struktur
 
-- `backend/public/index.php` – API (`GET/POST /api/books`, `GET/DELETE /api/books/{slug}`, `POST /api/books/generate`, `GET/POST /api/lessons`, `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`, `GET/POST /api/progress`, `POST /api/progress/merge`) dan penyaji frontend
+- `backend/public/index.php` – API (`GET/POST /api/books`, `GET/DELETE /api/books/{slug}`, `POST /api/books/generate`, `GET/POST /api/lessons`, `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`, `POST /api/auth/profile`, `POST /api/auth/password`, `GET/POST /api/progress`, `POST /api/progress/merge`) dan penyaji frontend
 - `backend/src/Auth.php` – daftar/masuk/keluar pengguna, sesi cookie `HttpOnly` (tabel `users`, `sessions`)
 - `backend/src/Progress.php` – riwayat baca per pengguna (tabel `progress`); tamu memakai `localStorage` di `frontend/src/progress.ts`
 - `backend/seed/*.json` – buku bawaan (otomatis dimasukkan ke SQLite di `backend/data/`)

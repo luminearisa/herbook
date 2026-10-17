@@ -102,6 +102,55 @@ final class Auth
         ];
     }
 
+    /** @param array<string,mixed> $in @return array<string,mixed> */
+    public static function updateProfile(PDO $pdo, int $userId, array $in): array
+    {
+        $name = trim((string) ($in['name'] ?? ''));
+        $whatsapp = trim((string) ($in['whatsapp'] ?? ''));
+        if (mb_strlen($name) < 2) {
+            throw new InvalidArgumentException('Nama minimal 2 huruf.');
+        }
+        if ($whatsapp !== '' && !preg_match('/^[0-9+][0-9+\- ]{6,19}$/', $whatsapp)) {
+            throw new InvalidArgumentException('Nomor WhatsApp tidak valid.');
+        }
+        $pdo->prepare('UPDATE users SET name = ?, whatsapp = ? WHERE id = ?')
+            ->execute([mb_substr($name, 0, 80), mb_substr($whatsapp, 0, 20), $userId]);
+        return self::find($pdo, $userId);
+    }
+
+    /** @param array<string,mixed> $in */
+    public static function changePassword(PDO $pdo, int $userId, array $in): void
+    {
+        $current = (string) ($in['current'] ?? '');
+        $password = (string) ($in['password'] ?? '');
+        if (strlen($password) < 6) {
+            throw new InvalidArgumentException('Kata sandi baru minimal 6 karakter.');
+        }
+        $st = $pdo->prepare('SELECT password_hash FROM users WHERE id = ?');
+        $st->execute([$userId]);
+        $hash = $st->fetchColumn();
+        if (!is_string($hash) || !password_verify($current, $hash)) {
+            throw new InvalidArgumentException('Kata sandi saat ini salah.');
+        }
+        $pdo->prepare('UPDATE users SET password_hash = ? WHERE id = ?')
+            ->execute([password_hash($password, PASSWORD_DEFAULT), $userId]);
+    }
+
+    /** @return array<string,mixed> */
+    private static function find(PDO $pdo, int $userId): array
+    {
+        $st = $pdo->prepare('SELECT id, name, email, username, whatsapp FROM users WHERE id = ?');
+        $st->execute([$userId]);
+        $row = $st->fetch();
+        return [
+            'id' => (int) $row['id'],
+            'name' => (string) $row['name'],
+            'email' => (string) $row['email'],
+            'username' => (string) $row['username'],
+            'whatsapp' => (string) $row['whatsapp'],
+        ];
+    }
+
     /** @return array<string,mixed> */
     private static function startSession(PDO $pdo, int $userId): array
     {

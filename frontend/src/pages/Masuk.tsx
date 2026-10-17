@@ -24,7 +24,8 @@ export function Masuk() {
           dan bisa dibuka dari perangkat lain.
         </p>
         <div className="hero-actions">
-          <a className="btn primary" href="#/">Ke rak buku</a>
+          <a className="btn primary" href="#/profil">Buka profil</a>
+          <a className="btn" href="#/">Ke rak buku</a>
           <button
             className="btn"
             onClick={() => {

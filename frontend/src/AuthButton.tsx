@@ -9,7 +9,10 @@ export function AuthButton() {
     const first = user.name.split(' ')[0];
     return (
       <span className="auth-box">
-        <span className="auth-hello" title={user.username}>👋 {first}</span>
+        <a className="auth-hello" href="#/profil" title={`@${user.username}`}>
+          <span aria-hidden>👤</span>
+          <span className="auth-name">{first}</span>
+        </a>
         <button
           className="btn small"
           onClick={() => {
