@@ -748,3 +748,109 @@ function Person({ kind, v = 0, pose = 'berdiri', mood = 'senang' }: { kind: 'ana
 
 export const Anak = (p: CharProps) => <Person kind="anak" {...p} />;
 export const Dewasa = (p: CharProps) => <Person kind="dewasa" {...p} />;
+
+/* ---------------- Tokoh buah ---------------- */
+
+function FruitBody({ v }: { v: number }) {
+  switch (v) {
+    case 1:
+      return (
+        <>
+          <circle cx="0" cy="-62" r="38" fill="#fb8c00" />
+          {[[-22, -84], [18, -88], [28, -60], [-30, -50], [8, -36], [-8, -96], [24, -40]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r="1.6" fill="#e07600" />)}
+          <ellipse cx="-14" cy="-84" rx="8" ry="4" fill="#fff" opacity=".25" transform="rotate(-30 -14 -84)" />
+          <path d="M0 -100 Q10 -112 22 -106 Q12 -98 0 -100z" fill="#3f9a4d" /><circle cx="0" cy="-100" r="3" fill="#6a421e" />
+        </>
+      );
+    case 2:
+      return (
+        <>
+          <path d="M-20 -112 Q-46 -62 -16 -24 Q-2 -14 14 -24 Q-6 -60 6 -112z" fill="#ffd93b" stroke="#d9a912" strokeWidth="2" />
+          <path d="M-20 -112 h26 l-2 -9 h-22z" fill="#8a6a2b" />
+          <path d="M-16 -26 Q-2 -16 12 -26 L8 -22 Q-2 -14 -13 -22z" fill="#5a4220" />
+          <path d="M-26 -70 Q-34 -50 -22 -34" stroke="#fff" strokeOpacity=".5" strokeWidth="4" fill="none" strokeLinecap="round" />
+        </>
+      );
+    case 3:
+      return (
+        <>
+          <ellipse cx="0" cy="-62" rx="48" ry="42" fill="#2f8a3e" />
+          <ellipse cx="0" cy="-62" rx="42" ry="36" fill="#e9f5c9" />
+          <ellipse cx="0" cy="-62" rx="38" ry="32" fill="#ef4b5b" />
+          {[[-26, -78], [24, -80], [-30, -50], [28, -48], [0, -88], [0, -36]].map(([x, y], i) => (
+            <ellipse key={i} cx={x} cy={y} rx="2.4" ry="3.6" fill="#2b1a0f" transform={`rotate(${i * 25} ${x} ${y})`} />
+          ))}
+        </>
+      );
+    case 4:
+      return (
+        <>
+          <path d="M0 -22 C-30 -34 -42 -66 -34 -84 Q-18 -98 0 -90 Q18 -98 34 -84 C42 -66 30 -34 0 -22Z" fill="#e8344e" />
+          {[[-22, -72], [22, -72], [-14, -50], [14, -50], [0, -34], [-28, -56], [28, -56]].map(([x, y], i) => <ellipse key={i} cx={x} cy={y} rx="1.8" ry="2.6" fill="#ffe27a" />)}
+          <path d="M-22 -94 L-8 -86 L0 -102 L8 -86 L22 -94 L12 -80 H-12z" fill="#3f9a4d" />
+        </>
+      );
+    case 5:
+      return (
+        <>
+          <path d="M0 -100 Q4 -114 16 -116" stroke="#6a421e" strokeWidth="4" fill="none" strokeLinecap="round" />
+          <path d="M6 -106 Q22 -112 28 -102 Q16 -96 6 -106z" fill="#3f9a4d" />
+          {[[-22, -84], [22, -84], [-30, -58], [30, -58], [-14, -34], [14, -34], [0, -92]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r="17" fill={i % 2 ? '#6b3fa0' : '#7d4db5'} />)}
+          <circle cx="0" cy="-62" r="26" fill="#7d4db5" />
+          <ellipse cx="-14" cy="-80" rx="6" ry="3" fill="#fff" opacity=".3" />
+        </>
+      );
+    default:
+      return (
+        <>
+          <path d="M0 -96 C-12 -104 -42 -100 -42 -64 C-42 -34 -24 -22 -8 -26 C-3 -27 3 -27 8 -26 C24 -22 42 -34 42 -64 C42 -100 12 -104 0 -96Z" fill="#e53935" />
+          <ellipse cx="-24" cy="-80" rx="7" ry="11" fill="#fff" opacity=".28" transform="rotate(25 -24 -80)" />
+          <path d="M0 -96 Q2 -110 8 -114" stroke="#6a421e" strokeWidth="4" fill="none" strokeLinecap="round" />
+          <path d="M6 -106 Q22 -116 30 -104 Q16 -96 6 -106z" fill="#3f9a4d" />
+        </>
+      );
+  }
+}
+
+export function Buah({ v = 0, pose = 'berdiri', mood = 'senang' }: CharProps) {
+  const run = pose === 'lari';
+  const jump = pose === 'lompat';
+  const faceY = v === 2 ? -66 : v === 4 ? -62 : -60;
+  const reach = v === 2 ? 20 : v === 5 ? 34 : v === 4 ? 36 : 42;
+  const leg = (x: number, r: number) => (
+    <g transform={`translate(${x} -26) rotate(${r})`}>
+      <path d="M0 0 L0 22" stroke="#2b1a0f" strokeWidth="4" strokeLinecap="round" />
+      <ellipse cx="3" cy="22" rx="8" ry="4" fill="#5a3a1c" />
+    </g>
+  );
+  const arm = (side: 1 | -1, up: boolean) => (
+    <path
+      d={up ? `M${side * reach} -62 Q${side * (reach + 20)} -78 ${side * (reach + 14)} -100` : `M${side * reach} -62 Q${side * (reach + 16)} -50 ${side * (reach + 10)} -34`}
+      stroke="#2b1a0f" strokeWidth="4" fill="none" strokeLinecap="round"
+    />
+  );
+  return (
+    <g transform={jump ? 'translate(0 -30)' : run ? 'translate(0 -4) rotate(-8 0 -50)' : undefined}>
+      {leg(-12, jump ? -30 : run ? -35 : 0)}
+      {leg(12, jump ? 30 : run ? 35 : 0)}
+      {arm(-1, jump || (run && true))}
+      {arm(1, jump)}
+      <FruitBody v={v} />
+      <g transform={`translate(0 ${faceY + 60})`}><HumanFace mood={mood} y={-60} /></g>
+    </g>
+  );
+}
+
+export function Lubang({ v = 0 }: CharProps) {
+  return v === 1 ? (
+    <g>
+      <path d="M-62 -2 Q0 22 62 -2 Q50 22 0 26 Q-50 22 -62 -2z" fill="#8a5a2b" />
+      <path d="M-62 -2 Q0 22 62 -2" stroke="#a8713c" strokeWidth="4" fill="none" />
+    </g>
+  ) : (
+    <g>
+      <ellipse cx="0" cy="0" rx="64" ry="20" fill="#8a5a2b" />
+      <ellipse cx="0" cy="2" rx="54" ry="15" fill="#3a2412" />
+    </g>
+  );
+}

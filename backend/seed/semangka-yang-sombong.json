@@ -1,0 +1,339 @@
+{
+ "title": "Semangka yang Sombong",
+ "summary": "Semangka merasa dirinya yang terbesar dan paling hebat. Tapi suatu hari ia membutuhkan bantuan kawan-kawan kecilnya.",
+ "moral": "Besar badan tidak menjadikan seseorang lebih mulia. Rendah hatilah, karena kita semua saling membutuhkan.",
+ "cover": {
+  "bg": "kebun",
+  "items": [
+   {
+    "t": "buah",
+    "x": 300,
+    "y": 466,
+    "s": 2.0,
+    "v": 3,
+    "mood": "licik"
+   },
+   {
+    "t": "buah",
+    "x": 580,
+    "y": 466,
+    "s": 1.2,
+    "v": 4,
+    "mood": "sedih"
+   },
+   {
+    "t": "buah",
+    "x": 690,
+    "y": 466,
+    "s": 1.2,
+    "v": 5,
+    "mood": "sedih"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di ujung kebun hiduplah Semangka yang bertubuh besar dan bundar. \"Akulah buah terbesar dan termanis di sini!\" katanya setiap hari sambil membusungkan dada.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 600,
+      "y": 370,
+      "s": 1.0
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 466,
+      "s": 2.0,
+      "v": 3,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 560,
+      "y": 466,
+      "s": 1.2,
+      "v": 4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 680,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Kalian kecil sekali,\" ejek Semangka kepada Stroberi dan Anggur. \"Tak ada gunanya kalian. Hanya aku yang bisa membuat orang kenyang!\" Stroberi dan Anggur menunduk sedih, tetapi mereka tetap bersikap sopan.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 466,
+      "s": 2.0,
+      "v": 3,
+      "mood": "licik"
+     },
+     {
+      "t": "buah",
+      "x": 560,
+      "y": 466,
+      "s": 1.2,
+      "v": 4,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 690,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Suatu pagi Semangka menggelinding di jalan sambil bernyanyi. \"Lihat betapa cepatnya aku!\" Karena terlalu asyik, ia tak melihat sebuah lubang besar di depannya.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "lubang",
+      "x": 520,
+      "y": 470,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.8,
+      "v": 3,
+      "mood": "senang",
+      "pose": "lari"
+     },
+     {
+      "t": "kupu",
+      "x": 420,
+      "y": 300
+     }
+    ]
+   }
+  },
+  {
+   "text": "Bluk! Semangka jatuh ke dalam lubang. Tubuhnya yang besar dan bulat terlalu licin untuk memanjat naik. \"Tolong! Tolong aku!\" serunya panik. Tetapi tak ada yang mendengar.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "lubang",
+      "x": 430,
+      "y": 470,
+      "s": 1.6,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 430,
+      "y": 488,
+      "s": 1.7,
+      "v": 3,
+      "mood": "takut"
+     },
+     {
+      "t": "lubang",
+      "x": 430,
+      "y": 470,
+      "s": 1.6,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Stroberi dan Anggur mendengar teriakan itu. Walau pernah diejek, mereka tidak berpikir dua kali. \"Ayo kita tolong Semangka!\" Mereka berlari secepat mungkin ke tepi lubang.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "lubang",
+      "x": 560,
+      "y": 470,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 560,
+      "y": 488,
+      "s": 1.7,
+      "v": 3,
+      "mood": "sedih"
+     },
+     {
+      "t": "lubang",
+      "x": 560,
+      "y": 470,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.2,
+      "v": 4,
+      "mood": "senang",
+      "pose": "lari"
+     },
+     {
+      "t": "buah",
+      "x": 130,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tubuh mereka terlalu kecil untuk menarik Semangka. Maka mereka memanggil Gajah yang sedang lewat. Dengan belalainya yang kuat, Gajah mengangkat Semangka keluar dari lubang dengan hati-hati.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "lubang",
+      "x": 600,
+      "y": 470,
+      "s": 1.4,
+      "v": 0
+     },
+     {
+      "t": "gajah",
+      "x": 330,
+      "y": 456,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 130,
+      "y": 466,
+      "s": 1.2,
+      "v": 4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 220,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 600,
+      "y": 486,
+      "s": 1.5,
+      "v": 3,
+      "mood": "kaget"
+     },
+     {
+      "t": "lubang",
+      "x": 600,
+      "y": 470,
+      "s": 1.4,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Terima kasih, Stroberi dan Anggur, juga Gajah,\" kata Semangka malu. \"Maafkan aku yang sombong. Ternyata aku pun butuh bantuan kalian.\" Mereka tertawa gembira, dan sejak itu Semangka menjadi buah yang rendah hati. Tamat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 650,
+      "y": 370,
+      "s": 1.0
+     },
+     {
+      "t": "buah",
+      "x": 430,
+      "y": 466,
+      "s": 1.2,
+      "v": 4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 530,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.8,
+      "v": 3,
+      "mood": "senang"
+     },
+     {
+      "t": "kupu",
+      "x": 350,
+      "y": 290
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "semangka-yang-sombong",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

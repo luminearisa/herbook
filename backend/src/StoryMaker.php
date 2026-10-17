@@ -82,7 +82,7 @@ TXT . match ($category) {
         return <<<TXT
 
 
-KATEGORI FABEL: cerita hewan yang berperilaku seperti manusia dan selalu berakhir dengan pesan moral yang jelas (isi bagian moral). Boleh memakai fabel klasik (mis. kura-kura dan kelinci) atau karangan baru. Tokoh utama tidak harus kancil. Tambahan TIPE: kelinci, belalang, singa, tikus, bendera (garis finis), jaring (digambar setelah tokoh yang terperangkap), sumur (v=1 menampilkan bayangan singa di air), tongkat (batang kayu horizontal, titik y = tengahnya), semut, kurakura; BG tambahan: salju; POSE tambahan: tidur (kelinci/singa); pohon dan semak v=3 berarti bersalju.
+KATEGORI FABEL: cerita hewan yang berperilaku seperti manusia dan selalu berakhir dengan pesan moral yang jelas (isi bagian moral). Boleh memakai fabel klasik (mis. kura-kura dan kelinci) atau karangan baru. Tokoh utama tidak harus kancil; boleh tokoh buah-buahan atau hewan lain. Tambahan TIPE: kelinci, belalang, singa, tikus, bendera (garis finis), jaring (digambar setelah tokoh yang terperangkap), sumur (v=1 menampilkan bayangan singa di air), tongkat (batang kayu horizontal, titik y = tengahnya), buah (tokoh buah berwajah: v=0 apel, 1 jeruk, 2 pisang, 3 semangka, 4 stroberi, 5 anggur; menghadap depan, pose berdiri/lari/lompat; jangan menceritakan buah dimakan), lubang (v=0 lubang di tanah; v=1 bibir lubang yang digambar setelah tokoh agar tokoh tampak di dalam lubang), semut, kurakura; BG tambahan: salju; POSE tambahan: tidur (kelinci/singa); pohon dan semak v=3 berarti bersalju.
 TXT;
     }
 

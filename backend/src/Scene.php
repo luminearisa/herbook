@@ -13,7 +13,7 @@ final class Scene
         'kancil', 'buaya', 'harimau', 'gajah', 'petani', 'kurakura', 'burung', 'kupu',
         'pohon', 'semak', 'batu', 'bunga', 'awan', 'timun', 'orangorangan',
         'rumah', 'kurungan', 'pagar', 'kabah', 'semut', 'hudhud', 'ababil', 'kurma',
-        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring', 'anak', 'dewasa', 'meja', 'vas', 'kue', 'sumur', 'tongkat',
+        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring', 'anak', 'dewasa', 'meja', 'vas', 'kue', 'sumur', 'tongkat', 'buah', 'lubang',
     ];
     public const MOODS = ['senang', 'takut', 'licik', 'sedih', 'marah', 'kaget', 'pingsan'];
     public const POSES = ['berdiri', 'lari', 'lompat', 'rebah', 'renang', 'tidur', 'duduk', 'salam', 'doa'];
@@ -46,7 +46,7 @@ final class Scene
                 $item['mood'] = $raw['mood'];
             }
             if (isset($raw['v'])) {
-                $item['v'] = (int) self::num($raw['v'], 0, 3);
+                $item['v'] = (int) self::num($raw['v'], 0, 7);
             }
             $items[] = $item;
         }

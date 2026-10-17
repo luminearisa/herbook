@@ -1,0 +1,351 @@
+{
+ "title": "Jeruk yang Dipandang Sebelah Mata",
+ "summary": "Apel yang berkulit mengilap mengejek kulit Jeruk yang kasar. Tapi siapa yang menolongnya saat ia terjatuh?",
+ "moral": "Jangan menilai seseorang dari penampilannya. Hati yang baik dan kemauan menolong jauh lebih berharga.",
+ "cover": {
+  "bg": "kebun",
+  "items": [
+   {
+    "t": "pagar",
+    "x": 420,
+    "y": 370,
+    "s": 1.2
+   },
+   {
+    "t": "buah",
+    "x": 250,
+    "y": 466,
+    "s": 1.5,
+    "v": 0,
+    "mood": "licik"
+   },
+   {
+    "t": "buah",
+    "x": 560,
+    "y": 466,
+    "s": 1.5,
+    "v": 1,
+    "mood": "senang"
+   },
+   {
+    "t": "buah",
+    "x": 130,
+    "y": 466,
+    "s": 1.5,
+    "v": 2,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di sebuah kebun yang cerah, Apel, Pisang, dan Jeruk tinggal bersebelahan. Setiap pagi mereka berjemur dan mengobrol. Apel selalu bangga dengan kulitnya yang merah dan mengilap.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 370,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 120,
+      "y": 482
+     },
+     {
+      "t": "buah",
+      "x": 150,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 350,
+      "y": 466,
+      "s": 1.5,
+      "v": 0,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 570,
+      "y": 466,
+      "s": 1.5,
+      "v": 1,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Lihat kulitku, halus dan berkilau!\" kata Apel. \"Kulit Jeruk kasar dan berbintik-bintik. Jelek sekali!\" Pisang ikut tertawa kecil. Jeruk menunduk dan tidak berkata apa-apa.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 370,
+      "s": 1.2
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.5,
+      "v": 0,
+      "mood": "licik"
+     },
+     {
+      "t": "buah",
+      "x": 440,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "licik"
+     },
+     {
+      "t": "buah",
+      "x": 620,
+      "y": 466,
+      "s": 1.5,
+      "v": 1,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Jeruk menjauh dan duduk sendirian di bawah pohon. \"Mungkin benar, aku tidak secantik Apel,\" bisiknya sedih. Tetapi ia tetap tidak marah, dan tetap tersenyum kepada siapa pun yang lewat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 130,
+      "y": 400,
+      "s": 1.4
+     },
+     {
+      "t": "batu",
+      "x": 620,
+      "y": 462,
+      "s": 1.0
+     },
+     {
+      "t": "buah",
+      "x": 400,
+      "y": 466,
+      "s": 1.5,
+      "v": 1,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Suatu hari Apel berjalan di dekat sebuah lubang sambil memamerkan kulitnya kepada burung-burung. \"Lihatlah aku! Siapa yang secantik aku?\" Karena sibuk berlagak, ia tidak melihat jalan di depannya.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "lubang",
+      "x": 470,
+      "y": 466,
+      "s": 1.2,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 300,
+      "y": 160,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 466,
+      "s": 1.5,
+      "v": 0,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 150,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Bluk! Apel terpeleset dan jatuh ke dalam lubang yang dalam. \"Tolong! Aku tidak bisa naik!\" teriaknya. Kulitnya terlalu licin untuk memanjat dinding tanah itu.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pagar",
+      "x": 650,
+      "y": 370,
+      "s": 1.0
+     },
+     {
+      "t": "lubang",
+      "x": 420,
+      "y": 468,
+      "s": 1.3,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 420,
+      "y": 484,
+      "s": 1.5,
+      "v": 0,
+      "mood": "takut"
+     },
+     {
+      "t": "lubang",
+      "x": 420,
+      "y": 468,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "buah",
+      "x": 170,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Pisang ingin menolong, tetapi tangannya licin dan tidak bisa berpegangan. Jeruk yang mendengar teriakan itu segera berlari. Ia mengulurkan tangannya yang kasar, dan genggamannya kuat sehingga tidak tergelincir.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "lubang",
+      "x": 430,
+      "y": 468,
+      "s": 1.3,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 430,
+      "y": 484,
+      "s": 1.5,
+      "v": 0,
+      "mood": "kaget"
+     },
+     {
+      "t": "lubang",
+      "x": 430,
+      "y": 468,
+      "s": 1.3,
+      "v": 1
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.5,
+      "v": 1,
+      "mood": "senang",
+      "pose": "lari"
+     },
+     {
+      "t": "buah",
+      "x": 130,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dengan tarikan Jeruk, Apel pun berhasil keluar. \"Maafkan aku, Jeruk,\" kata Apel malu. \"Kulitmu yang kasar justru menyelamatkanku.\" Jeruk tersenyum, \"Tidak apa-apa, kita kan teman.\" Sejak itu mereka tidak pernah saling mengejek. Tamat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 370,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 120,
+      "y": 482
+     },
+     {
+      "t": "kupu",
+      "x": 330,
+      "y": 300
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 466,
+      "s": 1.5,
+      "v": 0,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 470,
+      "y": 466,
+      "s": 1.5,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 640,
+      "y": 466,
+      "s": 1.5,
+      "v": 2,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "jeruk-yang-dipandang-sebelah-mata",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

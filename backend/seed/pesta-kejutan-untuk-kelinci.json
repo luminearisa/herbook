@@ -1,0 +1,472 @@
+{
+ "title": "Pesta Kejutan untuk Kelinci",
+ "summary": "Para buah ingin membuat pesta kejutan untuk Kelinci. Tapi mereka sibuk membanggakan diri, siapa yang akan bekerja?",
+ "moral": "Setiap orang punya kelebihan masing-masing. Dengan bekerja sama, hal besar bisa terwujud.",
+ "cover": {
+  "bg": "kebun",
+  "items": [
+   {
+    "t": "bendera",
+    "x": 150,
+    "y": 430,
+    "s": 1.0
+   },
+   {
+    "t": "kelinci",
+    "x": 300,
+    "y": 460,
+    "s": 1.3,
+    "mood": "kaget"
+   },
+   {
+    "t": "buah",
+    "x": 470,
+    "y": 466,
+    "s": 1.3,
+    "v": 0,
+    "mood": "senang"
+   },
+   {
+    "t": "buah",
+    "x": 570,
+    "y": 466,
+    "s": 1.3,
+    "v": 1,
+    "mood": "senang"
+   },
+   {
+    "t": "buah",
+    "x": 690,
+    "y": 466,
+    "s": 1.4,
+    "v": 3,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Hari ini hari ulang tahun Kelinci! Para buah di kebun ingin membuat pesta kejutan untuknya. \"Kita harus membuat pesta yang meriah,\" kata Apel bersemangat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pagar",
+      "x": 430,
+      "y": 370,
+      "s": 1.2
+     },
+     {
+      "t": "buah",
+      "x": 130,
+      "y": 466,
+      "s": 1.3,
+      "v": 0,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.3,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 380,
+      "y": 466,
+      "s": 1.3,
+      "v": 2,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 500,
+      "y": 466,
+      "s": 1.3,
+      "v": 4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 600,
+      "y": 466,
+      "s": 1.3,
+      "v": 5,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 710,
+      "y": 466,
+      "s": 1.4,
+      "v": 3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Namun mereka malah berdebat. \"Aku yang terbesar, akulah yang harus memimpin!\" kata Semangka. \"Aku paling manis!\" bantah Stroberi. \"Aku paling berkilau!\" sahut Apel. Tak ada yang mau bekerja.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "buah",
+      "x": 130,
+      "y": 466,
+      "s": 1.3,
+      "v": 0,
+      "mood": "licik"
+     },
+     {
+      "t": "buah",
+      "x": 260,
+      "y": 466,
+      "s": 1.3,
+      "v": 1,
+      "mood": "marah"
+     },
+     {
+      "t": "buah",
+      "x": 380,
+      "y": 466,
+      "s": 1.3,
+      "v": 2,
+      "mood": "marah"
+     },
+     {
+      "t": "buah",
+      "x": 500,
+      "y": 466,
+      "s": 1.3,
+      "v": 4,
+      "mood": "marah"
+     },
+     {
+      "t": "buah",
+      "x": 600,
+      "y": 466,
+      "s": 1.3,
+      "v": 5,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 710,
+      "y": 466,
+      "s": 1.4,
+      "v": 3,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Seekor burung bijak yang hinggap di pohon tersenyum melihat mereka. \"Wahai buah-buahan, setiap kalian punya kelebihan. Kalau digabungkan, pesta ini akan menjadi indah. Coba bagi tugasnya!\" Mereka pun terdiam dan berpikir.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 400,
+      "s": 1.5
+     },
+     {
+      "t": "burung",
+      "x": 170,
+      "y": 120,
+      "s": 1.5,
+      "v": 2
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 466,
+      "s": 1.3,
+      "v": 0,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 400,
+      "y": 466,
+      "s": 1.3,
+      "v": 1,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 500,
+      "y": 466,
+      "s": 1.3,
+      "v": 2,
+      "mood": "sedih"
+     },
+     {
+      "t": "buah",
+      "x": 640,
+      "y": 466,
+      "s": 1.4,
+      "v": 3,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Aku besar dan kuat, biar aku jadi panggung,\" kata Semangka. \"Aku pandai menyanyi!\" kata Jeruk. \"Aku jago menari!\" kata Pisang. \"Aku kecil, jadi aku bisa memasang hiasan di tempat tinggi,\" kata Anggur. Semua setuju sambil tertawa.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "bendera",
+      "x": 100,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "buah",
+      "x": 400,
+      "y": 466,
+      "s": 1.5,
+      "v": 3,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 250,
+      "y": 466,
+      "s": 1.3,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 540,
+      "y": 466,
+      "s": 1.3,
+      "v": 2,
+      "mood": "senang",
+      "pose": "lompat"
+     },
+     {
+      "t": "buah",
+      "x": 670,
+      "y": 466,
+      "s": 1.2,
+      "v": 5,
+      "mood": "senang",
+      "pose": "lompat"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Mereka bekerja riang gembira. Stroberi menata kue di meja, Apel menggantung bendera, dan semuanya saling membantu. Sebentar saja kebun itu berubah menjadi tempat pesta yang meriah.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "bendera",
+      "x": 120,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "bendera",
+      "x": 680,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.3,
+      "v": 0
+     },
+     {
+      "t": "buah",
+      "x": 240,
+      "y": 466,
+      "s": 1.3,
+      "v": 4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 570,
+      "y": 466,
+      "s": 1.3,
+      "v": 0,
+      "mood": "senang",
+      "pose": "lompat"
+     },
+     {
+      "t": "kue",
+      "x": 400,
+      "y": 404,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kelinci pulang dan terkejut melihat kebun yang dihias. \"Selamat ulang tahun, Kelinci!\" seru semua buah serempak. Kelinci terharu dan melompat-lompat gembira. \"Ini pesta terbaik yang pernah kualami!\"",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "bendera",
+      "x": 100,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "bendera",
+      "x": 700,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "meja",
+      "x": 500,
+      "y": 470,
+      "s": 1.2,
+      "v": 0
+     },
+     {
+      "t": "kelinci",
+      "x": 200,
+      "y": 460,
+      "s": 1.4,
+      "mood": "kaget"
+     },
+     {
+      "t": "buah",
+      "x": 380,
+      "y": 466,
+      "s": 1.2,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 640,
+      "y": 466,
+      "s": 1.4,
+      "v": 3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Hari itu semua buah belajar bahwa tidak perlu saling membanggakan diri. Setiap buah punya peran, dan pesta terbaik lahir dari kerja sama. Kelinci pun berterima kasih kepada teman-temannya. Tamat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "bendera",
+      "x": 110,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "bendera",
+      "x": 690,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "kupu",
+      "x": 350,
+      "y": 290
+     },
+     {
+      "t": "kelinci",
+      "x": 300,
+      "y": 460,
+      "s": 1.4,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 430,
+      "y": 466,
+      "s": 1.3,
+      "v": 0,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 530,
+      "y": 466,
+      "s": 1.3,
+      "v": 1,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 620,
+      "y": 466,
+      "s": 1.3,
+      "v": 5,
+      "mood": "senang"
+     },
+     {
+      "t": "buah",
+      "x": 710,
+      "y": 466,
+      "s": 1.3,
+      "v": 4,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "pesta-kejutan-untuk-kelinci",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}
