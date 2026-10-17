@@ -984,3 +984,17 @@ export function Unta({ pose = 'berdiri', mood = 'senang' }: CharProps) {
     </g>
   );
 }
+
+export function Ikan({ v = 0 }: CharProps) {
+  const col = ['#ff9a3d', '#4aa3df', '#ffd23f', '#e86a8a'][v % 4];
+  return (
+    <g className="fishswim">
+      <path d="M-20 0 L-40 -12 L-40 12z" fill={col} />
+      <ellipse cx="0" cy="0" rx="24" ry="14" fill={col} />
+      <path d="M-4 -12 Q6 -26 14 -12z" fill={col} opacity=".8" />
+      <path d="M-6 -10 Q-12 0 -6 10 M6 -10 Q0 0 6 10" stroke="#fff" strokeOpacity=".5" strokeWidth="3" fill="none" />
+      <circle cx="13" cy="-3" r="4" fill="#fff" /><circle cx="14" cy="-3" r="2" fill="#1d2b3a" />
+      <path d="M20 4 q3 2 6 0" stroke="#1d2b3a" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+    </g>
+  );
+}

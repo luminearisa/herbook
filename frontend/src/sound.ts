@@ -188,6 +188,9 @@ const SYNTH: Record<string, (c: AudioContext) => void> = {
     tone(c, { f: 130, f2: 260, dur: 0.9, vol: 0.22, vib: 6, lp: 900 });
     tone(c, { f: 260, f2: 150, dur: 1.0, vol: 0.2, vib: 6, lp: 900, at: 0.8 });
   },
+  bubble: (c) => {
+    [0, 0.09, 0.19].forEach((at, i) => tone(c, { f: 500 + i * 140, f2: 900 + i * 200, dur: 0.07, vol: 0.14, at }));
+  },
   crackle: (c) => {
     noise(c, { dur: 0.9, lp: 700, vol: 0.18 });
     for (let i = 0; i < 9; i++) noise(c, { dur: 0.04, hp: 2500, vol: 0.25, at: 0.05 + i * 0.09 + Math.random() * 0.05 });

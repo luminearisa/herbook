@@ -304,3 +304,5 @@ nav { align-items: center; }
 .flame2 { animation-duration: .38s; animation-delay: .1s; }
 .flame3 { animation-duration: .3s; animation-delay: .05s; }
 @keyframes flame { from { transform: scale(1, .92) skewX(-3deg); } to { transform: scale(.95, 1.08) skewX(3deg); } }
+.fishswim { animation: fishswim 2.2s ease-in-out infinite alternate; }
+@keyframes fishswim { from { transform: translateX(-10px) rotate(-3deg); } to { transform: translateX(14px) rotate(3deg); } }

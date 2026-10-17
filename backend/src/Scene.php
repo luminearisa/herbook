@@ -8,12 +8,12 @@ declare(strict_types=1);
  */
 final class Scene
 {
-    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja', 'gurun', 'salju', 'dalamrumah', 'laut', 'lautmalam'];
+    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja', 'gurun', 'salju', 'dalamrumah', 'laut', 'lautmalam', 'lautbelah'];
     public const TYPES = [
         'kancil', 'buaya', 'harimau', 'gajah', 'petani', 'kurakura', 'burung', 'kupu',
         'pohon', 'semak', 'batu', 'bunga', 'awan', 'timun', 'orangorangan',
         'rumah', 'kurungan', 'pagar', 'kabah', 'semut', 'hudhud', 'ababil', 'kurma',
-        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring', 'anak', 'dewasa', 'meja', 'vas', 'kue', 'sumur', 'tongkat', 'buah', 'lubang', 'paus', 'bahtera', 'anjing', 'gua', 'hujan', 'ombak', 'unta', 'tebing', 'api',
+        'surat', 'debu', 'sarang', 'kelinci', 'belalang', 'singa', 'tikus', 'bendera', 'jaring', 'anak', 'dewasa', 'meja', 'vas', 'kue', 'sumur', 'tongkat', 'buah', 'lubang', 'paus', 'bahtera', 'anjing', 'gua', 'hujan', 'ombak', 'unta', 'tebing', 'api', 'piramida', 'ikan',
     ];
     public const MOODS = ['senang', 'takut', 'licik', 'sedih', 'marah', 'kaget', 'pingsan'];
     public const POSES = ['berdiri', 'lari', 'lompat', 'rebah', 'renang', 'tidur', 'duduk', 'salam', 'doa'];

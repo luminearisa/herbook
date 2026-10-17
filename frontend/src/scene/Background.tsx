@@ -19,6 +19,7 @@ const SKY: Record<Bg, [string, string]> = {
   dalamrumah: ['#fbe9c8', '#fbe9c8'],
   laut: ['#7fd0ff', '#e6f6ff'],
   lautmalam: ['#0a1640', '#2b3a80'],
+  lautbelah: ['#7fd0ff', '#e6f6ff'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -101,7 +102,7 @@ function ForestSilhouette({ y, color }: { y: number; color: string }) {
 
 const GROUND: Record<Bg, string> = {
   hutan: '#68b258', sungai: '#68b258', kebun: '#8fbf5a', desa: '#78b85e', malam: '#2a6a46',
-  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55', laut: '#2a7fb8', lautmalam: '#0c2552',
+  senja: '#3f7a4d', gurun: '#f6dfa0', salju: '#f4f9fc', dalamrumah: '#c98f55', laut: '#2a7fb8', lautmalam: '#0c2552', lautbelah: '#1c6fb0',
 };
 
 /** `ext`: tambahan tinggi (unit viewBox) di bawah kanvas 800x500, dipakai mode layar penuh. */
@@ -112,7 +113,7 @@ export function Background({ bg, ext = 0, interactive = false, onInteract }: { b
     <g>
       <Sky bg={bg} />
       {ext > 0 && <rect y="480" width="800" height={ext + 20} fill={GROUND[bg]} />}
-      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun' || bg === 'laut') && <Sun interactive={interactive} onInteract={onInteract} />}
+      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun' || bg === 'laut' || bg === 'lautbelah') && <Sun interactive={interactive} onInteract={onInteract} />}
       {bg === 'senja' && <Sun low interactive={interactive} onInteract={onInteract} />}
       {bg === 'hutan' && (
         <>
@@ -131,6 +132,31 @@ export function Background({ bg, ext = 0, interactive = false, onInteract }: { b
               <path key={`${x}${y}`} d={`M${x} ${y} q15 -8 30 0 t30 0`} />
             ))}
           </g>
+        </>
+      )}
+      {bg === 'lautbelah' && (
+        <>
+          <defs>
+            <linearGradient id="wall-g" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stopColor="#6fd0f6" />
+              <stop offset="0.5" stopColor="#2f93d0" />
+              <stop offset="1" stopColor="#14588f" />
+            </linearGradient>
+          </defs>
+          <rect y="300" width="800" height={b - 300} fill="#2a7fb8" />
+          <path d={`M0 100 Q90 130 180 124 T370 176 V300 L${220 - 0.75 * ext} ${b} H0z`} fill="url(#wall-g)" />
+          <path d={`M800 100 Q710 130 620 124 T430 176 V300 L${580 + 0.75 * ext} ${b} H800z`} fill="url(#wall-g)" />
+          <g className="ripples" stroke="#fff" strokeOpacity=".28" strokeWidth="4" fill="none" strokeLinecap="round">
+            {[[60, 200, 360], [150, 230, 440], [250, 260, 470], [90, 330, 470], [40, 400, 480]].map(([x, y, h], i) => <path key={`l${i}`} d={`M${x} ${y} q8 ${h / 6} 0 ${h / 3} t0 ${h / 3}`} />)}
+            {[[740, 200, 360], [650, 230, 440], [550, 260, 470], [710, 330, 470], [760, 400, 480]].map(([x, y, h], i) => <path key={`r${i}`} d={`M${x} ${y} q-8 ${h / 6} 0 ${h / 3} t0 ${h / 3}`} />)}
+          </g>
+          <path d="M0 106 Q90 136 180 130 T370 182 M800 106 Q710 136 620 130 T430 182" stroke="#fff" strokeOpacity=".8" strokeWidth="5" fill="none" />
+          <path d={`M370 300 H430 L${580 + 0.75 * ext} ${b} H${220 - 0.75 * ext}z`} fill="#e8cf93" />
+          <path d={`M370 300 L${220 - 0.75 * ext} ${b} M430 300 L${580 + 0.75 * ext} ${b}`} stroke="#b89a5c" strokeWidth="6" />
+          <g stroke="#c9ad73" strokeWidth="3" fill="none" strokeLinecap="round" opacity=".8">
+            <path d="M390 330 q10 -4 20 0" /><path d="M360 380 q14 -5 28 0 M420 420 q18 -6 36 0" /><path d="M330 460 q20 -6 40 0 M440 480 q20 -6 40 0" />
+          </g>
+          <rect x="370" y="294" width="60" height="8" fill="#6fb35a" />
         </>
       )}
       {bg === 'dalamrumah' && (

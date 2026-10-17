@@ -351,7 +351,16 @@ export function Sumur({ v = 0 }: CharProps) {
   );
 }
 
-export function Tongkat() {
+export function Tongkat({ v = 0 }: CharProps) {
+  if (v === 1) {
+    return (
+      <g>
+        <rect x="-5" y="-176" width="10" height="176" rx="5" fill="#8a5a2b" />
+        <path d="M0 -176 Q0 -204 -24 -202 Q-40 -198 -36 -182" stroke="#8a5a2b" strokeWidth="10" fill="none" strokeLinecap="round" />
+        <path d="M-2 -150 V-120 M2 -90 V-60" stroke="#6a421e" strokeWidth="2" />
+      </g>
+    );
+  }
   return (
     <g>
       <rect x="-90" y="-4" width="180" height="8" rx="4" fill="#8a5a2b" />
@@ -462,6 +471,16 @@ export function Api({ v = 0 }: CharProps) {
       <g className="flame flame3" style={{ transformOrigin: '50% 100%' }}>
         <path d="M0 -10 C-18 -22 -16 -42 0 -60 C16 -42 18 -22 0 -10Z" fill="#fff0a8" />
       </g>
+    </g>
+  );
+}
+
+export function Piramida() {
+  return (
+    <g>
+      <path d="M-110 0 L0 -150 L110 0Z" fill="#e8c27a" stroke="#c9a257" strokeWidth="3" />
+      <path d="M0 -150 L110 0 L34 0Z" fill="#cfa55c" />
+      <path d="M-84 -34 H84 M-62 -64 H62 M-40 -94 H40 M-20 -122 H20" stroke="#c9a257" strokeWidth="2.4" opacity=".8" />
     </g>
   );
 }

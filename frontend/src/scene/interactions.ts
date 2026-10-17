@@ -65,6 +65,8 @@ const TABLE: Record<string, Interaction> = {
   gua: { anim: 'squash', sound: 'echo' },
   unta: { anim: 'sway', sound: 'camel', mood: 'senang' },
   tebing: { anim: 'squash', sound: 'echo' },
+  piramida: { anim: 'squash', sound: 'echo' },
+  ikan: { anim: 'flyaway', sound: 'bubble', fx: ['splash'], fxBox: [-10, -20, 30, 10], origin: 'center' },
   api: { anim: 'squash', sound: 'crackle', fx: ['sparkle'], fxBox: [-40, -140, 80, 90] },
   // hujan dan ombak tidak interaktif (hanya hiasan di depan gambar)
   // kabah sengaja tidak ada: tidak dijadikan mainan
