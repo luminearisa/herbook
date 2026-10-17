@@ -120,7 +120,36 @@ interface SceneProps {
   onInteract?: () => void;
 }
 
+interface Tap { id: number; x: number; y: number; kind: 'ring' | 'sparkle' | 'puff' }
+
+/** Letak sentuhan di koordinat gambar; di sungai berupa riak air. */
+function tapKind(bg: SceneData['bg'], x: number, y: number): { kind: Tap['kind']; sound: string } {
+  const inWater = bg === 'sungai' && y > 300 && x > 150 - 0.25 * (y - 300) && x < 650 + 0.25 * (y - 300);
+  if (inWater) return { kind: 'ring', sound: 'splash' };
+  if (y < 300 && bg !== 'dalamrumah') return { kind: 'sparkle', sound: 'chime' };
+  return { kind: 'puff', sound: 'pop' };
+}
+
 export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice', interactive = false, onInteract }: SceneProps) {
+  const [taps, setTaps] = useState<Tap[]>([]);
+  const nextId = useRef(0);
+
+  function tapBackground(e: React.MouseEvent<SVGGElement>) {
+    const svg = e.currentTarget.ownerSVGElement;
+    const ctm = svg?.getScreenCTM();
+    if (!svg || !ctm) return;
+    const pt = svg.createSVGPoint();
+    pt.x = e.clientX;
+    pt.y = e.clientY;
+    const p = pt.matrixTransform(ctm.inverse());
+    const { kind, sound } = tapKind(scene.bg, p.x, p.y);
+    onInteract?.();
+    playSound(sound);
+    const id = nextId.current++;
+    setTaps((t) => [...t.slice(-6), { id, x: p.x, y: p.y, kind }]);
+    window.setTimeout(() => setTaps((t) => t.filter((x) => x.id !== id)), 1300);
+  }
+
   return (
     <svg
       className={className}
@@ -129,11 +158,26 @@ export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice', in
       role="img"
       aria-label="Ilustrasi cerita"
     >
-      <Background bg={scene.bg} ext={extend} interactive={interactive} onInteract={onInteract} />
+      <g onClick={interactive ? tapBackground : undefined}>
+        <Background bg={scene.bg} ext={extend} interactive={interactive} onInteract={onInteract} />
+      </g>
       {scene.items.map((item, i) => (
         <Item key={i} item={item} interactive={interactive} onInteract={onInteract} />
       ))}
-      <Overlay bg={scene.bg} ext={extend} />
+      <Overlay bg={scene.bg} ext={extend} interactive={interactive} onInteract={onInteract} />
+      <g pointerEvents="none">
+        {taps.map((t) => (
+          <g key={t.id} transform={`translate(${t.x} ${t.y})`}>
+            {t.kind === 'ring' && [0, 1, 2].map((i) => <circle key={i} className="fx-ring" style={{ animationDelay: `${i * 0.15}s` }} r="22" fill="none" stroke="#fff" strokeWidth="3" />)}
+            {t.kind === 'sparkle' && [[-18, -6], [0, -22], [18, -4], [0, 8]].map(([x, y], i) => (
+              <g key={i} transform={`translate(${x} ${y})`}><path className="fx fx-sparkle" style={{ ['--dx' as string]: `${x}px`, animationDelay: `${i * 0.06}s` }} d="M0 -9 L2.7 -2.7 L9 0 L2.7 2.7 L0 9 L-2.7 2.7 L-9 0 L-2.7 -2.7z" fill="#ffd54a" /></g>
+            ))}
+            {t.kind === 'puff' && [[-14, 0], [0, -6], [14, 0]].map(([x, y], i) => (
+              <circle key={i} className="fx-puff" style={{ animationDelay: `${i * 0.05}s` }} cx={x} cy={y} r="9" fill="#fff" />
+            ))}
+          </g>
+        ))}
+      </g>
     </svg>
   );
 }

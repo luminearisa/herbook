@@ -37,7 +37,8 @@ function Sky({ bg }: { bg: Bg }) {
 function Sun({ low, interactive, onInteract }: { low?: boolean; interactive?: boolean; onInteract?: () => void }) {
   const [fast, setFast] = useState(false);
   const timer = useRef<number>();
-  function tap() {
+  function tap(e: React.MouseEvent) {
+    e.stopPropagation(); // jangan ikut memicu efek sentuhan latar
     onInteract?.();
     playSound('chime');
     setFast(true);
@@ -201,34 +202,51 @@ export function Background({ bg, ext = 0, interactive = false, onInteract }: { b
   );
 }
 
-/** Lapisan di atas objek: cahaya malam/senja, bulan, bintang, kunang-kunang. */
-export function Overlay({ bg, ext = 0 }: { bg: Bg; ext?: number }) {
+/** Lapisan di atas objek: cahaya malam/senja, bulan, bintang, kunang-kunang. Tidak boleh menghalangi sentuhan ke tokoh. */
+export function Overlay({ bg, ext = 0, interactive = false, onInteract }: { bg: Bg; ext?: number; interactive?: boolean; onInteract?: () => void }) {
+  const [glow, setGlow] = useState(false);
+  const timer = useRef<number>();
   if (bg === 'salju') {
     return (
-      <g fill="#fff">
+      <g fill="#fff" pointerEvents="none">
         {Array.from({ length: 26 }, (_, i) => (
           <circle key={i} className="snow" style={{ animationDelay: `${(i % 9) * 0.5}s`, animationDuration: `${5 + (i % 5)}s` }} cx={(i * 97) % 800} cy={-10} r={2 + (i % 3)} />
         ))}
       </g>
     );
   }
-  if (bg === 'senja') return <rect width="800" height={500 + ext} fill="#ff8a3d" opacity=".14" />;
+  if (bg === 'senja') return <rect width="800" height={500 + ext} fill="#ff8a3d" opacity=".14" pointerEvents="none" />;
   if (bg !== 'malam') return null;
+  function tapMoon() {
+    onInteract?.();
+    playSound('chime');
+    setGlow(true);
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => setGlow(false), 1500);
+  }
   return (
     <g>
-      <rect width="800" height={500 + ext} fill="#101e5c" opacity=".38" />
-      {STARS.map(([x, y, r], i) => (
-        <circle key={i} className="twinkle" style={{ animationDelay: `${i * 0.3}s` }} cx={x} cy={y} r={r} fill="#fff7c2" />
-      ))}
-      <g transform="translate(650 90)">
-        <circle r="60" fill="#fff6c0" opacity=".16" />
+      <g pointerEvents="none">
+        <rect width="800" height={500 + ext} fill="#101e5c" opacity=".38" />
+        {STARS.map(([x, y, r], i) => (
+          <circle key={i} className={glow ? 'twinkle twinkle-fast' : 'twinkle'} style={{ animationDelay: `${i * 0.3}s` }} cx={x} cy={y} r={r} fill="#fff7c2" />
+        ))}
+        {[[200, 380], [330, 420], [560, 400], [700, 440]].map(([x, y], i) => (
+          <circle key={i} className="firefly" style={{ animationDelay: `${i * 0.7}s` }} cx={x} cy={y} r="3" fill="#e9ff6b" />
+        ))}
+      </g>
+      <g
+        transform="translate(650 90)"
+        className={interactive ? 'tappable' : undefined}
+        onClick={interactive ? tapMoon : undefined}
+        role={interactive ? 'button' : undefined}
+        aria-label={interactive ? 'bulan' : undefined}
+      >
+        <circle r="60" fill="#fff6c0" opacity={glow ? 0.35 : 0.16} className={glow ? 'sun-pulse' : undefined} />
         <circle r="40" fill="#fff6c0" opacity=".25" />
         <circle r="30" fill="#fff9d6" />
         <circle cx="-8" cy="-6" r="6" fill="#efe3a0" /><circle cx="10" cy="8" r="4" fill="#efe3a0" />
       </g>
-      {[[200, 380], [330, 420], [560, 400], [700, 440]].map(([x, y], i) => (
-        <circle key={i} className="firefly" style={{ animationDelay: `${i * 0.7}s` }} cx={x} cy={y} r="3" fill="#e9ff6b" />
-      ))}
     </g>
   );
 }

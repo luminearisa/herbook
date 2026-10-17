@@ -27,7 +27,7 @@ Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan tek
 
 ## Interaktif
 
-Di halaman baca, gambar bisa disentuh: pohon bergoyang dan menjatuhkan daun (atau buah), kancil melompat, buaya membuka mulut dan menggeram, gajah berteriak, awan meneteskan hujan, bunga berkilau, orang dan tokoh buah menyapa dengan suara, dan seterusnya. Daftar reaksi tiap jenis ada di `frontend/src/scene/interactions.ts`. Ka'bah sengaja tidak dibuat interaktif.
+Di halaman baca, gambar bisa disentuh: pohon bergoyang dan menjatuhkan daun (atau buah), kancil melompat, buaya membuka mulut dan menggeram, gajah berteriak, awan meneteskan hujan, bunga berkilau, orang dan tokoh buah menyapa dengan suara, dan seterusnya. Daftar reaksi tiap jenis ada di `frontend/src/scene/interactions.ts`. Menyentuh bagian kosong juga ada efeknya: riak air di sungai, kilau di langit, dan kepulan debu di tanah. Di adegan malam, bulan bisa disentuh. Ka'bah sengaja tidak dibuat interaktif.
 
 Suara dibuat langsung oleh browser (Web Audio), jadi tanpa berkas dan tanpa masalah lisensi. Untuk memakai rekaman asli, lihat `frontend/public/sounds/README.md`. Tombol 🔊 di bar atas mematikan semua suara.
 
