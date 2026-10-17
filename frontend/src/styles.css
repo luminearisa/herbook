@@ -300,3 +300,7 @@ nav { align-items: center; }
 @keyframes spout { 0%, 100% { opacity: .2; transform: scaleY(.5); } 50% { opacity: .9; transform: scaleY(1); } }
 .wag { animation: wag .5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: 100% 100%; }
 @keyframes wag { from { transform: rotate(-10deg); } to { transform: rotate(14deg); } }
+.flame { animation: flame .5s ease-in-out infinite alternate; transform-box: fill-box; }
+.flame2 { animation-duration: .38s; animation-delay: .1s; }
+.flame3 { animation-duration: .3s; animation-delay: .05s; }
+@keyframes flame { from { transform: scale(1, .92) skewX(-3deg); } to { transform: scale(.95, 1.08) skewX(3deg); } }

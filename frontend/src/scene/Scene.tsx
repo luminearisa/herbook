@@ -4,7 +4,7 @@ import { Background, Overlay } from './Background';
 import { interactionFor, type Fx, type Interaction } from './interactions';
 import { playSound, speak } from '../sound';
 import { Ababil, Anak, Anjing, Buaya, Burung, Dewasa, Gajah, Harimau, Belalang, Buah, Hudhud, Kancil, Kelinci, Kupu, Kurakura, Lubang, Paus, Petani, Semut, Singa, Tikus, Unta, type CharProps } from './characters';
-import { Awan, Bahtera, Batu, Bendera, Bunga, Debu, Gua, Hujan, Jaring, Kue, Meja, Ombak, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Tebing, Timun, Tongkat } from './props';
+import { Api, Awan, Bahtera, Batu, Bendera, Bunga, Debu, Gua, Hujan, Jaring, Kue, Meja, Ombak, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Tebing, Timun, Tongkat } from './props';
 
 const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   kancil: Kancil, buaya: Buaya, harimau: Harimau, gajah: Gajah, petani: Petani, kurakura: Kurakura,
@@ -13,7 +13,7 @@ const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   kabah: Kabah, semut: Semut, hudhud: Hudhud, ababil: Ababil, kurma: Kurma, surat: Surat, debu: Debu, sarang: Sarang,
   kelinci: Kelinci, belalang: Belalang, singa: Singa, tikus: Tikus, bendera: Bendera, jaring: Jaring,
   anak: Anak, dewasa: Dewasa, meja: Meja, vas: Vas, kue: Kue, sumur: Sumur, tongkat: Tongkat, buah: Buah, lubang: Lubang,
-  paus: Paus, bahtera: Bahtera, anjing: Anjing, gua: Gua, hujan: Hujan, ombak: Ombak, unta: Unta, tebing: Tebing,
+  paus: Paus, bahtera: Bahtera, anjing: Anjing, gua: Gua, hujan: Hujan, ombak: Ombak, unta: Unta, tebing: Tebing, api: Api,
 };
 
 // Hewan/orang yang bergerak halus supaya gambar terasa hidup.

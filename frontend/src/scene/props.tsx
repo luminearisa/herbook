@@ -428,3 +428,40 @@ export function Tebing() {
     </g>
   );
 }
+
+export function Api({ v = 0 }: CharProps) {
+  if (v === 1) {
+    return (
+      <g>
+        <ellipse cx="0" cy="-2" rx="64" ry="10" fill="#6fbf5f" />
+        <g className="flame" style={{ transformOrigin: '50% 100%' }} opacity=".75">
+          <path d="M0 -4 C-30 -30 -26 -62 -8 -84 C-6 -62 4 -56 10 -70 C26 -50 30 -20 0 -4Z" fill="#9ee3ff" />
+          <path d="M0 -6 C-14 -22 -12 -40 0 -52 C10 -40 14 -22 0 -6Z" fill="#e6fbff" />
+        </g>
+        {[[-52, -10, '#ff6b8a'], [-34, -6, '#ffd23f'], [38, -8, '#b57bee'], [56, -12, '#ff6b8a'], [20, -4, '#fff']].map(([x, y, c], i) => (
+          <g key={i} transform={`translate(${x} ${y})`}>
+            <path d="M0 0 V-14" stroke="#3f8c47" strokeWidth="3" />
+            {[0, 72, 144, 216, 288].map((a) => <ellipse key={a} cx="0" cy="-20" rx="3.6" ry="6" fill={c as string} transform={`rotate(${a} 0 -15)`} />)}
+            <circle cx="0" cy="-15" r="3" fill="#f9a825" />
+          </g>
+        ))}
+        <g className="drift" opacity=".5"><circle cx="-14" cy="-96" r="9" fill="#fff" /><circle cx="6" cy="-108" r="12" fill="#fff" /><circle cx="26" cy="-98" r="8" fill="#fff" /></g>
+      </g>
+    );
+  }
+  return (
+    <g>
+      <rect x="-60" y="-14" width="120" height="16" rx="7" fill="#6a421e" transform="rotate(-6 0 -6)" />
+      <rect x="-56" y="-18" width="112" height="16" rx="7" fill="#7a4e2a" transform="rotate(8 0 -10)" />
+      <g className="flame" style={{ transformOrigin: '50% 100%' }}>
+        <path d="M0 -10 C-60 -36 -56 -100 -20 -150 C-14 -110 10 -96 20 -124 C56 -88 66 -40 0 -10Z" fill="#ff6a1a" />
+      </g>
+      <g className="flame flame2" style={{ transformOrigin: '50% 100%' }}>
+        <path d="M0 -10 C-36 -30 -34 -70 -12 -104 C-8 -78 8 -70 14 -88 C38 -64 40 -30 0 -10Z" fill="#ffb02e" />
+      </g>
+      <g className="flame flame3" style={{ transformOrigin: '50% 100%' }}>
+        <path d="M0 -10 C-18 -22 -16 -42 0 -60 C16 -42 18 -22 0 -10Z" fill="#fff0a8" />
+      </g>
+    </g>
+  );
+}

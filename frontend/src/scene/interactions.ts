@@ -65,6 +65,7 @@ const TABLE: Record<string, Interaction> = {
   gua: { anim: 'squash', sound: 'echo' },
   unta: { anim: 'sway', sound: 'camel', mood: 'senang' },
   tebing: { anim: 'squash', sound: 'echo' },
+  api: { anim: 'squash', sound: 'crackle', fx: ['sparkle'], fxBox: [-40, -140, 80, 90] },
   // hujan dan ombak tidak interaktif (hanya hiasan di depan gambar)
   // kabah sengaja tidak ada: tidak dijadikan mainan
 };
@@ -72,6 +73,7 @@ const TABLE: Record<string, Interaction> = {
 export function interactionFor(item: SceneItem): Interaction | undefined {
   const base = TABLE[item.t];
   if (!base) return undefined;
+  if (item.t === 'api' && item.v === 1) return { ...base, sound: 'chime' };
   if (item.t === 'vas' && item.v === 1) return { ...base, sound: 'tinkle' };
   if (item.t === 'pohon' && item.v === 1) return { ...base, fx: ['leaves', 'fruit'], sound: 'rustle' };
   return base;

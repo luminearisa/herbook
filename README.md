@@ -7,7 +7,7 @@ Isi awal:
 - Dongeng Kancil: *Kancil dan Buaya*, *Kancil Mencuri Timun*, *Kancil dan Gajah*
 - Fabel: *Kura-kura dan Kelinci*, *Semut dan Belalang*, *Singa dan Tikus*, *Kelinci dan Singa yang Sombong*, *Kura-kura dan Dua Bangau*, *Kancil dan Mangga yang Tinggi*, *Jeruk yang Dipandang Sebelah Mata*, *Semangka yang Sombong*, *Pesta Kejutan untuk Kelinci* (tokoh buah-buahan)
 - Adab Anak Muslim: *Rafi Belajar Bismillah*, *Salma dan Salam*, *Jujur Itu Indah*, *Berbagi Itu Indah* (tokoh anak: Rafi dan Salma)
-- Kisah Islami: *Pasukan Gajah dan Burung Ababil* (QS. Al-Fil), *Semut yang Waspada* (QS. An-Naml), *Hud-hud dan Negeri Saba* (QS. An-Naml), *Nabi Nuh dan Bahtera* (QS. Hud), *Nabi Yunus dan Ikan Paus* (QS. Al-Anbiya, Ash-Shaffat), *Ashabul Kahfi dan Anjingnya* (QS. Al-Kahfi), *Anjing yang Kehausan* (HR. Bukhari dan Muslim), *Nabi Saleh dan Unta Allah* (QS. Al-A'raf, Hud, Asy-Syu'ara)
+- Kisah Islami: *Pasukan Gajah dan Burung Ababil* (QS. Al-Fil), *Semut yang Waspada* (QS. An-Naml), *Hud-hud dan Negeri Saba* (QS. An-Naml), *Nabi Nuh dan Bahtera* (QS. Hud), *Nabi Yunus dan Ikan Paus* (QS. Al-Anbiya, Ash-Shaffat), *Ashabul Kahfi dan Anjingnya* (QS. Al-Kahfi), *Anjing yang Kehausan* (HR. Bukhari dan Muslim), *Nabi Saleh dan Unta Allah* (QS. Al-A'raf, Hud, Asy-Syu'ara), *Nabi Ibrahim dan Api* (QS. Al-An'am, Al-Anbiya; HR. Bukhari)
 
 Kisah Islami sengaja tidak menggambar manusia (nabi dan sahabat); hanya hewan, alam, dan Ka'bah. Kategori Adab memakai tokoh anak Muslim fiktif beserta keluarganya.
 

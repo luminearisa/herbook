@@ -1,0 +1,345 @@
+{
+ "slug": "nabi-ibrahim-api",
+ "category": "islami",
+ "author": "Kisah Islami",
+ "title": "Nabi Ibrahim dan Api",
+ "summary": "Kisah Nabi Ibrahim 'alaihis salam yang mencari Tuhan dengan akalnya, menolak berhala, dan diselamatkan Allah dari api yang menyala. (QS. Al-An'am: 74-79; QS. Al-Anbiya: 51-70; HR. Bukhari)",
+ "moral": "Beranilah membela kebenaran, bertawakallah kepada Allah, dan yakinlah bahwa pertolongan-Nya datang dengan cara yang tidak kita sangka.",
+ "cover": {
+  "bg": "gurun",
+  "items": [
+   {
+    "t": "awan",
+    "x": 260,
+    "y": 70
+   },
+   {
+    "t": "kurma",
+    "x": 120,
+    "y": 415,
+    "s": 1.2
+   },
+   {
+    "t": "api",
+    "x": 470,
+    "y": 462,
+    "s": 1.8,
+    "v": 0
+   },
+   {
+    "t": "kurma",
+    "x": 730,
+    "y": 420,
+    "s": 1.1
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Nabi Ibrahim 'alaihis salam lahir di tengah kaum yang menyembah patung-patung dari batu. Sejak kecil beliau bertanya-tanya dalam hati, \"Mungkinkah benda yang tidak bisa mendengar, melihat, dan menolong ini pantas disembah?\"",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "tebing",
+      "x": 190,
+      "y": 440,
+      "s": 1.0
+     },
+     {
+      "t": "batu",
+      "x": 470,
+      "y": 462,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 640,
+      "y": 420,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 150,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Pada suatu malam, beliau melihat bintang dan berkata, \"Inikah Tuhanku?\" Tetapi ketika bintang itu terbenam, beliau berkata, \"Aku tidak suka kepada yang terbenam.\" Lalu bulan terbit, tetapi bulan pun terbenam juga. (QS. Al-An'am: 76-77)",
+   "scene": {
+    "bg": "malam",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 130,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 700,
+      "y": 420,
+      "s": 1.1
+     },
+     {
+      "t": "batu",
+      "x": 420,
+      "y": 462,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ketika matahari terbit dengan terang, beliau berkata, \"Inikah Tuhanku? Ini lebih besar.\" Namun matahari pun terbenam. Maka beliau berkata, \"Aku menghadapkan wajahku kepada Yang menciptakan langit dan bumi.\" (QS. Al-An'am: 78-79)",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 120,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 720,
+      "y": 420,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 400,
+      "y": 160,
+      "v": 2
+     },
+     {
+      "t": "batu",
+      "x": 430,
+      "y": 462,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nabi Ibrahim menasihati ayah dan kaumnya dengan lembut agar meninggalkan patung. Tetapi mereka tidak mau. Ketika kaumnya pergi, patung-patung itu ditemukan hancur, dan mereka menjadi marah.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "tebing",
+      "x": 200,
+      "y": 440,
+      "s": 1.0
+     },
+     {
+      "t": "batu",
+      "x": 470,
+      "y": 462,
+      "s": 0.8
+     },
+     {
+      "t": "batu",
+      "x": 530,
+      "y": 464,
+      "s": 0.6
+     },
+     {
+      "t": "batu",
+      "x": 590,
+      "y": 462,
+      "s": 0.7
+     },
+     {
+      "t": "debu",
+      "x": 520,
+      "y": 440,
+      "s": 0.9
+     },
+     {
+      "t": "kurma",
+      "x": 720,
+      "y": 420,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Mereka berkata, \"Bakarlah dia dan tolonglah tuhan-tuhan kalian.\" (QS. Al-Anbiya: 68). Maka mereka mengumpulkan kayu bakar, lalu menyalakan api yang sangat besar, sehingga asap dan panasnya terasa dari jauh.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "debu",
+      "x": 250,
+      "y": 450,
+      "s": 1.2
+     },
+     {
+      "t": "api",
+      "x": 470,
+      "y": 464,
+      "s": 2.4,
+      "v": 0
+     },
+     {
+      "t": "kurma",
+      "x": 730,
+      "y": 420,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ketika dilemparkan ke dalam api, Nabi Ibrahim berkata, \"Hasbunallah wa ni'mal wakil\", artinya, \"Cukuplah Allah bagiku, dan Dia sebaik-baik pelindung.\" (HR. Bukhari). Beliau hanya bergantung kepada Allah.",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "api",
+      "x": 450,
+      "y": 464,
+      "s": 2.6,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 300,
+      "y": 150,
+      "v": 0
+     }
+    ]
+   }
+  },
+  {
+   "text": "Allah berfirman, \"Wahai api, jadilah dingin, dan jadilah keselamatan bagi Ibrahim!\" (QS. Al-Anbiya: 69). Seketika api itu menjadi dingin, dan Nabi Ibrahim selamat dengan izin Allah.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "api",
+      "x": 450,
+      "y": 464,
+      "s": 2.4,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 290
+     },
+     {
+      "t": "kupu",
+      "x": 620,
+      "y": 300
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 150,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Mereka ingin berbuat makar, tetapi Allah menjadikan mereka orang-orang yang merugi. Dari kisah ini kita belajar: berani membela kebenaran, bertawakal kepada Allah, dan yakin bahwa pertolongan-Nya datang dengan cara yang indah. Tamat.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "kurma",
+      "x": 120,
+      "y": 415,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 720,
+      "y": 420,
+      "s": 1.1
+     },
+     {
+      "t": "api",
+      "x": 420,
+      "y": 464,
+      "s": 1.9,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 280
+     },
+     {
+      "t": "burung",
+      "x": 600,
+      "y": 150,
+      "v": 2
+     }
+    ]
+   }
+  }
+ ]
+}
