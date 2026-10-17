@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../api';
+import { ContinueButton, ProgressBadge, Riwayat } from '../Progress';
 import { Scene } from '../scene/Scene';
 import type { LessonSummary } from '../types';
 
@@ -13,6 +14,7 @@ const SOON = [
 export function Explore() {
   const [lessons, setLessons] = useState<LessonSummary[] | null>(null);
   const [error, setError] = useState('');
+  const titles = Object.fromEntries((lessons ?? []).map((l) => [l.slug, l.title]));
   useEffect(() => {
     api.lessons().then(setLessons).catch((e: Error) => setError(e.message));
   }, []);
@@ -29,6 +31,7 @@ export function Explore() {
           </p>
           {lessons?.[0] && (
             <div className="hero-actions">
+              <ContinueButton kind="lesson" label="Lanjutkan belajar" />
               <a className="btn primary" href={`#/sekitar/${lessons[0].slug}`}>Mulai belajar</a>
             </div>
           )}
@@ -45,6 +48,7 @@ export function Explore() {
             <a key={l.slug} href={`#/sekitar/${l.slug}`} className="book-card">
               <div className="cover">
                 <Scene scene={l.cover} />
+                <ProgressBadge kind="lesson" slug={l.slug} />
                 <div className="cover-title">{l.title}</div>
               </div>
               <div className="book-meta">
@@ -56,6 +60,8 @@ export function Explore() {
           ))}
         </div>
       </section>
+
+      <Riwayat titles={titles} kind="lesson" />
 
       <section className="section">
         <h2>Segera hadir</h2>

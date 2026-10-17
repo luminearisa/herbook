@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { api } from '../api';
+import { getEntry, save } from '../progress';
 import { Scene } from '../scene/Scene';
 import { SoundToggle } from '../SoundToggle';
 import { playSound } from '../sound';
@@ -22,6 +23,7 @@ export function Lesson({ slug }: { slug: string }) {
   });
   const root = useRef<HTMLElement>(null);
   const touchX = useRef<number | null>(null);
+  const [resume, setResume] = useState(0);
 
   useEffect(() => {
     api.lesson(slug).then(setLesson).catch((e: Error) => setError(e.message));
@@ -29,6 +31,33 @@ export function Lesson({ slug }: { slug: string }) {
   }, [slug]);
 
   const total = lesson ? lesson.pages.length + (lesson.quiz.length ? 1 : 0) : 0;
+
+  // Catat riwayat belajar: sampai pelajaran berapa materi ini dipelajari.
+  useEffect(() => {
+    if (!lesson) return;
+    save(
+      'lesson',
+      lesson.slug,
+      lesson.title,
+      Math.min(index + 1, lesson.pages.length),
+      lesson.pages.length,
+      index >= lesson.pages.length,
+    );
+  }, [lesson, index]);
+
+  useEffect(() => {
+    if (!lesson) {
+      setResume(0);
+      return;
+    }
+    const p = getEntry('lesson', lesson.slug);
+    setResume(p && !p.completed && p.page > 0 && p.page < lesson.pages.length ? p.page : 0);
+  }, [lesson]);
+
+  useEffect(() => {
+    if (index !== 0) setResume(0);
+  }, [index]);
+
   const stopSpeech = () => {
     window.speechSynthesis?.cancel();
     setSpeaking(false);
@@ -121,6 +150,21 @@ export function Lesson({ slug }: { slug: string }) {
           {full ? '✕ Keluar' : '⛶ Layar penuh'}
         </button>
       </div>
+
+      {resume > 0 && index === 0 && (
+        <p className="note resume-note">
+          🌿 Terakhir kamu sampai pelajaran {resume}.{' '}
+          <button
+            className="btn small"
+            onClick={() => {
+              setResume(0);
+              go(resume - 1);
+            }}
+          >
+            Lanjutkan
+          </button>
+        </p>
+      )}
 
       <div className="spread" key={index}>
         <div className="art-frame">

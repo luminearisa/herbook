@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { go } from '../App';
 import { api } from '../api';
+import { getEntry, save } from '../progress';
 import { Scene } from '../scene/Scene';
 import { SoundToggle } from '../SoundToggle';
 import type { Book } from '../types';
@@ -27,6 +28,7 @@ export function Reader({ slug }: { slug: string }) {
     sessionStorage.removeItem('herbook-note');
     return n;
   });
+  const [resume, setResume] = useState(0);
 
   useEffect(() => {
     api.book(slug).then(setBook).catch((e: Error) => setError(e.message));
@@ -34,6 +36,33 @@ export function Reader({ slug }: { slug: string }) {
   }, [slug]);
 
   const total = book ? book.pages.length + 1 : 0; // + halaman penutup
+
+  // Catat riwayat baca: sampai halaman berapa cerita ini dibaca.
+  useEffect(() => {
+    if (!book) return;
+    save(
+      'book',
+      book.slug,
+      book.title,
+      Math.min(index + 1, book.pages.length),
+      book.pages.length,
+      index >= book.pages.length,
+    );
+  }, [book, index]);
+
+  // Tawarkan melanjutkan bila terakhir berhenti di tengah cerita.
+  useEffect(() => {
+    if (!book) {
+      setResume(0);
+      return;
+    }
+    const p = getEntry('book', book.slug);
+    setResume(p && !p.completed && p.page > 0 && p.page < book.pages.length ? p.page : 0);
+  }, [book]);
+
+  useEffect(() => {
+    if (index !== 0) setResume(0);
+  }, [index]);
 
   // Layar penuh: API browser bila ada, kalau tidak (mis. iPhone) cukup mode CSS.
   const enterFull = useCallback(() => {
@@ -143,6 +172,20 @@ export function Reader({ slug }: { slug: string }) {
         </button>
       </div>
       {note && <p className="note">{note}</p>}
+      {resume > 0 && index === 0 && (
+        <p className="note resume-note">
+          📖 Terakhir kamu sampai halaman {resume}.{' '}
+          <button
+            className="btn small"
+            onClick={() => {
+              setResume(0);
+              setIndex(Math.min(resume - 1, total - 1));
+            }}
+          >
+            Lanjutkan
+          </button>
+        </p>
+      )}
 
       <div className="spread" key={index}>
         <div className="art-frame">

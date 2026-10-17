@@ -4,6 +4,9 @@ import { Reader } from './pages/Reader';
 import { Create } from './pages/Create';
 import { Explore } from './pages/Explore';
 import { Lesson } from './pages/Lesson';
+import { Masuk } from './pages/Masuk';
+import { AuthButton } from './AuthButton';
+import { init as initAuth } from './auth';
 import { InstallBanner, InstallButton } from './InstallPrompt';
 import { SoundToggle } from './SoundToggle';
 
@@ -29,6 +32,10 @@ export function App() {
   const book = route.match(/^\/buku\/([a-z0-9-]+)$/);
   const lesson = route.match(/^\/sekitar\/([a-z0-9-]+)$/);
 
+  useEffect(() => {
+    initAuth();
+  }, []);
+
   return (
     <div className="app">
       <header className="topbar">
@@ -48,10 +55,11 @@ export function App() {
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
           <InstallButton />
           <SoundToggle />
+          <AuthButton />
         </nav>
       </header>
       <main>
-        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : <Home />}
+        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : route === '/masuk' ? <Masuk /> : <Home />}
       </main>
       <footer className="footer">Her Book · cerita bergambar untuk dibaca bersama</footer>
       <InstallBanner />

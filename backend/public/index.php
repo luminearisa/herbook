@@ -8,6 +8,8 @@ loadEnvFile($root . '/.env');
 
 require $root . '/src/Scene.php';
 require $root . '/src/Db.php';
+require $root . '/src/Auth.php';
+require $root . '/src/Progress.php';
 require $root . '/src/Books.php';
 require $root . '/src/Lessons.php';
 require $root . '/src/StoryMaker.php';
@@ -57,7 +59,35 @@ function handleApi(string $method, string $route): void
 {
     try {
         $pdo = Db::pdo();
-        if ($route === '/lessons' && $method === 'GET') {
+        if ($route === '/auth/register' && $method === 'POST') {
+            json(['user' => Auth::register($pdo, body())], 201);
+        } elseif ($route === '/auth/login' && $method === 'POST') {
+            json(['user' => Auth::login($pdo, body())]);
+        } elseif ($route === '/auth/logout' && $method === 'POST') {
+            Auth::logout($pdo);
+            json(['ok' => true]);
+        } elseif ($route === '/auth/me' && $method === 'GET') {
+            json(['user' => Auth::user($pdo)]);
+        } elseif ($route === '/progress' && $method === 'GET') {
+            $user = Auth::user($pdo);
+            json(['items' => $user ? Progress::all($pdo, $user['id']) : []]);
+        } elseif ($route === '/progress' && in_array($method, ['POST', 'PUT'], true)) {
+            $user = Auth::user($pdo);
+            if (!$user) {
+                json(['ok' => false, 'guest' => true], 200);
+                return;
+            }
+            Progress::save($pdo, $user['id'], body());
+            json(['ok' => true]);
+        } elseif ($route === '/progress/merge' && $method === 'POST') {
+            $user = Auth::user($pdo);
+            if (!$user) {
+                json(['ok' => false, 'guest' => true], 200);
+                return;
+            }
+            Progress::merge($pdo, $user['id'], (array) (body()['items'] ?? []));
+            json(['items' => Progress::all($pdo, $user['id'])]);
+        } elseif ($route === '/lessons' && $method === 'GET') {
             json(Lessons::all($pdo));
         } elseif (preg_match('#^/lessons/([a-z0-9-]+)$#', $route, $lm) && $method === 'GET') {
             $lesson = Lessons::find($pdo, $lm[1]);

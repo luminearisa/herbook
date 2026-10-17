@@ -345,3 +345,48 @@ nav { align-items: center; }
 .reader.full .spread .art-frame { align-self: auto; }
 .reader.full.lesson .story { max-height: 42vh; }
 .reader.full.lesson .story-text { font-size: clamp(.95rem, 1.8vw, 1.2rem); line-height: 1.5; }
+
+/* akun */
+.auth-box { display: inline-flex; align-items: center; gap: 8px; }
+.auth-hello {
+  font-weight: 600; color: var(--green-dark); max-width: 120px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.auth-form { display: grid; gap: 14px; margin-top: 18px; }
+.field { display: grid; gap: 6px; font-weight: 600; color: var(--green-dark); }
+.field > span { font-size: .95rem; }
+.field input {
+  font: inherit; font-weight: 400; color: var(--ink);
+  padding: 12px 14px; border-radius: 14px; border: 2px solid var(--line); background: var(--paper);
+}
+.field input:focus { outline: 3px solid #bfe0c8; border-color: var(--green); }
+.auth-form .btn { justify-self: start; }
+.auth-form .error { margin: 0; }
+
+/* riwayat baca */
+.progress-badge {
+  position: absolute; right: 10px; bottom: 10px; z-index: 2;
+  padding: 4px 10px; border-radius: 999px; font-size: .78rem; font-weight: 700;
+  background: rgba(255, 253, 246, .94); color: var(--green-dark);
+  border: 1px solid var(--line); box-shadow: 0 3px 10px rgba(60, 45, 20, .18);
+}
+.progress-badge.done { background: #d9f0e2; border-color: #9ed6b3; color: #1f4a36; }
+.resume-note { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 12px; }
+.resume-note .btn { padding: 3px 12px; }
+.riwayat { display: grid; gap: 10px; }
+.riwayat-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 16px;
+  background: var(--paper); border: 2px solid var(--line); border-radius: 16px;
+  transition: transform .12s, box-shadow .12s;
+}
+.riwayat-row:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(80, 55, 20, .12); }
+.riwayat-icon { font-size: 1.4rem; }
+.riwayat-main { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.riwayat-main strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.riwayat-main small { font-size: .8rem; }
+.riwayat-state { font-size: .82rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
+.riwayat-state.done { color: #2f9a4d; }
+
+@media (max-width: 760px) {
+  .auth-hello { display: none; }
+}

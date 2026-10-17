@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../api';
+import { ContinueButton, ProgressBadge, Riwayat } from '../Progress';
 import { Scene } from '../scene/Scene';
 import type { BookSummary } from '../types';
 
@@ -15,6 +16,7 @@ export function Home() {
   const [error, setError] = useState('');
   const [tab, setTab] = useState<'semua' | 'dongeng' | 'fabel' | 'adab' | 'islami'>('semua');
   const shown = books?.filter((b) => tab === 'semua' || b.category === tab);
+  const titles = Object.fromEntries((books ?? []).map((b) => [b.slug, b.title]));
 
   useEffect(() => {
     api.books().then(setBooks).catch((e: Error) => setError(e.message));
@@ -31,6 +33,7 @@ export function Home() {
             sendiri hanya dengan menulis ide ceritanya.
           </p>
           <div className="hero-actions">
+            <ContinueButton kind="book" label="Lanjutkan membaca" />
             {books?.[0] && (
               <a className="btn primary" href={`#/buku/${books[0].slug}`}>Mulai membaca</a>
             )}
@@ -57,6 +60,7 @@ export function Home() {
             <a key={b.slug} href={`#/buku/${b.slug}`} className="book-card">
               <div className="cover">
                 <Scene scene={b.cover} />
+                <ProgressBadge kind="book" slug={b.slug} />
                 <div className="cover-title">{b.title}</div>
               </div>
               <div className="book-meta">
@@ -77,6 +81,8 @@ export function Home() {
           </a>
         </div>
       </section>
+
+      <Riwayat titles={titles} />
 
       <section className="section">
         <h2>Segera hadir</h2>

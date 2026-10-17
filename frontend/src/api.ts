@@ -1,8 +1,18 @@
-import type { Book, BookSummary, Category, Lesson, LessonSummary } from './types';
+import type {
+  Book,
+  BookSummary,
+  Category,
+  Lesson,
+  LessonSummary,
+  ProgressItem,
+  RegisterInput,
+  User,
+} from './types';
 
 async function request<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(url, {
     ...init,
+    credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
   });
   const data = await res.json().catch(() => ({}));
@@ -21,4 +31,23 @@ export const api = {
   lessons: () => request<LessonSummary[]>('/api/lessons'),
   lesson: (slug: string) => request<Lesson>(`/api/lessons/${slug}`),
   remove: (slug: string) => request<{ ok: true }>(`/api/books/${slug}`, { method: 'DELETE' }),
+
+  me: () => request<{ user: User | null }>('/api/auth/me'),
+  register: (input: RegisterInput) =>
+    request<{ user: User }>('/api/auth/register', { method: 'POST', body: JSON.stringify(input) }),
+  login: (identifier: string, password: string) =>
+    request<{ user: User }>('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ identifier, password }),
+    }),
+  logout: () => request<{ ok: true }>('/api/auth/logout', { method: 'POST' }),
+
+  progress: () => request<{ items: ProgressItem[] }>('/api/progress'),
+  saveProgress: (item: { kind: string; slug: string; page: number; total: number; completed: boolean }) =>
+    request<{ ok: boolean }>('/api/progress', { method: 'POST', body: JSON.stringify(item) }),
+  mergeProgress: (items: { kind: string; slug: string; page: number; total: number; completed: boolean }[]) =>
+    request<{ items: ProgressItem[] }>('/api/progress/merge', {
+      method: 'POST',
+      body: JSON.stringify({ items }),
+    }),
 };

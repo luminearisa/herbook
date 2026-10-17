@@ -66,3 +66,30 @@ export interface Lesson extends LessonSummary {
   pages: LessonPage[];
   quiz: QuizQuestion[];
 }
+
+export interface User {
+  id: number;
+  name: string;
+  email: string;
+  username: string;
+  whatsapp: string;
+}
+
+export type ProgressKind = 'book' | 'lesson';
+
+export interface ProgressItem {
+  kind: ProgressKind;
+  slug: string;
+  page: number;
+  total: number;
+  completed: boolean;
+  updated_at: string;
+}
+
+export interface RegisterInput {
+  name: string;
+  email: string;
+  username: string;
+  password: string;
+  whatsapp?: string;
+}
