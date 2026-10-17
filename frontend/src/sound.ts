@@ -188,6 +188,10 @@ const SYNTH: Record<string, (c: AudioContext) => void> = {
     tone(c, { f: 130, f2: 260, dur: 0.9, vol: 0.22, vib: 6, lp: 900 });
     tone(c, { f: 260, f2: 150, dur: 1.0, vol: 0.2, vib: 6, lp: 900, at: 0.8 });
   },
+  camel: (c) => {
+    tone(c, { f: 190, f2: 120, dur: 0.55, type: 'sawtooth', vol: 0.18, lp: 700, vib: 13 });
+    tone(c, { f: 150, f2: 100, dur: 0.4, type: 'sawtooth', vol: 0.14, lp: 600, vib: 11, at: 0.5 });
+  },
   bark: (c) => {
     [0, 0.22].forEach((at) => {
       tone(c, { f: 420, f2: 200, dur: 0.14, type: 'sawtooth', vol: 0.2, lp: 1200, at });

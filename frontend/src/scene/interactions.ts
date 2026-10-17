@@ -63,6 +63,8 @@ const TABLE: Record<string, Interaction> = {
   anjing: { anim: 'hop2', sound: 'bark', mood: 'senang' },
   bahtera: { anim: 'wobble', sound: 'creak', origin: 'bottom' },
   gua: { anim: 'squash', sound: 'echo' },
+  unta: { anim: 'sway', sound: 'camel', mood: 'senang' },
+  tebing: { anim: 'squash', sound: 'echo' },
   // hujan dan ombak tidak interaktif (hanya hiasan di depan gambar)
   // kabah sengaja tidak ada: tidak dijadikan mainan
 };

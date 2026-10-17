@@ -412,3 +412,19 @@ export function Ombak() {
     </g>
   );
 }
+
+export function Tebing() {
+  return (
+    <g>
+      <path d="M-196 0 L-196 -120 Q-176 -196 -96 -206 Q-22 -236 60 -206 Q152 -194 184 -112 L196 0Z" fill="#b89a6e" stroke="#8f7650" strokeWidth="3" />
+      <path d="M-190 -60 Q0 -76 190 -56 M-186 -110 Q0 -128 184 -104 M-150 -160 Q0 -184 150 -158" stroke="#a3855b" strokeWidth="4" fill="none" opacity=".8" />
+      {[-110, -10, 96].map((x, i) => (
+        <g key={x}>
+          <path d={`M${x - 30} 0 V${-58 - i * 8} Q${x - 30} ${-96 - i * 8} ${x} ${-96 - i * 8} Q${x + 30} ${-96 - i * 8} ${x + 30} ${-58 - i * 8} V0z`} fill="#2d2418" />
+          <path d={`M${x - 36} 0 h72 M${x - 30} -6 h60`} stroke="#8f7650" strokeWidth="4" />
+        </g>
+      ))}
+      <rect x="-60" y="-168" width="22" height="34" rx="10" fill="#2d2418" /><rect x="40" y="-166" width="22" height="34" rx="10" fill="#2d2418" />
+    </g>
+  );
+}

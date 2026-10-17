@@ -924,3 +924,63 @@ export function Anjing({ pose = 'berdiri', mood = 'senang' }: CharProps) {
     </g>
   );
 }
+
+/* ---------------- Unta ---------------- */
+
+export function Unta({ pose = 'berdiri', mood = 'senang' }: CharProps) {
+  const fur = '#cf9d5f';
+  const light = '#e8c995';
+  const dark = '#8a5a2b';
+  const sleep = pose === 'tidur';
+  const run = pose === 'lari';
+  const m: Mood = sleep ? 'senang' : mood;
+  const head = (cx: number, cy: number) => (
+    <g>
+      <ellipse cx={cx} cy={cy} rx="23" ry="15" fill={fur} transform={`rotate(14 ${cx} ${cy})`} />
+      <ellipse cx={cx + 18} cy={cy + 5} rx="14" ry="10.5" fill={light} transform={`rotate(14 ${cx + 18} ${cy + 5})`} />
+      <ellipse cx={cx + 28} cy={cy + 3} rx="3.4" ry="2.8" fill="#2b1a0f" />
+      <ellipse cx={cx - 12} cy={cy - 14} rx="5" ry="9" fill={dark} transform={`rotate(-20 ${cx - 12} ${cy - 14})`} />
+      {sleep ? (
+        <path d={`M${cx - 2} ${cy - 5} q7 5 14 0`} stroke="#2b1a0f" strokeWidth="2.4" fill="none" strokeLinecap="round" />
+      ) : (
+        <g style={{ color: fur }}><SimpleFace ex={cx + 6} ey={cy - 5} mx={cx + 20} my={cy + 12} mood={m} r={4.8} /></g>
+      )}
+    </g>
+  );
+  if (sleep) {
+    return (
+      <g>
+        <path d="M-66 -34 Q-86 -30 -82 -12" stroke={dark} strokeWidth="5" fill="none" strokeLinecap="round" />
+        <ellipse cx="0" cy="-36" rx="68" ry="28" fill={fur} />
+        <circle cx="-8" cy="-70" r="26" fill={fur} />
+        <ellipse cx="-40" cy="-6" rx="30" ry="9" fill={light} /><ellipse cx="46" cy="-6" rx="34" ry="9" fill={light} />
+        <path d="M44 -52 Q74 -80 88 -104" stroke={fur} strokeWidth="24" fill="none" strokeLinecap="round" />
+        {head(98, -112)}
+        <Zzz x={122} y={-134} />
+      </g>
+    );
+  }
+  const leg = (x: number, r: number, shade?: boolean) => (
+    <g transform={`translate(${x} -74) rotate(${r})`}>
+      <path d="M0 0 L0 38" stroke={shade ? '#b9884a' : fur} strokeWidth="13" strokeLinecap="round" />
+      <path d="M0 34 L0 70" stroke={shade ? '#b9884a' : fur} strokeWidth="9" strokeLinecap="round" />
+      <ellipse cx="3" cy="72" rx="11" ry="5.5" fill={dark} />
+    </g>
+  );
+  const rot = run ? [-34, 30, 34, -28] : [0, 0, 0, 0];
+  return (
+    <g transform={run ? 'translate(0 -6) rotate(-4 0 -70)' : undefined}>
+      <path d="M-62 -100 Q-84 -94 -80 -66" stroke={dark} strokeWidth="5" fill="none" strokeLinecap="round" />
+      {leg(-40, rot[0], true)}
+      {leg(34, rot[2], true)}
+      <ellipse cx="0" cy="-92" rx="64" ry="30" fill={fur} />
+      <ellipse cx="2" cy="-76" rx="46" ry="10" fill={light} opacity=".8" />
+      <circle cx="-8" cy="-130" r="27" fill={fur} />
+      <path d="M-30 -118 Q-8 -108 14 -118" stroke="#b9884a" strokeWidth="2" fill="none" />
+      {leg(-22, rot[1])}
+      {leg(52, rot[3])}
+      <path d="M44 -104 Q76 -128 92 -156" stroke={fur} strokeWidth="26" fill="none" strokeLinecap="round" />
+      {head(104, -166)}
+    </g>
+  );
+}
