@@ -338,3 +338,38 @@ export function Kupu({ v = 0 }: CharProps) {
     </g>
   );
 }
+
+/* ---------------- Gajah ---------------- */
+
+export function Gajah({ pose = 'berdiri', mood = 'senang' }: CharProps) {
+  const g = '#8f9bb0';
+  const dark = '#6f7b92';
+  const rot = LEG_ROT[pose] ?? LEG_ROT.berdiri;
+  const leg = (x: number, r: number, shade: boolean) => (
+    <g transform={`translate(${x} -70) rotate(${r})`}>
+      <rect x="-17" y="0" width="34" height="70" rx="14" fill={shade ? dark : g} />
+      <path d="M-14 62 h28" stroke="#e8dcc8" strokeWidth="6" strokeLinecap="round" />
+    </g>
+  );
+  return (
+    <g>
+      {leg(-52, rot[0], true)}
+      {leg(52, rot[2], true)}
+      <path d="M-88 -120 Q-112 -100 -100 -62" stroke={dark} strokeWidth="6" fill="none" strokeLinecap="round" />
+      <ellipse cx="0" cy="-112" rx="92" ry="58" fill={g} />
+      {leg(-34, rot[1], false)}
+      {leg(70, rot[3], false)}
+      <ellipse cx="62" cy="-124" rx="34" ry="46" fill={dark} />
+      <ellipse cx="62" cy="-124" rx="24" ry="36" fill="#d9a5b3" opacity=".7" />
+      <circle cx="108" cy="-132" r="44" fill={g} />
+      <path d="M126 -104 Q158 -96 156 -60 Q154 -28 140 -22 Q128 -26 138 -50 Q142 -76 120 -86z" fill={g} />
+      <path d="M134 -92 Q150 -70 146 -40" stroke={dark} strokeWidth="2" fill="none" />
+      <path d="M118 -100 Q146 -92 150 -70 Q138 -84 116 -88z" fill="#f4ecd8" />
+      <circle cx="120" cy="-146" r="6.5" fill="#fff" stroke={INK} strokeWidth="1.5" />
+      <circle cx={mood === 'kaget' ? 121 : 122} cy="-146" r={mood === 'kaget' ? 2 : 3.2} fill={INK} />
+      {mood === 'marah' && <path d="M108 -160 L132 -150" stroke={INK} strokeWidth="3.5" strokeLinecap="round" />}
+      {mood === 'senang' && <path d="M122 -104 Q132 -98 142 -108" fill="none" stroke={INK} strokeWidth="2" strokeLinecap="round" />}
+      {mood === 'takut' && <path d="M104 -170 q-4 8 0 11 q4 -3 0 -11z" fill="#7fd0ff" stroke="#3a8fc0" />}
+    </g>
+  );
+}

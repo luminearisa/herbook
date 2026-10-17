@@ -3,7 +3,7 @@
 Perpustakaan buku cerita bergambar. Backend PHP + SQLite, frontend React + TypeScript.
 Ilustrasi digambar sebagai **SVG** dari data adegan, jadi buku baru bisa dibuat lewat prompt.
 
-Isi awal: **Kancil dan Buaya** dan **Kancil Mencuri Timun**.
+Isi awal: **Kancil dan Buaya**, **Kancil Mencuri Timun**, dan **Kancil dan Gajah**.
 
 ## Menjalankan
 

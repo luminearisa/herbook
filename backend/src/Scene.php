@@ -10,7 +10,7 @@ final class Scene
 {
     public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja'];
     public const TYPES = [
-        'kancil', 'buaya', 'harimau', 'petani', 'kurakura', 'burung', 'kupu',
+        'kancil', 'buaya', 'harimau', 'gajah', 'petani', 'kurakura', 'burung', 'kupu',
         'pohon', 'semak', 'batu', 'bunga', 'awan', 'timun', 'orangorangan',
         'rumah', 'kurungan', 'pagar',
     ];

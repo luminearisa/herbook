@@ -88,6 +88,7 @@ TXT;
             'buaya' => ['Buaya', 'buaya', 'sungai', ['renang', 'berenang di sungai']],
             'harimau' => ['Harimau', 'harimau', 'hutan', ['berdiri', 'mengaum di hutan']],
             'macan' => ['Harimau', 'harimau', 'hutan', ['berdiri', 'mengaum di hutan']],
+            'gajah' => ['Gajah', 'gajah', 'hutan', ['berdiri', 'berjalan di hutan']],
             'petani' => ['Pak Tani', 'petani', 'kebun', ['berdiri', 'menjaga kebunnya']],
         ];
         $v = $villains['harimau'];

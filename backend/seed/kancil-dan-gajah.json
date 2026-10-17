@@ -1,0 +1,304 @@
+{
+ "slug": "kancil-dan-gajah",
+ "title": "Kancil dan Gajah",
+ "author": "Dongeng Nusantara",
+ "summary": "Gajah yang sombong ingin menginjak Kancil. Tapi Kancil punya akal tentang sebatang pohon yang hampir roboh.",
+ "moral": "Kekuatan besar tanpa berpikir mudah dikelabui. Jangan sombong, dan pakai akalmu dengan baik.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 90,
+    "y": 410,
+    "s": 1.2
+   },
+   {
+    "t": "gajah",
+    "x": 560,
+    "y": 450,
+    "s": 1.15,
+    "mood": "marah",
+    "flip": true
+   },
+   {
+    "t": "kancil",
+    "x": 230,
+    "y": 460,
+    "s": 1.25,
+    "mood": "licik"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di hutan yang teduh, Kancil sedang berjalan santai sambil bersiul. Tiba-tiba tanah bergetar: dum, dum, dum! Seekor gajah besar berjalan ke arahnya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kancil",
+      "x": 180,
+      "y": 460,
+      "s": 1.2,
+      "mood": "kaget"
+     },
+     {
+      "t": "gajah",
+      "x": 560,
+      "y": 455,
+      "s": 1.1,
+      "flip": true,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Minggir, Kancil kecil!\" bentak Gajah. \"Akulah yang paling kuat di hutan ini. Siapa menghalangiku akan kuinjak!\" Kancil gemetar, tetapi otaknya mulai bekerja.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kancil",
+      "x": 190,
+      "y": 460,
+      "s": 1.2,
+      "mood": "takut"
+     },
+     {
+      "t": "gajah",
+      "x": 560,
+      "y": 455,
+      "s": 1.15,
+      "flip": true,
+      "mood": "marah"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Tunggu, Gajah yang perkasa!\" seru Kancil. \"Pohon besar ini miring dan hampir menimpa kampung. Sejak tadi aku menahannya agar tidak roboh. Tapi tenagaku kecil sekali...\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "kancil",
+      "x": 340,
+      "y": 462,
+      "s": 1.2,
+      "mood": "licik"
+     },
+     {
+      "t": "gajah",
+      "x": 640,
+      "y": 455,
+      "s": 1.1,
+      "flip": true,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Gajah menggaruk kepalanya. \"Hmm, kalau begitu biar aku yang menahannya. Kekuatanku pasti cukup!\" Ia pun mendorong batang pohon itu dengan sekuat tenaga.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "gajah",
+      "x": 300,
+      "y": 455,
+      "s": 1.1,
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 600,
+      "y": 462,
+      "s": 1.2,
+      "mood": "licik",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Bagus sekali!\" kata Kancil. \"Jangan lepaskan, ya. Aku akan mencari tali untuk menyangganya.\" Gajah mengangguk bangga, sementara Kancil melangkah pergi sambil menahan tawa.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "gajah",
+      "x": 300,
+      "y": 455,
+      "s": 1.1,
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 620,
+      "y": 462,
+      "s": 1.2,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Satu jam berlalu. Dua jam berlalu. Kancil tak kunjung kembali. Gajah terus mendorong dengan keringat bercucuran. \"Kancil, mana talinya?\" panggilnya lemas.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "gajah",
+      "x": 300,
+      "y": 455,
+      "s": 1.1,
+      "mood": "takut"
+     },
+     {
+      "t": "burung",
+      "x": 600,
+      "y": 200,
+      "v": 2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Matahari mulai tenggelam. Gajah memperhatikan pohon itu: tidak bergerak sedikit pun. \"Pohon ini tidak pernah miring! Aku telah ditipu!\" geramnya, tetapi Kancil sudah jauh.",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "gajah",
+      "x": 300,
+      "y": 455,
+      "s": 1.1,
+      "mood": "marah"
+     },
+     {
+      "t": "semak",
+      "x": 650,
+      "y": 445
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sementara itu, Kancil bersenang-senang di tepi sungai. Ia sadar, ia selamat karena akalnya. Gajah pun belajar agar tidak sombong. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 300,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 600,
+      "y": 445
+     },
+     {
+      "t": "bunga",
+      "x": 300,
+      "y": 470
+     },
+     {
+      "t": "kupu",
+      "x": 520,
+      "y": 280
+     },
+     {
+      "t": "kancil",
+      "x": 430,
+      "y": 458,
+      "s": 1.25,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ]
+}
