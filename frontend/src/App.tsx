@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Home } from './pages/Home';
 import { Reader } from './pages/Reader';
 import { Create } from './pages/Create';
+import { InstallBanner, InstallButton } from './InstallPrompt';
 
 function useHashRoute(): string {
   const [hash, setHash] = useState(() => window.location.hash.slice(1) || '/');
@@ -40,12 +41,14 @@ export function App() {
         <nav>
           <a href="#/" className={route === '/' ? 'active' : ''}>Perpustakaan</a>
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
+          <InstallButton />
         </nav>
       </header>
       <main>
         {book ? <Reader slug={book[1]} key={book[1]} /> : route === '/baru' ? <Create /> : <Home />}
       </main>
       <footer className="footer">Her Book · cerita bergambar untuk dibaca bersama</footer>
+      <InstallBanner />
     </div>
   );
 }

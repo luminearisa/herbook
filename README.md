@@ -58,3 +58,7 @@ bash deploy/deploy.sh                      # nilai bawaan bisa diganti: HERBOOK_
 ```
 
 Pakai kunci SSH, jangan menyimpan password di repo. Untuk fitur prompt, isi `herbook-app/.env` di server dengan `ANTHROPIC_API_KEY=...`.
+
+## Pasang sebagai aplikasi (PWA)
+
+Her Book adalah aplikasi web progresif: ada manifest, ikon, dan service worker (`frontend/public/`). Di Chrome/Edge/Android muncul pop-up "Pasang Her Book" dan tombol **Pasang aplikasi** di bar atas; di iPhone/iPad (Safari) muncul petunjuk "Tambah ke Layar Utama". Buku yang pernah dibuka tetap bisa dibaca tanpa internet. Pemasangan hanya berfungsi lewat HTTPS (atau `localhost`).

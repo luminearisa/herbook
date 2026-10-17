@@ -111,8 +111,12 @@ function serveFrontend(string $path): void
     $types = [
         'html' => 'text/html; charset=utf-8', 'js' => 'text/javascript', 'css' => 'text/css',
         'svg' => 'image/svg+xml', 'png' => 'image/png', 'ico' => 'image/x-icon',
-        'json' => 'application/json', 'woff2' => 'font/woff2',
+        'json' => 'application/json', 'woff2' => 'font/woff2', 'webmanifest' => 'application/manifest+json',
     ];
     header('Content-Type: ' . ($types[pathinfo($file, PATHINFO_EXTENSION)] ?? 'application/octet-stream'));
+    // Berkas yang boleh berubah tiap rilis jangan tersimpan lama di cache browser
+    if (in_array(basename($file), ['sw.js', 'index.html', 'manifest.webmanifest'], true)) {
+        header('Cache-Control: no-cache');
+    }
     readfile($file);
 }
