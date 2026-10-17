@@ -1,0 +1,300 @@
+{
+ "title": "Kura-kura dan Kelinci",
+ "summary": "Kelinci yang sombong menantang Kura-kura lomba lari. Siapa yang akan sampai lebih dulu?",
+ "moral": "Sombong membuat kita lengah, sedangkan ketekunan dan kerja keras akan membawa kita sampai tujuan.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 110,
+    "y": 410,
+    "s": 1.2
+   },
+   {
+    "t": "bendera",
+    "x": 735,
+    "y": 440,
+    "s": 1.1
+   },
+   {
+    "t": "kurakura",
+    "x": 560,
+    "y": 468,
+    "s": 1.1
+   },
+   {
+    "t": "kelinci",
+    "x": 300,
+    "y": 458,
+    "s": 1.3,
+    "mood": "licik"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Kelinci terkenal sebagai pelari tercepat di hutan, dan ia sangat bangga. \"Lihatlah kakiku yang lincah!\" katanya. Di dekatnya, Kura-kura berjalan pelan-pelan dengan tenang.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kurakura",
+      "x": 580,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 290,
+      "y": 458,
+      "s": 1.3,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Kura-kura, jalanmu lambat sekali!\" ejek Kelinci. Kura-kura tersenyum dan menjawab, \"Bagaimana kalau kita berlomba sampai bendera di ujung hutan?\" Kelinci tertawa terbahak-bahak, lalu menerima tantangan itu.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kurakura",
+      "x": 300,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 150,
+      "y": 458,
+      "s": 1.3,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Satu, dua, tiga, mulai! Kelinci melesat secepat angin, sementara Kura-kura melangkah satu demi satu. Sebentar saja Kelinci sudah jauh sekali, dan Kura-kura hanya terlihat sebagai titik kecil.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kurakura",
+      "x": 130,
+      "y": 468,
+      "s": 1.0,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 470,
+      "y": 458,
+      "s": 1.3,
+      "mood": "senang",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Ah, Kura-kura masih jauh,\" pikir Kelinci. \"Aku tidur sebentar saja di bawah pohon rindang ini.\" Angin sepoi-sepoi pun membuainya, dan Kelinci tertidur pulas.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 490,
+      "y": 420,
+      "s": 1.5
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kurakura",
+      "x": 190,
+      "y": 468,
+      "s": 1.1,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 450,
+      "y": 462,
+      "s": 1.3,
+      "pose": "tidur"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kura-kura berjalan terus tanpa berhenti, tanpa mengeluh. Ia melewati Kelinci yang sedang mendengkur, dan tetap melangkah dengan sabar, selangkah demi selangkah.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 330,
+      "y": 420,
+      "s": 1.5
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kelinci",
+      "x": 290,
+      "y": 462,
+      "s": 1.3,
+      "pose": "tidur"
+     },
+     {
+      "t": "kurakura",
+      "x": 560,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kelinci terbangun saat langit mulai jingga. Ia melompat dan berlari sekencang-kencangnya, tetapi terlambat! Kura-kura sudah sampai di garis akhir dan disambut tepuk tangan burung-burung.",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kurakura",
+      "x": 660,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "burung",
+      "x": 580,
+      "y": 170,
+      "v": 2
+     },
+     {
+      "t": "kelinci",
+      "x": 330,
+      "y": 458,
+      "s": 1.3,
+      "mood": "kaget",
+      "pose": "lari"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kelinci menunduk malu. \"Maafkan aku, Kura-kura. Aku terlalu sombong.\" Kura-kura menjawab ramah, \"Tidak apa-apa. Yang penting kita terus berusaha.\" Sejak itu mereka berteman baik. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "bendera",
+      "x": 735,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "kurakura",
+      "x": 430,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 240,
+      "y": 458,
+      "s": 1.3,
+      "mood": "sedih"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "kura-kura-dan-kelinci",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

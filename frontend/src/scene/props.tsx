@@ -2,7 +2,8 @@ import type { CharProps } from './characters';
 
 export function Pohon({ v = 0 }: CharProps) {
   const fruit = v === 1;
-  const leaf = ['#3f9a4d', '#3b9145', '#58a948', '#2f8a56'][v % 4];
+  const snow = v === 3;
+  const leaf = snow ? '#e9f2f8' : ['#3f9a4d', '#3b9145', '#58a948'][v % 3];
   return (
     <g>
       <path d="M-12 0 Q-8 -60 -6 -110 L8 -110 Q8 -60 14 0z" fill="#7a4e2a" />
@@ -25,7 +26,7 @@ export function Pohon({ v = 0 }: CharProps) {
 }
 
 export function Semak({ v = 0 }: CharProps) {
-  const c = ['#4fa04a', '#3f8c47', '#62b04f', '#3b8a5c'][v % 4];
+  const c = v === 3 ? '#e9f2f8' : ['#4fa04a', '#3f8c47', '#62b04f'][v % 3];
   return (
     <g>
       <ellipse cx="0" cy="-18" rx="52" ry="24" fill={c} />
@@ -217,6 +218,35 @@ export function Sarang() {
       <ellipse cx="6" cy="-6" rx="17" ry="12" fill="#3b2412" />
       {[[-48, -6], [-30, -2], [30, -4], [48, -2]].map(([x, y], i) => (
         <circle key={i} cx={x} cy={y} r="3.4" fill="#7a5028" />
+      ))}
+    </g>
+  );
+}
+
+export function Bendera() {
+  return (
+    <g>
+      <rect x="-3" y="-120" width="6" height="120" rx="3" fill="#7a4e2a" />
+      <g className="drift-b">
+        {Array.from({ length: 12 }, (_, i) => (
+          <rect key={i} x={3 + (i % 4) * 14} y={-118 + Math.floor(i / 4) * 14} width="14" height="14" fill={(i + Math.floor(i / 4)) % 2 ? '#2b1a0f' : '#fff'} />
+        ))}
+      </g>
+      <path d="M-40 0 H40" stroke="#fff" strokeWidth="8" strokeLinecap="round" opacity=".8" />
+    </g>
+  );
+}
+
+/** Jaring pemburu; digambar setelah tokoh yang terperangkap. */
+export function Jaring() {
+  return (
+    <g opacity=".92">
+      <path d="M-90 0 Q-100 -90 -30 -170 H30 Q100 -90 90 0z" fill="#d9c08a" fillOpacity=".15" stroke="#9a7a3a" strokeWidth="3" />
+      {[-60, -30, 0, 30, 60].map((x) => (
+        <path key={x} d={`M${x} -170 L${x * 1.5} 0`} stroke="#9a7a3a" strokeWidth="2" />
+      ))}
+      {[-130, -90, -50, -16].map((y) => (
+        <path key={y} d={`M-95 ${y} Q0 ${y + 14} 95 ${y}`} stroke="#9a7a3a" strokeWidth="2" fill="none" />
       ))}
     </g>
   );

@@ -13,6 +13,7 @@ const SKY: Record<Bg, [string, string]> = {
   malam: ['#0a1640', '#2b3a80'],
   senja: ['#6a4c9c', '#ffb26b'],
   gurun: ['#7cc8f2', '#fff0c4'],
+  salju: ['#b9d3ea', '#f3f8fc'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -91,6 +92,13 @@ export function Background({ bg }: { bg: Bg }) {
           <Grass color="#68b258" from={360} />
         </>
       )}
+      {bg === 'salju' && (
+        <>
+          <Hills far="#e3eef7" mid="#d3e3f0" y={290} />
+          <ForestSilhouette y={320} color="#c3d6e6" />
+          <Grass color="#f4f9fc" from={360} />
+        </>
+      )}
       {bg === 'gurun' && (
         <>
           <path d="M0 300 Q150 240 300 290 T600 280 T800 270 V500 H0z" fill="#ecc977" />
@@ -151,6 +159,15 @@ export function Background({ bg }: { bg: Bg }) {
 
 /** Lapisan di atas objek: cahaya malam/senja, bulan, bintang, kunang-kunang. */
 export function Overlay({ bg }: { bg: Bg }) {
+  if (bg === 'salju') {
+    return (
+      <g fill="#fff">
+        {Array.from({ length: 26 }, (_, i) => (
+          <circle key={i} className="snow" style={{ animationDelay: `${(i % 9) * 0.5}s`, animationDuration: `${5 + (i % 5)}s` }} cx={(i * 97) % 800} cy={-10} r={2 + (i % 3)} />
+        ))}
+      </g>
+    );
+  }
   if (bg === 'senja') return <rect width="800" height="500" fill="#ff8a3d" opacity=".14" />;
   if (bg !== 'malam') return null;
   return (

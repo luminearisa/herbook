@@ -1,4 +1,4 @@
-import type { Book, BookSummary } from './types';
+import type { Book, BookSummary, Category } from './types';
 
 async function request<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -13,7 +13,7 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 export const api = {
   books: () => request<BookSummary[]>('/api/books'),
   book: (slug: string) => request<Book>(`/api/books/${slug}`),
-  generate: (prompt: string, category: 'dongeng' | 'islami') =>
+  generate: (prompt: string, category: Category) =>
     request<{ book: Book; mode: 'ai' | 'offline'; note: string | null }>('/api/books/generate', {
       method: 'POST',
       body: JSON.stringify({ prompt, category }),

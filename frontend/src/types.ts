@@ -1,6 +1,8 @@
 export type Mood = 'senang' | 'takut' | 'licik' | 'sedih' | 'marah' | 'kaget' | 'pingsan';
-export type Pose = 'berdiri' | 'lari' | 'lompat' | 'rebah' | 'renang';
-export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun';
+export type Pose = 'berdiri' | 'lari' | 'lompat' | 'rebah' | 'renang' | 'tidur';
+export type Bg = 'hutan' | 'sungai' | 'kebun' | 'desa' | 'malam' | 'senja' | 'gurun' | 'salju';
+
+export type Category = 'dongeng' | 'islami' | 'fabel';
 
 export interface SceneItem {
   t: string;
@@ -25,7 +27,7 @@ export interface BookSummary {
   summary: string;
   moral: string;
   cover: SceneData;
-  category: 'dongeng' | 'islami';
+  category: Category;
   is_seed: boolean;
   page_count: number;
 }

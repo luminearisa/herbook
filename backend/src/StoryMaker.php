@@ -69,7 +69,20 @@ BG: $bgs. (sungai: tepi kiri x<170 dan kanan x>630, air di tengah; buaya berpose
 TIPE: $types. Tokoh hewan/orang menghadap kanan; flip=true menghadapkan ke kiri. Tinggi kancil sekitar 125*s px, pohon ~180*s px.
 MOOD (hewan/orang): $moods. POSE: $poses (lompat/lari/rebah untuk kancil; renang untuk buaya; v=1 pada pohon berarti berbuah).
 Tokoh utama cerita sebaiknya kancil kecuali pengguna meminta lain; gunakan hanya TIPE yang tersedia.
-TXT . ($category === 'islami' ? self::islamicRules() : '');
+TXT . match ($category) {
+            'islami' => self::islamicRules(),
+            'fabel' => self::fableRules(),
+            default => '',
+        };
+    }
+
+    private static function fableRules(): string
+    {
+        return <<<TXT
+
+
+KATEGORI FABEL: cerita hewan yang berperilaku seperti manusia dan selalu berakhir dengan pesan moral yang jelas (isi bagian moral). Boleh memakai fabel klasik (mis. kura-kura dan kelinci) atau karangan baru. Tokoh utama tidak harus kancil. Tambahan TIPE: kelinci, belalang, singa, tikus, bendera (garis finis), jaring (digambar setelah tokoh yang terperangkap), semut, kurakura; BG tambahan: salju; POSE tambahan: tidur (kelinci/singa); pohon dan semak v=3 berarti bersalju.
+TXT;
     }
 
     private static function islamicRules(): string

@@ -1,8 +1,14 @@
 import { useState } from 'react';
 import { go } from '../App';
 import { api } from '../api';
+import type { Category } from '../types';
 
-const IDEAS: Record<'dongeng' | 'islami', string[]> = {
+const IDEAS: Record<Category, string[]> = {
+  fabel: [
+    'Singa dan tikus kecil yang saling menolong',
+    'Kura-kura dan kelinci berlomba lari',
+    'Semut yang rajin dan belalang yang malas',
+  ],
   islami: [
     'Kisah Nabi Yunus dan ikan paus',
     'Kisah unta Nabi Saleh',
@@ -17,7 +23,7 @@ const IDEAS: Record<'dongeng' | 'islami', string[]> = {
 
 export function Create() {
   const [prompt, setPrompt] = useState('');
-  const [category, setCategory] = useState<'dongeng' | 'islami'>('dongeng');
+  const [category, setCategory] = useState<Category>('dongeng');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -44,7 +50,7 @@ export function Create() {
       </p>
       <form onSubmit={submit} className="create-form">
         <div className="tabs" role="radiogroup" aria-label="Jenis cerita">
-          {([['dongeng', 'Dongeng'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
+          {([['dongeng', 'Dongeng'], ['fabel', 'Fabel'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
             <button type="button" key={k} role="radio" aria-checked={category === k} className={'tab' + (category === k ? ' on' : '')} onClick={() => setCategory(k)} disabled={busy}>
               {label}
             </button>

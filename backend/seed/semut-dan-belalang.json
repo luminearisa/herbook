@@ -1,0 +1,319 @@
+{
+ "title": "Semut dan Belalang",
+ "summary": "Semut rajin menyimpan makanan sepanjang musim panas, sedangkan Belalang hanya bernyanyi. Bagaimana nasib mereka saat musim dingin tiba?",
+ "moral": "Bekerjalah dan bersiaplah sejak dini. Dan jadilah orang yang mau berbagi kepada yang membutuhkan.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "bunga",
+    "x": 120,
+    "y": 470
+   },
+   {
+    "t": "sarang",
+    "x": 640,
+    "y": 455,
+    "s": 1.3
+   },
+   {
+    "t": "semut",
+    "x": 470,
+    "y": 466,
+    "s": 1.5,
+    "mood": "senang",
+    "v": 1
+   },
+   {
+    "t": "belalang",
+    "x": 250,
+    "y": 462,
+    "s": 1.4,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di musim panas yang cerah, Belalang bernyanyi dan bermain di antara bunga-bunga. \"Hidup itu indah!\" serunya. Ia tak punya waktu memikirkan hari esok.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "bunga",
+      "x": 110,
+      "y": 476
+     },
+     {
+      "t": "bunga",
+      "x": 470,
+      "y": 480,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 650,
+      "y": 478,
+      "v": 2
+     },
+     {
+      "t": "kupu",
+      "x": 560,
+      "y": 290
+     },
+     {
+      "t": "belalang",
+      "x": 300,
+      "y": 462,
+      "s": 1.5,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sementara itu, Semut sibuk membawa biji-bijian ke sarangnya. \"Ayo ikut mengumpulkan makanan, Belalang,\" ajaknya. \"Musim dingin akan tiba.\" Belalang hanya tertawa, \"Santai saja, masih lama!\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "sarang",
+      "x": 700,
+      "y": 455,
+      "s": 1.4
+     },
+     {
+      "t": "semut",
+      "x": 520,
+      "y": 466,
+      "s": 1.5,
+      "mood": "senang",
+      "v": 1
+     },
+     {
+      "t": "belalang",
+      "x": 230,
+      "y": 458,
+      "s": 1.5,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Hari demi hari berlalu. Semut terus bekerja keras sampai gudang makanannya penuh. Belalang bersantai di atas batu, bernyanyi dan menari, tanpa mengumpulkan sebutir pun makanan.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "batu",
+      "x": 250,
+      "y": 458,
+      "s": 1.2
+     },
+     {
+      "t": "belalang",
+      "x": 250,
+      "y": 424,
+      "s": 1.4,
+      "mood": "senang"
+     },
+     {
+      "t": "sarang",
+      "x": 700,
+      "y": 455,
+      "s": 1.4
+     },
+     {
+      "t": "semut",
+      "x": 480,
+      "y": 468,
+      "s": 1.5,
+      "mood": "senang",
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Lalu musim dingin pun datang. Salju turun menutupi seluruh hutan, dan tidak ada lagi daun maupun biji yang bisa dimakan. Belalang menggigil kedinginan dan lapar sekali.",
+   "scene": {
+    "bg": "salju",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3,
+      "v": 3
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2,
+      "v": 3
+     },
+     {
+      "t": "semak",
+      "x": 450,
+      "y": 445,
+      "v": 3
+     },
+     {
+      "t": "belalang",
+      "x": 300,
+      "y": 462,
+      "s": 1.5,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dengan langkah lemas, Belalang mengetuk pintu sarang Semut. \"Semut, tolonglah aku. Aku lapar dan kedinginan.\" Semut berkata, \"Kenapa kau tidak menyimpan makanan di musim panas?\" Belalang hanya bisa tertunduk malu.",
+   "scene": {
+    "bg": "salju",
+    "items": [
+     {
+      "t": "sarang",
+      "x": 660,
+      "y": 455,
+      "s": 1.5
+     },
+     {
+      "t": "semut",
+      "x": 560,
+      "y": 468,
+      "s": 1.5,
+      "mood": "kaget",
+      "flip": true
+     },
+     {
+      "t": "belalang",
+      "x": 340,
+      "y": 462,
+      "s": 1.5,
+      "mood": "sedih"
+     },
+     {
+      "t": "semak",
+      "x": 110,
+      "y": 445,
+      "v": 3
+     }
+    ]
+   }
+  },
+  {
+   "text": "Semut menghela napas, lalu tersenyum. \"Masuklah. Kita punya cukup makanan untuk berbagi.\" Belalang berterima kasih sambil berjanji tidak akan malas lagi. Mereka makan bersama di dalam sarang yang hangat.",
+   "scene": {
+    "bg": "salju",
+    "items": [
+     {
+      "t": "sarang",
+      "x": 660,
+      "y": 455,
+      "s": 1.5
+     },
+     {
+      "t": "semut",
+      "x": 550,
+      "y": 468,
+      "s": 1.5,
+      "mood": "senang",
+      "flip": true
+     },
+     {
+      "t": "belalang",
+      "x": 350,
+      "y": 460,
+      "s": 1.5,
+      "mood": "senang"
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3,
+      "v": 3
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ketika musim semi tiba, Belalang ikut membantu Semut mengumpulkan biji-bijian. Ia belajar bahwa kerja keras itu penting, dan Semut belajar bahwa berbagi itu menyenangkan. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "bunga",
+      "x": 120,
+      "y": 478
+     },
+     {
+      "t": "bunga",
+      "x": 640,
+      "y": 482,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 470,
+      "y": 290
+     },
+     {
+      "t": "belalang",
+      "x": 250,
+      "y": 462,
+      "s": 1.5,
+      "mood": "senang"
+     },
+     {
+      "t": "semut",
+      "x": 470,
+      "y": 468,
+      "s": 1.5,
+      "mood": "senang",
+      "v": 1
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "semut-dan-belalang",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

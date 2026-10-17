@@ -159,3 +159,6 @@ textarea:focus { outline: 3px solid #bfe0c8; border-color: var(--green); }
 .tab { font: inherit; font-weight: 500; cursor: pointer; padding: 6px 16px; border-radius: 999px; border: 2px solid var(--line); background: var(--paper); color: var(--ink); }
 .tab.on { background: var(--green); border-color: var(--green); color: #fff; }
 .chip.islami { background: #dcefe3; color: #1f4a36; }
+.chip.fabel { background: #ffe3b8; color: #7a4a0c; }
+.snow { animation: snowfall linear infinite; }
+@keyframes snowfall { from { transform: translateY(0); opacity: 0; } 10% { opacity: 1; } to { transform: translateY(520px) translateX(24px); opacity: .9; } }
