@@ -1,0 +1,410 @@
+{
+ "title": "Pasukan Gajah dan Burung Ababil",
+ "summary": "Kisah tentang pasukan bergajah yang ingin menghancurkan Ka'bah, dan burung Ababil yang Allah kirim sebagai penjaganya (QS. Al-Fil).",
+ "moral": "Allah Maha Kuasa menjaga rumah-Nya. Kekuatan dan kesombongan tidak berarti apa-apa di hadapan-Nya.",
+ "cover": {
+  "bg": "gurun",
+  "items": [
+   {
+    "t": "kurma",
+    "x": 110,
+    "y": 410,
+    "s": 1.2
+   },
+   {
+    "t": "kabah",
+    "x": 470,
+    "y": 420,
+    "s": 1.3
+   },
+   {
+    "t": "ababil",
+    "x": 560,
+    "y": 110,
+    "s": 1.1,
+    "v": 0
+   },
+   {
+    "t": "ababil",
+    "x": 650,
+    "y": 170,
+    "s": 1.1,
+    "v": 0
+   },
+   {
+    "t": "ababil",
+    "x": 380,
+    "y": 150,
+    "s": 1.1,
+    "v": 0
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di kota Mekah yang dikelilingi gurun, berdirilah Ka'bah, rumah Allah yang mulia. Orang-orang dari berbagai penjuru datang untuk menghormatinya.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kabah",
+      "x": 470,
+      "y": 420,
+      "s": 1.3
+     },
+     {
+      "t": "kurma",
+      "x": 740,
+      "y": 415,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Pada suatu hari, Abrahah, penguasa dari Yaman, datang dengan pasukan gajah yang besar. Ia iri dan bertekad menghancurkan Ka'bah. Tanah bergetar dan debu mengepul ke langit.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kabah",
+      "x": 720,
+      "y": 360,
+      "s": 0.75
+     },
+     {
+      "t": "debu",
+      "x": 250,
+      "y": 430,
+      "s": 1.3
+     },
+     {
+      "t": "gajah",
+      "x": 150,
+      "y": 465,
+      "s": 0.95,
+      "mood": "marah"
+     },
+     {
+      "t": "gajah",
+      "x": 350,
+      "y": 450,
+      "s": 0.95,
+      "mood": "marah"
+     },
+     {
+      "t": "gajah",
+      "x": 540,
+      "y": 440,
+      "s": 0.85,
+      "mood": "marah"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Penduduk Mekah menyingkir ke bukit-bukit. Pemimpin mereka berkata, \"Ka'bah ini punya Pemilik yang akan menjaganya.\" Mereka pun menunggu dengan penuh keyakinan.",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kabah",
+      "x": 420,
+      "y": 420,
+      "s": 1.4
+     },
+     {
+      "t": "kurma",
+      "x": 730,
+      "y": 410,
+      "s": 1.1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ketika pasukan hendak maju, gajah terbesar tiba-tiba berhenti. Ia tidak mau melangkah ke arah Ka'bah. Dipukul dan dibujuk pun, ia tetap diam, sedangkan gajah lainnya kebingungan.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kabah",
+      "x": 730,
+      "y": 340,
+      "s": 0.6
+     },
+     {
+      "t": "gajah",
+      "x": 110,
+      "y": 440,
+      "s": 0.9,
+      "mood": "kaget"
+     },
+     {
+      "t": "gajah",
+      "x": 690,
+      "y": 445,
+      "s": 0.7,
+      "mood": "kaget"
+     },
+     {
+      "t": "gajah",
+      "x": 400,
+      "y": 465,
+      "s": 1.3,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tiba-tiba langit dipenuhi burung-burung kecil yang datang berbondong-bondong. Itulah burung Ababil, dan masing-masing membawa batu kecil dari tanah yang keras.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kabah",
+      "x": 730,
+      "y": 350,
+      "s": 0.7
+     },
+     {
+      "t": "ababil",
+      "x": 150,
+      "y": 100,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 270,
+      "y": 170,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 390,
+      "y": 90,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 510,
+      "y": 160,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 630,
+      "y": 100,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 230,
+      "y": 250,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 460,
+      "y": 240,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 580,
+      "y": 270,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "gajah",
+      "x": 200,
+      "y": 470,
+      "s": 0.9,
+      "mood": "kaget"
+     },
+     {
+      "t": "gajah",
+      "x": 420,
+      "y": 455,
+      "s": 0.9,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Burung-burung itu menjatuhkan batu-batunya. Pasukan bergajah pun kacau dan lari tunggang-langgang. Allah membuat mereka seperti daun-daun yang dimakan ulat.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "debu",
+      "x": 300,
+      "y": 440,
+      "s": 1.4
+     },
+     {
+      "t": "ababil",
+      "x": 170,
+      "y": 110,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 330,
+      "y": 80,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 500,
+      "y": 130,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "ababil",
+      "x": 640,
+      "y": 90,
+      "s": 1.1,
+      "v": 0
+     },
+     {
+      "t": "batu",
+      "x": 250,
+      "y": 250,
+      "s": 0.3
+     },
+     {
+      "t": "batu",
+      "x": 420,
+      "y": 230,
+      "s": 0.3
+     },
+     {
+      "t": "batu",
+      "x": 560,
+      "y": 280,
+      "s": 0.3
+     },
+     {
+      "t": "gajah",
+      "x": 110,
+      "y": 465,
+      "s": 0.85,
+      "mood": "takut",
+      "pose": "lari",
+      "flip": true
+     },
+     {
+      "t": "gajah",
+      "x": 370,
+      "y": 455,
+      "s": 0.85,
+      "mood": "takut",
+      "pose": "lari",
+      "flip": true
+     },
+     {
+      "t": "gajah",
+      "x": 640,
+      "y": 470,
+      "s": 0.85,
+      "mood": "takut",
+      "pose": "lari",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ka'bah tetap berdiri aman. Peristiwa itu terjadi pada tahun yang dikenal sebagai Tahun Gajah. Kita belajar bahwa orang yang sombong tidak akan menang melawan kehendak Allah. Tamat.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 110,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kabah",
+      "x": 450,
+      "y": 420,
+      "s": 1.3
+     },
+     {
+      "t": "kurma",
+      "x": 740,
+      "y": 415,
+      "s": 1.1
+     },
+     {
+      "t": "ababil",
+      "x": 600,
+      "y": 120,
+      "s": 1.1,
+      "v": 1
+     },
+     {
+      "t": "ababil",
+      "x": 680,
+      "y": 190,
+      "s": 1.1,
+      "v": 1
+     },
+     {
+      "t": "ababil",
+      "x": 540,
+      "y": 200,
+      "s": 1.1,
+      "v": 1
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "pasukan-gajah",
+ "category": "islami",
+ "author": "Kisah Islami"
+}

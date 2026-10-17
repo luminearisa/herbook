@@ -3,12 +3,14 @@ declare(strict_types=1);
 
 final class Books
 {
+    public const CATEGORIES = ['dongeng', 'islami'];
+
     /** @return list<array<string,mixed>> */
     public static function all(PDO $pdo): array
     {
         $rows = $pdo->query(
             'SELECT b.*, (SELECT COUNT(*) FROM pages p WHERE p.book_id = b.id) AS page_count
-             FROM books b ORDER BY b.is_seed DESC, b.id ASC'
+             FROM books b ORDER BY b.is_seed DESC, b.category ASC, b.id ASC'
         )->fetchAll();
         return array_map(static fn (array $r) => self::present($r), $rows);
     }
@@ -45,7 +47,7 @@ final class Books
 
         $pdo->beginTransaction();
         try {
-            $pdo->prepare('INSERT INTO books (slug, title, author, summary, moral, cover, is_seed) VALUES (?,?,?,?,?,?,?)')
+            $pdo->prepare('INSERT INTO books (slug, title, author, summary, moral, cover, is_seed, category) VALUES (?,?,?,?,?,?,?,?)')
                 ->execute([
                     $slug,
                     mb_substr($title, 0, 120),
@@ -54,6 +56,7 @@ final class Books
                     mb_substr(trim((string) ($in['moral'] ?? '')), 0, 400),
                     json_encode(Scene::sanitize($in['cover'] ?? $pages[0]['scene'] ?? [])),
                     $seed ? 1 : 0,
+                    in_array($in['category'] ?? null, self::CATEGORIES, true) ? $in['category'] : 'dongeng',
                 ]);
             $bookId = (int) $pdo->lastInsertId();
             $ins = $pdo->prepare('INSERT INTO pages (book_id, position, text, scene) VALUES (?,?,?,?)');
@@ -98,6 +101,7 @@ final class Books
             'summary' => $r['summary'],
             'moral' => $r['moral'],
             'cover' => json_decode($r['cover'], true),
+            'category' => $r['category'],
             'is_seed' => (bool) $r['is_seed'],
             'page_count' => (int) ($r['page_count'] ?? 0),
         ];

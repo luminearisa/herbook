@@ -154,3 +154,70 @@ export function Kurungan() {
     </g>
   );
 }
+
+export function Kabah() {
+  return (
+    <g>
+      <ellipse cx="8" cy="2" rx="150" ry="16" fill="#efe3c6" opacity=".9" />
+      <path d="M-70 -120 H40 L78 -134 H-32z" fill="#3a3a44" />
+      <path d="M40 -120 L78 -134 V-14 L40 0z" fill="#17171c" />
+      <rect x="-70" y="-120" width="110" height="120" fill="#26262b" />
+      <rect x="-70" y="-100" width="110" height="12" fill="#d9a93c" />
+      <path d="M40 -100 L78 -112 V-100 L40 -88z" fill="#b8892a" />
+      <rect x="-48" y="-72" width="30" height="58" rx="3" fill="#e5b84a" stroke="#a8802c" strokeWidth="2" />
+      <path d="M-33 -72 V-14" stroke="#a8802c" strokeWidth="2" />
+      <path d="M-70 -80 H40 M-70 -60 H40" stroke="#32323a" strokeWidth="2" />
+    </g>
+  );
+}
+
+export function Kurma() {
+  return (
+    <g>
+      <path d="M-8 0 Q-16 -60 -2 -130 L10 -130 Q4 -60 12 0z" fill="#8a5a2b" />
+      {[-10, -26, -42, -58].map((y, i) => (
+        <path key={i} d={`M-8 ${y} h20`} stroke="#6a421e" strokeWidth="3" />
+      ))}
+      <g className="sway" style={{ transformOrigin: '2px -130px' }}>
+        {[-70, -40, -12, 14, 42, 70].map((a) => (
+          <path key={a} d="M2 -130 Q40 -170 78 -128 Q42 -150 2 -130z" fill="#3f9a4d" stroke="#2f7a3d" strokeWidth="1.5" transform={`rotate(${a} 2 -130)`} />
+        ))}
+        <circle cx="-6" cy="-128" r="5" fill="#a8532e" /><circle cx="8" cy="-124" r="5" fill="#a8532e" />
+      </g>
+    </g>
+  );
+}
+
+export function Surat() {
+  return (
+    <g className="flutter">
+      <rect x="-26" y="-14" width="52" height="28" rx="5" fill="#f3e2b3" stroke="#b58d45" strokeWidth="2" />
+      <path d="M-18 -6 H18 M-18 0 H12 M-18 6 H16" stroke="#8a6a3a" strokeWidth="2" strokeLinecap="round" />
+      <ellipse cx="-26" cy="0" rx="5" ry="15" fill="#e7cf92" stroke="#b58d45" strokeWidth="2" />
+      <circle cx="16" cy="8" r="5" fill="#b3412e" />
+    </g>
+  );
+}
+
+export function Debu() {
+  return (
+    <g className="drift">
+      {[[-60, -16, 24], [-26, -30, 30], [10, -20, 34], [48, -30, 26], [80, -14, 22], [-4, -48, 22]].map(([x, y, r], i) => (
+        <circle key={i} cx={x} cy={y} r={r} fill="#e0c08a" opacity=".78" />
+      ))}
+    </g>
+  );
+}
+
+export function Sarang() {
+  return (
+    <g>
+      <path d="M-60 0 Q-50 -50 -10 -58 Q30 -62 56 -20 Q62 -8 66 0z" fill="#9a6a3a" />
+      <path d="M-40 -14 q8 -22 30 -30" stroke="#b98350" strokeWidth="5" fill="none" strokeLinecap="round" opacity=".7" />
+      <ellipse cx="6" cy="-6" rx="17" ry="12" fill="#3b2412" />
+      {[[-48, -6], [-30, -2], [30, -4], [48, -2]].map(([x, y], i) => (
+        <circle key={i} cx={x} cy={y} r="3.4" fill="#7a5028" />
+      ))}
+    </g>
+  );
+}

@@ -13,10 +13,10 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 export const api = {
   books: () => request<BookSummary[]>('/api/books'),
   book: (slug: string) => request<Book>(`/api/books/${slug}`),
-  generate: (prompt: string) =>
+  generate: (prompt: string, category: 'dongeng' | 'islami') =>
     request<{ book: Book; mode: 'ai' | 'offline'; note: string | null }>('/api/books/generate', {
       method: 'POST',
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({ prompt, category }),
     }),
   remove: (slug: string) => request<{ ok: true }>(`/api/books/${slug}`, { method: 'DELETE' }),
 };

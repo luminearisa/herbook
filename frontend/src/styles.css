@@ -154,3 +154,8 @@ textarea:focus { outline: 3px solid #bfe0c8; border-color: var(--green); }
   .story-text { font-size: 1.1rem; }
   nav a { padding: 6px 10px; font-size: .9rem; }
 }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 16px; }
+.tab { font: inherit; font-weight: 500; cursor: pointer; padding: 6px 16px; border-radius: 999px; border: 2px solid var(--line); background: var(--paper); color: var(--ink); }
+.tab.on { background: var(--green); border-color: var(--green); color: #fff; }
+.chip.islami { background: #dcefe3; color: #1f4a36; }

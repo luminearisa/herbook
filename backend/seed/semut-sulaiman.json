@@ -1,0 +1,375 @@
+{
+ "title": "Semut yang Waspada",
+ "summary": "Seekor semut cerdas memperingatkan kaumnya agar selamat dari pasukan Nabi Sulaiman 'alaihis salam (QS. An-Naml: 18-19).",
+ "moral": "Peduli pada sesama dan berani mengingatkan itu mulia. Dan bersyukurlah atas setiap nikmat dari Allah.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "bunga",
+    "x": 120,
+    "y": 470
+   },
+   {
+    "t": "sarang",
+    "x": 640,
+    "y": 450,
+    "s": 1.3
+   },
+   {
+    "t": "semut",
+    "x": 360,
+    "y": 462,
+    "s": 2.2,
+    "mood": "kaget"
+   },
+   {
+    "t": "burung",
+    "x": 250,
+    "y": 120,
+    "v": 0
+   },
+   {
+    "t": "burung",
+    "x": 330,
+    "y": 160,
+    "v": 1
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Nabi Sulaiman 'alaihis salam adalah nabi yang dikaruniai kemampuan memahami bahasa hewan. Suatu hari beliau berjalan bersama pasukannya yang besar, terdiri dari jin, manusia, dan burung-burung.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 200,
+      "y": 120,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 170,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 470,
+      "y": 110,
+      "v": 2
+     },
+     {
+      "t": "burung",
+      "x": 580,
+      "y": 180,
+      "v": 3
+     },
+     {
+      "t": "semak",
+      "x": 400,
+      "y": 445
+     }
+    ]
+   }
+  },
+  {
+   "text": "Di sebuah lembah yang tenang, hiduplah koloni semut. Mereka bekerja sama dengan rajin membawa makanan ke sarang, sambil bernyanyi kecil.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "semak",
+      "x": 90,
+      "y": 445
+     },
+     {
+      "t": "sarang",
+      "x": 560,
+      "y": 455,
+      "s": 1.4
+     },
+     {
+      "t": "semut",
+      "x": 170,
+      "y": 462,
+      "s": 1.4,
+      "mood": "senang",
+      "v": 1
+     },
+     {
+      "t": "semut",
+      "x": 340,
+      "y": 468,
+      "s": 1.4,
+      "mood": "senang",
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 120,
+      "y": 478
+     },
+     {
+      "t": "bunga",
+      "x": 470,
+      "y": 482,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tiba-tiba seekor semut melihat debu mengepul dari kejauhan. Tanah bergetar pelan. Pasukan besar sedang menuju lembah mereka!",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "debu",
+      "x": 640,
+      "y": 335,
+      "s": 1.1
+     },
+     {
+      "t": "semak",
+      "x": 520,
+      "y": 445
+     },
+     {
+      "t": "semut",
+      "x": 300,
+      "y": 462,
+      "s": 2.2,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dengan lantang semut itu berseru, \"Wahai semut-semut, masuklah ke sarang kalian! Jangan sampai kalian terinjak oleh Sulaiman dan pasukannya, sedangkan mereka tidak menyadarinya.\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "debu",
+      "x": 760,
+      "y": 330,
+      "s": 0.9
+     },
+     {
+      "t": "sarang",
+      "x": 670,
+      "y": 455,
+      "s": 1.3
+     },
+     {
+      "t": "semut",
+      "x": 170,
+      "y": 460,
+      "s": 2.4,
+      "mood": "kaget"
+     },
+     {
+      "t": "semut",
+      "x": 390,
+      "y": 466,
+      "s": 1.5,
+      "mood": "takut"
+     },
+     {
+      "t": "semut",
+      "x": 530,
+      "y": 470,
+      "s": 1.5,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nabi Sulaiman mendengar kata-kata semut itu dan tersenyum lembut. Beliau berdoa, \"Ya Tuhanku, berilah aku petunjuk agar aku selalu mensyukuri nikmat-Mu dan beramal saleh yang Engkau ridai.\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "burung",
+      "x": 200,
+      "y": 120,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 160,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 580,
+      "y": 130,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 260,
+      "y": 478
+     },
+     {
+      "t": "bunga",
+      "x": 600,
+      "y": 478,
+      "v": 2
+     },
+     {
+      "t": "semut",
+      "x": 420,
+      "y": 465,
+      "s": 2.4,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Pasukan pun melangkah hati-hati dan berbelok melewati lembah itu. Semut-semut tetap aman di dalam sarang, dan kebun kecil mereka tidak terinjak sedikit pun.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "debu",
+      "x": 140,
+      "y": 335,
+      "s": 1.0
+     },
+     {
+      "t": "semak",
+      "x": 90,
+      "y": 445
+     },
+     {
+      "t": "sarang",
+      "x": 450,
+      "y": 455,
+      "s": 1.6
+     },
+     {
+      "t": "semut",
+      "x": 470,
+      "y": 440,
+      "s": 1.6,
+      "mood": "senang"
+     },
+     {
+      "t": "kupu",
+      "x": 620,
+      "y": 300
+     },
+     {
+      "t": "burung",
+      "x": 300,
+      "y": 130,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dari kisah ini kita belajar: peduli pada sesama, berani mengingatkan, dan selalu bersyukur kepada Allah. Bahkan makhluk sekecil semut pun bisa menjadi teladan. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 710,
+      "y": 405,
+      "s": 1.2
+     },
+     {
+      "t": "bunga",
+      "x": 250,
+      "y": 480
+     },
+     {
+      "t": "bunga",
+      "x": 580,
+      "y": 482,
+      "v": 1
+     },
+     {
+      "t": "kupu",
+      "x": 500,
+      "y": 290
+     },
+     {
+      "t": "semut",
+      "x": 400,
+      "y": 466,
+      "s": 2.4,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "semut-sulaiman",
+ "category": "islami",
+ "author": "Kisah Islami"
+}

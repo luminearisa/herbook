@@ -2,14 +2,22 @@ import { useState } from 'react';
 import { go } from '../App';
 import { api } from '../api';
 
-const IDEAS = [
-  'Kancil dan harimau yang ingin memangsanya di tepi hutan',
-  'Kancil menipu buaya agar bisa menyeberangi sungai',
-  'Kancil membantu petani menjaga kebun dari tikus',
-];
+const IDEAS: Record<'dongeng' | 'islami', string[]> = {
+  islami: [
+    'Kisah Nabi Yunus dan ikan paus',
+    'Kisah unta Nabi Saleh',
+    'Kisah Ashabul Kahfi dan anjing yang setia',
+  ],
+  dongeng: [
+    'Kancil dan harimau yang ingin memangsanya di tepi hutan',
+    'Kancil menipu buaya agar bisa menyeberangi sungai',
+    'Kancil membantu petani menjaga kebun dari tikus',
+  ],
+};
 
 export function Create() {
   const [prompt, setPrompt] = useState('');
+  const [category, setCategory] = useState<'dongeng' | 'islami'>('dongeng');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
 
@@ -18,7 +26,7 @@ export function Create() {
     setBusy(true);
     setError('');
     try {
-      const res = await api.generate(prompt);
+      const res = await api.generate(prompt, category);
       if (res.note) sessionStorage.setItem('herbook-note', res.note);
       go(`/buku/${res.book.slug}`);
     } catch (err) {
@@ -35,6 +43,19 @@ export function Create() {
         menggambarnya dalam SVG.
       </p>
       <form onSubmit={submit} className="create-form">
+        <div className="tabs" role="radiogroup" aria-label="Jenis cerita">
+          {([['dongeng', 'Dongeng'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
+            <button type="button" key={k} role="radio" aria-checked={category === k} className={'tab' + (category === k ? ' on' : '')} onClick={() => setCategory(k)} disabled={busy}>
+              {label}
+            </button>
+          ))}
+        </div>
+        {category === 'islami' && (
+          <p className="note">
+            Kisah Islami hanya mengambil dari Al-Qur'an dan hadis shahih, dan tidak menggambar manusia
+            (nabi dan sahabat); hanya hewan, alam, dan Ka'bah. Perlu ANTHROPIC_API_KEY di server.
+          </p>
+        )}
         <textarea
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
@@ -44,7 +65,7 @@ export function Create() {
           disabled={busy}
         />
         <div className="ideas">
-          {IDEAS.map((i) => (
+          {IDEAS[category].map((i) => (
             <button type="button" key={i} className="chip button" onClick={() => setPrompt(i)} disabled={busy}>
               {i}
             </button>

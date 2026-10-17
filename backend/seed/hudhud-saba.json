@@ -1,0 +1,252 @@
+{
+ "title": "Hud-hud dan Negeri Saba",
+ "summary": "Burung Hud-hud membawa kabar penting tentang negeri Saba kepada Nabi Sulaiman 'alaihis salam (QS. An-Naml: 20-44).",
+ "moral": "Sekecil apa pun kita, kita bisa berjasa. Sampaikan kebaikan dengan jujur dan bijaksana.",
+ "cover": {
+  "bg": "gurun",
+  "items": [
+   {
+    "t": "kurma",
+    "x": 640,
+    "y": 410,
+    "s": 1.3
+   },
+   {
+    "t": "hudhud",
+    "x": 330,
+    "y": 230,
+    "s": 1.6
+   },
+   {
+    "t": "surat",
+    "x": 470,
+    "y": 300,
+    "s": 1.1
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Suatu hari Nabi Sulaiman 'alaihis salam memeriksa pasukan burungnya. Beliau mencari-cari dan bertanya, \"Mengapa aku tidak melihat Hud-hud? Apakah ia termasuk yang tidak hadir?\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 260,
+      "y": 130,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 420,
+      "y": 170,
+      "v": 2
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 110,
+      "v": 3
+     }
+    ]
+   }
+  },
+  {
+   "text": "Ternyata Hud-hud terbang jauh sekali ke negeri Saba. Di sana ia melihat kerajaan yang megah dan makmur. Namun penduduknya bersujud kepada matahari, bukan kepada Allah.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 130,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 690,
+      "y": 415,
+      "s": 1.1
+     },
+     {
+      "t": "hudhud",
+      "x": 380,
+      "y": 190,
+      "s": 1.5
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tak lama kemudian Hud-hud kembali. \"Aku membawa kabar yang pasti dari negeri Saba,\" katanya. Ia melaporkan semua yang dilihatnya dengan jujur, tanpa menambah dan tanpa mengurangi.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "semak",
+      "x": 620,
+      "y": 445
+     },
+     {
+      "t": "hudhud",
+      "x": 420,
+      "y": 300,
+      "s": 1.7
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nabi Sulaiman berkata, \"Akan kami lihat, apakah kamu benar atau berdusta.\" Beliau menulis sebuah surat dan menyerahkannya kepada Hud-hud untuk dibawa ke penguasa negeri itu.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "hudhud",
+      "x": 360,
+      "y": 260,
+      "s": 1.7
+     },
+     {
+      "t": "surat",
+      "x": 440,
+      "y": 330,
+      "s": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "text": "Hud-hud terbang tinggi dan menjatuhkan surat itu di istana Saba. Surat itu dimulai dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang, dan mengajak mereka tunduk kepada-Nya.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 620,
+      "y": 415,
+      "s": 1.3
+     },
+     {
+      "t": "hudhud",
+      "x": 300,
+      "y": 150,
+      "s": 1.5
+     },
+     {
+      "t": "surat",
+      "x": 390,
+      "y": 250,
+      "s": 1.2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Sang ratu, Balqis, membaca surat itu dan bermusyawarah dengan para pembesarnya. Dengan hikmah dan kebijaksanaan, akhirnya ia beriman kepada Allah bersama Nabi Sulaiman.",
+   "scene": {
+    "bg": "senja",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 150,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "surat",
+      "x": 420,
+      "y": 380,
+      "s": 1.4
+     },
+     {
+      "t": "hudhud",
+      "x": 560,
+      "y": 250,
+      "s": 1.5
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dari Hud-hud kita belajar: burung sekecil itu pun bisa berjasa besar karena jujur dan bertanggung jawab. Kita juga harus menyampaikan kebaikan dengan cara yang bijak. Tamat.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "kurma",
+      "x": 120,
+      "y": 410,
+      "s": 1.2
+     },
+     {
+      "t": "kurma",
+      "x": 700,
+      "y": 415,
+      "s": 1.1
+     },
+     {
+      "t": "hudhud",
+      "x": 400,
+      "y": 220,
+      "s": 1.8
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "hudhud-saba",
+ "category": "islami",
+ "author": "Kisah Islami"
+}

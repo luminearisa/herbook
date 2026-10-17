@@ -8,11 +8,12 @@ declare(strict_types=1);
  */
 final class Scene
 {
-    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja'];
+    public const BACKGROUNDS = ['hutan', 'sungai', 'kebun', 'desa', 'malam', 'senja', 'gurun'];
     public const TYPES = [
         'kancil', 'buaya', 'harimau', 'gajah', 'petani', 'kurakura', 'burung', 'kupu',
         'pohon', 'semak', 'batu', 'bunga', 'awan', 'timun', 'orangorangan',
-        'rumah', 'kurungan', 'pagar',
+        'rumah', 'kurungan', 'pagar', 'kabah', 'semut', 'hudhud', 'ababil', 'kurma',
+        'surat', 'debu', 'sarang',
     ];
     public const MOODS = ['senang', 'takut', 'licik', 'sedih', 'marah', 'kaget', 'pingsan'];
     public const POSES = ['berdiri', 'lari', 'lompat', 'rebah', 'renang'];

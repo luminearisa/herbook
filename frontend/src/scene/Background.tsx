@@ -12,6 +12,7 @@ const SKY: Record<Bg, [string, string]> = {
   desa: ['#86d1fa', '#fdf1cf'],
   malam: ['#0a1640', '#2b3a80'],
   senja: ['#6a4c9c', '#ffb26b'],
+  gurun: ['#7cc8f2', '#fff0c4'],
 };
 
 function Sky({ bg }: { bg: Bg }) {
@@ -81,13 +82,23 @@ export function Background({ bg }: { bg: Bg }) {
   return (
     <g>
       <Sky bg={bg} />
-      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa') && <Sun />}
+      {(bg === 'hutan' || bg === 'sungai' || bg === 'kebun' || bg === 'desa' || bg === 'gurun') && <Sun />}
       {bg === 'senja' && <Sun low />}
       {bg === 'hutan' && (
         <>
           <Hills far="#9bd48b" mid="#7cc07a" y={280} />
           <ForestSilhouette y={320} color="#4f9e5a" />
           <Grass color="#68b258" from={360} />
+        </>
+      )}
+      {bg === 'gurun' && (
+        <>
+          <path d="M0 300 Q150 240 300 290 T600 280 T800 270 V500 H0z" fill="#ecc977" />
+          <path d="M0 350 Q200 290 400 340 T800 320 V500 H0z" fill="#f2d68f" />
+          <rect y="400" width="800" height="100" fill="#f6dfa0" />
+          {[[100, 440], [300, 470], [520, 430], [680, 475]].map(([x, y], i) => (
+            <path key={i} d={`M${x} ${y} q30 -10 60 0`} stroke="#d9b567" strokeWidth="3" fill="none" strokeLinecap="round" />
+          ))}
         </>
       )}
       {bg === 'senja' && (

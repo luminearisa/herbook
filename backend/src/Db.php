@@ -48,6 +48,10 @@ CREATE TABLE IF NOT EXISTS pages (
     UNIQUE (book_id, position)
 );
 SQL);
+        $cols = array_column($pdo->query('PRAGMA table_info(books)')->fetchAll(), 'name');
+        if (!in_array('category', $cols, true)) {
+            $pdo->exec("ALTER TABLE books ADD COLUMN category TEXT NOT NULL DEFAULT 'dongeng'");
+        }
     }
 
     private static function seed(PDO $pdo): void

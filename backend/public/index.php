@@ -44,7 +44,8 @@ function handleApi(string $method, string $route): void
                 json(['error' => 'Tulis ide ceritanya dulu, minimal beberapa kata.'], 422);
                 return;
             }
-            $result = StoryMaker::generate(mb_substr($prompt, 0, 1000));
+            $category = (body()['category'] ?? '') === 'islami' ? 'islami' : 'dongeng';
+            $result = StoryMaker::generate(mb_substr($prompt, 0, 1000), $category);
             $slug = Books::create($pdo, $result['book']);
             json(['book' => Books::find($pdo, $slug), 'mode' => $result['mode'], 'note' => $result['note']], 201);
         } elseif (preg_match('#^/books/([a-z0-9-]+)$#', $route, $m)) {

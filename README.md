@@ -3,7 +3,11 @@
 Perpustakaan buku cerita bergambar. Backend PHP + SQLite, frontend React + TypeScript.
 Ilustrasi digambar sebagai **SVG** dari data adegan, jadi buku baru bisa dibuat lewat prompt.
 
-Isi awal: **Kancil dan Buaya**, **Kancil Mencuri Timun**, dan **Kancil dan Gajah**.
+Isi awal:
+- Dongeng Kancil: *Kancil dan Buaya*, *Kancil Mencuri Timun*, *Kancil dan Gajah*
+- Kisah Islami: *Pasukan Gajah dan Burung Ababil* (QS. Al-Fil), *Semut yang Waspada* (QS. An-Naml), *Hud-hud dan Negeri Saba* (QS. An-Naml)
+
+Kisah Islami sengaja tidak menggambar manusia (nabi dan sahabat); hanya hewan, alam, dan Ka'bah.
 
 ## Menjalankan
 
@@ -19,7 +23,7 @@ Mode pengembangan (hot reload): `npm run dev:api` dan `npm run dev:web` di dua t
 
 Buka **+ Buku Baru**, tulis ide cerita. Dengan `ANTHROPIC_API_KEY` di environment, Claude
 menulis cerita dan menyusun adegan (model bisa diganti lewat `HERBOOK_MODEL`). Tanpa key dipakai
-penyusun cerita sederhana bawaan.
+penyusun cerita sederhana bawaan (hanya untuk dongeng; Kisah Islami butuh key agar isinya tidak dikarang dari templat).
 
 ```sh
 ANTHROPIC_API_KEY=sk-... npm run dev:api

@@ -8,13 +8,22 @@ declare(strict_types=1);
 final class StoryMaker
 {
     /** @return array{book:array<string,mixed>,mode:string,note:?string} */
-    public static function generate(string $prompt): array
+    public static function generate(string $prompt, string $category = 'dongeng'): array
     {
         $key = getenv('ANTHROPIC_API_KEY') ?: '';
         $note = null;
+        if ($category === 'islami' && $key === '') {
+            // Isi keagamaan tidak disusun dari templat; butuh penulis AI.
+            throw new InvalidArgumentException('Kisah Islami baru bisa dibuat setelah ANTHROPIC_API_KEY diatur di server.');
+        }
         if ($key !== '') {
             try {
-                return ['book' => self::viaClaude($prompt, $key), 'mode' => 'ai', 'note' => null];
+                $book = self::viaClaude($prompt, $key, $category);
+                $book['category'] = $category;
+                if ($category === 'islami') {
+                    $book = self::withoutPeople($book);
+                }
+                return ['book' => $book, 'mode' => 'ai', 'note' => null];
             } catch (Throwable $e) {
                 $note = 'AI tidak tersedia (' . $e->getMessage() . '), memakai penyusun cerita sederhana.';
             }
@@ -24,7 +33,26 @@ final class StoryMaker
         return ['book' => self::offline($prompt), 'mode' => 'offline', 'note' => $note];
     }
 
-    private static function systemPrompt(): string
+    /** Kisah Islami tidak menggambar manusia (nabi/sahabat): buang tokoh manusia dari adegan. @param array<string,mixed> $book @return array<string,mixed> */
+    private static function withoutPeople(array $book): array
+    {
+        $strip = static function (mixed $scene): mixed {
+            if (is_array($scene) && is_array($scene['items'] ?? null)) {
+                $scene['items'] = array_values(array_filter(
+                    $scene['items'],
+                    static fn ($it) => !in_array($it['t'] ?? '', ['petani', 'orangorangan'], true)
+                ));
+            }
+            return $scene;
+        };
+        $book['cover'] = $strip($book['cover'] ?? []);
+        foreach ($book['pages'] as $i => $page) {
+            $book['pages'][$i]['scene'] = $strip($page['scene'] ?? []);
+        }
+        return $book;
+    }
+
+    private static function systemPrompt(string $category): string
     {
         $bgs = implode(', ', Scene::BACKGROUNDS);
         $types = implode(', ', Scene::TYPES);
@@ -41,11 +69,21 @@ BG: $bgs. (sungai: tepi kiri x<170 dan kanan x>630, air di tengah; buaya berpose
 TIPE: $types. Tokoh hewan/orang menghadap kanan; flip=true menghadapkan ke kiri. Tinggi kancil sekitar 125*s px, pohon ~180*s px.
 MOOD (hewan/orang): $moods. POSE: $poses (lompat/lari/rebah untuk kancil; renang untuk buaya; v=1 pada pohon berarti berbuah).
 Tokoh utama cerita sebaiknya kancil kecuali pengguna meminta lain; gunakan hanya TIPE yang tersedia.
+TXT . ($category === 'islami' ? self::islamicRules() : '');
+    }
+
+    private static function islamicRules(): string
+    {
+        return <<<TXT
+
+
+KATEGORI KISAH ISLAMI: ceritakan hanya kisah yang bersumber dari Al-Qur'an atau hadis shahih, dengan setia pada sumbernya; jangan menambah detail yang tidak ada dasarnya, dan sebutkan sumbernya (mis. QS. Al-Fil) di summary.
+Jangan menggambar manusia, terutama para nabi, rasul, dan sahabat: hanya hewan, alam, Ka'bah (kabah), dan benda. Ceritakan peran manusia lewat teks saja. Gunakan salam penghormatan ('alaihis salam / shallallahu 'alaihi wa sallam) pada nama nabi. Tokoh utama bukan kancil kecuali memang sesuai kisahnya. Tambahan TIPE: kabah, semut, hudhud, ababil, kurma, surat, debu, sarang; BG tambahan: gurun. Akhiri dengan pesan (moral) yang sesuai.
 TXT;
     }
 
     /** @return array<string,mixed> */
-    private static function viaClaude(string $prompt, string $key): array
+    private static function viaClaude(string $prompt, string $key, string $category): array
     {
         $ch = curl_init('https://api.anthropic.com/v1/messages');
         curl_setopt_array($ch, [
@@ -60,7 +98,7 @@ TXT;
             CURLOPT_POSTFIELDS => json_encode([
                 'model' => getenv('HERBOOK_MODEL') ?: 'claude-sonnet-5-5',
                 'max_tokens' => 8000,
-                'system' => self::systemPrompt(),
+                'system' => self::systemPrompt($category),
                 'messages' => [['role' => 'user', 'content' => $prompt]],
             ]),
         ]);

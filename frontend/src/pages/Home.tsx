@@ -13,6 +13,8 @@ const SOON = [
 export function Home() {
   const [books, setBooks] = useState<BookSummary[] | null>(null);
   const [error, setError] = useState('');
+  const [tab, setTab] = useState<'semua' | 'dongeng' | 'islami'>('semua');
+  const shown = books?.filter((b) => tab === 'semua' || b.category === tab);
 
   useEffect(() => {
     api.books().then(setBooks).catch((e: Error) => setError(e.message));
@@ -40,10 +42,17 @@ export function Home() {
 
       <section className="section">
         <h2>Rak buku</h2>
+        <div className="tabs" role="tablist">
+          {([['semua', 'Semua'], ['dongeng', 'Dongeng Kancil'], ['islami', 'Kisah Islami']] as const).map(([k, label]) => (
+            <button key={k} role="tab" aria-selected={tab === k} className={'tab' + (tab === k ? ' on' : '')} onClick={() => setTab(k)}>
+              {label}
+            </button>
+          ))}
+        </div>
         {error && <p className="error">{error}</p>}
         {!books && !error && <p className="muted">Memuat buku…</p>}
         <div className="shelf">
-          {books?.map((b) => (
+          {shown?.map((b) => (
             <a key={b.slug} href={`#/buku/${b.slug}`} className="book-card">
               <div className="cover">
                 <Scene scene={b.cover} />
@@ -52,7 +61,9 @@ export function Home() {
               <div className="book-meta">
                 <h3>{b.title}</h3>
                 <p>{b.summary}</p>
-                <span className="chip">{b.page_count} halaman{b.is_seed ? '' : ' · buatanmu'}</span>
+                <span className={'chip' + (b.category === 'islami' ? ' islami' : '')}>
+                  {b.category === 'islami' ? 'Kisah Islami · ' : ''}{b.page_count} halaman{b.is_seed ? '' : ' · buatanmu'}
+                </span>
               </div>
             </a>
           ))}

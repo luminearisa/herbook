@@ -373,3 +373,68 @@ export function Gajah({ pose = 'berdiri', mood = 'senang' }: CharProps) {
     </g>
   );
 }
+
+/* ---------------- Semut, hud-hud, ababil ---------------- */
+
+export function Semut({ mood = 'senang', v = 0 }: CharProps) {
+  const col = '#6b2d1a';
+  const up = mood === 'kaget' || mood === 'takut';
+  return (
+    <g>
+      {[[-22, -6, -34, 0], [-6, -8, -6, 0], [10, -8, 22, 0]].map(([x1, y1, x2, y2], i) => (
+        <path key={i} d={`M${x1} ${y1} L${(x1 + x2) / 2} ${y1 - 8} L${x2} ${y2}`} stroke={col} strokeWidth="3" fill="none" strokeLinecap="round" />
+      ))}
+      {[[-14, -8, -26, 0], [2, -8, 4, 0], [14, -8, 30, 0]].map(([x1, y1, x2, y2], i) => (
+        <path key={i} d={`M${x1} ${y1} L${(x1 + x2) / 2} ${y1 - 10} L${x2} ${y2}`} stroke="#8a3f26" strokeWidth="3" fill="none" strokeLinecap="round" />
+      ))}
+      <ellipse cx="-32" cy="-18" rx="21" ry="14" fill={col} />
+      <ellipse cx="-3" cy="-20" rx="13" ry="10" fill="#8a3f26" />
+      <circle cx="22" cy="-24" r="12" fill={col} />
+      <path d={up ? 'M26 -34 Q32 -52 40 -54' : 'M26 -34 Q34 -44 44 -42'} stroke={col} strokeWidth="2.6" fill="none" strokeLinecap="round" />
+      <path d={up ? 'M20 -35 Q18 -52 8 -56' : 'M20 -35 Q22 -48 12 -50'} stroke={col} strokeWidth="2.6" fill="none" strokeLinecap="round" />
+      <circle cx="27" cy="-27" r={up ? 4.6 : 3.6} fill="#fff" /><circle cx="28" cy="-27" r="1.8" fill={INK} />
+      {mood === 'senang' ? (
+        <path d="M24 -19 Q29 -15 33 -20" stroke="#f8d6c8" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+      ) : (
+        <ellipse cx="30" cy="-18" rx="2" ry={up ? 3 : 1.4} fill="#f8d6c8" />
+      )}
+      {v === 1 && <circle cx="-34" cy="-40" r="5" fill="#fff6e0" stroke="#d9c9a0" />}
+    </g>
+  );
+}
+
+export function Hudhud() {
+  const body = '#e2994f';
+  return (
+    <g className="flap">
+      <path d="M-16 2 L-38 10 L-36 -4z" fill="#2b1a0f" />
+      <path d="M-34 4 L-27 3 M-33 -1 L-26 -1" stroke="#fff" strokeWidth="3" />
+      <ellipse cx="0" cy="0" rx="22" ry="13" fill={body} />
+      <path d="M-8 -4 Q-18 -26 8 -28 Q12 -12 6 -2z" fill="#2b1a0f" />
+      <path d="M-12 -13 q8 -4 16 -2 M-12 -19 q8 -4 16 -2" stroke="#fff" strokeWidth="3" fill="none" />
+      <circle cx="20" cy="-8" r="9" fill={body} />
+      {[-38, -18, 0, 18, 38].map((a) => (
+        <path key={a} d="M0 0 L-3 -22 L3 -22z" fill="#e2994f" stroke="#2b1a0f" strokeWidth=".8" transform={`translate(20 -14) rotate(${a} 0 6)`} />
+      ))}
+      {[-38, -18, 0, 18, 38].map((a) => (
+        <circle key={a} cx="0" cy="-22" r="2" fill="#2b1a0f" transform={`translate(20 -14) rotate(${a} 0 6)`} />
+      ))}
+      <path d="M28 -8 Q44 -6 50 4" stroke="#3b2412" strokeWidth="3" fill="none" strokeLinecap="round" />
+      <circle cx="23" cy="-10" r="2" fill={INK} />
+    </g>
+  );
+}
+
+export function Ababil({ v = 0 }: CharProps) {
+  return (
+    <g className="flap">
+      <path d="M-14 0 L-30 -8 L-28 6z" fill="#3d4654" />
+      <ellipse cx="0" cy="0" rx="16" ry="9" fill="#586273" />
+      <path d="M-2 -2 Q-8 -22 10 -22 Q10 -8 6 0z" fill="#3d4654" />
+      <circle cx="14" cy="-5" r="7" fill="#586273" />
+      <path d="M20 -6 L28 -3 L20 -1z" fill="#f2b134" />
+      <circle cx="16" cy="-7" r="1.7" fill="#fff" />
+      {v === 0 && <circle cx="30" cy="1" r="3.6" fill="#8a6a45" stroke="#5a4028" strokeWidth="1" />}
+    </g>
+  );
+}
