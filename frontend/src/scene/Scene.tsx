@@ -2,7 +2,7 @@ import type { ReactElement } from 'react';
 import type { SceneData, SceneItem } from '../types';
 import { Background, Overlay } from './Background';
 import { Ababil, Anak, Buaya, Burung, Dewasa, Gajah, Harimau, Belalang, Hudhud, Kancil, Kelinci, Kupu, Kurakura, Petani, Semut, Singa, Tikus, type CharProps } from './characters';
-import { Awan, Batu, Bendera, Bunga, Debu, Jaring, Kue, Meja, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Surat, Timun } from './props';
+import { Awan, Batu, Bendera, Bunga, Debu, Jaring, Kue, Meja, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Timun, Tongkat } from './props';
 
 const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   kancil: Kancil, buaya: Buaya, harimau: Harimau, gajah: Gajah, petani: Petani, kurakura: Kurakura,
@@ -10,7 +10,7 @@ const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   awan: Awan, timun: Timun, orangorangan: Orangorangan, rumah: Rumah, kurungan: Kurungan, pagar: Pagar,
   kabah: Kabah, semut: Semut, hudhud: Hudhud, ababil: Ababil, kurma: Kurma, surat: Surat, debu: Debu, sarang: Sarang,
   kelinci: Kelinci, belalang: Belalang, singa: Singa, tikus: Tikus, bendera: Bendera, jaring: Jaring,
-  anak: Anak, dewasa: Dewasa, meja: Meja, vas: Vas, kue: Kue,
+  anak: Anak, dewasa: Dewasa, meja: Meja, vas: Vas, kue: Kue, sumur: Sumur, tongkat: Tongkat,
 };
 
 // Hewan/orang yang bergerak halus supaya gambar terasa hidup.

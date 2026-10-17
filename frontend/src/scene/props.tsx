@@ -325,3 +325,37 @@ export function Kue() {
     </g>
   );
 }
+
+export function Sumur({ v = 0 }: CharProps) {
+  return (
+    <g>
+      <rect x="-56" y="-100" width="8" height="100" rx="3" fill="#7a4e2a" />
+      <rect x="48" y="-100" width="8" height="100" rx="3" fill="#7a4e2a" />
+      <path d="M-66 -96 L0 -134 L66 -96z" fill="#a8532e" />
+      <path d="M0 -104 V-70" stroke="#9a7a3a" strokeWidth="3" />
+      <path d="M-9 -70 h18 l-3 16 h-12z" fill="#8a5a2b" />
+      <path d="M-52 -50 V0 H52 V-50z" fill="#b8b2a6" />
+      <path d="M-52 -30 H52 M-52 -14 H52 M-20 -50 V-30 M20 -30 V-14 M-30 -14 V0 M30 -14 V0" stroke="#8f897d" strokeWidth="2" />
+      <ellipse cx="0" cy="-50" rx="52" ry="14" fill="#cfc9bc" />
+      <ellipse cx="0" cy="-50" rx="40" ry="9" fill="#2f5f8a" />
+      {v === 1 && (
+        <g>
+          {Array.from({ length: 8 }, (_, i) => (
+            <circle key={i} cx={Math.cos((i * Math.PI) / 4) * 8} cy={-50 + Math.sin((i * Math.PI) / 4) * 4} r="3.4" fill="#8a4f1f" />
+          ))}
+          <ellipse cx="0" cy="-50" rx="6" ry="3.4" fill="#e8b45a" />
+          <circle cx="-2" cy="-51" r=".9" fill="#2b1a0f" /><circle cx="3" cy="-51" r=".9" fill="#2b1a0f" />
+        </g>
+      )}
+    </g>
+  );
+}
+
+export function Tongkat() {
+  return (
+    <g>
+      <rect x="-90" y="-4" width="180" height="8" rx="4" fill="#8a5a2b" />
+      <path d="M-60 -3 H-30 M20 2 H60" stroke="#6a421e" strokeWidth="1.6" />
+    </g>
+  );
+}

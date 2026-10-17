@@ -1,0 +1,273 @@
+{
+ "title": "Kancil dan Mangga yang Tinggi",
+ "summary": "Kancil tak bisa meraih mangga yang ranum di pucuk pohon, lalu berkata mangga itu pasti masam. Benarkah begitu?",
+ "moral": "Jangan mencela sesuatu hanya karena kita tidak bisa meraihnya. Akui keterbatasan, lalu mintalah bantuan.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 560,
+    "y": 430,
+    "s": 2.1,
+    "v": 1
+   },
+   {
+    "t": "kancil",
+    "x": 300,
+    "y": 460,
+    "s": 1.3,
+    "mood": "licik",
+    "pose": "lompat"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Siang itu perut Kancil keroncongan. Tiba-tiba matanya tertuju pada pohon mangga yang sangat tinggi. Buah-buahnya ranum kuning keemasan, tergantung di ujung dahan. \"Wah, pasti manis sekali!\" katanya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 600,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 110,
+      "y": 445
+     },
+     {
+      "t": "kancil",
+      "x": 320,
+      "y": 460,
+      "s": 1.3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil mengambil ancang-ancang lalu melompat setinggi-tingginya. Hop! Tapi mangga itu masih terlalu tinggi. Ia mencoba lagi, hop! Tetap tidak sampai.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 560,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "kancil",
+      "x": 380,
+      "y": 460,
+      "s": 1.3,
+      "mood": "senang",
+      "pose": "lompat"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Berkali-kali Kancil melompat, sampai napasnya tersengal-sengal dan kakinya pegal. Ia terduduk di bawah pohon sambil memandang mangga-mangga yang menggoda itu. \"Aduh, tinggi sekali...\"",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 560,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "batu",
+      "x": 250,
+      "y": 458,
+      "s": 1.0
+     },
+     {
+      "t": "kancil",
+      "x": 400,
+      "y": 462,
+      "s": 1.3,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Karena kesal, Kancil bangkit dan berkata, \"Ah, buat apa mangga itu? Pasti rasanya masam dan tidak enak. Lebih baik aku pergi saja!\" Ia pun melangkah pergi sambil berpura-pura tidak peduli.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 620,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 120,
+      "y": 445
+     },
+     {
+      "t": "kancil",
+      "x": 260,
+      "y": 460,
+      "s": 1.3,
+      "mood": "licik",
+      "pose": "lari",
+      "flip": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "Seekor burung hinggap di dahan dan mematuk mangga itu. \"Hmm, manis dan segar sekali!\" katanya riang. Kancil yang mendengar dari jauh pun tertegun dan malu, karena ucapannya tadi ternyata keliru.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 600,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 530,
+      "y": 150,
+      "s": 1.3,
+      "v": 2
+     },
+     {
+      "t": "kancil",
+      "x": 220,
+      "y": 460,
+      "s": 1.3,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil menarik napas dan berkata jujur, \"Teman-teman, aku tak bisa meraih mangga itu. Bisakah Gajah membantuku?\" Gajah yang kebetulan lewat tersenyum, lalu mengulurkan belalainya yang panjang dan memetik beberapa mangga.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 620,
+      "y": 430,
+      "s": 2.1,
+      "v": 1
+     },
+     {
+      "t": "gajah",
+      "x": 460,
+      "y": 456,
+      "s": 1.2,
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 190,
+      "y": 460,
+      "s": 1.3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kancil, Gajah, dan Burung makan mangga manis bersama-sama. Kancil belajar bahwa mengakui keterbatasan itu tidak memalukan, dan meminta bantuan membuat kita bisa meraih apa yang tak sanggup kita ambil sendiri. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 430,
+      "s": 1.8,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 640,
+      "y": 170,
+      "s": 1.3,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 600,
+      "y": 480
+     },
+     {
+      "t": "kupu",
+      "x": 520,
+      "y": 280
+     },
+     {
+      "t": "gajah",
+      "x": 500,
+      "y": 456,
+      "s": 1.1,
+      "mood": "senang"
+     },
+     {
+      "t": "kancil",
+      "x": 290,
+      "y": 460,
+      "s": 1.3,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "kancil-dan-mangga",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

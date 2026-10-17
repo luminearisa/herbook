@@ -1,0 +1,333 @@
+{
+ "title": "Kura-kura dan Dua Bangau",
+ "summary": "Kura-kura yang suka berbicara diterbangkan dua sahabatnya menuju danau baru. Asalkan ia mau diam sepanjang perjalanan.",
+ "moral": "Dengarkan nasihat sahabat, tahan diri dari memamerkan kebolehan, dan jangan bicara saat tidak perlu.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "rumah",
+    "x": 640,
+    "y": 420,
+    "s": 1.2
+   },
+   {
+    "t": "burung",
+    "x": 330,
+    "y": 150,
+    "s": 1.5,
+    "v": 0
+   },
+   {
+    "t": "burung",
+    "x": 490,
+    "y": 150,
+    "s": 1.5,
+    "v": 1
+   },
+   {
+    "t": "tongkat",
+    "x": 410,
+    "y": 172,
+    "s": 1.0
+   },
+   {
+    "t": "kurakura",
+    "x": 410,
+    "y": 226,
+    "s": 1.0,
+    "mood": "senang"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Musim kemarau yang panjang membuat kolam tempat tinggal Kura-kura mengering. Rumput menguning dan tanah retak. Kura-kura duduk lesu di tepi kolam. \"Ke mana aku harus pergi?\" keluhnya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "batu",
+      "x": 250,
+      "y": 458,
+      "s": 1.2
+     },
+     {
+      "t": "batu",
+      "x": 600,
+      "y": 462,
+      "s": 0.9
+     },
+     {
+      "t": "kurakura",
+      "x": 420,
+      "y": 468,
+      "s": 1.3,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Dua burung bangau, sahabat Kura-kura, datang menghampiri. \"Jangan bersedih, Sahabat,\" kata mereka. \"Kami tahu sebuah danau besar yang airnya jernih, tapi letaknya jauh sekali.\" Mata Kura-kura berbinar.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 260,
+      "y": 170,
+      "s": 1.4,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 200,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "kurakura",
+      "x": 420,
+      "y": 468,
+      "s": 1.3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Gigitlah tongkat ini erat-erat, kami akan membawamu terbang,\" kata kedua bangau. \"Tapi ingat: apa pun yang terjadi, jangan membuka mulutmu.\" Kura-kura mengangguk setuju.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "burung",
+      "x": 250,
+      "y": 370,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 600,
+      "y": 370,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "tongkat",
+      "x": 420,
+      "y": 470,
+      "s": 1.0
+     },
+     {
+      "t": "kurakura",
+      "x": 420,
+      "y": 468,
+      "s": 1.2,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Mereka pun terbang tinggi. Kura-kura menggigit tongkat dengan kuat sambil memandang pemandangan indah di bawahnya: desa, sawah, dan sungai yang berkelok-kelok.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 150,
+      "y": 480,
+      "s": 1.0
+     },
+     {
+      "t": "rumah",
+      "x": 650,
+      "y": 480,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 150,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 490,
+      "y": 150,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "tongkat",
+      "x": 410,
+      "y": 172,
+      "s": 1.0
+     },
+     {
+      "t": "kurakura",
+      "x": 410,
+      "y": 226,
+      "s": 1.0,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Orang-orang di desa menengadah dan berseru, \"Lihat! Kura-kura bisa terbang! Pasti ia sendiri yang menemukan akalnya!\" Kura-kura merasa bangga dan sangat ingin berkata, \"Ini idekuuu!\" Wajahnya terlihat gelisah.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 150,
+      "y": 480,
+      "s": 1.0
+     },
+     {
+      "t": "rumah",
+      "x": 650,
+      "y": 480,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 150,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 490,
+      "y": 150,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "tongkat",
+      "x": 410,
+      "y": 172,
+      "s": 1.0
+     },
+     {
+      "t": "kurakura",
+      "x": 410,
+      "y": 226,
+      "s": 1.0,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kura-kura tak tahan lagi. Ia membuka mulutnya untuk menjawab, dan seketika tongkat terlepas. Kura-kura jatuh meluncur ke bawah, sementara kedua bangau berteriak, \"Kami sudah mengingatkanmu!\"",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 150,
+      "y": 480,
+      "s": 1.0
+     },
+     {
+      "t": "rumah",
+      "x": 650,
+      "y": 480,
+      "s": 1.1
+     },
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 120,
+      "s": 1.5,
+      "v": 0,
+      "mood": "kaget"
+     },
+     {
+      "t": "burung",
+      "x": 490,
+      "y": 120,
+      "s": 1.5,
+      "v": 1,
+      "mood": "kaget"
+     },
+     {
+      "t": "kurakura",
+      "x": 410,
+      "y": 330,
+      "s": 1.0,
+      "mood": "kaget"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Untung Kura-kura jatuh ke tumpukan jerami yang empuk, sehingga ia tidak terluka parah, hanya sangat malu. Kedua bangau menolongnya hingga tiba di danau. Kura-kura berjanji akan selalu mendengarkan nasihat sahabatnya. Tamat.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "burung",
+      "x": 330,
+      "y": 150,
+      "s": 1.5,
+      "v": 0
+     },
+     {
+      "t": "burung",
+      "x": 470,
+      "y": 130,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 95,
+      "y": 445
+     },
+     {
+      "t": "kurakura",
+      "x": 110,
+      "y": 468,
+      "s": 1.2,
+      "mood": "sedih"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "kura-kura-dan-bangau",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}

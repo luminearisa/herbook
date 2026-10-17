@@ -1,0 +1,308 @@
+{
+ "title": "Kelinci dan Singa yang Sombong",
+ "summary": "Seekor singa yang sombong memangsa hewan hutan setiap hari. Kelinci yang kecil menemukan cara untuk menghentikannya.",
+ "moral": "Kecerdikan bisa mengalahkan kekuatan, dan kesombongan membuat orang mudah tertipu oleh bayangannya sendiri.",
+ "cover": {
+  "bg": "hutan",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 100,
+    "y": 410,
+    "s": 1.3
+   },
+   {
+    "t": "sumur",
+    "x": 600,
+    "y": 450,
+    "s": 1.3,
+    "v": 1
+   },
+   {
+    "t": "singa",
+    "x": 360,
+    "y": 456,
+    "s": 1.1,
+    "mood": "marah"
+   },
+   {
+    "t": "kelinci",
+    "x": 170,
+    "y": 460,
+    "s": 1.3,
+    "mood": "licik"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "text": "Di sebuah hutan hiduplah seekor singa yang sangat sombong. Setiap hari ia memangsa hewan mana pun yang ditemuinya. \"Akulah raja hutan!\" auman Singa. Seluruh hewan hidup dalam ketakutan.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "singa",
+      "x": 400,
+      "y": 456,
+      "s": 1.2,
+      "mood": "marah"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Para hewan berkumpul dan sepakat mendatangi Singa. \"Raja, kami akan mengirim satu hewan setiap hari untuk makananmu, asalkan Raja tidak memburu kami lagi.\" Singa setuju. Hari itu, giliran Kelinci yang pergi.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "kurakura",
+      "x": 520,
+      "y": 468,
+      "s": 1.1,
+      "mood": "sedih"
+     },
+     {
+      "t": "tikus",
+      "x": 370,
+      "y": 468,
+      "s": 2,
+      "mood": "takut"
+     },
+     {
+      "t": "kelinci",
+      "x": 200,
+      "y": 460,
+      "s": 1.3,
+      "mood": "sedih"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Kelinci tidak terburu-buru. Ia berjalan pelan, berhenti di bawah pohon, lalu tiba di tempat Singa ketika matahari sudah tinggi. Singa menunggu dengan perut lapar dan sangat marah.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "singa",
+      "x": 470,
+      "y": 456,
+      "s": 1.2,
+      "mood": "marah"
+     },
+     {
+      "t": "kelinci",
+      "x": 170,
+      "y": 460,
+      "s": 1.3,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Mengapa kau terlambat?\" geram Singa. Kelinci menjawab, \"Ampun, Raja. Tadi aku dihadang singa lain yang mengaku sebagai raja hutan. Ia menahan teman-temanku dan berkata ia lebih kuat dari Raja!\" Singa meraung murka.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 700,
+      "y": 400,
+      "s": 1.2
+     },
+     {
+      "t": "singa",
+      "x": 450,
+      "y": 456,
+      "s": 1.2,
+      "mood": "marah"
+     },
+     {
+      "t": "kelinci",
+      "x": 150,
+      "y": 460,
+      "s": 1.3,
+      "mood": "takut"
+     }
+    ]
+   }
+  },
+  {
+   "text": "\"Tunjukkan di mana singa itu!\" bentak Singa. Kelinci pun membawanya ke sebuah sumur tua yang dalam. \"Ia bersembunyi di dalam sana, Raja,\" kata Kelinci sambil menunjuk ke bawah.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "sumur",
+      "x": 650,
+      "y": 450,
+      "s": 1.4,
+      "v": 0
+     },
+     {
+      "t": "singa",
+      "x": 380,
+      "y": 456,
+      "s": 1.1,
+      "mood": "marah"
+     },
+     {
+      "t": "kelinci",
+      "x": 170,
+      "y": 460,
+      "s": 1.3,
+      "mood": "licik"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Singa mengintip ke dalam sumur dan melihat singa lain menatap balik dengan wajah garang. Ia mengaum, dan singa di bawah ikut mengaum. Karena sangat marah, Singa melompat ke dalam sumur untuk menerkamnya.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "sumur",
+      "x": 560,
+      "y": 450,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "singa",
+      "x": 330,
+      "y": 456,
+      "s": 1.1,
+      "mood": "marah"
+     },
+     {
+      "t": "kelinci",
+      "x": 150,
+      "y": 460,
+      "s": 1.3,
+      "mood": "senang"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Byurr! Ternyata yang ia lihat hanyalah bayangannya sendiri. Singa tidak pernah muncul lagi. Para hewan bersorak dan berterima kasih kepada Kelinci yang cerdik. Hutan pun kembali damai. Tamat.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "awan",
+      "x": 260,
+      "y": 70
+     },
+     {
+      "t": "awan",
+      "x": 560,
+      "y": 55,
+      "s": 0.8
+     },
+     {
+      "t": "pohon",
+      "x": 100,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "bunga",
+      "x": 600,
+      "y": 478
+     },
+     {
+      "t": "kupu",
+      "x": 520,
+      "y": 290
+     },
+     {
+      "t": "kurakura",
+      "x": 640,
+      "y": 468,
+      "s": 1.1,
+      "mood": "senang"
+     },
+     {
+      "t": "tikus",
+      "x": 470,
+      "y": 468,
+      "s": 2,
+      "mood": "senang"
+     },
+     {
+      "t": "kelinci",
+      "x": 290,
+      "y": 460,
+      "s": 1.4,
+      "mood": "senang"
+     }
+    ]
+   }
+  }
+ ],
+ "slug": "kelinci-dan-singa",
+ "category": "fabel",
+ "author": "Fabel Nusantara"
+}
