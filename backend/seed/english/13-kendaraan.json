@@ -1,0 +1,49 @@
+{
+ "slug": "kendaraan",
+ "emoji": "🚗",
+ "title": "Kendaraan",
+ "title_en": "Vehicles",
+ "summary": "Nama kendaraan dalam bahasa Inggris, dari mobil sampai helikopter.",
+ "words": [
+  {
+   "en": "car",
+   "id": "mobil",
+   "emoji": "🚗"
+  },
+  {
+   "en": "bus",
+   "id": "bus",
+   "emoji": "🚌"
+  },
+  {
+   "en": "train",
+   "id": "kereta",
+   "emoji": "🚂"
+  },
+  {
+   "en": "plane",
+   "id": "pesawat",
+   "emoji": "✈️"
+  },
+  {
+   "en": "ship",
+   "id": "kapal",
+   "emoji": "🚢"
+  },
+  {
+   "en": "bicycle",
+   "id": "sepeda",
+   "emoji": "🚲"
+  },
+  {
+   "en": "motorcycle",
+   "id": "sepeda motor",
+   "emoji": "🏍️"
+  },
+  {
+   "en": "helicopter",
+   "id": "helikopter",
+   "emoji": "🚁"
+  }
+ ]
+}

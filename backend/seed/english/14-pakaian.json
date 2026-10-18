@@ -1,0 +1,49 @@
+{
+ "slug": "pakaian",
+ "emoji": "👕",
+ "title": "Pakaian",
+ "title_en": "Clothes",
+ "summary": "Nama pakaian dalam bahasa Inggris yang dipakai setiap hari.",
+ "words": [
+  {
+   "en": "shirt",
+   "id": "baju",
+   "emoji": "👕"
+  },
+  {
+   "en": "trousers",
+   "id": "celana",
+   "emoji": "👖"
+  },
+  {
+   "en": "dress",
+   "id": "gaun",
+   "emoji": "👗"
+  },
+  {
+   "en": "shoes",
+   "id": "sepatu",
+   "emoji": "👟"
+  },
+  {
+   "en": "socks",
+   "id": "kaus kaki",
+   "emoji": "🧦"
+  },
+  {
+   "en": "hat",
+   "id": "topi",
+   "emoji": "🎩"
+  },
+  {
+   "en": "jacket",
+   "id": "jaket",
+   "emoji": "🧥"
+  },
+  {
+   "en": "glasses",
+   "id": "kacamata",
+   "emoji": "👓"
+  }
+ ]
+}

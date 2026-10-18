@@ -1,0 +1,59 @@
+{
+ "slug": "gerakan",
+ "emoji": "🏃",
+ "title": "Kata Kerja (Gerakan)",
+ "title_en": "Action Words",
+ "summary": "Kata kerja sehari-hari dalam bahasa Inggris: berlari, melompat, makan, tidur, dan lainnya. Ajak anak memperagakan gerakannya.",
+ "words": [
+  {
+   "en": "run",
+   "id": "berlari",
+   "emoji": "🏃"
+  },
+  {
+   "en": "jump",
+   "id": "melompat",
+   "emoji": "🤸"
+  },
+  {
+   "en": "walk",
+   "id": "berjalan",
+   "emoji": "🚶"
+  },
+  {
+   "en": "eat",
+   "id": "makan",
+   "emoji": "🍽️"
+  },
+  {
+   "en": "drink",
+   "id": "minum",
+   "emoji": "🥤"
+  },
+  {
+   "en": "sleep",
+   "id": "tidur",
+   "emoji": "😴"
+  },
+  {
+   "en": "sit",
+   "id": "duduk",
+   "emoji": "🪑"
+  },
+  {
+   "en": "stand",
+   "id": "berdiri",
+   "emoji": "🧍"
+  },
+  {
+   "en": "clap",
+   "id": "bertepuk tangan",
+   "emoji": "👏"
+  },
+  {
+   "en": "sing",
+   "id": "bernyanyi",
+   "emoji": "🎤"
+  }
+ ]
+}

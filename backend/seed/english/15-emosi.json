@@ -1,0 +1,49 @@
+{
+ "slug": "emosi",
+ "emoji": "😊",
+ "title": "Perasaan",
+ "title_en": "Feelings",
+ "summary": "Nama perasaan dalam bahasa Inggris supaya anak bisa mengungkapkan hatinya.",
+ "words": [
+  {
+   "en": "happy",
+   "id": "senang",
+   "emoji": "😀"
+  },
+  {
+   "en": "sad",
+   "id": "sedih",
+   "emoji": "😢"
+  },
+  {
+   "en": "angry",
+   "id": "marah",
+   "emoji": "😠"
+  },
+  {
+   "en": "sleepy",
+   "id": "mengantuk",
+   "emoji": "😴"
+  },
+  {
+   "en": "scared",
+   "id": "takut",
+   "emoji": "😨"
+  },
+  {
+   "en": "surprised",
+   "id": "kaget",
+   "emoji": "😲"
+  },
+  {
+   "en": "love",
+   "id": "sayang",
+   "emoji": "😍"
+  },
+  {
+   "en": "hungry",
+   "id": "lapar",
+   "emoji": "🤤"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "slug": "lawan-kata",
+ "emoji": "↔️",
+ "title": "Lawan Kata",
+ "title_en": "Opposites",
+ "summary": "Pasangan kata yang berlawanan: besar–kecil, tinggi–pendek, panas–dingin, dan lainnya.",
+ "words": [
+  {
+   "en": "big",
+   "id": "besar",
+   "emoji": "🐘"
+  },
+  {
+   "en": "small",
+   "id": "kecil",
+   "emoji": "🐜"
+  },
+  {
+   "en": "tall",
+   "id": "tinggi",
+   "emoji": "🦒"
+  },
+  {
+   "en": "short",
+   "id": "pendek",
+   "emoji": "🐹"
+  },
+  {
+   "en": "long",
+   "id": "panjang",
+   "emoji": "📏"
+  },
+  {
+   "en": "hot",
+   "id": "panas",
+   "emoji": "🔥"
+  },
+  {
+   "en": "cold",
+   "id": "dingin",
+   "emoji": "❄️"
+  },
+  {
+   "en": "fast",
+   "id": "cepat",
+   "emoji": "⚡"
+  },
+  {
+   "en": "slow",
+   "id": "lambat",
+   "emoji": "🐌"
+  },
+  {
+   "en": "happy",
+   "id": "senang",
+   "emoji": "😀"
+  }
+ ]
+}

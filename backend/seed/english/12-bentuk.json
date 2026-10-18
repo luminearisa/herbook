@@ -1,0 +1,49 @@
+{
+ "slug": "bentuk",
+ "emoji": "🔷",
+ "title": "Bentuk",
+ "title_en": "Shapes",
+ "summary": "Kenali bentuk-bentuk sederhana dalam bahasa Inggris: lingkaran, persegi, segitiga, dan lainnya.",
+ "words": [
+  {
+   "en": "circle",
+   "id": "lingkaran",
+   "emoji": "⭕"
+  },
+  {
+   "en": "square",
+   "id": "persegi",
+   "emoji": "🟦"
+  },
+  {
+   "en": "triangle",
+   "id": "segitiga",
+   "emoji": "🔺"
+  },
+  {
+   "en": "star",
+   "id": "bintang",
+   "emoji": "⭐"
+  },
+  {
+   "en": "heart",
+   "id": "hati",
+   "emoji": "❤️"
+  },
+  {
+   "en": "diamond",
+   "id": "belah ketupat",
+   "emoji": "🔷"
+  },
+  {
+   "en": "crescent",
+   "id": "bulan sabit",
+   "emoji": "🌙"
+  },
+  {
+   "en": "cross",
+   "id": "tanda silang",
+   "emoji": "❌"
+  }
+ ]
+}

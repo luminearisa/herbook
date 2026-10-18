@@ -32,8 +32,9 @@ Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1:
 ## English untuk Balita
 
 Modul belajar bahasa Inggris untuk balita (`#/english`), terpisah dari cerita dan Mengenal Sekitar.
-Ada **9 topik · 98 kata**: Alfabet (A–Z), Angka 1–10, Warna, Hewan, Buah, Anggota Tubuh, Keluarga,
-Benda di Rumah, dan Sapaan. Tiap topik punya dua mode:
+Ada **15 topik · 150 kata**: Alfabet (A–Z), Angka 1–10, Warna, Hewan, Buah, Anggota Tubuh, Keluarga,
+Benda di Rumah, Sapaan, Kata Kerja (Gerakan), Lawan Kata, Bentuk, Kendaraan, Pakaian, dan Perasaan.
+Tiap topik punya dua mode:
 
 - **Belajar** – sentuh kartu untuk mendengar kata bahasa Inggrisnya (suara `en-US`); emoji menjadi
   gambar, kata Inggris ditulis besar, arti Indonesia di bawahnya.
