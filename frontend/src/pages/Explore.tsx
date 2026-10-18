@@ -6,9 +6,9 @@ import { Scene } from '../scene/Scene';
 import type { LessonSummary } from '../types';
 
 const SOON = [
-  { icon: '🐾', name: 'Hewan di Sekitar Kita', hint: 'Kenali suara dan rumahnya' },
-  { icon: '🌱', name: 'Tumbuhan', hint: 'Dari biji sampai buah' },
-  { icon: '🏠', name: 'Rumah dan Lingkungan', hint: 'Tempat kita tinggal' },
+  { icon: '🐾', name: 'Hewan · Part 2', hint: 'Suara dan makanan hewan' },
+  { icon: '🌱', name: 'Tumbuhan · Part 2', hint: 'Bunga, buah, dan biji' },
+  { icon: '🏠', name: 'Rumah · Part 2', hint: 'Tetangga dan lingkungan' },
 ];
 
 export function Explore() {

@@ -1,0 +1,461 @@
+{
+ "slug": "tumbuhan-1-mengenal-tumbuhan",
+ "series": "tumbuhan",
+ "part": 1,
+ "title": "Tumbuhan Part 1: Mengenal Tumbuhan",
+ "summary": "Kenali tumbuhan di sekitar kita: bagian-bagiannya, cara tumbuh dari biji, manfaatnya, dan cara merawatnya.",
+ "cover": {
+  "bg": "kebun",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 140,
+    "y": 408,
+    "s": 1.3,
+    "v": 1
+   },
+   {
+    "t": "semak",
+    "x": 640,
+    "y": 452
+   },
+   {
+    "t": "bunga",
+    "x": 300,
+    "y": 486,
+    "v": 1
+   },
+   {
+    "t": "bunga",
+    "x": 420,
+    "y": 486,
+    "v": 2
+   },
+   {
+    "t": "tunas",
+    "x": 530,
+    "y": 486
+   },
+   {
+    "t": "kupu",
+    "x": 620,
+    "y": 340
+   },
+   {
+    "t": "burung",
+    "x": 560,
+    "y": 140
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Tumbuhan di Sekitar Kita",
+   "text": "Tumbuhan hidup di sekitar kita: di halaman, kebun, dan hutan. Ada tumbuhan kecil seperti rumput dan bunga, ada juga pohon yang tinggi besar. Tumbuhan membuat udara segar dan lingkungan menjadi indah.",
+   "fact": "Tumbuhan disebut juga flora. Jenis tumbuhan di dunia sangat banyak, lebih dari tiga ratus ribu jenis.",
+   "reflection": "Subhanallah, Allah menumbuhkan berbagai tumbuhan yang menghijaukan bumi.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 140,
+      "y": 408,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 620,
+      "y": 452
+     },
+     {
+      "t": "bunga",
+      "x": 380,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 480,
+      "y": 486,
+      "v": 2
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 330
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 140
+     }
+    ]
+   }
+  },
+  {
+   "title": "Bagian-Bagian Tumbuhan",
+   "text": "Tumbuhan memiliki beberapa bagian. Akar menyerap air dan zat hara dari tanah. Batang menopang tumbuhan dan mengalirkan air. Daun membuat makanan dari cahaya matahari. Bunga lalu menjadi buah dan biji.",
+   "fact": "Daun memasak makanan dengan bantuan cahaya matahari. Proses ini disebut fotosintesis, dan menghasilkan oksigen untuk kita hirup.",
+   "reflection": "Alhamdulillah, setiap bagian tumbuhan punya tugas yang rapi untuk kelangsungan hidupnya.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 400,
+      "y": 432,
+      "s": 1.4,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 150,
+      "y": 484
+     },
+     {
+      "t": "semak",
+      "x": 650,
+      "y": 454
+     }
+    ]
+   }
+  },
+  {
+   "title": "Dari Biji Menjadi Tumbuhan",
+   "text": "Tumbuhan baru berasal dari biji. Biji yang ditanam akan tumbuh menjadi tunas kecil. Tunas tumbuh makin besar menjadi tumbuhan dewasa, lalu berbunga dan berbuah. Buah yang matang berisi biji baru.",
+   "fact": "Beberapa biji bisa tumbuh dalam hitungan hari, tetapi ada juga yang butuh berminggu-minggu. Biji perlu air, udara, dan tempat yang hangat untuk tumbuh.",
+   "reflection": "Subhanallah, dari biji yang kecil Allah menumbuhkan tumbuhan yang besar dan bermanfaat.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 120,
+      "y": 408,
+      "s": 1.1
+     },
+     {
+      "t": "tunas",
+      "x": 300,
+      "y": 486
+     },
+     {
+      "t": "tunas",
+      "x": 400,
+      "y": 486,
+      "v": 1
+     },
+     {
+      "t": "tunas",
+      "x": 500,
+      "y": 486,
+      "v": 2
+     },
+     {
+      "t": "petani",
+      "x": 630,
+      "y": 468,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Daun, Bunga, dan Buah",
+   "text": "Daun biasanya berwarna hijau dan berbentuk lebar atau sempit. Bunga berwarna-warni dan harum, sehingga menarik kupu-kupu serta lebah. Buah muncul setelah bunga, dan di dalamnya ada biji.",
+   "fact": "Warna dan aroma bunga menarik hewan penyerbuk. Berkat mereka, bunga berubah menjadi buah.",
+   "reflection": "Alhamdulillah, daun, bunga, dan buah memperlihatkan keindahan ciptaan Allah.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 180,
+      "y": 408,
+      "s": 1.2,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 430,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 540,
+      "y": 486,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 650,
+      "y": 484,
+      "v": 3
+     },
+     {
+      "t": "kupu",
+      "x": 500,
+      "y": 320
+     }
+    ]
+   }
+  },
+  {
+   "title": "Sayur dan Buah untuk Makanan",
+   "text": "Banyak sayur dan buah berasal dari tumbuhan. Kita makan timun, bayam, tomat, dan aneka buah. Makanan itu membuat tubuh sehat karena mengandung vitamin dan serat.",
+   "fact": "Buah kurma adalah makanan yang manis dan menyehatkan. Nabi menganjurkan berbuka puasa dengan kurma.",
+   "reflection": "Alhamdulillah, Allah menyediakan aneka sayur dan buah yang lezat dan menyehatkan.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "kurma",
+      "x": 200,
+      "y": 420,
+      "s": 1.0
+     },
+     {
+      "t": "semak",
+      "x": 120,
+      "y": 454
+     },
+     {
+      "t": "timun",
+      "x": 400,
+      "y": 484
+     },
+     {
+      "t": "timun",
+      "x": 470,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "buah",
+      "x": 600,
+      "y": 486,
+      "v": 2
+     },
+     {
+      "t": "bunga",
+      "x": 700,
+      "y": 484
+     }
+    ]
+   }
+  },
+  {
+   "title": "Tumbuhan Memberi Oksigen dan Naungan",
+   "text": "Daun tumbuhan menghasilkan oksigen yang kita hirup. Pohon juga memberi naungan atau tempat berteduh dari panas. Di bawah pohon kita bisa duduk dan bermain dengan nyaman.",
+   "fact": "Satu pohon besar dapat menyediakan oksigen bagi beberapa orang setiap hari. Menanam pohon berarti menanam kebaikan untuk masa depan.",
+   "reflection": "Subhanallah, tumbuhan membantu kita bernapas dan berteduh, tanda kasih sayang Allah.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "matahari",
+      "x": 690,
+      "y": 90,
+      "s": 0.6
+     },
+     {
+      "t": "pohon",
+      "x": 270,
+      "y": 410,
+      "s": 1.4
+     },
+     {
+      "t": "pohon",
+      "x": 610,
+      "y": 408,
+      "s": 1.2
+     },
+     {
+      "t": "anak",
+      "x": 430,
+      "y": 470,
+      "s": 1.0
+     },
+     {
+      "t": "dewasa",
+      "x": 520,
+      "y": 468,
+      "s": 1.0
+     },
+     {
+      "t": "semak",
+      "x": 720,
+      "y": 452
+     }
+    ]
+   }
+  },
+  {
+   "title": "Menanam dan Merawat Tumbuhan",
+   "text": "Kita bisa menanam tumbuhan di pot atau halaman. Beri air secara teratur, letakkan di tempat yang cukup cahaya, dan bersihkan rumput liar di sekitarnya. Tanaman yang terawat tumbuh subur.",
+   "fact": "Terlalu banyak air bisa membuat akar membusuk, sedangkan kekurangan air membuat tanaman layu. Beri air secukupnya saja.",
+   "reflection": "Alhamdulillah, merawat tumbuhan melatih kita rajin dan sabar.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 408,
+      "s": 1.1
+     },
+     {
+      "t": "petani",
+      "x": 280,
+      "y": 470,
+      "s": 1.1
+     },
+     {
+      "t": "sumur",
+      "x": 430,
+      "y": 470,
+      "s": 0.9
+     },
+     {
+      "t": "tunas",
+      "x": 570,
+      "y": 486
+     },
+     {
+      "t": "bunga",
+      "x": 660,
+      "y": 484
+     }
+    ]
+   }
+  },
+  {
+   "title": "Menjaga Tumbuhan",
+   "text": "Tumbuhan adalah titipan Allah yang harus dijaga. Kita tidak mencabut atau menebang pohon sembarangan. Menanam pohon dan menyiraminya adalah cara menjaga bumi agar tetap hijau.",
+   "fact": "Menebang hutan sembarangan bisa menyebabkan banjir dan tanah longsor. Menanam kembali pohon membuat alam seimbang.",
+   "reflection": "Subhanallah, menjaga tumbuhan berarti menjaga kehidupan di bumi.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 180,
+      "y": 406,
+      "s": 1.3
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 320
+     },
+     {
+      "t": "anak",
+      "x": 380,
+      "y": 470,
+      "s": 1.05
+     },
+     {
+      "t": "dewasa",
+      "x": 470,
+      "y": 468,
+      "s": 1.05
+     },
+     {
+      "t": "tunas",
+      "x": 590,
+      "y": 486
+     },
+     {
+      "t": "bunga",
+      "x": 670,
+      "y": 484
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Bagian tumbuhan yang menyerap air dari tanah adalah...",
+   "options": [
+    "akar",
+    "daun",
+    "bunga"
+   ],
+   "answer": 0,
+   "explain": "Akar menyerap air dan zat hara dari tanah."
+  },
+  {
+   "q": "Tumbuhan baru tumbuh dari...",
+   "options": [
+    "biji",
+    "batu",
+    "pasir"
+   ],
+   "answer": 0,
+   "explain": "Tumbuhan baru berasal dari biji yang ditanam."
+  },
+  {
+   "q": "Bagian tumbuhan yang menopang dan mengalirkan air adalah...",
+   "options": [
+    "batang",
+    "bunga",
+    "biji"
+   ],
+   "answer": 0,
+   "explain": "Batang menopang tumbuhan dan mengalirkan air."
+  },
+  {
+   "q": "Daun membuat makanan dengan bantuan...",
+   "options": [
+    "cahaya matahari",
+    "batu",
+    "tanah"
+   ],
+   "answer": 0,
+   "explain": "Daun membuat makanan dengan bantuan cahaya matahari."
+  },
+  {
+   "q": "Sayur dan buah membuat tubuh...",
+   "options": [
+    "sehat",
+    "lemas",
+    "pusing"
+   ],
+   "answer": 0,
+   "explain": "Sayur dan buah mengandung vitamin dan serat yang menyehatkan."
+  },
+  {
+   "q": "Daun tumbuhan menghasilkan ... untuk kita hirup.",
+   "options": [
+    "oksigen",
+    "asap",
+    "debu"
+   ],
+   "answer": 0,
+   "explain": "Daun menghasilkan oksigen untuk kita hirup."
+  },
+  {
+   "q": "Agar tumbuh subur, tanaman perlu...",
+   "options": [
+    "air dan cahaya yang cukup",
+    "batu besar",
+    "gula"
+   ],
+   "answer": 0,
+   "explain": "Tanaman perlu air dan cahaya yang cukup."
+  },
+  {
+   "q": "Cara menjaga tumbuhan adalah...",
+   "options": [
+    "menanam dan menyiraminya",
+    "mencabutnya sembarangan",
+    "menebang semua pohon"
+   ],
+   "answer": 0,
+   "explain": "Kita menjaga tumbuhan dengan menanam dan menyiraminya."
+  }
+ ]
+}

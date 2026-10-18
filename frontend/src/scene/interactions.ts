@@ -46,6 +46,8 @@ const TABLE: Record<string, Interaction> = {
   rumah: { anim: 'squash', sound: 'knock' },
   pagar: { anim: 'rattle', sound: 'knock' },
   meja: { anim: 'rattle', sound: 'clink' },
+  kursi: { anim: 'rattle', sound: 'clink' },
+  tunas: { anim: 'wiggle', sound: 'rustle', fx: ['leaves'], fxBox: [-34, -60, 68, 44], origin: 'bottom' },
   kue: { anim: 'squash', sound: 'chime', fx: ['sparkle'], fxBox: [-40, -50, 80, 30] },
   vas: { anim: 'wobble', sound: 'clink' },
   jaring: { anim: 'stretch', sound: 'thump' },
@@ -98,6 +100,9 @@ const NAMES: Record<string, string> = {
   kancil: 'Kancil', gajah: 'Gajah', kelinci: 'Kelinci', ikan: 'Ikan', semut: 'Semut',
   pagar: 'Pagar', meja: 'Meja', vas: 'Vas bunga', kue: 'Kue', sumur: 'Sumur', tongkat: 'Tongkat',
   kurungan: 'Kurungan', timun: 'Timun', gunung: 'Gunung',
+  harimau: 'Harimau', singa: 'Singa', buaya: 'Buaya', kurakura: 'Kura-kura', belalang: 'Belalang',
+  tikus: 'Tikus', unta: 'Unta', anjing: 'Anjing', paus: 'Paus', sarang: 'Sarang burung', lubang: 'Lubang',
+  hudhud: 'Burung hud-hud', ababil: 'Burung ababil', kursi: 'Kursi', tunas: 'Tunas',
 };
 const NAMES_EN: Record<string, string> = {
   matahari: 'The Sun', bulan: 'The Moon', bintang: 'Star', awan: 'Cloud', pelangi: 'Rainbow', petir: 'Lightning',
@@ -106,6 +111,9 @@ const NAMES_EN: Record<string, string> = {
   kancil: 'Mouse deer', gajah: 'Elephant', kelinci: 'Rabbit', ikan: 'Fish', semut: 'Ant',
   pagar: 'Fence', meja: 'Table', vas: 'Flower vase', kue: 'Cake', sumur: 'Well', tongkat: 'Walking stick',
   kurungan: 'Cage', timun: 'Cucumber', gunung: 'Mountain',
+  harimau: 'Tiger', singa: 'Lion', buaya: 'Crocodile', kurakura: 'Turtle', belalang: 'Grasshopper',
+  tikus: 'Mouse', unta: 'Camel', anjing: 'Dog', paus: 'Whale', sarang: "Bird's nest", lubang: 'Burrow',
+  hudhud: 'Hoopoe', ababil: 'Swift', kursi: 'Chair', tunas: 'Sprout',
 };
 const FRUITS = ['Apel', 'Jeruk', 'Pisang', 'Semangka', 'Stroberi', 'Anggur'];
 const FRUITS_EN = ['Apple', 'Orange', 'Banana', 'Watermelon', 'Strawberry', 'Grape'];

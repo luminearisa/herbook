@@ -1,0 +1,485 @@
+{
+ "slug": "hewan-1-hewan-di-sekitar",
+ "series": "hewan",
+ "part": 1,
+ "title": "Hewan Part 1: Hewan di Sekitar Kita",
+ "summary": "Kenali hewan-hewan di sekitar kita: hewan peliharaan, hewan kecil, dan hewan laut, lengkap dengan suara dan tempat tinggalnya.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 90,
+    "y": 406,
+    "s": 1.2
+   },
+   {
+    "t": "rumah",
+    "x": 640,
+    "y": 432,
+    "s": 0.95
+   },
+   {
+    "t": "semak",
+    "x": 720,
+    "y": 452
+   },
+   {
+    "t": "bunga",
+    "x": 200,
+    "y": 486,
+    "v": 1
+   },
+   {
+    "t": "anjing",
+    "x": 300,
+    "y": 480,
+    "s": 1.05
+   },
+   {
+    "t": "kelinci",
+    "x": 430,
+    "y": 484,
+    "s": 0.95
+   },
+   {
+    "t": "burung",
+    "x": 560,
+    "y": 140
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Hewan di Sekitar Kita",
+   "text": "Di sekitar kita hidup banyak hewan. Ada hewan yang dipelihara di rumah, ada yang hidup di kebun, dan ada yang hidup di hutan atau laut. Setiap hewan punya bentuk, suara, dan cara hidup yang berbeda.",
+   "fact": "Hewan dibagi menjadi hewan peliharaan, hewan ternak, dan hewan liar. Semuanya makhluk ciptaan Allah yang perlu kita sayangi.",
+   "reflection": "Subhanallah, Allah menciptakan beragam hewan dengan bentuk dan suaranya masing-masing.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 720,
+      "y": 452
+     },
+     {
+      "t": "bunga",
+      "x": 380,
+      "y": 486
+     },
+     {
+      "t": "anjing",
+      "x": 250,
+      "y": 482,
+      "s": 1.0
+     },
+     {
+      "t": "kelinci",
+      "x": 470,
+      "y": 484,
+      "s": 0.9
+     },
+     {
+      "t": "burung",
+      "x": 620,
+      "y": 140
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hewan Peliharaan",
+   "text": "Hewan peliharaan adalah hewan yang kita rawat di rumah, seperti anjing dan kelinci. Kita memberi makan, minum, dan tempat tinggal yang aman. Menyayangi hewan peliharaan membuatnya sehat dan jinak.",
+   "fact": "Anjing mengenal tuannya dari bau dan suara. Kelinci menyukai wortel dan sayuran hijau.",
+   "reflection": "Alhamdulillah, hewan peliharaan mengajarkan kita sabar dan bertanggung jawab.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 580,
+      "y": 432,
+      "s": 0.95
+     },
+     {
+      "t": "pagar",
+      "x": 130,
+      "y": 470
+     },
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 406,
+      "s": 1.0
+     },
+     {
+      "t": "anjing",
+      "x": 300,
+      "y": 480,
+      "s": 1.05
+     },
+     {
+      "t": "kelinci",
+      "x": 430,
+      "y": 484,
+      "s": 0.95
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hewan Kecil di Kebun",
+   "text": "Di kebun dan rumput hidup hewan kecil seperti semut, belalang, dan kupu-kupu. Semut berjalan berbaris mencari makanan. Belalang melompat di antara rumput. Kupu-kupu terbang dari bunga ke bunga.",
+   "fact": "Semut bisa mengangkat beban yang jauh lebih berat daripada tubuhnya. Belalang mendengar dengan bagian di perutnya.",
+   "reflection": "Subhanallah, hewan kecil pun punya tugas dan manfaat dalam kehidupan.",
+   "scene": {
+    "bg": "kebun",
+    "items": [
+     {
+      "t": "semak",
+      "x": 720,
+      "y": 452
+     },
+     {
+      "t": "timun",
+      "x": 120,
+      "y": 478
+     },
+     {
+      "t": "bunga",
+      "x": 200,
+      "y": 484,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 640,
+      "y": 484,
+      "v": 2
+     },
+     {
+      "t": "semut",
+      "x": 300,
+      "y": 488
+     },
+     {
+      "t": "belalang",
+      "x": 430,
+      "y": 478
+     },
+     {
+      "t": "kupu",
+      "x": 560,
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "title": "Burung dan Sarangnya",
+   "text": "Burung hidup di pohon dan membuat sarang dari ranting serta daun kering. Di sarang, burung bertelur dan merawat anaknya. Burung bernyanyi di pagi hari dan terbang mencari makanan.",
+   "fact": "Sarang burung dibuat dengan rapi memakai paruh dan kakinya. Ada burung yang bersarang di lubang pohon, ada yang di dahan.",
+   "reflection": "Subhanallah, Allah memberi burung kepandaian membuat rumahnya sendiri.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 250,
+      "y": 412,
+      "s": 1.3
+     },
+     {
+      "t": "sarang",
+      "x": 250,
+      "y": 296,
+      "s": 0.95
+     },
+     {
+      "t": "burung",
+      "x": 430,
+      "y": 200
+     },
+     {
+      "t": "burung",
+      "x": 600,
+      "y": 156,
+      "v": 1
+     },
+     {
+      "t": "semak",
+      "x": 700,
+      "y": 452
+     },
+     {
+      "t": "kupu",
+      "x": 140,
+      "y": 340
+     }
+    ]
+   }
+  },
+  {
+   "title": "Ikan di Air",
+   "text": "Ikan hidup di air, baik di sungai, danau, maupun laut. Ikan bernapas dengan insang dan berenang memakai ekor serta sirip. Ada ikan yang kecil, ada juga yang besar.",
+   "fact": "Ikan tidak bisa hidup di luar air karena insangnya perlu air untuk mengambil oksigen.",
+   "reflection": "Alhamdulillah, Allah menyediakan air sebagai tempat hidup ikan dan hewan air lainnya.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 70,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 250,
+      "y": 140
+     },
+     {
+      "t": "ikan",
+      "x": 300,
+      "y": 440
+     },
+     {
+      "t": "ikan",
+      "x": 470,
+      "y": 466,
+      "v": 1
+     },
+     {
+      "t": "kurakura",
+      "x": 240,
+      "y": 472
+     },
+     {
+      "t": "batu",
+      "x": 545,
+      "y": 474
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hewan Besar di Hutan",
+   "text": "Di hutan hidup hewan besar seperti gajah dan harimau. Gajah berbadan besar dan berbelalai panjang. Harimau berlari cepat dan memiliki loreng di tubuhnya. Mereka hidup bebas di alam.",
+   "fact": "Gajah memakai belalainya untuk mengambil makanan dan minum. Harimau aktif mencari makan pada malam hari.",
+   "reflection": "Subhanallah, Allah menciptakan hewan besar dengan kekuatan dan keunikan masing-masing.",
+   "scene": {
+    "bg": "hutan",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 410,
+      "s": 1.3
+     },
+     {
+      "t": "pohon",
+      "x": 720,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 200,
+      "y": 456
+     },
+     {
+      "t": "burung",
+      "x": 430,
+      "y": 140
+     },
+     {
+      "t": "gajah",
+      "x": 300,
+      "y": 486,
+      "s": 1.1
+     },
+     {
+      "t": "harimau",
+      "x": 580,
+      "y": 486,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hewan Laut",
+   "text": "Di laut hidup hewan yang sangat besar, seperti paus. Ada juga kura-kura laut dan berbagai ikan yang berenang bebas. Laut menjadi rumah bagi ribuan jenis hewan.",
+   "fact": "Paus bukan ikan, melainkan hewan menyusui yang hidup di laut. Paus naik ke permukaan untuk bernapas.",
+   "reflection": "Subhanallah, laut yang luas menjadi rumah bagi banyak hewan ciptaan Allah.",
+   "scene": {
+    "bg": "laut",
+    "items": [
+     {
+      "t": "burung",
+      "x": 120,
+      "y": 140
+     },
+     {
+      "t": "ikan",
+      "x": 350,
+      "y": 380
+     },
+     {
+      "t": "ikan",
+      "x": 600,
+      "y": 430,
+      "v": 2
+     },
+     {
+      "t": "kurakura",
+      "x": 200,
+      "y": 470,
+      "s": 0.9
+     },
+     {
+      "t": "paus",
+      "x": 520,
+      "y": 470,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Menyayangi Hewan",
+   "text": "Hewan adalah makhluk ciptaan Allah yang harus kita sayangi. Kita tidak menyiksa atau mengganggu hewan. Beri makan hewan peliharaan dengan teratur, dan jangan merusak sarang serta tempat tinggal hewan.",
+   "fact": "Menyayangi hewan termasuk perbuatan baik. Nabi mengajarkan bahwa memberi minum kepada hewan yang kehausan pun berpahala.",
+   "reflection": "Alhamdulillah, menyayangi hewan adalah cara kita bersyukur dan berbuat baik kepada makhluk Allah.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 640,
+      "y": 432,
+      "s": 0.95
+     },
+     {
+      "t": "bunga",
+      "x": 560,
+      "y": 486
+     },
+     {
+      "t": "kelinci",
+      "x": 300,
+      "y": 484,
+      "s": 0.9
+     },
+     {
+      "t": "anak",
+      "x": 390,
+      "y": 470,
+      "s": 1.05
+     },
+     {
+      "t": "anjing",
+      "x": 480,
+      "y": 482,
+      "s": 1.0
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Hewan yang biasa dipelihara di rumah adalah...",
+   "options": [
+    "anjing",
+    "harimau",
+    "singa"
+   ],
+   "answer": 0,
+   "explain": "Anjing dan kelinci adalah contoh hewan peliharaan."
+  },
+  {
+   "q": "Burung membuat ... untuk bertelur.",
+   "options": [
+    "sarang",
+    "lubang",
+    "kandang"
+   ],
+   "answer": 0,
+   "explain": "Burung membuat sarang dari ranting dan daun kering."
+  },
+  {
+   "q": "Hewan yang berjalan berbaris mencari makanan adalah...",
+   "options": [
+    "semut",
+    "gajah",
+    "paus"
+   ],
+   "answer": 0,
+   "explain": "Semut berjalan berbaris mencari makanan."
+  },
+  {
+   "q": "Ikan bernapas dengan...",
+   "options": [
+    "insang",
+    "paru-paru",
+    "belalai"
+   ],
+   "answer": 0,
+   "explain": "Ikan bernapas dengan insang."
+  },
+  {
+   "q": "Hewan besar yang berbelalai panjang adalah...",
+   "options": [
+    "gajah",
+    "harimau",
+    "kura-kura"
+   ],
+   "answer": 0,
+   "explain": "Gajah memiliki belalai yang panjang."
+  },
+  {
+   "q": "Hewan laut yang naik ke permukaan untuk bernapas adalah...",
+   "options": [
+    "paus",
+    "semut",
+    "belalang"
+   ],
+   "answer": 0,
+   "explain": "Paus naik ke permukaan untuk bernapas."
+  },
+  {
+   "q": "Kupu-kupu biasanya hinggap di...",
+   "options": [
+    "bunga",
+    "batu",
+    "air"
+   ],
+   "answer": 0,
+   "explain": "Kupu-kupu terbang dari bunga ke bunga."
+  },
+  {
+   "q": "Cara menyayangi hewan adalah...",
+   "options": [
+    "memberi makan dan tidak menyakitinya",
+    "melempar batu ke hewan",
+    "merusak sarang burung"
+   ],
+   "answer": 0,
+   "explain": "Kita menyayangi hewan dengan memberi makan dan tidak mengganggunya."
+  }
+ ]
+}

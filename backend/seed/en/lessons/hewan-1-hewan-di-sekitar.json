@@ -1,0 +1,136 @@
+{
+  "title": "Animals Part 1: Animals Around Us",
+  "summary": "Get to know the animals around us: pets, small animals, and sea animals, along with their sounds and homes.",
+  "pages": [
+    {
+      "title": "Animals Around Us",
+      "text": "Many animals live around us. Some are kept at home, some live in the garden, and some live in the forest or the sea. Every animal has a different shape, sound, and way of life.",
+      "fact": "Animals are grouped into pets, farm animals, and wild animals. They are all creatures of Allah that we should love.",
+      "reflection": "Subhanallah, Allah created many kinds of animals, each with its own shape and sound."
+    },
+    {
+      "title": "Pets",
+      "text": "Pets are animals we care for at home, such as dogs and rabbits. We give them food, water, and a safe place to live. Loving our pets keeps them healthy and gentle.",
+      "fact": "A dog knows its owner by smell and sound. Rabbits love carrots and green vegetables.",
+      "reflection": "Alhamdulillah, pets teach us patience and responsibility."
+    },
+    {
+      "title": "Small Animals in the Garden",
+      "text": "In gardens and grass live small animals such as ants, grasshoppers, and butterflies. Ants walk in a line looking for food. Grasshoppers hop among the grass. Butterflies fly from flower to flower.",
+      "fact": "An ant can carry a load far heavier than its own body. A grasshopper hears with a part on its belly.",
+      "reflection": "Subhanallah, even small animals have a task and a use in life."
+    },
+    {
+      "title": "Birds and Their Nests",
+      "text": "Birds live in trees and make nests from twigs and dry leaves. In the nest, birds lay eggs and care for their young. Birds sing in the morning and fly out to find food.",
+      "fact": "A bird builds its nest neatly using its beak and feet. Some birds nest in tree holes, others on branches.",
+      "reflection": "Subhanallah, Allah gave birds the skill to build their own homes."
+    },
+    {
+      "title": "Fish in the Water",
+      "text": "Fish live in water, in rivers, lakes, or the sea. Fish breathe with gills and swim using their tails and fins. Some fish are small, and some are very big.",
+      "fact": "Fish cannot live out of water because their gills need water to take in oxygen.",
+      "reflection": "Alhamdulillah, Allah provides water as a home for fish and other water animals."
+    },
+    {
+      "title": "Big Animals in the Forest",
+      "text": "In the forest live big animals such as elephants and tigers. An elephant has a huge body and a long trunk. A tiger runs fast and has stripes on its body. They live freely in nature.",
+      "fact": "An elephant uses its trunk to pick up food and drink. Tigers hunt for food at night.",
+      "reflection": "Subhanallah, Allah created big animals with their own strength and uniqueness."
+    },
+    {
+      "title": "Sea Animals",
+      "text": "In the sea live very large animals, such as whales. There are also sea turtles and many kinds of fish swimming freely. The sea is home to thousands of kinds of animals.",
+      "fact": "A whale is not a fish but a mammal that lives in the sea. Whales come up to the surface to breathe.",
+      "reflection": "Subhanallah, the wide sea is home to many creatures created by Allah."
+    },
+    {
+      "title": "Loving Animals",
+      "text": "Animals are creatures of Allah that we must love. We do not hurt or disturb them. Feed your pets regularly, and do not damage the nests and homes of animals.",
+      "fact": "Loving animals is a good deed. The Prophet taught that even giving a drink to a thirsty animal is rewarded.",
+      "reflection": "Alhamdulillah, loving animals is how we thank Allah and do good to His creatures."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "An animal usually kept as a pet at home is...",
+      "options": [
+        "a dog",
+        "a tiger",
+        "a lion"
+      ],
+      "answer": 0,
+      "explain": "Dogs and rabbits are examples of pets."
+    },
+    {
+      "q": "Birds make a ... to lay their eggs.",
+      "options": [
+        "nest",
+        "hole",
+        "cage"
+      ],
+      "answer": 0,
+      "explain": "Birds make nests from twigs and dry leaves."
+    },
+    {
+      "q": "The animal that walks in a line looking for food is the...",
+      "options": [
+        "ant",
+        "elephant",
+        "whale"
+      ],
+      "answer": 0,
+      "explain": "Ants walk in a line looking for food."
+    },
+    {
+      "q": "Fish breathe with...",
+      "options": [
+        "gills",
+        "lungs",
+        "a trunk"
+      ],
+      "answer": 0,
+      "explain": "Fish breathe with gills."
+    },
+    {
+      "q": "A big animal with a long trunk is the...",
+      "options": [
+        "elephant",
+        "tiger",
+        "turtle"
+      ],
+      "answer": 0,
+      "explain": "The elephant has a long trunk."
+    },
+    {
+      "q": "The sea animal that comes to the surface to breathe is the...",
+      "options": [
+        "whale",
+        "ant",
+        "grasshopper"
+      ],
+      "answer": 0,
+      "explain": "A whale comes up to the surface to breathe."
+    },
+    {
+      "q": "Butterflies usually perch on...",
+      "options": [
+        "flowers",
+        "stones",
+        "water"
+      ],
+      "answer": 0,
+      "explain": "Butterflies fly from flower to flower."
+    },
+    {
+      "q": "One way to love animals is...",
+      "options": [
+        "feeding them and not hurting them",
+        "throwing stones at them",
+        "destroying birds nests"
+      ],
+      "answer": 0,
+      "explain": "We love animals by feeding them and not disturbing them."
+    }
+  ]
+}

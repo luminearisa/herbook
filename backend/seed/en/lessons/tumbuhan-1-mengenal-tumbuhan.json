@@ -1,0 +1,136 @@
+{
+  "title": "Plants Part 1: Getting to Know Plants",
+  "summary": "Get to know the plants around us: their parts, how they grow from seeds, their uses, and how to care for them.",
+  "pages": [
+    {
+      "title": "Plants Around Us",
+      "text": "Plants live around us: in the yard, the garden, and the forest. There are small plants such as grass and flowers, and there are tall, big trees. Plants make the air fresh and the surroundings beautiful.",
+      "fact": "Plants are also called flora. The world has a great many kinds of plants, more than three hundred thousand.",
+      "reflection": "Subhanallah, Allah grows many kinds of plants that make the earth green."
+    },
+    {
+      "title": "Parts of a Plant",
+      "text": "A plant has several parts. Roots soak up water and nutrients from the soil. The stem holds the plant up and carries water. Leaves make food from sunlight. Flowers then become fruit and seeds.",
+      "fact": "Leaves cook food with the help of sunlight. This process is called photosynthesis, and it makes oxygen for us to breathe.",
+      "reflection": "Alhamdulillah, every part of a plant has a neat task to keep it alive."
+    },
+    {
+      "title": "From a Seed to a Plant",
+      "text": "A new plant comes from a seed. A planted seed grows into a small sprout. The sprout grows bigger into an adult plant, then flowers and bears fruit. Ripe fruit holds new seeds.",
+      "fact": "Some seeds sprout within days, but others need weeks. Seeds need water, air, and a warm place to grow.",
+      "reflection": "Subhanallah, from a tiny seed Allah grows a big and useful plant."
+    },
+    {
+      "title": "Leaves, Flowers, and Fruit",
+      "text": "Leaves are usually green and may be broad or narrow. Flowers are colourful and fragrant, attracting butterflies and bees. Fruit appears after the flower, and inside it are seeds.",
+      "fact": "The colour and scent of flowers attract pollinating animals. Thanks to them, flowers turn into fruit.",
+      "reflection": "Alhamdulillah, leaves, flowers, and fruit show the beauty of Allah creation."
+    },
+    {
+      "title": "Vegetables and Fruit for Food",
+      "text": "Many vegetables and fruits come from plants. We eat cucumber, spinach, tomato, and all kinds of fruit. This food keeps us healthy because it contains vitamins and fibre.",
+      "fact": "Dates are a sweet and healthy food. The Prophet recommended breaking the fast with dates.",
+      "reflection": "Alhamdulillah, Allah provides all kinds of tasty and healthy vegetables and fruit."
+    },
+    {
+      "title": "Plants Give Oxygen and Shade",
+      "text": "Leaves make the oxygen we breathe. Trees also give shade, a place to shelter from the heat. Under a tree we can sit and play comfortably.",
+      "fact": "One big tree can supply oxygen for several people every day. Planting a tree means planting goodness for the future.",
+      "reflection": "Subhanallah, plants help us breathe and shelter us, a sign of Allah mercy."
+    },
+    {
+      "title": "Planting and Caring for Plants",
+      "text": "We can plant plants in a pot or in the yard. Water them regularly, put them where there is enough light, and clear the weeds around them. Well-cared-for plants grow strong.",
+      "fact": "Too much water can rot the roots, while too little makes the plant wilt. Give just the right amount.",
+      "reflection": "Alhamdulillah, caring for plants trains us to be diligent and patient."
+    },
+    {
+      "title": "Protecting Plants",
+      "text": "Plants are a trust from Allah that we must protect. We do not pull up or cut down trees carelessly. Planting trees and watering them are ways to keep the earth green.",
+      "fact": "Cutting down forests carelessly can cause floods and landslides. Planting trees again keeps nature balanced.",
+      "reflection": "Subhanallah, protecting plants means protecting life on earth."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The part of a plant that soaks up water from the soil is the...",
+      "options": [
+        "root",
+        "leaf",
+        "flower"
+      ],
+      "answer": 0,
+      "explain": "Roots soak up water and nutrients from the soil."
+    },
+    {
+      "q": "A new plant grows from a...",
+      "options": [
+        "seed",
+        "stone",
+        "sand"
+      ],
+      "answer": 0,
+      "explain": "A new plant comes from a planted seed."
+    },
+    {
+      "q": "The part of a plant that holds it up and carries water is the...",
+      "options": [
+        "stem",
+        "flower",
+        "seed"
+      ],
+      "answer": 0,
+      "explain": "The stem holds the plant up and carries water."
+    },
+    {
+      "q": "Leaves make food with the help of...",
+      "options": [
+        "sunlight",
+        "stones",
+        "soil"
+      ],
+      "answer": 0,
+      "explain": "Leaves make food with the help of sunlight."
+    },
+    {
+      "q": "Vegetables and fruit keep our body...",
+      "options": [
+        "healthy",
+        "weak",
+        "dizzy"
+      ],
+      "answer": 0,
+      "explain": "Vegetables and fruit contain healthy vitamins and fibre."
+    },
+    {
+      "q": "The leaves of plants make ... for us to breathe.",
+      "options": [
+        "oxygen",
+        "smoke",
+        "dust"
+      ],
+      "answer": 0,
+      "explain": "Leaves make oxygen for us to breathe."
+    },
+    {
+      "q": "To grow well, a plant needs...",
+      "options": [
+        "enough water and light",
+        "big stones",
+        "sugar"
+      ],
+      "answer": 0,
+      "explain": "A plant needs enough water and light."
+    },
+    {
+      "q": "One way to protect plants is...",
+      "options": [
+        "planting and watering them",
+        "pulling them up carelessly",
+        "cutting down all the trees"
+      ],
+      "answer": 0,
+      "explain": "We protect plants by planting and watering them."
+    }
+  ]
+}

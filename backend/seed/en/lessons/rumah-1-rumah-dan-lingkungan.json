@@ -1,0 +1,136 @@
+{
+  "title": "Home Part 1: Home and Its Surroundings",
+  "summary": "Get to know the home and its surroundings: the parts of a house, the rooms, the yard, clean water, and how to keep them clean.",
+  "pages": [
+    {
+      "title": "My Home",
+      "text": "A home is where we live with our family. At home we sleep, eat, study, and play. A clean home makes us comfortable and healthy.",
+      "fact": "A home protects us from heat, rain, and wind. Every home has a different shape, but all are places to shelter.",
+      "reflection": "Alhamdulillah, Allah gives us a home as a safe and comfortable place."
+    },
+    {
+      "title": "Parts of a House",
+      "text": "A house has several parts. The roof protects us from rain and heat. The door is the way in and out. The windows let in light and air. The walls divide the rooms inside.",
+      "fact": "Windows that are often opened keep the air inside the house fresh and healthy.",
+      "reflection": "Subhanallah, every part of a house is made to keep us comfortable."
+    },
+    {
+      "title": "The Living Room",
+      "text": "In the living room we receive guests. There is a table, chairs, and a flower vase. We sit politely and greet guests kindly. A tidy room makes guests feel at home.",
+      "fact": "Respecting guests is a good habit. The Prophet taught us to honour guests.",
+      "reflection": "Alhamdulillah, the living room is a place to gather and welcome guests."
+    },
+    {
+      "title": "Eating Together as a Family",
+      "text": "At home we eat together with our family. Before eating we wash our hands and say a prayer. After eating, we help clear the table.",
+      "fact": "Eating together as a family brings us closer. Saying a prayer before eating is a good habit.",
+      "reflection": "Alhamdulillah, eating together with family is a blessing to be thankful for."
+    },
+    {
+      "title": "The Yard",
+      "text": "In the yard we plant trees and flowers. A fence keeps the house safe. A green yard makes the house cool and beautiful.",
+      "fact": "Plants in the yard help soak up rainwater so it does not puddle.",
+      "reflection": "Subhanallah, a green yard makes the home cooler and more beautiful."
+    },
+    {
+      "title": "The Well and Clean Water",
+      "text": "Many homes have a well as a source of water. Clean water is used for drinking, cooking, bathing, and washing. We must save water and not pollute it.",
+      "fact": "Clean water is an important need. Covering the well and not throwing rubbish into it keeps the water clean.",
+      "reflection": "Alhamdulillah, clean water is a blessing we must protect and be thankful for."
+    },
+    {
+      "title": "The Neighbourhood",
+      "text": "Outside the home there is the neighbourhood: neighbours, roads, and other houses. We live side by side with our neighbours. Greeting and helping one another makes the neighbourhood pleasant.",
+      "fact": "Respecting neighbours is a good teaching. A peaceful neighbourhood makes life calm.",
+      "reflection": "Alhamdulillah, Allah created us to live together and help one another."
+    },
+    {
+      "title": "Keeping Home and Surroundings Clean",
+      "text": "A clean home and neighbourhood keep us healthy. We sweep, put rubbish in the bin, and do not scribble on the walls. Keeping clean is a shared responsibility.",
+      "fact": "Piled-up rubbish can become a home for disease and smells. Putting rubbish in the bin prevents illness.",
+      "reflection": "Alhamdulillah, keeping the home clean is a way to be thankful and stay healthy."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The place we live in with our family is called a...",
+      "options": [
+        "home",
+        "river",
+        "forest"
+      ],
+      "answer": 0,
+      "explain": "A home is where we live with our family."
+    },
+    {
+      "q": "The part of a house that protects us from rain and heat is the...",
+      "options": [
+        "roof",
+        "window",
+        "fence"
+      ],
+      "answer": 0,
+      "explain": "The roof protects us from rain and heat."
+    },
+    {
+      "q": "The place where light and air enter the house is the...",
+      "options": [
+        "window",
+        "roof",
+        "floor"
+      ],
+      "answer": 0,
+      "explain": "Windows let in light and air."
+    },
+    {
+      "q": "We receive guests in the...",
+      "options": [
+        "living room",
+        "bathroom",
+        "yard"
+      ],
+      "answer": 0,
+      "explain": "The living room is where we receive guests."
+    },
+    {
+      "q": "Before eating we should...",
+      "options": [
+        "wash our hands and say a prayer",
+        "run around",
+        "sleep"
+      ],
+      "answer": 0,
+      "explain": "Before eating we wash our hands and say a prayer."
+    },
+    {
+      "q": "A source of clean water at home can come from a...",
+      "options": [
+        "well",
+        "stone",
+        "sand"
+      ],
+      "answer": 0,
+      "explain": "A well is one source of clean water."
+    },
+    {
+      "q": "To keep the water clean, we must not...",
+      "options": [
+        "throw rubbish into the well",
+        "save water",
+        "cover the well"
+      ],
+      "answer": 0,
+      "explain": "Throwing rubbish into the well pollutes the water."
+    },
+    {
+      "q": "One way to keep the house clean is...",
+      "options": [
+        "sweeping and putting rubbish in the bin",
+        "scribbling on the walls",
+        "piling up rubbish"
+      ],
+      "answer": 0,
+      "explain": "We sweep and put rubbish in the bin."
+    }
+  ]
+}

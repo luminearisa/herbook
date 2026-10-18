@@ -630,3 +630,35 @@ export function Angin() {
     </g>
   );
 }
+
+/** Tunas: kecambah kecil yang tumbuh di atas tanah. */
+export function Tunas({ v = 0 }: CharProps) {
+  const leaf = ['#4fa04a', '#3f8c47', '#62b04f'][v % 3];
+  return (
+    <g>
+      <ellipse cx="0" cy="-6" rx="46" ry="12" fill="#9a7a52" />
+      <ellipse cx="0" cy="-10" rx="46" ry="10" fill="#a8895f" />
+      <path d="M0 -8 V-58" stroke="#4c8a3a" strokeWidth="8" strokeLinecap="round" />
+      <path d="M0 -40 Q-30 -62 -42 -36 Q-16 -22 0 -40Z" fill={leaf} />
+      <path d="M0 -46 Q30 -68 42 -42 Q16 -28 0 -46Z" fill={leaf} />
+      <path d="M-14 -34 Q-22 -44 -34 -40 M14 -40 Q22 -50 34 -46" stroke="#3f7a32" strokeWidth="2" fill="none" opacity=".5" />
+    </g>
+  );
+}
+
+/** Kursi kayu sederhana untuk ruangan di dalam rumah. */
+export function Kursi({ v = 0 }: CharProps) {
+  const wood = ['#b07a44', '#c8934f', '#98672f'][v % 3];
+  const dark = ['#8a5c2f', '#a06f3c', '#734c28'][v % 3];
+  return (
+    <g>
+      <rect x="-48" y="-100" width="14" height="100" rx="4" fill={dark} />
+      <rect x="34" y="-100" width="14" height="100" rx="4" fill={dark} />
+      <rect x="-44" y="-96" width="88" height="48" rx="7" fill={wood} />
+      <rect x="-34" y="-86" width="68" height="28" rx="5" fill={dark} opacity=".3" />
+      <rect x="-54" y="-46" width="108" height="18" rx="6" fill={wood} />
+      <rect x="-44" y="-28" width="12" height="28" rx="3" fill={dark} />
+      <rect x="32" y="-28" width="12" height="28" rx="3" fill={dark} />
+    </g>
+  );
+}

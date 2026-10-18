@@ -1,0 +1,462 @@
+{
+ "slug": "rumah-1-rumah-dan-lingkungan",
+ "series": "rumah",
+ "part": 1,
+ "title": "Rumah Part 1: Rumah dan Lingkungan",
+ "summary": "Kenali rumah dan lingkungan di sekitarnya: bagian rumah, ruangan, halaman, air bersih, dan cara menjaga kebersihannya.",
+ "cover": {
+  "bg": "desa",
+  "items": [
+   {
+    "t": "pohon",
+    "x": 110,
+    "y": 406,
+    "s": 1.2
+   },
+   {
+    "t": "rumah",
+    "x": 420,
+    "y": 440,
+    "s": 1.15
+   },
+   {
+    "t": "pagar",
+    "x": 200,
+    "y": 474
+   },
+   {
+    "t": "bunga",
+    "x": 640,
+    "y": 486,
+    "v": 1
+   },
+   {
+    "t": "semak",
+    "x": 700,
+    "y": 452
+   },
+   {
+    "t": "burung",
+    "x": 560,
+    "y": 140
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Rumahku",
+   "text": "Rumah adalah tempat kita tinggal bersama keluarga. Di rumah kita tidur, makan, belajar, dan bermain. Rumah yang bersih membuat kita nyaman dan sehat.",
+   "fact": "Rumah melindungi kita dari panas, hujan, dan angin. Setiap rumah berbeda bentuknya, tetapi semuanya tempat berlindung.",
+   "reflection": "Alhamdulillah, Allah memberi kita rumah sebagai tempat yang aman dan nyaman.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "rumah",
+      "x": 400,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "semak",
+      "x": 690,
+      "y": 452
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 140
+     }
+    ]
+   }
+  },
+  {
+   "title": "Bagian-Bagian Rumah",
+   "text": "Rumah memiliki beberapa bagian. Atap melindungi dari hujan dan panas. Pintu menjadi jalan masuk dan keluar. Jendela tempat cahaya dan udara masuk. Dinding membatasi ruangan di dalam rumah.",
+   "fact": "Jendela yang sering dibuka membuat udara di dalam rumah segar dan sehat.",
+   "reflection": "Subhanallah, setiap bagian rumah dirancang untuk membuat kita nyaman.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 406,
+      "s": 1.1
+     },
+     {
+      "t": "rumah",
+      "x": 420,
+      "y": 440,
+      "s": 1.2
+     },
+     {
+      "t": "pagar",
+      "x": 170,
+      "y": 474
+     },
+     {
+      "t": "bunga",
+      "x": 310,
+      "y": 488
+     },
+     {
+      "t": "semak",
+      "x": 680,
+      "y": 454
+     }
+    ]
+   }
+  },
+  {
+   "title": "Ruang Tamu",
+   "text": "Di ruang tamu kita menerima tamu. Ada meja, kursi, dan vas bunga. Kita duduk dengan sopan dan menyapa tamu dengan ramah. Ruangan yang rapi membuat tamu betah.",
+   "fact": "Menghormati tamu adalah kebiasaan baik. Nabi mengajarkan untuk memuliakan tamu.",
+   "reflection": "Alhamdulillah, ruang tamu menjadi tempat berkumpul dan menjamu tamu.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 470,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "kursi",
+      "x": 230,
+      "y": 470,
+      "s": 1.0
+     },
+     {
+      "t": "kursi",
+      "x": 575,
+      "y": 470,
+      "s": 1.0,
+      "v": 1
+     },
+     {
+      "t": "vas",
+      "x": 360,
+      "y": 405,
+      "s": 0.8
+     },
+     {
+      "t": "kue",
+      "x": 450,
+      "y": 407,
+      "s": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "title": "Makan Bersama Keluarga",
+   "text": "Di rumah kita makan bersama keluarga. Sebelum makan kita mencuci tangan dan berdoa. Setelah makan, kita membantu membereskan meja.",
+   "fact": "Makan bersama keluarga membuat hubungan makin dekat. Berdoa sebelum makan adalah kebiasaan baik.",
+   "reflection": "Alhamdulillah, makan bersama keluarga adalah nikmat yang patut disyukuri.",
+   "scene": {
+    "bg": "dalamrumah",
+    "items": [
+     {
+      "t": "meja",
+      "x": 400,
+      "y": 474,
+      "s": 1.5,
+      "v": 1
+     },
+     {
+      "t": "kue",
+      "x": 400,
+      "y": 407,
+      "s": 1.4
+     },
+     {
+      "t": "buah",
+      "x": 300,
+      "y": 408,
+      "v": 0
+     },
+     {
+      "t": "anak",
+      "x": 170,
+      "y": 474,
+      "s": 1.0
+     },
+     {
+      "t": "dewasa",
+      "x": 640,
+      "y": 472,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Halaman Rumah",
+   "text": "Di halaman rumah kita menanam pohon dan bunga. Pagar menjaga rumah tetap aman. Halaman yang hijau membuat rumah sejuk dan indah.",
+   "fact": "Tanaman di halaman membantu menyerap air hujan sehingga tidak menggenang.",
+   "reflection": "Subhanallah, halaman yang hijau menambah kesejukan dan keindahan rumah.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "rumah",
+      "x": 540,
+      "y": 440,
+      "s": 1.1
+     },
+     {
+      "t": "pagar",
+      "x": 220,
+      "y": 472,
+      "s": 1.1
+     },
+     {
+      "t": "pohon",
+      "x": 340,
+      "y": 408,
+      "s": 1.1
+     },
+     {
+      "t": "bunga",
+      "x": 260,
+      "y": 488,
+      "v": 1
+     },
+     {
+      "t": "bunga",
+      "x": 400,
+      "y": 488,
+      "v": 2
+     },
+     {
+      "t": "kupu",
+      "x": 460,
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "title": "Sumur dan Air Bersih",
+   "text": "Banyak rumah memiliki sumur sebagai sumber air. Air bersih dipakai untuk minum, memasak, mandi, dan mencuci. Kita harus menghemat air dan tidak mencemarnya.",
+   "fact": "Air bersih adalah kebutuhan penting. Menutup sumur dan tidak membuang sampah ke dalamnya menjaga air tetap bersih.",
+   "reflection": "Alhamdulillah, air bersih adalah nikmat yang harus kita jaga dan syukuri.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "sumur",
+      "x": 380,
+      "y": 478,
+      "s": 1.1
+     },
+     {
+      "t": "pohon",
+      "x": 640,
+      "y": 408,
+      "s": 1.1
+     },
+     {
+      "t": "anak",
+      "x": 240,
+      "y": 470,
+      "s": 1.0
+     },
+     {
+      "t": "semak",
+      "x": 120,
+      "y": 452
+     },
+     {
+      "t": "burung",
+      "x": 520,
+      "y": 140
+     }
+    ]
+   }
+  },
+  {
+   "title": "Lingkungan Sekitar",
+   "text": "Di luar rumah ada lingkungan: tetangga, jalan, dan rumah-rumah lain. Kita hidup berdampingan dengan tetangga. Saling menyapa dan membantu membuat lingkungan nyaman.",
+   "fact": "Menghormati tetangga termasuk ajaran baik. Lingkungan yang rukun membuat hidup tenang.",
+   "reflection": "Alhamdulillah, Allah menciptakan kita untuk hidup bersama dan saling menolong.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 110,
+      "y": 406,
+      "s": 1.1
+     },
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 406,
+      "s": 1.0
+     },
+     {
+      "t": "rumah",
+      "x": 250,
+      "y": 444,
+      "s": 0.95
+     },
+     {
+      "t": "rumah",
+      "x": 640,
+      "y": 444,
+      "s": 0.95
+     },
+     {
+      "t": "dewasa",
+      "x": 400,
+      "y": 472,
+      "s": 1.05
+     },
+     {
+      "t": "anak",
+      "x": 480,
+      "y": 472,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Menjaga Kebersihan Rumah dan Lingkungan",
+   "text": "Rumah dan lingkungan yang bersih membuat kita sehat. Kita menyapu, membuang sampah pada tempatnya, dan tidak mencoret dinding. Menjaga kebersihan adalah tanggung jawab bersama.",
+   "fact": "Sampah yang menumpuk dapat menjadi sarang penyakit dan menimbulkan bau. Membuang sampah pada tempatnya mencegah penyakit.",
+   "reflection": "Alhamdulillah, menjaga kebersihan rumah adalah cara bersyukur dan menjaga kesehatan.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 180,
+      "y": 406,
+      "s": 1.1
+     },
+     {
+      "t": "rumah",
+      "x": 570,
+      "y": 442,
+      "s": 1.05
+     },
+     {
+      "t": "semak",
+      "x": 120,
+      "y": 452
+     },
+     {
+      "t": "anak",
+      "x": 330,
+      "y": 472,
+      "s": 1.05
+     },
+     {
+      "t": "dewasa",
+      "x": 420,
+      "y": 470,
+      "s": 1.05
+     },
+     {
+      "t": "bunga",
+      "x": 700,
+      "y": 486
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Tempat kita tinggal bersama keluarga disebut...",
+   "options": [
+    "rumah",
+    "sungai",
+    "hutan"
+   ],
+   "answer": 0,
+   "explain": "Rumah adalah tempat kita tinggal bersama keluarga."
+  },
+  {
+   "q": "Bagian rumah yang melindungi dari hujan dan panas adalah...",
+   "options": [
+    "atap",
+    "jendela",
+    "pagar"
+   ],
+   "answer": 0,
+   "explain": "Atap melindungi rumah dari hujan dan panas."
+  },
+  {
+   "q": "Tempat cahaya dan udara masuk ke rumah adalah...",
+   "options": [
+    "jendela",
+    "atap",
+    "lantai"
+   ],
+   "answer": 0,
+   "explain": "Jendela tempat cahaya dan udara masuk."
+  },
+  {
+   "q": "Kita menerima tamu di...",
+   "options": [
+    "ruang tamu",
+    "kamar mandi",
+    "halaman"
+   ],
+   "answer": 0,
+   "explain": "Ruang tamu adalah tempat menerima tamu."
+  },
+  {
+   "q": "Sebelum makan sebaiknya kita...",
+   "options": [
+    "mencuci tangan dan berdoa",
+    "berlari-lari",
+    "tidur"
+   ],
+   "answer": 0,
+   "explain": "Sebelum makan kita mencuci tangan dan berdoa."
+  },
+  {
+   "q": "Sumber air bersih di rumah dapat berasal dari...",
+   "options": [
+    "sumur",
+    "batu",
+    "pasir"
+   ],
+   "answer": 0,
+   "explain": "Sumur adalah salah satu sumber air bersih."
+  },
+  {
+   "q": "Agar air tetap bersih, kita tidak boleh...",
+   "options": [
+    "membuang sampah ke sumur",
+    "menghemat air",
+    "menutup sumur"
+   ],
+   "answer": 0,
+   "explain": "Membuang sampah ke sumur membuat air tercemar."
+  },
+  {
+   "q": "Cara menjaga kebersihan rumah adalah...",
+   "options": [
+    "menyapu dan membuang sampah pada tempatnya",
+    "mencoret dinding",
+    "menumpuk sampah"
+   ],
+   "answer": 0,
+   "explain": "Kita menyapu dan membuang sampah pada tempatnya."
+  }
+ ]
+}
