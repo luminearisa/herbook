@@ -1,0 +1,509 @@
+{
+ "slug": "alam-2-darat-dan-air",
+ "series": "alam",
+ "part": 2,
+ "title": "Alam Part 2: Darat dan Air",
+ "summary": "Kenali gunung, lembah, sungai, dan laut, serta cara menjaga alam sekitar lewat gambar yang bisa disentuh.",
+ "cover": {
+  "bg": "padang",
+  "items": [
+   {
+    "t": "gunung",
+    "x": 280,
+    "y": 384,
+    "s": 1.3
+   },
+   {
+    "t": "gunung",
+    "x": 680,
+    "y": 386,
+    "s": 0.95,
+    "v": 1
+   },
+   {
+    "t": "awan",
+    "x": 140,
+    "y": 80,
+    "s": 0.9
+   },
+   {
+    "t": "burung",
+    "x": 470,
+    "y": 120,
+    "v": 0
+   },
+   {
+    "t": "pohon",
+    "x": 90,
+    "y": 410,
+    "s": 1.15
+   },
+   {
+    "t": "semak",
+    "x": 730,
+    "y": 448
+   },
+   {
+    "t": "bunga",
+    "x": 380,
+    "y": 486,
+    "v": 1
+   }
+  ]
+ },
+ "pages": [
+  {
+   "title": "Gunung",
+   "text": "Gunung adalah bagian bumi yang menjulang sangat tinggi. Puncak gunung yang tinggi bisa tertutup salju, dan di lerengnya tumbuh pohon-pohon. Gunung menyimpan air di dalam tanah, yang kemudian menjadi mata air dan sungai.",
+   "fact": "Gunung tertinggi di dunia adalah Everest, tingginya sekitar 8.848 meter. Di Indonesia banyak gunung, seperti Gunung Rinjani dan Gunung Semeru.",
+   "reflection": "Subhanallah, Allah menciptakan gunung yang tinggi untuk menguatkan bumi dan menyimpan air.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "gunung",
+      "x": 300,
+      "y": 382,
+      "s": 1.35
+     },
+     {
+      "t": "gunung",
+      "x": 670,
+      "y": 384,
+      "s": 1.0,
+      "v": 1
+     },
+     {
+      "t": "awan",
+      "x": 140,
+      "y": 80,
+      "s": 0.9
+     },
+     {
+      "t": "awan",
+      "x": 660,
+      "y": 95,
+      "s": 0.8,
+      "v": 1
+     },
+     {
+      "t": "burung",
+      "x": 470,
+      "y": 120,
+      "v": 0
+     },
+     {
+      "t": "pohon",
+      "x": 80,
+      "y": 412,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 735,
+      "y": 448
+     }
+    ]
+   }
+  },
+  {
+   "title": "Lembah dan Dataran Rendah",
+   "text": "Di antara gunung-gunung terdapat lembah, yaitu tanah rendah yang diapit perbukitan. Lembah dan dataran rendah biasanya subur karena air mengalir ke sana. Di sana orang menanam padi, sayur, dan buah-buahan.",
+   "fact": "Tanah di lembah dan dataran rendah sering lebih subur karena membawa lumpur dan zat hara dari gunung saat hujan.",
+   "reflection": "Alhamdulillah, Allah menyediakan tanah yang subur agar kita bisa bercocok tanam dan mendapat makanan.",
+   "scene": {
+    "bg": "desa",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 90,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "pohon",
+      "x": 730,
+      "y": 406,
+      "s": 1.05
+     },
+     {
+      "t": "burung",
+      "x": 430,
+      "y": 130,
+      "v": 0
+     },
+     {
+      "t": "rumah",
+      "x": 560,
+      "y": 430,
+      "s": 1.0
+     },
+     {
+      "t": "petani",
+      "x": 250,
+      "y": 462,
+      "s": 1.1
+     },
+     {
+      "t": "bunga",
+      "x": 390,
+      "y": 486,
+      "v": 1
+     }
+    ]
+   }
+  },
+  {
+   "title": "Sungai",
+   "text": "Sungai adalah air yang mengalir dari tempat yang tinggi ke tempat yang lebih rendah, lalu bermuara di laut. Air sungai berasal dari mata air, hujan, dan salju yang mencair di gunung. Sungai memberi minuman bagi hewan dan menyuburkan tanaman di sekitarnya.",
+   "fact": "Sungai terpanjang di dunia adalah Sungai Nil di Afrika, panjangnya lebih dari 6.600 kilometer. Di Indonesia ada Sungai Kapuas dan Sungai Musi.",
+   "reflection": "Alhamdulillah, air sungai yang mengalir memberi kehidupan bagi makhluk ciptaan Allah.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 70,
+      "y": 406,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 250,
+      "y": 140,
+      "v": 1
+     },
+     {
+      "t": "ikan",
+      "x": 300,
+      "y": 440,
+      "v": 0
+     },
+     {
+      "t": "ikan",
+      "x": 470,
+      "y": 466,
+      "v": 1
+     },
+     {
+      "t": "kurakura",
+      "x": 240,
+      "y": 472
+     },
+     {
+      "t": "batu",
+      "x": 545,
+      "y": 474,
+      "v": 0
+     },
+     {
+      "t": "semak",
+      "x": 742,
+      "y": 448
+     }
+    ]
+   }
+  },
+  {
+   "title": "Hulu Sungai dan Air Terjun",
+   "text": "Di hulu, sungai mengalir deras di antara batu-batu dan tebing. Di tempat yang tinggi, air bisa jatuh membentuk air terjun yang indah. Air terjun membuat udara terasa sejuk dan menyegarkan.",
+   "fact": "Air terjun tertinggi di dunia adalah Angel Falls di Venezuela, tingginya hampir 1.000 meter. Suara gemuruh air terjun bisa terdengar dari jauh.",
+   "reflection": "Subhanallah, air terjun yang deras mengingatkan kita pada kebesaran Allah yang mengatur alam.",
+   "scene": {
+    "bg": "sungai",
+    "items": [
+     {
+      "t": "tebing",
+      "x": 120,
+      "y": 442,
+      "s": 1.2
+     },
+     {
+      "t": "tebing",
+      "x": 700,
+      "y": 442,
+      "s": 1.2
+     },
+     {
+      "t": "burung",
+      "x": 420,
+      "y": 120,
+      "v": 2
+     },
+     {
+      "t": "batu",
+      "x": 400,
+      "y": 478,
+      "v": 1
+     },
+     {
+      "t": "batu",
+      "x": 300,
+      "y": 482,
+      "v": 2
+     },
+     {
+      "t": "semak",
+      "x": 250,
+      "y": 452
+     }
+    ]
+   }
+  },
+  {
+   "title": "Laut",
+   "text": "Laut adalah kumpulan air yang sangat luas dan rasanya asin. Bumi kita sebagian besar terdiri dari laut. Di dalam laut hidup banyak ikan, rumput laut, dan hewan laut lainnya. Laut juga menjadi tempat kapal berlayar.",
+   "fact": "Sekitar tujuh puluh persen permukaan bumi adalah laut. Bagian laut yang paling dalam adalah Palung Mariana, dalamnya sekitar sebelas kilometer.",
+   "reflection": "Subhanallah, laut yang luas menyimpan banyak rezeki dan makhluk ciptaan Allah.",
+   "scene": {
+    "bg": "laut",
+    "items": [
+     {
+      "t": "burung",
+      "x": 650,
+      "y": 120,
+      "v": 0
+     },
+     {
+      "t": "ikan",
+      "x": 250,
+      "y": 380,
+      "v": 0
+     },
+     {
+      "t": "ikan",
+      "x": 560,
+      "y": 420,
+      "v": 2
+     },
+     {
+      "t": "kurakura",
+      "x": 200,
+      "y": 470,
+      "s": 0.9
+     },
+     {
+      "t": "paus",
+      "x": 540,
+      "y": 470,
+      "s": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "title": "Ombak dan Pantai",
+   "text": "Pantai adalah tepi laut yang berpasir. Di pantai kita bisa melihat ombak, yaitu gelombang air laut yang bergulung ke tepi. Ombak terjadi karena angin yang bertiup di atas laut. Bermain di pantai itu menyenangkan, tetapi harus hati-hati dan diawasi orang tua.",
+   "fact": "Pasir pantai berasal dari pecahan batu dan kerang yang terkikis ombak selama bertahun-tahun. Tidak semua pantai berpasir; ada juga pantai berbatu.",
+   "reflection": "Alhamdulillah, ombak dan pantai menjadi tempat bermain yang indah untuk kita syukuri.",
+   "scene": {
+    "bg": "laut",
+    "items": [
+     {
+      "t": "burung",
+      "x": 180,
+      "y": 120,
+      "v": 1
+     },
+     {
+      "t": "ikan",
+      "x": 280,
+      "y": 400,
+      "v": 1
+     },
+     {
+      "t": "ombak",
+      "x": 400,
+      "y": 400,
+      "s": 1.0
+     },
+     {
+      "t": "batu",
+      "x": 650,
+      "y": 486,
+      "v": 0
+     },
+     {
+      "t": "kurakura",
+      "x": 590,
+      "y": 486,
+      "s": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "title": "Pasir, Batu, dan Tanah",
+   "text": "Tanah adalah lapisan bumi tempat tumbuhan tumbuh. Tanah tersusun dari butiran batu, pasir, dan sisa tumbuhan yang membusuk. Di pantai kita menjumpai pasir, di gunung banyak batu. Tanah yang gembur membuat akar tumbuhan mudah menyerap air.",
+   "fact": "Butuh ratusan tahun untuk membentuk tanah yang subur dari batu dan tumbuhan yang membusuk. Karena itu, kita harus menjaga tanah agar tidak tercemar.",
+   "reflection": "Alhamdulillah, dari tanah Allah menumbuhkan tanaman yang menjadi makanan kita.",
+   "scene": {
+    "bg": "gurun",
+    "items": [
+     {
+      "t": "burung",
+      "x": 400,
+      "y": 120,
+      "v": 2
+     },
+     {
+      "t": "kurma",
+      "x": 680,
+      "y": 430,
+      "s": 1.05
+     },
+     {
+      "t": "batu",
+      "x": 230,
+      "y": 472,
+      "v": 0
+     },
+     {
+      "t": "batu",
+      "x": 330,
+      "y": 476,
+      "v": 2
+     },
+     {
+      "t": "semak",
+      "x": 520,
+      "y": 456
+     }
+    ]
+   }
+  },
+  {
+   "title": "Menjaga Alam Sekitar",
+   "text": "Alam adalah titipan Allah yang harus kita jaga. Kita tidak membuang sampah ke sungai atau laut, tidak menebang pohon sembarangan, dan tidak menyakiti hewan. Menanam pohon dan menghemat air juga cara menjaga alam. Dengan menjaga alam, air tetap bersih dan kita hidup sehat.",
+   "fact": "Sampah plastik di sungai bisa terbawa sampai ke laut dan membahayakan ikan serta penyu. Membuang sampah pada tempatnya adalah kebiasaan baik.",
+   "reflection": "Alhamdulillah, menjaga alam adalah cara kita bersyukur kepada Allah dan berbuat baik kepada sesama makhluk.",
+   "scene": {
+    "bg": "padang",
+    "items": [
+     {
+      "t": "pohon",
+      "x": 170,
+      "y": 408,
+      "s": 1.2
+     },
+     {
+      "t": "semak",
+      "x": 680,
+      "y": 450
+     },
+     {
+      "t": "bunga",
+      "x": 600,
+      "y": 486,
+      "v": 2
+     },
+     {
+      "t": "kupu",
+      "x": 300,
+      "y": 320
+     },
+     {
+      "t": "anak",
+      "x": 380,
+      "y": 468,
+      "s": 1.05
+     },
+     {
+      "t": "dewasa",
+      "x": 470,
+      "y": 466,
+      "s": 1.05
+     },
+     {
+      "t": "burung",
+      "x": 560,
+      "y": 120,
+      "v": 0
+     }
+    ]
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Bagian bumi yang menjulang sangat tinggi dan puncaknya sering bersalju disebut...",
+   "options": [
+    "Gunung",
+    "Sungai",
+    "Laut"
+   ],
+   "answer": 0,
+   "explain": "Gunung adalah bagian bumi yang menjulang sangat tinggi."
+  },
+  {
+   "q": "Air yang mengalir dari pegunungan menuju laut disebut...",
+   "options": [
+    "danau",
+    "sungai",
+    "awan"
+   ],
+   "answer": 1,
+   "explain": "Sungai adalah air yang mengalir dari tempat tinggi ke tempat lebih rendah, lalu ke laut."
+  },
+  {
+   "q": "Tanah rendah di antara dua gunung disebut...",
+   "options": [
+    "lembah",
+    "puncak",
+    "pantai"
+   ],
+   "answer": 0,
+   "explain": "Lembah adalah tanah rendah yang diapit perbukitan atau gunung."
+  },
+  {
+   "q": "Hewan yang hidup di sungai adalah...",
+   "options": [
+    "ikan",
+    "unta",
+    "singa"
+   ],
+   "answer": 0,
+   "explain": "Ikan hidup di sungai, danau, dan laut."
+  },
+  {
+   "q": "Kumpulan air yang sangat luas dan rasanya asin disebut...",
+   "options": [
+    "sungai",
+    "laut",
+    "sumur"
+   ],
+   "answer": 1,
+   "explain": "Laut adalah kumpulan air yang sangat luas dan asin."
+  },
+  {
+   "q": "Ombak terjadi karena...",
+   "options": [
+    "angin yang bertiup di atas laut",
+    "batu di pantai",
+    "ikan yang berenang"
+   ],
+   "answer": 0,
+   "explain": "Ombak terjadi karena angin yang bertiup di atas laut."
+  },
+  {
+   "q": "Di pantai kita menjumpai...",
+   "options": [
+    "pasir dan ombak",
+    "salju",
+    "gundukan gurun"
+   ],
+   "answer": 0,
+   "explain": "Pantai adalah tepi laut yang berpasir, dengan ombak yang bergulung."
+  },
+  {
+   "q": "Salah satu cara menjaga alam adalah...",
+   "options": [
+    "membuang sampah ke sungai",
+    "menanam pohon dan tidak membuang sampah ke air",
+    "menebang semua pohon"
+   ],
+   "answer": 1,
+   "explain": "Menanam pohon dan menjaga air tetap bersih adalah cara menjaga alam."
+  }
+ ]
+}

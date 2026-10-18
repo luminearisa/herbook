@@ -65,6 +65,7 @@ const TABLE: Record<string, Interaction> = {
   gua: { anim: 'squash', sound: 'echo' },
   unta: { anim: 'sway', sound: 'camel', mood: 'senang' },
   tebing: { anim: 'squash', sound: 'echo' },
+  gunung: { anim: 'squash', sound: 'echo' },
   piramida: { anim: 'squash', sound: 'echo' },
   matahari: { anim: 'pulse', sound: 'chime', fx: ['sparkle'], fxBox: [-90, -90, 180, 180], origin: 'center' },
   bulan: { anim: 'pulse', sound: 'chime', fx: ['sparkle'], fxBox: [-70, -70, 140, 140], origin: 'center' },
@@ -96,7 +97,7 @@ const NAMES: Record<string, string> = {
   bunga: 'Bunga', burung: 'Burung', kupu: 'Kupu-kupu', rumah: 'Rumah', batu: 'Batu', semak: 'Semak',
   kancil: 'Kancil', gajah: 'Gajah', kelinci: 'Kelinci', ikan: 'Ikan', semut: 'Semut',
   pagar: 'Pagar', meja: 'Meja', vas: 'Vas bunga', kue: 'Kue', sumur: 'Sumur', tongkat: 'Tongkat',
-  kurungan: 'Kurungan', timun: 'Timun',
+  kurungan: 'Kurungan', timun: 'Timun', gunung: 'Gunung',
 };
 const NAMES_EN: Record<string, string> = {
   matahari: 'The Sun', bulan: 'The Moon', bintang: 'Star', awan: 'Cloud', pelangi: 'Rainbow', petir: 'Lightning',
@@ -104,7 +105,7 @@ const NAMES_EN: Record<string, string> = {
   bunga: 'Flower', burung: 'Bird', kupu: 'Butterfly', rumah: 'House', batu: 'Stone', semak: 'Bush',
   kancil: 'Mouse deer', gajah: 'Elephant', kelinci: 'Rabbit', ikan: 'Fish', semut: 'Ant',
   pagar: 'Fence', meja: 'Table', vas: 'Flower vase', kue: 'Cake', sumur: 'Well', tongkat: 'Walking stick',
-  kurungan: 'Cage', timun: 'Cucumber',
+  kurungan: 'Cage', timun: 'Cucumber', gunung: 'Mountain',
 };
 const FRUITS = ['Apel', 'Jeruk', 'Pisang', 'Semangka', 'Stroberi', 'Anggur'];
 const FRUITS_EN = ['Apple', 'Orange', 'Banana', 'Watermelon', 'Strawberry', 'Grape'];

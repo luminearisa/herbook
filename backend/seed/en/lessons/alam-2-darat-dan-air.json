@@ -1,0 +1,136 @@
+{
+  "title": "Nature Part 2: Land and Water",
+  "summary": "Get to know mountains, valleys, rivers, and the sea, and how to care for nature, through pictures you can touch.",
+  "pages": [
+    {
+      "title": "The Mountain",
+      "text": "A mountain is a part of the earth that rises very high. The high peaks of a mountain can be covered in snow, and trees grow on its slopes. Mountains store water in the ground, which then becomes springs and rivers.",
+      "fact": "The highest mountain in the world is Everest, about 8,848 metres tall. Indonesia has many mountains, such as Mount Rinjani and Mount Semeru.",
+      "reflection": "Subhanallah, Allah created high mountains to strengthen the earth and store water."
+    },
+    {
+      "title": "Valleys and Lowlands",
+      "text": "Between mountains there are valleys: low land bordered by hills. Valleys and lowlands are usually fertile because water flows into them. There people grow rice, vegetables, and fruit.",
+      "fact": "Soil in valleys and lowlands is often more fertile because it carries mud and nutrients down from the mountains when it rains.",
+      "reflection": "Alhamdulillah, Allah provides fertile soil so we can grow crops and get food."
+    },
+    {
+      "title": "The River",
+      "text": "A river is water that flows from a high place to a lower place, and finally empties into the sea. River water comes from springs, rain, and snow melting on the mountains. Rivers give animals a drink and make the plants around them fertile.",
+      "fact": "The longest river in the world is the Nile in Africa, more than 6,600 kilometres long. In Indonesia there are the Kapuas and the Musi rivers.",
+      "reflection": "Alhamdulillah, the flowing river gives life to Allah's creatures."
+    },
+    {
+      "title": "Upstream and Waterfalls",
+      "text": "Upstream, the river flows swiftly between rocks and cliffs. In high places, water can fall and form a beautiful waterfall. A waterfall makes the air feel cool and fresh.",
+      "fact": "The highest waterfall in the world is Angel Falls in Venezuela, almost 1,000 metres tall. The rumble of a waterfall can be heard from far away.",
+      "reflection": "Subhanallah, the rushing waterfall reminds us of Allah's greatness in arranging nature."
+    },
+    {
+      "title": "The Sea",
+      "text": "The sea is a very wide body of water, and it tastes salty. Most of our earth is made up of sea. Many fish, seaweed, and other sea animals live in the sea. The sea is also where ships sail.",
+      "fact": "About seventy per cent of the earth's surface is sea. The deepest part of the sea is the Mariana Trench, about eleven kilometres deep.",
+      "reflection": "Subhanallah, the wide sea holds many provisions and creatures created by Allah."
+    },
+    {
+      "title": "Waves and the Beach",
+      "text": "The beach is the sandy edge of the sea. At the beach we can see waves, the rolling sea water that comes to the shore. Waves happen because of the wind blowing over the sea. Playing at the beach is fun, but we must be careful and watched by our parents.",
+      "fact": "Beach sand comes from pieces of rock and shells worn down by the waves over many years. Not every beach is sandy; some are rocky.",
+      "reflection": "Alhamdulillah, the waves and the beach are a beautiful place to play that we should be thankful for."
+    },
+    {
+      "title": "Sand, Stone, and Soil",
+      "text": "Soil is the layer of the earth where plants grow. Soil is made of grains of rock, sand, and rotted plant remains. At the beach we find sand, and on mountains there are many stones. Loose soil makes it easy for plant roots to absorb water.",
+      "fact": "It takes hundreds of years to form fertile soil from rock and rotted plants. So we must take care of the soil and not pollute it.",
+      "reflection": "Alhamdulillah, from the soil Allah grows the plants that become our food."
+    },
+    {
+      "title": "Caring for Nature",
+      "text": "Nature is a trust from Allah that we must protect. We do not throw rubbish into rivers or the sea, we do not cut down trees carelessly, and we do not harm animals. Planting trees and saving water are also ways to care for nature. By caring for nature, the water stays clean and we live healthily.",
+      "fact": "Plastic rubbish in a river can be carried to the sea and harm fish and turtles. Putting rubbish in the bin is a good habit.",
+      "reflection": "Alhamdulillah, caring for nature is how we thank Allah and do good to fellow creatures."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The part of the earth that rises very high and is often snow-capped at its peak is called a...",
+      "options": [
+        "mountain",
+        "river",
+        "sea"
+      ],
+      "answer": 0,
+      "explain": "A mountain is a part of the earth that rises very high."
+    },
+    {
+      "q": "Water that flows from the mountains down to the sea is called a...",
+      "options": [
+        "lake",
+        "river",
+        "cloud"
+      ],
+      "answer": 1,
+      "explain": "A river is water that flows from a high place to a lower place, and finally to the sea."
+    },
+    {
+      "q": "The low land between two mountains is called a...",
+      "options": [
+        "valley",
+        "peak",
+        "beach"
+      ],
+      "answer": 0,
+      "explain": "A valley is low land bordered by hills or mountains."
+    },
+    {
+      "q": "An animal that lives in a river is...",
+      "options": [
+        "a fish",
+        "a camel",
+        "a lion"
+      ],
+      "answer": 0,
+      "explain": "Fish live in rivers, lakes, and the sea."
+    },
+    {
+      "q": "A very wide body of salty water is called the...",
+      "options": [
+        "river",
+        "sea",
+        "well"
+      ],
+      "answer": 1,
+      "explain": "The sea is a very wide body of salty water."
+    },
+    {
+      "q": "Waves are made by...",
+      "options": [
+        "wind blowing over the sea",
+        "stones on the beach",
+        "fish swimming"
+      ],
+      "answer": 0,
+      "explain": "Waves happen because of the wind blowing over the sea."
+    },
+    {
+      "q": "At the beach we see...",
+      "options": [
+        "sand and waves",
+        "snow",
+        "desert dunes"
+      ],
+      "answer": 0,
+      "explain": "A beach is the sandy edge of the sea, with rolling waves."
+    },
+    {
+      "q": "One way to care for nature is...",
+      "options": [
+        "throwing rubbish into the river",
+        "planting trees and not throwing rubbish into water",
+        "cutting down all the trees"
+      ],
+      "answer": 1,
+      "explain": "Planting trees and keeping water clean are ways to care for nature."
+    }
+  ]
+}

@@ -440,6 +440,23 @@ export function Tebing() {
   );
 }
 
+/** Gunung: v 0 berpuncak salju, v 1 lebih hijau, v 2 berbatu tanpa salju. */
+export function Gunung({ v = 0 }: CharProps) {
+  const rock = ['#8d94a3', '#7f9781', '#9aa0ad'][v % 3];
+  const dark = ['#6f768a', '#617a63', '#7c828f'][v % 3];
+  const snow = '#f2f7fc';
+  return (
+    <g>
+      <path d="M-220 0 L0 -280 L220 0 Z" fill={rock} />
+      <path d="M0 -280 L220 0 L40 0 Z" fill={dark} />
+      {v !== 2 && (
+        <path d="M-66 -196 L0 -280 L66 -196 Q33 -216 0 -204 Q-33 -216 -66 -196 Z" fill={snow} />
+      )}
+      <path d="M-24 -236 Q-10 -170 -8 -110 M24 -236 Q12 -176 10 -110" stroke="#ffffff" strokeOpacity=".2" strokeWidth="6" fill="none" />
+    </g>
+  );
+}
+
 export function Api({ v = 0 }: CharProps) {
   if (v === 1) {
     return (

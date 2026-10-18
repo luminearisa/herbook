@@ -4,7 +4,7 @@ import { Background, Overlay } from './Background';
 import { interactionFor, nameFor, speechFor, type Fx, type Interaction } from './interactions';
 import { playSound, speak } from '../sound';
 import { Ababil, Anak, Anjing, Buaya, Burung, Dewasa, Gajah, Harimau, Belalang, Buah, Hudhud, Ikan, Kancil, Kelinci, Kupu, Kurakura, Lubang, Paus, Petani, Semut, Singa, Tikus, Unta, type CharProps } from './characters';
-import { Api, Angin, Awan, Bahtera, Batu, Bendera, Bintang, Bulan, Bunga, Debu, Gua, Hujan, Jaring, Kincir, Kue, Layangan, Matahari, Pelangi, Petir, Meja, Ombak, Piramida, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Tebing, Timun, Tongkat } from './props';
+import { Api, Angin, Awan, Bahtera, Batu, Bendera, Bintang, Bulan, Bunga, Debu, Gua, Gunung, Hujan, Jaring, Kincir, Kue, Layangan, Matahari, Pelangi, Petir, Meja, Ombak, Piramida, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Tebing, Timun, Tongkat } from './props';
 
 const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   kancil: Kancil, buaya: Buaya, harimau: Harimau, gajah: Gajah, petani: Petani, kurakura: Kurakura,
@@ -13,7 +13,7 @@ const REGISTRY: Record<string, (p: CharProps) => ReactElement> = {
   kabah: Kabah, semut: Semut, hudhud: Hudhud, ababil: Ababil, kurma: Kurma, surat: Surat, debu: Debu, sarang: Sarang,
   kelinci: Kelinci, belalang: Belalang, singa: Singa, tikus: Tikus, bendera: Bendera, jaring: Jaring,
   anak: Anak, dewasa: Dewasa, meja: Meja, vas: Vas, kue: Kue, sumur: Sumur, tongkat: Tongkat, buah: Buah, lubang: Lubang,
-  paus: Paus, bahtera: Bahtera, anjing: Anjing, gua: Gua, hujan: Hujan, ombak: Ombak, unta: Unta, tebing: Tebing, api: Api, piramida: Piramida, ikan: Ikan,
+  paus: Paus, bahtera: Bahtera, anjing: Anjing, gua: Gua, hujan: Hujan, ombak: Ombak, unta: Unta, tebing: Tebing, gunung: Gunung, api: Api, piramida: Piramida, ikan: Ikan,
   matahari: Matahari, bulan: Bulan, bintang: Bintang, pelangi: Pelangi, petir: Petir, layangan: Layangan, kincir: Kincir, angin: Angin,
 };
 

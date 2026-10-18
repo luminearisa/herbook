@@ -27,7 +27,7 @@ Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan tek
 
 ## Mengenal Sekitar
 
-Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur), **Benda Part 1: Benda-Benda di Sekitar Kita** (rumah, pagar, meja, vas, kue, sumur, tongkat, kurungan), dan **Cuaca Part 1: Mengenal Cuaca** (cerah, berawan, mendung, hujan, berangin, panas, dingin). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
+Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur), **Alam Part 2: Darat dan Air** (gunung, lembah, sungai, air terjun, laut, ombak, pasir dan tanah, serta menjaga alam), **Benda Part 1: Benda-Benda di Sekitar Kita** (rumah, pagar, meja, vas, kue, sumur, tongkat, kurungan), dan **Cuaca Part 1: Mengenal Cuaca** (cerah, berawan, mendung, hujan, berangin, panas, dingin). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
 
 ## Bahasa: Indonesia ⇄ English
 
