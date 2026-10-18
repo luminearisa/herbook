@@ -1,0 +1,59 @@
+{
+ "slug": "hewan",
+ "emoji": "🐾",
+ "title": "Hewan",
+ "title_en": "Animals",
+ "summary": "Nama-nama hewan dalam bahasa Inggris, dari kucing sampai semut.",
+ "words": [
+  {
+   "en": "cat",
+   "id": "kucing",
+   "emoji": "🐱"
+  },
+  {
+   "en": "dog",
+   "id": "anjing",
+   "emoji": "🐶"
+  },
+  {
+   "en": "bird",
+   "id": "burung",
+   "emoji": "🐦"
+  },
+  {
+   "en": "fish",
+   "id": "ikan",
+   "emoji": "🐟"
+  },
+  {
+   "en": "rabbit",
+   "id": "kelinci",
+   "emoji": "🐰"
+  },
+  {
+   "en": "elephant",
+   "id": "gajah",
+   "emoji": "🐘"
+  },
+  {
+   "en": "tiger",
+   "id": "harimau",
+   "emoji": "🐯"
+  },
+  {
+   "en": "turtle",
+   "id": "kura-kura",
+   "emoji": "🐢"
+  },
+  {
+   "en": "butterfly",
+   "id": "kupu-kupu",
+   "emoji": "🦋"
+  },
+  {
+   "en": "ant",
+   "id": "semut",
+   "emoji": "🐜"
+  }
+ ]
+}

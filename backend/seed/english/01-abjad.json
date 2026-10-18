@@ -1,0 +1,139 @@
+{
+ "slug": "abjad",
+ "emoji": "🔤",
+ "title": "Alfabet (A–Z)",
+ "title_en": "The Alphabet (A–Z)",
+ "summary": "Kenali 26 huruf bahasa Inggris dari A sampai Z, masing-masing dengan contoh kata sederhana.",
+ "words": [
+  {
+   "en": "A",
+   "id": "apple (apel)",
+   "emoji": "🍎"
+  },
+  {
+   "en": "B",
+   "id": "ball (bola)",
+   "emoji": "⚽"
+  },
+  {
+   "en": "C",
+   "id": "cat (kucing)",
+   "emoji": "🐱"
+  },
+  {
+   "en": "D",
+   "id": "dog (anjing)",
+   "emoji": "🐶"
+  },
+  {
+   "en": "E",
+   "id": "egg (telur)",
+   "emoji": "🥚"
+  },
+  {
+   "en": "F",
+   "id": "fish (ikan)",
+   "emoji": "🐟"
+  },
+  {
+   "en": "G",
+   "id": "goat (kambing)",
+   "emoji": "🐐"
+  },
+  {
+   "en": "H",
+   "id": "hat (topi)",
+   "emoji": "🎩"
+  },
+  {
+   "en": "I",
+   "id": "ice cream (es krim)",
+   "emoji": "🍦"
+  },
+  {
+   "en": "J",
+   "id": "juice (jus)",
+   "emoji": "🥤"
+  },
+  {
+   "en": "K",
+   "id": "key (kunci)",
+   "emoji": "🔑"
+  },
+  {
+   "en": "L",
+   "id": "lion (singa)",
+   "emoji": "🦁"
+  },
+  {
+   "en": "M",
+   "id": "moon (bulan)",
+   "emoji": "🌙"
+  },
+  {
+   "en": "N",
+   "id": "nose (hidung)",
+   "emoji": "👃"
+  },
+  {
+   "en": "O",
+   "id": "orange (jeruk)",
+   "emoji": "🍊"
+  },
+  {
+   "en": "P",
+   "id": "pen (pena)",
+   "emoji": "🖊️"
+  },
+  {
+   "en": "Q",
+   "id": "queen (ratu)",
+   "emoji": "👸"
+  },
+  {
+   "en": "R",
+   "id": "rabbit (kelinci)",
+   "emoji": "🐰"
+  },
+  {
+   "en": "S",
+   "id": "sun (matahari)",
+   "emoji": "☀️"
+  },
+  {
+   "en": "T",
+   "id": "tree (pohon)",
+   "emoji": "🌳"
+  },
+  {
+   "en": "U",
+   "id": "umbrella (payung)",
+   "emoji": "☂️"
+  },
+  {
+   "en": "V",
+   "id": "van (mobil van)",
+   "emoji": "🚐"
+  },
+  {
+   "en": "W",
+   "id": "watch (jam tangan)",
+   "emoji": "⌚"
+  },
+  {
+   "en": "X",
+   "id": "xylophone (xilofon)",
+   "emoji": "🎶"
+  },
+  {
+   "en": "Y",
+   "id": "yacht (kapal pesiar)",
+   "emoji": "⛵"
+  },
+  {
+   "en": "Z",
+   "id": "zebra (zebra)",
+   "emoji": "🦓"
+  }
+ ]
+}

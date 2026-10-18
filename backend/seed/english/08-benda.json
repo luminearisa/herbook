@@ -1,0 +1,59 @@
+{
+ "slug": "benda",
+ "emoji": "🎒",
+ "title": "Benda di Rumah",
+ "title_en": "Things at Home",
+ "summary": "Nama benda yang sering dijumpai di rumah dalam bahasa Inggris.",
+ "words": [
+  {
+   "en": "book",
+   "id": "buku",
+   "emoji": "📕"
+  },
+  {
+   "en": "ball",
+   "id": "bola",
+   "emoji": "⚽"
+  },
+  {
+   "en": "shoe",
+   "id": "sepatu",
+   "emoji": "👟"
+  },
+  {
+   "en": "bag",
+   "id": "tas",
+   "emoji": "🎒"
+  },
+  {
+   "en": "cup",
+   "id": "gelas",
+   "emoji": "🥤"
+  },
+  {
+   "en": "chair",
+   "id": "kursi",
+   "emoji": "🪑"
+  },
+  {
+   "en": "door",
+   "id": "pintu",
+   "emoji": "🚪"
+  },
+  {
+   "en": "window",
+   "id": "jendela",
+   "emoji": "🪟"
+  },
+  {
+   "en": "bed",
+   "id": "tempat tidur",
+   "emoji": "🛏️"
+  },
+  {
+   "en": "clock",
+   "id": "jam",
+   "emoji": "⏰"
+  }
+ ]
+}

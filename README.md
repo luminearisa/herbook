@@ -29,6 +29,20 @@ Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan tek
 
 Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur), **Alam Part 2: Darat dan Air** (gunung, lembah, sungai, air terjun, laut, ombak, pasir dan tanah, serta menjaga alam), **Benda Part 1: Benda-Benda di Sekitar Kita** (rumah, pagar, meja, vas, kue, sumur, tongkat, kurungan), **Cuaca Part 1: Mengenal Cuaca** (cerah, berawan, mendung, hujan, berangin, panas, dingin), **Hewan Part 1: Hewan di Sekitar Kita** (hewan peliharaan, hewan kecil, burung dan sarang, ikan, hewan hutan, hewan laut, menyayangi hewan), **Tumbuhan Part 1: Mengenal Tumbuhan** (bagian tumbuhan, dari biji menjadi tumbuhan, daun/bunga/buah, oksigen dan naungan, merawat dan menjaga), dan **Rumah Part 1: Rumah dan Lingkungan** (bagian rumah, ruang tamu, makan bersama, halaman, sumur dan air bersih, lingkungan, menjaga kebersihan). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
 
+## English untuk Balita
+
+Modul belajar bahasa Inggris untuk balita (`#/english`), terpisah dari cerita dan Mengenal Sekitar.
+Ada **9 topik · 98 kata**: Alfabet (A–Z), Angka 1–10, Warna, Hewan, Buah, Anggota Tubuh, Keluarga,
+Benda di Rumah, dan Sapaan. Tiap topik punya dua mode:
+
+- **Belajar** – sentuh kartu untuk mendengar kata bahasa Inggrisnya (suara `en-US`); emoji menjadi
+  gambar, kata Inggris ditulis besar, arti Indonesia di bawahnya.
+- **Latihan** – kata diucapkan otomatis, anak memilih gambar yang tepat dari empat pilihan; jawaban
+  benar dapat bintang.
+
+Kata disimpan sebagai data di `backend/seed/english/*.json` (terurut dari nama berkas) dan dilayani
+lewat `GET /api/english` serta `GET /api/english/{slug}`.
+
 ## Bahasa: Indonesia ⇄ English
 
 Semua **cerita bawaan** (27 buku) dan **materi Mengenal Sekitar** punya versi bahasa Inggris. Tombol
@@ -75,7 +89,10 @@ ANTHROPIC_API_KEY=sk-... npm run dev:api
 
 ## Struktur
 
-- `backend/public/index.php` – API (`GET/POST /api/books`, `GET/DELETE /api/books/{slug}`, `POST /api/books/generate`, `GET/POST /api/lessons`, `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`, `POST /api/auth/profile`, `POST /api/auth/password`, `GET/POST /api/progress`, `POST /api/progress/merge`) dan penyaji frontend
+- `backend/public/index.php` – API (`GET/POST /api/books`, `GET/DELETE /api/books/{slug}`, `POST /api/books/generate`, `GET/POST /api/lessons`, `GET /api/english`, `GET /api/english/{slug}`, `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`, `GET /api/auth/me`, `POST /api/auth/profile`, `POST /api/auth/password`, `GET/POST /api/progress`, `POST /api/progress/merge`) dan penyaji frontend
+- `backend/src/English.php` – modul English untuk balita (tabel `english`, topik + daftar kata)
+- `backend/seed/english/` – kosakata bahasa Inggris (emoji, kata Inggris, arti Indonesia)
+- `frontend/src/pages/English.tsx` – halaman modul English (daftar topik, mode Belajar & Latihan)
 - `backend/src/Auth.php` – daftar/masuk/keluar pengguna, sesi cookie `HttpOnly` (tabel `users`, `sessions`)
 - `backend/src/Progress.php` – riwayat baca per pengguna (tabel `progress`); tamu memakai `localStorage` di `frontend/src/progress.ts`
 - `backend/seed/*.json` – buku bawaan (otomatis dimasukkan ke SQLite di `backend/data/`)

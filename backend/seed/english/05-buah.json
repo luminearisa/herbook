@@ -1,0 +1,49 @@
+{
+ "slug": "buah",
+ "emoji": "🍎",
+ "title": "Buah",
+ "title_en": "Fruits",
+ "summary": "Nama-nama buah dalam bahasa Inggris yang manis dan menyenangkan.",
+ "words": [
+  {
+   "en": "apple",
+   "id": "apel",
+   "emoji": "🍎"
+  },
+  {
+   "en": "orange",
+   "id": "jeruk",
+   "emoji": "🍊"
+  },
+  {
+   "en": "banana",
+   "id": "pisang",
+   "emoji": "🍌"
+  },
+  {
+   "en": "watermelon",
+   "id": "semangka",
+   "emoji": "🍉"
+  },
+  {
+   "en": "strawberry",
+   "id": "stroberi",
+   "emoji": "🍓"
+  },
+  {
+   "en": "grape",
+   "id": "anggur",
+   "emoji": "🍇"
+  },
+  {
+   "en": "mango",
+   "id": "mangga",
+   "emoji": "🥭"
+  },
+  {
+   "en": "pineapple",
+   "id": "nanas",
+   "emoji": "🍍"
+  }
+ ]
+}

@@ -12,6 +12,7 @@ require $root . '/src/Auth.php';
 require $root . '/src/Progress.php';
 require $root . '/src/Books.php';
 require $root . '/src/Lessons.php';
+require $root . '/src/English.php';
 require $root . '/src/StoryMaker.php';
 
 $path = rtrim(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/', '/') ?: '/';
@@ -107,6 +108,11 @@ function handleApi(string $method, string $route): void
         } elseif (preg_match('#^/lessons/([a-z0-9-]+)$#', $route, $lm) && $method === 'GET') {
             $lesson = Lessons::find($pdo, $lm[1]);
             $lesson ? json($lesson) : json(['error' => 'Materi tidak ditemukan.'], 404);
+        } elseif ($route === '/english' && $method === 'GET') {
+            json(English::all($pdo));
+        } elseif (preg_match('#^/english/([a-z0-9-]+)$#', $route, $em) && $method === 'GET') {
+            $topic = English::find($pdo, $em[1]);
+            $topic ? json($topic) : json(['error' => 'Topik tidak ditemukan.'], 404);
         } elseif ($route === '/books' && $method === 'GET') {
             json(Books::all($pdo));
         } elseif ($route === '/books' && $method === 'POST') {

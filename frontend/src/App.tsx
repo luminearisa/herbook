@@ -4,6 +4,7 @@ import { Reader } from './pages/Reader';
 import { Create } from './pages/Create';
 import { Explore } from './pages/Explore';
 import { Lesson } from './pages/Lesson';
+import { English, EnglishTopicView } from './pages/English';
 import { Masuk } from './pages/Masuk';
 import { Profil } from './pages/Profil';
 import { AuthButton } from './AuthButton';
@@ -33,6 +34,7 @@ export function App() {
   const route = useHashRoute();
   const book = route.match(/^\/buku\/([a-z0-9-]+)$/);
   const lesson = route.match(/^\/sekitar\/([a-z0-9-]+)$/);
+  const englishTopic = route.match(/^\/english\/([a-z0-9-]+)$/);
 
   useEffect(() => {
     initAuth();
@@ -54,6 +56,7 @@ export function App() {
         <nav>
           <a href="#/" className={route === '/' ? 'active' : ''}>Perpustakaan</a>
           <a href="#/sekitar" className={route.startsWith('/sekitar') ? 'active' : ''}>Mengenal Sekitar</a>
+          <a href="#/english" className={route.startsWith('/english') ? 'active' : ''}>English</a>
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
           <InstallButton />
           <LanguageToggle />
@@ -62,7 +65,7 @@ export function App() {
         </nav>
       </header>
       <main>
-        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : route === '/sekitar' ? <Explore /> : route === '/baru' ? <Create /> : route === '/masuk' ? <Masuk /> : route === '/profil' ? <Profil /> : <Home />}
+        {book ? <Reader slug={book[1]} key={book[1]} /> : lesson ? <Lesson slug={lesson[1]} key={lesson[1]} /> : englishTopic ? <EnglishTopicView slug={englishTopic[1]} key={englishTopic[1]} /> : route === '/sekitar' ? <Explore /> : route === '/english' ? <English /> : route === '/baru' ? <Create /> : route === '/masuk' ? <Masuk /> : route === '/profil' ? <Profil /> : <Home />}
       </main>
       <footer className="footer">Her Book · cerita bergambar untuk dibaca bersama</footer>
       <InstallBanner />

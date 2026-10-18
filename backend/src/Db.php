@@ -58,6 +58,17 @@ CREATE TABLE IF NOT EXISTS pages (
     scene TEXT NOT NULL,
     UNIQUE (book_id, position)
 );
+CREATE TABLE IF NOT EXISTS english (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL,
+    title_en TEXT NOT NULL DEFAULT '',
+    summary TEXT NOT NULL DEFAULT '',
+    emoji TEXT NOT NULL DEFAULT '',
+    position INTEGER NOT NULL DEFAULT 0,
+    content TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
@@ -95,6 +106,10 @@ SQL);
         if (!in_array('en', $lcols, true)) {
             $pdo->exec("ALTER TABLE lessons ADD COLUMN en TEXT NOT NULL DEFAULT ''");
         }
+        $ecols = array_column($pdo->query('PRAGMA table_info(english)')->fetchAll(), 'name');
+        if (!in_array('position', $ecols, true)) {
+            $pdo->exec('ALTER TABLE english ADD COLUMN position INTEGER NOT NULL DEFAULT 0');
+        }
     }
 
     private static function seed(PDO $pdo): void
@@ -110,6 +125,13 @@ SQL);
                 Lessons::create($pdo, $lesson);
             }
             self::syncTranslation($pdo, 'lessons', (string) $lesson['slug'], dirname(__DIR__) . '/seed/en/lessons/' . basename($file));
+        }
+        $topicPosition = 0;
+        foreach (glob(dirname(__DIR__) . '/seed/english/*.json') ?: [] as $file) {
+            $topic = json_decode((string) file_get_contents($file), true);
+            if (is_array($topic)) {
+                English::upsert($pdo, $topic, $topicPosition++);
+            }
         }
         foreach (glob(dirname(__DIR__) . '/seed/*.json') ?: [] as $file) {
             $book = json_decode((string) file_get_contents($file), true);

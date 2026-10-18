@@ -42,6 +42,7 @@ export function Home() {
             )}
             <a className="btn" href="#/baru">Buat cerita dari prompt</a>
             <a className="btn" href="#/sekitar">🌿 Mengenal Sekitar</a>
+            <a className="btn" href="#/english">🔤 English untuk Balita</a>
           </div>
         </div>
         {books?.[0] && <Scene scene={books[0].cover} className="hero-art" />}

@@ -1,0 +1,49 @@
+{
+ "slug": "sapaan",
+ "emoji": "👋",
+ "title": "Sapaan",
+ "title_en": "Greetings",
+ "summary": "Kata sapaan sopan dalam bahasa Inggris untuk dipakai setiap hari.",
+ "words": [
+  {
+   "en": "hello",
+   "id": "halo",
+   "emoji": "👋"
+  },
+  {
+   "en": "good morning",
+   "id": "selamat pagi",
+   "emoji": "🌅"
+  },
+  {
+   "en": "good night",
+   "id": "selamat malam",
+   "emoji": "🌙"
+  },
+  {
+   "en": "thank you",
+   "id": "terima kasih",
+   "emoji": "🙏"
+  },
+  {
+   "en": "please",
+   "id": "tolong",
+   "emoji": "🤲"
+  },
+  {
+   "en": "sorry",
+   "id": "maaf",
+   "emoji": "😔"
+  },
+  {
+   "en": "goodbye",
+   "id": "selamat tinggal",
+   "emoji": "🙋"
+  },
+  {
+   "en": "how are you?",
+   "id": "apa kabar?",
+   "emoji": "🤗"
+  }
+ ]
+}

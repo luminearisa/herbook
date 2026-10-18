@@ -109,3 +109,23 @@ export interface RegisterInput {
   password: string;
   whatsapp?: string;
 }
+
+/** Modul English untuk balita. */
+export interface EnglishWord {
+  en: string;
+  id: string;
+  emoji: string;
+}
+
+export interface EnglishTopicSummary {
+  slug: string;
+  title: string;
+  title_en?: string;
+  summary: string;
+  emoji: string;
+  word_count: number;
+}
+
+export interface EnglishTopic extends EnglishTopicSummary {
+  words: EnglishWord[];
+}

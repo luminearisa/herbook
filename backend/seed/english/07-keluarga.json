@@ -1,0 +1,49 @@
+{
+ "slug": "keluarga",
+ "emoji": "👨‍👩‍👧",
+ "title": "Keluarga",
+ "title_en": "My Family",
+ "summary": "Sebutan anggota keluarga dalam bahasa Inggris: ibu, ayah, nenek, kakek, dan lainnya.",
+ "words": [
+  {
+   "en": "mother",
+   "id": "ibu",
+   "emoji": "👩"
+  },
+  {
+   "en": "father",
+   "id": "ayah",
+   "emoji": "👨"
+  },
+  {
+   "en": "grandmother",
+   "id": "nenek",
+   "emoji": "👵"
+  },
+  {
+   "en": "grandfather",
+   "id": "kakek",
+   "emoji": "👴"
+  },
+  {
+   "en": "sister",
+   "id": "kakak perempuan",
+   "emoji": "👧"
+  },
+  {
+   "en": "brother",
+   "id": "kakak laki-laki",
+   "emoji": "👦"
+  },
+  {
+   "en": "baby",
+   "id": "bayi",
+   "emoji": "👶"
+  },
+  {
+   "en": "family",
+   "id": "keluarga",
+   "emoji": "👨‍👩‍👧‍👦"
+  }
+ ]
+}

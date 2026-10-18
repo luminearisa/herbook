@@ -1,0 +1,59 @@
+{
+ "slug": "angka",
+ "emoji": "🔢",
+ "title": "Angka 1–10",
+ "title_en": "Numbers 1–10",
+ "summary": "Belajar berhitung dalam bahasa Inggris dari one sampai ten.",
+ "words": [
+  {
+   "en": "one",
+   "id": "satu",
+   "emoji": "1️⃣"
+  },
+  {
+   "en": "two",
+   "id": "dua",
+   "emoji": "2️⃣"
+  },
+  {
+   "en": "three",
+   "id": "tiga",
+   "emoji": "3️⃣"
+  },
+  {
+   "en": "four",
+   "id": "empat",
+   "emoji": "4️⃣"
+  },
+  {
+   "en": "five",
+   "id": "lima",
+   "emoji": "5️⃣"
+  },
+  {
+   "en": "six",
+   "id": "enam",
+   "emoji": "6️⃣"
+  },
+  {
+   "en": "seven",
+   "id": "tujuh",
+   "emoji": "7️⃣"
+  },
+  {
+   "en": "eight",
+   "id": "delapan",
+   "emoji": "8️⃣"
+  },
+  {
+   "en": "nine",
+   "id": "sembilan",
+   "emoji": "9️⃣"
+  },
+  {
+   "en": "ten",
+   "id": "sepuluh",
+   "emoji": "🔟"
+  }
+ ]
+}

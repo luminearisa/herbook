@@ -1,0 +1,49 @@
+{
+ "slug": "tubuh",
+ "emoji": "🧒",
+ "title": "Anggota Tubuh",
+ "title_en": "My Body",
+ "summary": "Belajar nama anggota tubuh dalam bahasa Inggris sambil menunjuk tubuh sendiri.",
+ "words": [
+  {
+   "en": "head",
+   "id": "kepala",
+   "emoji": "🧑"
+  },
+  {
+   "en": "eyes",
+   "id": "mata",
+   "emoji": "👀"
+  },
+  {
+   "en": "nose",
+   "id": "hidung",
+   "emoji": "👃"
+  },
+  {
+   "en": "mouth",
+   "id": "mulut",
+   "emoji": "👄"
+  },
+  {
+   "en": "ear",
+   "id": "telinga",
+   "emoji": "👂"
+  },
+  {
+   "en": "hand",
+   "id": "tangan",
+   "emoji": "✋"
+  },
+  {
+   "en": "foot",
+   "id": "kaki",
+   "emoji": "🦶"
+  },
+  {
+   "en": "teeth",
+   "id": "gigi",
+   "emoji": "🦷"
+  }
+ ]
+}

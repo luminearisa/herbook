@@ -2,6 +2,8 @@ import type {
   Book,
   BookSummary,
   Category,
+  EnglishTopic,
+  EnglishTopicSummary,
   Lesson,
   LessonSummary,
   ProgressItem,
@@ -30,6 +32,8 @@ export const api = {
     }),
   lessons: () => request<LessonSummary[]>('/api/lessons'),
   lesson: (slug: string) => request<Lesson>(`/api/lessons/${slug}`),
+  english: () => request<EnglishTopicSummary[]>('/api/english'),
+  englishTopic: (slug: string) => request<EnglishTopic>(`/api/english/${slug}`),
   remove: (slug: string) => request<{ ok: true }>(`/api/books/${slug}`, { method: 'DELETE' }),
 
   me: () => request<{ user: User | null }>('/api/auth/me'),

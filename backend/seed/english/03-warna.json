@@ -1,0 +1,59 @@
+{
+ "slug": "warna",
+ "emoji": "🎨",
+ "title": "Warna",
+ "title_en": "Colours",
+ "summary": "Kenali warna-warna dalam bahasa Inggris dengan contoh kotak warna yang bisa disentuh.",
+ "words": [
+  {
+   "en": "red",
+   "id": "merah",
+   "emoji": "🟥"
+  },
+  {
+   "en": "blue",
+   "id": "biru",
+   "emoji": "🟦"
+  },
+  {
+   "en": "yellow",
+   "id": "kuning",
+   "emoji": "🟨"
+  },
+  {
+   "en": "green",
+   "id": "hijau",
+   "emoji": "🟩"
+  },
+  {
+   "en": "orange",
+   "id": "jingga",
+   "emoji": "🟧"
+  },
+  {
+   "en": "purple",
+   "id": "ungu",
+   "emoji": "🟪"
+  },
+  {
+   "en": "pink",
+   "id": "merah muda",
+   "emoji": "🩷"
+  },
+  {
+   "en": "brown",
+   "id": "coklat",
+   "emoji": "🟫"
+  },
+  {
+   "en": "black",
+   "id": "hitam",
+   "emoji": "⬛"
+  },
+  {
+   "en": "white",
+   "id": "putih",
+   "emoji": "⬜"
+  }
+ ]
+}
