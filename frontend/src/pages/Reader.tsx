@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { go } from '../App';
 import { api } from '../api';
+import { LanguageToggle } from '../LanguageToggle';
+import { pick, useLang } from '../lang';
 import { getEntry, save } from '../progress';
 import { Scene } from '../scene/Scene';
 import { SoundToggle } from '../SoundToggle';
 import type { Book } from '../types';
 
 export function Reader({ slug }: { slug: string }) {
+  const lang = useLang();
   const [book, setBook] = useState<Book | null>(null);
   const [error, setError] = useState('');
   const [index, setIndex] = useState(0);
@@ -120,6 +123,7 @@ export function Reader({ slug }: { slug: string }) {
 
   const isEnd = index === book.pages.length;
   const page = isEnd ? null : book.pages[index];
+  const pageText = page ? pick(page.text, page.text_en) : '';
 
   function toggleSpeak() {
     const synth = window.speechSynthesis;
@@ -129,8 +133,8 @@ export function Reader({ slug }: { slug: string }) {
       setSpeaking(false);
       return;
     }
-    const u = new SpeechSynthesisUtterance(page.text);
-    u.lang = 'id-ID';
+    const u = new SpeechSynthesisUtterance(pageText);
+    u.lang = lang === 'en' ? 'en-US' : 'id-ID';
     u.rate = 0.9;
     u.onend = () => setSpeaking(false);
     synth.speak(u);
@@ -158,7 +162,7 @@ export function Reader({ slug }: { slug: string }) {
     >
       <div className="reader-head">
         <a href="#/" className="back">← Rak buku</a>
-        <h1>{book.title}</h1>
+        <h1>{pick(book.title, book.title_en)}</h1>
         <span className="muted page-count">{isEnd ? 'Tamat' : `Halaman ${index + 1} dari ${book.pages.length}`}</span>
         {full && (
           <label className="alpha-ctl">
@@ -166,6 +170,7 @@ export function Reader({ slug }: { slug: string }) {
             <input type="range" min={30} max={100} value={alpha} onChange={(e) => setAlpha(Number(e.target.value))} aria-label="Kepekatan latar teks" />
           </label>
         )}
+        <LanguageToggle />
         <SoundToggle />
         <button className="btn small" onClick={full ? exitFull : enterFull} aria-pressed={full}>
           {full ? '✕ Keluar' : '⛶ Layar penuh'}
@@ -195,6 +200,7 @@ export function Reader({ slug }: { slug: string }) {
             onInteract={() => setTouched(true)}
             scene={page ? page.scene : book.cover}
             className="art"
+            lang={lang}
             extend={full ? 110 : 0}
             fit={full ? (portrait ? 'xMidYMid meet' : 'xMidYMax slice') : undefined}
           />
@@ -202,7 +208,7 @@ export function Reader({ slug }: { slug: string }) {
         <article className="story">
           {page ? (
             <>
-              <p className="story-text">{page.text}</p>
+              <p className="story-text">{pageText}</p>
               <button className="btn small" onClick={toggleSpeak}>
                 {speaking ? '⏹ Berhenti' : '🔊 Bacakan'}
               </button>
@@ -212,7 +218,7 @@ export function Reader({ slug }: { slug: string }) {
               <h2>Tamat 🎉</h2>
               {book.moral && (
                 <p className="story-text">
-                  <strong>Pesan cerita:</strong> {book.moral}
+                  <strong>Pesan cerita:</strong> {pick(book.moral, book.moral_en)}
                 </p>
               )}
               <div className="hero-actions">

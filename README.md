@@ -29,6 +29,19 @@ Tombol **Layar penuh** (atau tekan `F`) membuat gambar memenuhi layar dengan tek
 
 Segmen belajar selain cerita (`#/sekitar`). Materi yang tersedia: **Alam Part 1: Langit dan Cuaca** (matahari, bulan, bintang, awan, hujan, pelangi, angin, kilat dan guntur), **Benda Part 1: Benda-Benda di Sekitar Kita** (rumah, pagar, meja, vas, kue, sumur, tongkat, kurungan), dan **Cuaca Part 1: Mengenal Cuaca** (cerah, berawan, mendung, hujan, berangin, panas, dingin). Tiap pelajaran punya gambar yang bisa disentuh (nama benda tampil dan diucapkan), penjelasan, fakta "Tahukah kamu?", dan di akhir ada kuis dengan bintang penilaian. Materi disimpan sebagai JSON di `backend/seed/lessons/` dan dilayani lewat `GET /api/lessons`.
 
+## Bahasa: Indonesia ⇄ English
+
+Semua **cerita bawaan** (27 buku) dan **materi Mengenal Sekitar** punya versi bahasa Inggris. Tombol
+**ID · EN** di bar atas (juga tampil di halaman baca/materi) menggantinya: judul, ringkasan, isi tiap
+halaman, pesan moral, penjelasan materi, fakta, refleksi, soal kuis, sampai nama benda yang diucapkan
+saat gambar disentuh. Pilihan bahasa tersimpan di browser (`localStorage`). Label antarmuka (menu,
+tombol) tetap berbahasa Indonesia.
+
+Terjemahan disimpan sebagai berkas di `backend/seed/en/` (buku) dan `backend/seed/en/lessons/`
+(materi), lalu dimasukkan ke kolom `en` di SQLite saat aplikasi dibuka. Menambah atau memperbaiki
+terjemahan cukup dengan mengubah berkas itu — isinya akan disinkronkan ulang otomatis. Kalau sebuah
+cerita belum punya terjemahan (mis. buku hasil prompt), teksnya otomatis kembali ke bahasa Indonesia.
+
 ## Akun & riwayat baca
 
 Tanpa akun pun riwayat baca langsung tersimpan di browser (`localStorage`): daftar cerita dan materi
@@ -66,6 +79,8 @@ ANTHROPIC_API_KEY=sk-... npm run dev:api
 - `backend/src/Auth.php` – daftar/masuk/keluar pengguna, sesi cookie `HttpOnly` (tabel `users`, `sessions`)
 - `backend/src/Progress.php` – riwayat baca per pengguna (tabel `progress`); tamu memakai `localStorage` di `frontend/src/progress.ts`
 - `backend/seed/*.json` – buku bawaan (otomatis dimasukkan ke SQLite di `backend/data/`)
+- `backend/seed/en/` – terjemahan Inggris buku & materi (kolom `en` di SQLite)
+- `frontend/src/lang.ts` – pilihan bahasa (ID/EN) tersimpan di browser; `LanguageToggle.tsx` tombolnya
 - `backend/src/Scene.php` – kosakata adegan yang diizinkan (latar, tokoh, properti, suasana)
 - `frontend/src/scene/` – penggambar SVG: latar, tokoh (kancil, buaya, harimau, petani, …), properti
 

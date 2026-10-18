@@ -23,17 +23,23 @@ export interface SceneData {
 export interface BookSummary {
   slug: string;
   title: string;
+  /** Judul versi bahasa Inggris (kosong bila belum ada terjemahan). */
+  title_en?: string;
   author: string;
   summary: string;
+  summary_en?: string;
   moral: string;
   cover: SceneData;
   category: Category;
   is_seed: boolean;
+  /** Benar bila teks cerita punya terjemahan Inggris lengkap. */
+  has_en?: boolean;
   page_count: number;
 }
 
 export interface Book extends BookSummary {
-  pages: { text: string; scene: SceneData }[];
+  moral_en?: string;
+  pages: { text: string; text_en?: string; scene: SceneData }[];
 }
 
 export interface LessonSummary {
@@ -41,25 +47,35 @@ export interface LessonSummary {
   series: string;
   part: number;
   title: string;
+  title_en?: string;
   summary: string;
+  summary_en?: string;
   cover: SceneData;
+  has_en?: boolean;
   page_count: number;
   quiz_count: number;
 }
 
 export interface LessonPage {
   title: string;
+  title_en?: string;
   text: string;
+  text_en?: string;
   fact: string;
+  fact_en?: string;
   reflection: string;
+  reflection_en?: string;
   scene: SceneData;
 }
 
 export interface QuizQuestion {
   q: string;
+  q_en?: string;
   options: string[];
+  options_en?: string[];
   answer: number;
   explain: string;
+  explain_en?: string;
 }
 
 export interface Lesson extends LessonSummary {

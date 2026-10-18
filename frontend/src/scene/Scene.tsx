@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactElement } from 'react';
 import type { SceneData, SceneItem } from '../types';
 import { Background, Overlay } from './Background';
-import { interactionFor, nameFor, type Fx, type Interaction } from './interactions';
+import { interactionFor, nameFor, speechFor, type Fx, type Interaction } from './interactions';
 import { playSound, speak } from '../sound';
 import { Ababil, Anak, Anjing, Buaya, Burung, Dewasa, Gajah, Harimau, Belalang, Buah, Hudhud, Ikan, Kancil, Kelinci, Kupu, Kurakura, Lubang, Paus, Petani, Semut, Singa, Tikus, Unta, type CharProps } from './characters';
 import { Api, Angin, Awan, Bahtera, Batu, Bendera, Bintang, Bulan, Bunga, Debu, Gua, Hujan, Jaring, Kincir, Kue, Layangan, Matahari, Pelangi, Petir, Meja, Ombak, Piramida, Vas, Kabah, Kurma, Kurungan, Orangorangan, Pagar, Pohon, Rumah, Sarang, Semak, Sumur, Surat, Tebing, Timun, Tongkat } from './props';
@@ -60,7 +60,7 @@ function Particles({ kinds, box, ground }: { kinds: Fx[]; box: [number, number, 
   );
 }
 
-function Item({ item, interactive, onInteract, showNames }: { item: SceneItem; interactive: boolean; onInteract?: () => void; showNames?: boolean }) {
+function Item({ item, interactive, onInteract, showNames, lang = 'id' }: { item: SceneItem; interactive: boolean; onInteract?: () => void; showNames?: boolean; lang?: 'id' | 'en' }) {
   const Comp = REGISTRY[item.t];
   const cfg: Interaction | undefined = interactive ? interactionFor(item) : undefined;
   const [run, setRun] = useState<{ n: number; cfg: Interaction } | null>(null);
@@ -77,18 +77,19 @@ function Item({ item, interactive, onInteract, showNames }: { item: SceneItem; i
   function tap() {
     if (!cfg) return;
     onInteract?.();
-    const name = showNames ? nameFor(item) : undefined;
+    const voice = lang === 'en' ? 'en-US' : 'id-ID';
+    const name = showNames ? nameFor(item, lang) : undefined;
     if (name) {
       // Halaman belajar: bunyi efek, lalu nama benda diucapkan dan ditampilkan
       if (cfg.sound) playSound(cfg.sound);
-      window.setTimeout(() => speak(name, ''), 350);
+      window.setTimeout(() => speak(name, '', voice), 350);
       const bb = inner.current?.getBBox();
       if (bb) {
         // jaga label tetap di dalam gambar (tidak terpotong di tepi atas)
         const minY = (46 - item.y) / s;
         setTag({ x: bb.x + bb.width / 2, y: Math.max(bb.y - 14, minY), text: name });
       }
-    } else if (cfg.speak) speak(cfg.speak[Math.floor(Math.random() * cfg.speak.length)], cfg.sound ?? 'boing');
+    } else if (cfg.speak) speak(speechFor(item, cfg, lang) ?? '', cfg.sound ?? 'boing', voice);
     else if (cfg.sound) playSound(cfg.sound);
     setRun((r) => ({ n: (r?.n ?? 0) + 1, cfg }));
     window.clearTimeout(timer.current);
@@ -145,6 +146,8 @@ interface SceneProps {
   onInteract?: () => void;
   /** Halaman belajar: tampilkan dan ucapkan nama benda saat disentuh. */
   showNames?: boolean;
+  /** Bahasa nama benda yang diucapkan pada halaman belajar. */
+  lang?: 'id' | 'en';
 }
 
 interface Tap { id: number; x: number; y: number; kind: 'ring' | 'sparkle' | 'puff' }
@@ -157,7 +160,7 @@ function tapKind(bg: SceneData['bg'], x: number, y: number): { kind: Tap['kind']
   return { kind: 'puff', sound: 'pop' };
 }
 
-export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice', interactive = false, onInteract, showNames = false }: SceneProps) {
+export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice', interactive = false, onInteract, showNames = false, lang = 'id' }: SceneProps) {
   const [taps, setTaps] = useState<Tap[]>([]);
   const nextId = useRef(0);
 
@@ -189,7 +192,7 @@ export function Scene({ scene, className, extend = 0, fit = 'xMidYMid slice', in
         <Background bg={scene.bg} ext={extend} interactive={interactive} onInteract={onInteract} />
       </g>
       {scene.items.map((item, i) => (
-        <Item key={i} item={item} interactive={interactive} onInteract={onInteract} showNames={showNames} />
+        <Item key={i} item={item} interactive={interactive} onInteract={onInteract} showNames={showNames} lang={lang} />
       ))}
       <Overlay bg={scene.bg} ext={extend} interactive={interactive} onInteract={onInteract} />
       <g pointerEvents="none">

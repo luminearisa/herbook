@@ -1,0 +1,126 @@
+{
+  "title": "Objects Part 1: Objects Around Us",
+  "summary": "Get to know the house, fence, table, vase, cake, well, walking stick, and cage through pictures you can touch.",
+  "pages": [
+    {
+      "title": "The House",
+      "text": "A house is where we live and rest with our family. Inside there is a living room, bedrooms, a kitchen, and a bathroom. A house protects us from heat, rain, and wind. We should keep our house clean and tidy.",
+      "fact": "A healthy house has windows so fresh air can come in, and a roof so rainwater does not drip inside.",
+      "reflection": "Alhamdulillah, Allah gives us a house as a shelter and a place to gather with family."
+    },
+    {
+      "title": "The Fence",
+      "text": "A fence is something put up around a house or garden. A fence can be made of wood, bamboo, iron, or stone. It keeps us safe, marks the yard, and makes the house look neat. We should open and close the gate carefully.",
+      "fact": "A fence can also be a place for climbing plants, making the yard greener and more beautiful.",
+      "reflection": "Alhamdulillah, a fence helps keep our house and family safe."
+    },
+    {
+      "title": "The Table",
+      "text": "A table is a flat object with legs, used to put things on. We use a table to eat, study, write, or work. Tables are usually made of wood, plastic, or metal. Keep the table clean and do not stand on it.",
+      "fact": "A family dining table is usually square or round so everyone can sit together.",
+      "reflection": "Alhamdulillah, with a table we can eat and study more comfortably."
+    },
+    {
+      "title": "The Vase",
+      "text": "A vase is a container for holding flowers. A vase can be made of ceramic, glass, or clay. With a vase, flowers look pretty in the house. A vase breaks easily, so hold it with both hands and put it somewhere safe.",
+      "fact": "Before putting flowers in a vase, cut the stems at an angle and change the water so the flowers stay fresh longer.",
+      "reflection": "Subhanallah, flowers in a vase make the house feel fresh and beautiful."
+    },
+    {
+      "title": "The Cake",
+      "text": "A cake is a sweet food made from flour, eggs, sugar, and butter. Cakes are baked in an oven or steamed. There are birthday cakes, cookies, and soft cakes. Cake is often served on special occasions. Eat just enough and do not forget to wash your hands.",
+      "fact": "A birthday cake is usually decorated with cream and candles. The number of candles often shows the age of the birthday person.",
+      "reflection": "Alhamdulillah, Allah gives us delicious food to enjoy with family."
+    },
+    {
+      "title": "The Well",
+      "text": "A well is a hole dug in the ground to get water. Well water is used for drinking, cooking, bathing, and washing. Long ago people drew water with a bucket and rope. A well must be covered tightly to be safe, especially for children.",
+      "fact": "Well water comes from groundwater that seeps into the earth. We must save water and not pollute it.",
+      "reflection": "Alhamdulillah, Allah provides clean water from inside the earth for our needs."
+    },
+    {
+      "title": "The Walking Stick",
+      "text": "A walking stick is a long wooden or bamboo pole. A walking stick helps people walk on slippery ground or supports the body. There are also sticks for reaching high objects. Use a stick carefully so it does not hit other people.",
+      "fact": "People have used walking sticks for thousands of years to help them walk, long before wheelchairs existed.",
+      "reflection": "Alhamdulillah, a simple object like a stick can help people in need."
+    },
+    {
+      "title": "The Cage",
+      "text": "A cage is a pen made of bamboo or wire. People use a cage to keep birds or chickens safe. Animals in a cage still need food, water, and fresh air. Do not forget to clean the cage every day.",
+      "fact": "Birds in the wild fly far to find food. If we keep them, we are responsible for keeping them healthy.",
+      "reflection": "Alhamdulillah, animals are also Allah's creatures that we should love and care for."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "A house is a place to...",
+      "options": [
+        "sail the sea",
+        "live and rest",
+        "catch fish"
+      ],
+      "answer": 1,
+      "explain": "A house is a place to live and rest with family."
+    },
+    {
+      "q": "A fence is usually put up ... the house.",
+      "options": [
+        "around",
+        "on the roof of",
+        "inside the cupboard of"
+      ],
+      "answer": 0,
+      "explain": "A fence is put up around a house or garden to keep it safe."
+    },
+    {
+      "q": "A table is most often used to...",
+      "options": [
+        "fly",
+        "dive",
+        "eat and study"
+      ],
+      "answer": 2,
+      "explain": "A table is used to put food, books, or stationery on."
+    },
+    {
+      "q": "A vase is used to hold...",
+      "options": [
+        "flowers",
+        "shoes",
+        "books"
+      ],
+      "answer": 0,
+      "explain": "A vase is a container for flowers so they look pretty."
+    },
+    {
+      "q": "The main ingredients of cake are...",
+      "options": [
+        "stone and sand",
+        "flour, eggs, and sugar",
+        "wood and iron"
+      ],
+      "answer": 1,
+      "explain": "Cake is made from flour, eggs, sugar, and butter, then baked or steamed."
+    },
+    {
+      "q": "A well is a place to get...",
+      "options": [
+        "fire",
+        "water",
+        "wind"
+      ],
+      "answer": 1,
+      "explain": "A well is dug in the ground to get water."
+    },
+    {
+      "q": "A walking stick helps a person to...",
+      "options": [
+        "walk",
+        "fly",
+        "swim"
+      ],
+      "answer": 0,
+      "explain": "A walking stick helps a person walk or supports the body."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "title": "Weather Part 1: Getting to Know Weather",
+  "summary": "Get to know the kinds of weather: sunny, cloudy, overcast, rainy, windy, hot, and cold, through pictures you can touch.",
+  "pages": [
+    {
+      "title": "What Is Weather?",
+      "text": "Weather is the state of the air in a place at a certain time. Sometimes the sky is clear, sometimes cloudy, sometimes rainy. Weather can change every day, even every hour. We can feel weather through heat, cold, wind, and rain.",
+      "fact": "Weather is different from climate. Weather changes quickly within hours or days, while climate is the average weather over a very long time.",
+      "reflection": "Subhanallah, Allah arranges the weather so that this earth is balanced and comfortable for His creatures."
+    },
+    {
+      "title": "Sunny Weather",
+      "text": "Sunny weather happens when the sky is clear and the Sun shines brightly. The air feels warm and pleasant. When it is sunny, we can play outside, take a walk, or help dry the laundry.",
+      "fact": "Even when it is sunny, wear a hat or sunscreen when playing in the sun so your skin does not burn.",
+      "reflection": "Alhamdulillah, sunny weather gives us a chance to play and learn outside."
+    },
+    {
+      "title": "Cloudy Weather",
+      "text": "When it is cloudy, the sky is covered by clouds so the Sun is not too fierce. The air feels cooler. Clouds form from a gathering of water droplets floating in the sky.",
+      "fact": "Thick, dark clouds are called overcast clouds. They usually mean rain is coming soon.",
+      "reflection": "Subhanallah, clouds are a sign of the changing weather that Allah arranges so neatly."
+    },
+    {
+      "title": "Overcast Weather",
+      "text": "Overcast weather happens when thick, dark clouds cover the sky. The Sun is not visible and the air feels close and stuffy. Overcast skies often mean rain is on the way. We should get ready to bring an umbrella or raincoat.",
+      "fact": "The dark colour of a cloud happens because the cloud is very thick and full of water, so sunlight has trouble passing through.",
+      "reflection": "Alhamdulillah, overcast skies remind us that rain will soon fall, bringing blessings."
+    },
+    {
+      "title": "Rainy Weather",
+      "text": "Rainy weather happens when the water droplets in clouds grow heavy and fall to earth. Rain makes the soil fertile and fills the rivers. When it rains, shelter in a safe place, use an umbrella or raincoat, and do not play outside in heavy rain or when there is lightning.",
+      "fact": "Rainwater evaporates again in the Sun's heat, rises into the sky, and becomes clouds. This process is called the water cycle and goes on and on.",
+      "reflection": "Alhamdulillah, rain is a mercy from Allah that gives life to the earth and freshens the air."
+    },
+    {
+      "title": "Windy Weather",
+      "text": "Windy weather happens when the air moves fast. We can feel the wind on our face and see leaves and branches sway. Wind flies kites and turns windmills.",
+      "fact": "Wind cannot be seen, but we can feel it and see its movement. Wind also helps sailboats move.",
+      "reflection": "Subhanallah, the wind that Allah sends cools the air and helps with much of people's work."
+    },
+    {
+      "title": "Hot Weather",
+      "text": "Hot weather happens when the Sun shines very fiercely and the air feels warm. In desert areas, the weather can be very hot during the day. When it is hot, drink enough water, wear light clothing, and take shelter if you feel too hot.",
+      "fact": "Light-coloured clothing like white reflects sunlight, so it feels cooler than dark-coloured clothing.",
+      "reflection": "Alhamdulillah, Allah created water and shade so we stay comfortable in hot weather."
+    },
+    {
+      "title": "Cold Weather",
+      "text": "Cold weather happens when the air feels very cool, even to the bone. In snowy areas, snowflakes fall from the sky and cover the ground. When it is cold, wear warm clothes such as a jacket, scarf, and gloves.",
+      "fact": "Snow is ice crystals that form in clouds when the temperature is very cold. No two snowflakes are exactly the same shape.",
+      "reflection": "Subhanallah, Allah sends down beautiful white snow and teaches us to be grateful for every kind of weather."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Weather is the state of ... in a place at a certain time.",
+      "options": [
+        "the air",
+        "the soil",
+        "the sea water"
+      ],
+      "answer": 0,
+      "explain": "Weather is the state of the air: hot, cold, windy, or rainy."
+    },
+    {
+      "q": "Which one shows sunny weather?",
+      "options": [
+        "A dark and windy sky",
+        "A clear sky and bright sun",
+        "Heavy falling snow"
+      ],
+      "answer": 1,
+      "explain": "Sunny weather is marked by a clear sky and a bright Sun."
+    },
+    {
+      "q": "Thick, dark clouds usually mean...",
+      "options": [
+        "rain is coming",
+        "the weather is getting sunnier",
+        "night is coming"
+      ],
+      "answer": 0,
+      "explain": "Thick, dark overcast clouds usually mean rain is coming."
+    },
+    {
+      "q": "In heavy rain with lightning, we should...",
+      "options": [
+        "play in the field",
+        "shelter in a safe place",
+        "stand under a tree"
+      ],
+      "answer": 1,
+      "explain": "In heavy rain with lightning, shelter in a safe place and do not stand under a tree."
+    },
+    {
+      "q": "We can tell there is wind because...",
+      "options": [
+        "we can see its colour",
+        "we feel it on our face and it moves leaves",
+        "it sounds like music"
+      ],
+      "answer": 1,
+      "explain": "Wind cannot be seen, but it can be felt and seen from the movement of leaves and other objects."
+    },
+    {
+      "q": "When the weather is hot, we should...",
+      "options": [
+        "wear a thick jacket",
+        "drink enough water and take shelter",
+        "play in the sun all day"
+      ],
+      "answer": 1,
+      "explain": "When it is hot, drink enough water, wear light clothes, and take shelter if you feel too hot."
+    },
+    {
+      "q": "In cold, snowy weather we should wear...",
+      "options": [
+        "warm clothes such as a jacket",
+        "swimming clothes",
+        "only sunglasses"
+      ],
+      "answer": 0,
+      "explain": "In cold weather, wear warm clothes such as a jacket, scarf, and gloves."
+    }
+  ]
+}

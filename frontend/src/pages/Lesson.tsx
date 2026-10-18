@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { api } from '../api';
+import { LanguageToggle } from '../LanguageToggle';
+import { pick, useLang } from '../lang';
 import { getEntry, save } from '../progress';
 import { Scene } from '../scene/Scene';
 import { SoundToggle } from '../SoundToggle';
@@ -7,6 +9,7 @@ import { playSound } from '../sound';
 import type { Lesson as LessonData, QuizQuestion } from '../types';
 
 export function Lesson({ slug }: { slug: string }) {
+  const lang = useLang();
   const [lesson, setLesson] = useState<LessonData | null>(null);
   const [error, setError] = useState('');
   const [index, setIndex] = useState(0);
@@ -109,13 +112,24 @@ export function Lesson({ slug }: { slug: string }) {
 
   const page = lesson.pages[index];
   const isQuiz = !page;
+  const pageTitle = page ? pick(page.title, page.title_en) : '';
+  const pageText = page ? pick(page.text, page.text_en) : '';
+  const pageFact = page ? pick(page.fact, page.fact_en) : '';
+  const pageReflection = page ? pick(page.reflection, page.reflection_en) : '';
+  const quiz: QuizQuestion[] = lesson.quiz.map((q) => ({
+    q: pick(q.q, q.q_en),
+    options: lang === 'en' && q.options_en?.length === q.options.length ? q.options_en : q.options,
+    answer: q.answer,
+    explain: pick(q.explain, q.explain_en),
+  }));
 
   function toggleSpeak() {
     const synth = window.speechSynthesis;
     if (!synth || !page) return;
     if (speaking) { stopSpeech(); return; }
-    const u = new SpeechSynthesisUtterance(`${page.title}. ${page.text} Tahukah kamu? ${page.fact}`);
-    u.lang = 'id-ID';
+    const didYouKnow = lang === 'en' ? 'Did you know? ' : 'Tahukah kamu? ';
+    const u = new SpeechSynthesisUtterance(`${pageTitle}. ${pageText} ${pageFact ? didYouKnow + pageFact : ''}`);
+    u.lang = lang === 'en' ? 'en-US' : 'id-ID';
     u.rate = 0.92;
     u.onend = () => setSpeaking(false);
     synth.speak(u);
@@ -137,7 +151,7 @@ export function Lesson({ slug }: { slug: string }) {
     >
       <div className="reader-head">
         <a href="#/sekitar" className="back">← Mengenal Sekitar</a>
-        <h1>{lesson.title}</h1>
+        <h1>{pick(lesson.title, lesson.title_en)}</h1>
         <span className="muted page-count">{isQuiz ? 'Kuis' : `Pelajaran ${index + 1} dari ${lesson.pages.length}`}</span>
         {full && (
           <label className="alpha-ctl">
@@ -145,6 +159,7 @@ export function Lesson({ slug }: { slug: string }) {
             <input type="range" min={30} max={100} value={alpha} onChange={(e) => setAlpha(Number(e.target.value))} aria-label="Kepekatan latar teks" />
           </label>
         )}
+        <LanguageToggle />
         <SoundToggle />
         <button className="btn small" onClick={full ? exitFull : enterFull} aria-pressed={full}>
           {full ? '✕ Keluar' : '⛶ Layar penuh'}
@@ -172,6 +187,7 @@ export function Lesson({ slug }: { slug: string }) {
           <Scene
             interactive
             showNames
+            lang={lang}
             onInteract={() => setTouched(true)}
             scene={page ? page.scene : lesson.cover}
             className="art"
@@ -182,16 +198,16 @@ export function Lesson({ slug }: { slug: string }) {
         <article className="story">
           {page ? (
             <>
-              <h2 className="lesson-title">{page.title}</h2>
-              <p className="story-text">{page.text}</p>
-              {page.fact && (
-                <div className="fact"><strong>💡 Tahukah kamu?</strong> {page.fact}</div>
+              <h2 className="lesson-title">{pageTitle}</h2>
+              <p className="story-text">{pageText}</p>
+              {pageFact && (
+                <div className="fact"><strong>💡 Tahukah kamu?</strong> {pageFact}</div>
               )}
-              {page.reflection && <p className="reflection">🌿 {page.reflection}</p>}
+              {pageReflection && <p className="reflection">🌿 {pageReflection}</p>}
               <button className="btn small" onClick={toggleSpeak}>{speaking ? '⏹ Berhenti' : '🔊 Bacakan'}</button>
             </>
           ) : (
-            <Quiz questions={lesson.quiz} onBack={() => go(0)} />
+            <Quiz questions={quiz} onBack={() => go(0)} />
           )}
         </article>
       </div>

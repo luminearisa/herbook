@@ -98,11 +98,37 @@ const NAMES: Record<string, string> = {
   pagar: 'Pagar', meja: 'Meja', vas: 'Vas bunga', kue: 'Kue', sumur: 'Sumur', tongkat: 'Tongkat',
   kurungan: 'Kurungan', timun: 'Timun',
 };
+const NAMES_EN: Record<string, string> = {
+  matahari: 'The Sun', bulan: 'The Moon', bintang: 'Star', awan: 'Cloud', pelangi: 'Rainbow', petir: 'Lightning',
+  layangan: 'Kite', kincir: 'Windmill', angin: 'Wind', pohon: 'Tree', kurma: 'Date palm',
+  bunga: 'Flower', burung: 'Bird', kupu: 'Butterfly', rumah: 'House', batu: 'Stone', semak: 'Bush',
+  kancil: 'Mouse deer', gajah: 'Elephant', kelinci: 'Rabbit', ikan: 'Fish', semut: 'Ant',
+  pagar: 'Fence', meja: 'Table', vas: 'Flower vase', kue: 'Cake', sumur: 'Well', tongkat: 'Walking stick',
+  kurungan: 'Cage', timun: 'Cucumber',
+};
 const FRUITS = ['Apel', 'Jeruk', 'Pisang', 'Semangka', 'Stroberi', 'Anggur'];
+const FRUITS_EN = ['Apple', 'Orange', 'Banana', 'Watermelon', 'Strawberry', 'Grape'];
+const MOON = ['Bulan purnama', 'Bulan sabit', 'Bulan separuh'];
+const MOON_EN = ['Full moon', 'Crescent moon', 'Half moon'];
 
-export function nameFor(item: SceneItem): string | undefined {
-  if (item.t === 'buah') return FRUITS[item.v ?? 0];
-  if (item.t === 'bulan') return ['Bulan purnama', 'Bulan sabit', 'Bulan separuh'][item.v ?? 0] ?? 'Bulan';
-  if (item.t === 'awan' && (item.v ?? 0) >= 2) return 'Awan mendung';
-  return NAMES[item.t];
+export function nameFor(item: SceneItem, lang: 'id' | 'en' = 'id'): string | undefined {
+  const en = lang === 'en';
+  if (item.t === 'buah') return (en ? FRUITS_EN : FRUITS)[item.v ?? 0];
+  if (item.t === 'bulan') return (en ? MOON_EN : MOON)[item.v ?? 0] ?? (en ? 'Moon' : 'Bulan');
+  if (item.t === 'awan' && (item.v ?? 0) >= 2) return en ? 'Overcast cloud' : 'Awan mendung';
+  return (en ? NAMES_EN : NAMES)[item.t];
+}
+
+/** Kalimat pendek tokoh (manusia) saat disentuh, sesuai bahasa aktif. */
+const SPEAK_EN: Record<string, string[]> = {
+  petani: ['Hello!', 'Good afternoon!'],
+  anak: ['Hello!', "Assalamu'alaikum!", 'Hi, friend!'],
+  dewasa: ["Assalamu'alaikum!", 'Hello, child!'],
+  buah: ['Hehe!', 'Hi!', 'Hooray!'],
+};
+
+export function speechFor(item: SceneItem, cfg: Interaction, lang: 'id' | 'en' = 'id'): string | undefined {
+  const lines = (lang === 'en' ? SPEAK_EN[item.t] : undefined) ?? cfg.speak;
+  if (!lines || lines.length === 0) return undefined;
+  return lines[Math.floor(Math.random() * lines.length)];
 }

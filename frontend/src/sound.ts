@@ -271,8 +271,8 @@ export function playSound(name: string) {
   SYNTH[name]?.(c);
 }
 
-/** Mengucapkan kalimat pendek dengan suara bahasa Indonesia bila peramban mendukung. */
-export function speak(text: string, fallback = 'boing') {
+/** Mengucapkan kalimat pendek dengan suara yang sesuai (bawaan: bahasa Indonesia). */
+export function speak(text: string, fallback = 'boing', lang: 'id-ID' | 'en-US' = 'id-ID') {
   if (!enabled) return;
   const synth = window.speechSynthesis;
   if (!synth || typeof SpeechSynthesisUtterance === 'undefined') {
@@ -281,7 +281,7 @@ export function speak(text: string, fallback = 'boing') {
   }
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'id-ID';
+  u.lang = lang;
   u.rate = 1;
   u.pitch = 1.3;
   synth.speak(u);

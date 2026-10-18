@@ -7,6 +7,7 @@ import { Lesson } from './pages/Lesson';
 import { Masuk } from './pages/Masuk';
 import { Profil } from './pages/Profil';
 import { AuthButton } from './AuthButton';
+import { LanguageToggle } from './LanguageToggle';
 import { init as initAuth } from './auth';
 import { InstallBanner, InstallButton } from './InstallPrompt';
 import { SoundToggle } from './SoundToggle';
@@ -55,6 +56,7 @@ export function App() {
           <a href="#/sekitar" className={route.startsWith('/sekitar') ? 'active' : ''}>Mengenal Sekitar</a>
           <a href="#/baru" className={route === '/baru' ? 'active' : ''}>+ Buku Baru</a>
           <InstallButton />
+          <LanguageToggle />
           <SoundToggle />
           <AuthButton />
         </nav>

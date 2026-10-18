@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../api';
+import { pick, useLang } from '../lang';
 import { ContinueButton, ProgressBadge, Riwayat } from '../Progress';
 import { Scene } from '../scene/Scene';
 import type { LessonSummary } from '../types';
@@ -14,7 +15,9 @@ const SOON = [
 export function Explore() {
   const [lessons, setLessons] = useState<LessonSummary[] | null>(null);
   const [error, setError] = useState('');
-  const titles = Object.fromEntries((lessons ?? []).map((l) => [l.slug, l.title]));
+  useLang(); // ikut berubah saat bahasa diganti
+  const titleOf = (l: LessonSummary) => pick(l.title, l.title_en);
+  const titles = Object.fromEntries((lessons ?? []).map((l) => [l.slug, titleOf(l)]));
   useEffect(() => {
     api.lessons().then(setLessons).catch((e: Error) => setError(e.message));
   }, []);
@@ -49,11 +52,11 @@ export function Explore() {
               <div className="cover">
                 <Scene scene={l.cover} />
                 <ProgressBadge kind="lesson" slug={l.slug} />
-                <div className="cover-title">{l.title}</div>
+                <div className="cover-title">{titleOf(l)}</div>
               </div>
               <div className="book-meta">
-                <h3>{l.title}</h3>
-                <p>{l.summary}</p>
+                <h3>{titleOf(l)}</h3>
+                <p>{pick(l.summary, l.summary_en)}</p>
                 <span className="chip alam">{l.page_count} pelajaran · {l.quiz_count} soal kuis</span>
               </div>
             </a>

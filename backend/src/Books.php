@@ -26,12 +26,20 @@ final class Books
         }
         $pages = $pdo->prepare('SELECT text, scene FROM pages WHERE book_id = ? ORDER BY position');
         $pages->execute([$row['id']]);
+        $en = self::english($row);
         $book = self::present($row);
+        $enPages = is_array($en['pages'] ?? null) ? array_values($en['pages']) : [];
+        $book['moral_en'] = (string) ($en['moral'] ?? '');
         $book['pages'] = array_map(
-            static fn (array $p) => ['text' => $p['text'], 'scene' => json_decode($p['scene'], true)],
+            static fn (array $p): array => ['text' => $p['text'], 'scene' => json_decode($p['scene'], true)],
             $pages->fetchAll()
         );
+        foreach ($book['pages'] as $i => &$p) {
+            $p['text_en'] = (string) ($enPages[$i] ?? '');
+        }
+        unset($p);
         $book['page_count'] = count($book['pages']);
+        $book['has_en'] = $book['title_en'] !== '' && (string) ($book['pages'][0]['text_en'] ?? '') !== '';
         return $book;
     }
 
@@ -94,17 +102,33 @@ final class Books
     /** @param array<string,mixed> $r @return array<string,mixed> */
     private static function present(array $r): array
     {
+        $en = self::english($r);
+        $titleEn = (string) ($en['title'] ?? '');
         return [
             'slug' => $r['slug'],
             'title' => $r['title'],
+            'title_en' => $titleEn,
             'author' => $r['author'],
             'summary' => $r['summary'],
+            'summary_en' => (string) ($en['summary'] ?? ''),
             'moral' => $r['moral'],
             'cover' => json_decode($r['cover'], true),
             'category' => $r['category'],
             'is_seed' => (bool) $r['is_seed'],
+            'has_en' => $titleEn !== '',
             'page_count' => (int) ($r['page_count'] ?? 0),
         ];
+    }
+
+    /** @param array<string,mixed> $r @return array<string,mixed> */
+    private static function english(array $r): array
+    {
+        $raw = $r['en'] ?? '';
+        if (!is_string($raw) || $raw === '') {
+            return [];
+        }
+        $en = json_decode($raw, true);
+        return is_array($en) ? $en : [];
     }
 
     private static function uniqueSlug(PDO $pdo, string $base, bool $exact): string

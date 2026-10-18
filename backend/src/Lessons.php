@@ -27,11 +27,31 @@ final class Lessons
             return null;
         }
         $content = json_decode($row['content'], true) ?: [];
+        $en = self::english($row);
+        $enPages = array_values(is_array($en['pages'] ?? null) ? $en['pages'] : []);
+        $enQuiz = array_values(is_array($en['quiz'] ?? null) ? $en['quiz'] : []);
+        $pages = $content['pages'] ?? [];
+        $quiz = $content['quiz'] ?? [];
+        foreach ($pages as $i => &$p) {
+            $ep = is_array($enPages[$i] ?? null) ? $enPages[$i] : [];
+            $p['title_en'] = (string) ($ep['title'] ?? '');
+            $p['text_en'] = (string) ($ep['text'] ?? '');
+            $p['fact_en'] = (string) ($ep['fact'] ?? '');
+            $p['reflection_en'] = (string) ($ep['reflection'] ?? '');
+        }
+        unset($p);
+        foreach ($quiz as $i => &$q) {
+            $eq = is_array($enQuiz[$i] ?? null) ? $enQuiz[$i] : [];
+            $q['q_en'] = (string) ($eq['q'] ?? '');
+            $q['options_en'] = is_array($eq['options'] ?? null) ? array_values($eq['options']) : [];
+            $q['explain_en'] = (string) ($eq['explain'] ?? '');
+        }
+        unset($q);
         return self::present($row) + [
-            'pages' => $content['pages'] ?? [],
-            'quiz' => $content['quiz'] ?? [],
-            'page_count' => count($content['pages'] ?? []),
-            'quiz_count' => count($content['quiz'] ?? []),
+            'pages' => $pages,
+            'quiz' => $quiz,
+            'page_count' => count($pages),
+            'quiz_count' => count($quiz),
         ];
     }
 
@@ -86,13 +106,29 @@ final class Lessons
     /** @param array<string,mixed> $r @return array<string,mixed> */
     private static function present(array $r): array
     {
+        $en = self::english($r);
+        $titleEn = (string) ($en['title'] ?? '');
         return [
             'slug' => $r['slug'],
             'series' => $r['series'],
             'part' => (int) $r['part'],
             'title' => $r['title'],
+            'title_en' => $titleEn,
             'summary' => $r['summary'],
+            'summary_en' => (string) ($en['summary'] ?? ''),
             'cover' => json_decode($r['cover'], true),
+            'has_en' => $titleEn !== '',
         ];
+    }
+
+    /** @param array<string,mixed> $r @return array<string,mixed> */
+    private static function english(array $r): array
+    {
+        $raw = $r['en'] ?? '';
+        if (!is_string($raw) || $raw === '') {
+            return [];
+        }
+        $en = json_decode($raw, true);
+        return is_array($en) ? $en : [];
     }
 }

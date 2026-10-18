@@ -1,0 +1,126 @@
+{
+  "title": "Nature Part 1: Sky and Weather",
+  "summary": "Get to know the sun, moon, stars, clouds, rain, rainbow, wind, and lightning and thunder through pictures you can touch.",
+  "pages": [
+    {
+      "title": "The Sun",
+      "text": "The Sun is the star closest to Earth. It gives us light and warmth, so plants can grow and we can see clearly during the day. The Sun rises in the east and sets in the west.",
+      "fact": "Sunlight takes about 8 minutes to reach Earth, and the Sun is about 109 times the diameter of Earth. Never look straight at the Sun!",
+      "reflection": "Subhanallah, Allah created the Sun as a source of light and warmth for us."
+    },
+    {
+      "title": "The Moon",
+      "text": "The Moon is Earth's natural satellite that orbits the Earth. The Moon has no light of its own; it shines by reflecting sunlight. The Moon's visible shape changes, from crescent to full moon.",
+      "fact": "The Moon orbits the Earth in about 27 days, and its shape changes from one full moon to the next in about 29.5 days.",
+      "reflection": "Subhanallah, the Moon helps us mark the counting of time and the months of the year."
+    },
+    {
+      "title": "The Stars",
+      "text": "Stars are giant balls of very hot gas that give off their own light. Stars look small because they are so very far away. On a clear, cloudless night we can see thousands of twinkling stars in the sky.",
+      "fact": "The Sun is a star too! It looks so big and bright only because it is the closest one to us.",
+      "reflection": "Subhanallah, the night sky is adorned with beautiful stars as a sign of Allah's greatness."
+    },
+    {
+      "title": "Clouds",
+      "text": "Clouds form from tiny droplets of water and ice crystals floating in the air. Water from the sea, rivers, and ground evaporates in the Sun's heat, rises into the sky, and cools into clouds. Clouds come in many shapes.",
+      "fact": "A cloud that looks light can weigh hundreds of tons, but its water droplets are so tiny that they can float in the air.",
+      "reflection": "Alhamdulillah, clouds are where Allah stores water for the rain."
+    },
+    {
+      "title": "Rain",
+      "text": "When the water droplets in clouds grow many and heavy, they fall to earth as rain. Rain makes the soil fertile, fills rivers, and refreshes plants. The rainwater then flows to the sea and evaporates again, forming the water cycle.",
+      "fact": "Raindrops can fall at speeds of up to about 30 km per hour. Rain brings blessings, but still be careful in heavy rain.",
+      "reflection": "Alhamdulillah, rain is a mercy from Allah that gives life to the dry earth."
+    },
+    {
+      "title": "Rainbow",
+      "text": "A rainbow appears when sunlight passes through raindrops in the air. White light splits into seven colours: red, orange, yellow, green, blue, indigo, and violet. A rainbow is usually seen when the rain starts to ease and the Sun shines behind us.",
+      "fact": "A rainbow is really a full circle, but from the ground we see only half. Each person sees their own rainbow from a slightly different angle.",
+      "reflection": "Subhanallah, how beautiful are the colours of Allah's creation."
+    },
+    {
+      "title": "Wind",
+      "text": "Wind is moving air. Warm air rises and cooler air moves to fill its place, creating wind. Wind can fly a kite, turn a windmill, and sway the leaves.",
+      "fact": "Windmills are used to grind grain, and nowadays also to make electricity. We cannot see wind, but we can feel it and see its movement.",
+      "reflection": "Subhanallah, Allah sends the wind to move the clouds and cool the earth."
+    },
+    {
+      "title": "Lightning and Thunder",
+      "text": "Lightning is the bright flash that appears when electricity inside a cloud jumps to another cloud or to the ground. The rumbling sound that follows the lightning is called thunder. We see the lightning first, then hear the thunder.",
+      "fact": "Light travels faster than sound. Count the seconds between lightning and thunder: about every 3 seconds is roughly 1 kilometre away. When there is lightning, go indoors at once and do not shelter under a tree.",
+      "reflection": "Thunder and lightning are signs of Allah's greatness. Let us be careful and take shelter in a safe place."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What gives us light and heat during the day?",
+      "options": [
+        "The Sun",
+        "The Moon",
+        "Clouds"
+      ],
+      "answer": 0,
+      "explain": "The Sun is the nearest star and gives light and warmth."
+    },
+    {
+      "q": "The Moon shines because...",
+      "options": [
+        "it has its own lamp",
+        "it reflects sunlight",
+        "it absorbs starlight"
+      ],
+      "answer": 1,
+      "explain": "The Moon has no light of its own; it reflects sunlight."
+    },
+    {
+      "q": "The star closest to Earth is...",
+      "options": [
+        "the Moon",
+        "clouds",
+        "the Sun"
+      ],
+      "answer": 2,
+      "explain": "The Sun is a star, and it is the closest to Earth."
+    },
+    {
+      "q": "Clouds are formed from...",
+      "options": [
+        "cotton",
+        "tiny droplets of water and ice",
+        "smoke"
+      ],
+      "answer": 1,
+      "explain": "Clouds are made of water droplets and ice crystals floating in the air."
+    },
+    {
+      "q": "A rainbow appears when there is...",
+      "options": [
+        "sun and rain",
+        "moon and stars",
+        "wind and lightning"
+      ],
+      "answer": 0,
+      "explain": "Sunlight is split into seven colours by raindrops."
+    },
+    {
+      "q": "Which do we see first when there is lightning?",
+      "options": [
+        "thunder",
+        "lightning",
+        "both at once"
+      ],
+      "answer": 1,
+      "explain": "Light is faster than sound, so we see lightning first."
+    },
+    {
+      "q": "Wind can move...",
+      "options": [
+        "kites and windmills",
+        "only rocks",
+        "the Moon"
+      ],
+      "answer": 0,
+      "explain": "Wind flies kites and turns windmills."
+    }
+  ]
+}

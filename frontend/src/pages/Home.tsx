@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api } from '../api';
+import { pick, useLang } from '../lang';
 import { ContinueButton, ProgressBadge, Riwayat } from '../Progress';
 import { Scene } from '../scene/Scene';
 import type { BookSummary } from '../types';
@@ -15,8 +16,10 @@ export function Home() {
   const [books, setBooks] = useState<BookSummary[] | null>(null);
   const [error, setError] = useState('');
   const [tab, setTab] = useState<'semua' | 'dongeng' | 'fabel' | 'adab' | 'islami'>('semua');
+  useLang(); // ikut berubah saat bahasa diganti
   const shown = books?.filter((b) => tab === 'semua' || b.category === tab);
-  const titles = Object.fromEntries((books ?? []).map((b) => [b.slug, b.title]));
+  const titleOf = (b: BookSummary) => pick(b.title, b.title_en);
+  const titles = Object.fromEntries((books ?? []).map((b) => [b.slug, titleOf(b)]));
 
   useEffect(() => {
     api.books().then(setBooks).catch((e: Error) => setError(e.message));
@@ -61,11 +64,11 @@ export function Home() {
               <div className="cover">
                 <Scene scene={b.cover} />
                 <ProgressBadge kind="book" slug={b.slug} />
-                <div className="cover-title">{b.title}</div>
+                <div className="cover-title">{titleOf(b)}</div>
               </div>
               <div className="book-meta">
-                <h3>{b.title}</h3>
-                <p>{b.summary}</p>
+                <h3>{titleOf(b)}</h3>
+                <p>{pick(b.summary, b.summary_en)}</p>
                 <span className={'chip' + (b.category === 'dongeng' ? '' : ' ' + b.category)}>
                   {b.category === 'islami' ? 'Kisah Islami · ' : b.category === 'fabel' ? 'Fabel · ' : b.category === 'adab' ? 'Adab · ' : ''}{b.page_count} halaman{b.is_seed ? '' : ' · buatanmu'}
                 </span>

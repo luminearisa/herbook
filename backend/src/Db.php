@@ -88,6 +88,13 @@ SQL);
         if (!in_array('category', $cols, true)) {
             $pdo->exec("ALTER TABLE books ADD COLUMN category TEXT NOT NULL DEFAULT 'dongeng'");
         }
+        if (!in_array('en', $cols, true)) {
+            $pdo->exec("ALTER TABLE books ADD COLUMN en TEXT NOT NULL DEFAULT ''");
+        }
+        $lcols = array_column($pdo->query('PRAGMA table_info(lessons)')->fetchAll(), 'name');
+        if (!in_array('en', $lcols, true)) {
+            $pdo->exec("ALTER TABLE lessons ADD COLUMN en TEXT NOT NULL DEFAULT ''");
+        }
     }
 
     private static function seed(PDO $pdo): void
@@ -102,6 +109,7 @@ SQL);
             if (!$exists->fetchColumn()) {
                 Lessons::create($pdo, $lesson);
             }
+            self::syncTranslation($pdo, 'lessons', (string) $lesson['slug'], dirname(__DIR__) . '/seed/en/lessons/' . basename($file));
         }
         foreach (glob(dirname(__DIR__) . '/seed/*.json') ?: [] as $file) {
             $book = json_decode((string) file_get_contents($file), true);
@@ -113,6 +121,21 @@ SQL);
             if (!$exists->fetchColumn()) {
                 Books::create($pdo, $book, true);
             }
+            self::syncTranslation($pdo, 'books', (string) $book['slug'], dirname(__DIR__) . '/seed/en/' . basename($file));
         }
+    }
+
+    /** Menyimpan terjemahan Inggris (kolom `en`) dari berkas seed/en bila isinya berubah. */
+    private static function syncTranslation(PDO $pdo, string $table, string $slug, string $file): void
+    {
+        if (!is_file($file)) {
+            return;
+        }
+        $en = json_decode((string) file_get_contents($file), true);
+        if (!is_array($en)) {
+            return;
+        }
+        $json = json_encode($en, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        $pdo->prepare("UPDATE {$table} SET en = ? WHERE slug = ? AND en <> ?")->execute([$json, $slug, $json]);
     }
 }
